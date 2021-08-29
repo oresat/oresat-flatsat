@@ -1,4 +1,4 @@
-# The OreSat FlatSat Repo
+# OreSat FlatSat
 
 A "flatsat" is a integration and debugging configuration of your satellite that allows you to more easily do system integration, software development, testing, and debugging. It's the "open" satellite that allows you to get at all the signals and ports.
 
@@ -10,7 +10,7 @@ Here's a closeup of the cards: the 40 wire ribbon cable mimics our backplane, th
 
 ![OreSat 1U Backplane Picture](https://github.com/oresat/oresat-flatsat/raw/master/oresat-flatsat-cards.jpg)
 
-Some notes:
+# Some notes
 
 - We ordered 6 inch ribbon cables, but had to cut them down to 4" to pack the cards on our small table. We did that by cutting the ribbon cable and pressing on an IDC connector.
 - Don't forget to add termination resistors to both sides of the ribbon cable.
