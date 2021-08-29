@@ -4,11 +4,11 @@ A "flatsat" is a integration and debugging configuration of your satellite that 
 
 Here's what our OreSat0 flatsat looks like -- note the cards laid out flat on the table, the power supply on the left, the ribbon cable and cards, and the small PC on the upper right (vertical wall) that interfaces everything to the interwebs.
 
-[OreSat 1U Backplane Picture](https://github.com/oresat/oresat-flatsat/blob/master/oresat-flatsat.jpg)
+![OreSat 1U Backplane Picture](https://github.com/oresat/oresat-flatsat/raw/master/oresat-flatsat.jpg)
 
 Here's a closeup of the cards: the 40 wire ribbon cable mimics our backplane, the "flatsat breakout boards" interface the cards to the ribbon cable backplane, and the "card debug boards" at the bottom of some of the cards are JTAG, serial, USB, and some spare GPIO that's common to all cards.
 
-[OreSat 1U Backplane Picture](https://github.com/oresat/oresat-flatsat/blob/master/oresat-flatsat-cards.jpg)
+![OreSat 1U Backplane Picture](https://github.com/oresat/oresat-flatsat/raw/master/oresat-flatsat-cards.jpg)
 
 Some notes:
 
