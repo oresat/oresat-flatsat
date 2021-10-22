@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "SeeeduinoXiao")(type "Legacy")(uri "C:/Users/dal56/Downloads/Seeeduino XIAO KICAD/Seeeduino XIAO KICAD/Seeeduino XIAO.lib")(options "")(descr ""))
+  (lib (name "oresat-c3-surrogate-rescue")(type "Legacy")(uri "${KIPRJMOD}/oresat-c3-surrogate-rescue.lib")(options "")(descr ""))
+)
