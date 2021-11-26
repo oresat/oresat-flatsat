@@ -1,4 +1,10 @@
-# For PCBs designed using KiCad: http://www.kicad-pcb.org/
+
+# Additional files for KiCAD 6, we think
+*.kicad_prl
+fp-lib-table
+*-backups
+
+# For PCBs designed using KiCad 5.x: http://www.kicad-pcb.org/
 # Format documentation: http://kicad-pcb.org/help/file-formats/
 
 # Temporary files
