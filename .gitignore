@@ -1,3 +1,8 @@
+# Don't checkin directories called "local-archive". This is 
+# Where folks can store old versions for easy access, or build
+# files, or whatnot.
+
+local-archive
 
 # Additional files for KiCAD 6, we think
 *.kicad_prl
