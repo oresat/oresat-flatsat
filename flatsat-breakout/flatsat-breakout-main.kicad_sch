@@ -2579,7 +2579,7 @@
     (uuid 3376b2e0-8f3f-4d46-b094-eca914ece75a)
     (property "Reference" "J3" (id 0) (at 106.172 46.99 0))
     (property "Value" "Conn_01x40" (id 1) (at 106.172 49.53 0))
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical" (id 2) (at 104.14 101.6 0)
+    (property "Footprint" "Connector_IDC:IDC-Header_2x20_P2.54mm_Vertical" (id 2) (at 104.14 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 104.14 101.6 0)
@@ -2737,7 +2737,7 @@
     (uuid dc1bbcc9-ee51-40f1-8280-08a3863581c3)
     (property "Reference" "J2" (id 0) (at 96.012 46.99 0))
     (property "Value" "Conn_01x40" (id 1) (at 96.012 49.53 0))
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical" (id 2) (at 93.98 101.6 0)
+    (property "Footprint" "Connector_IDC:IDC-Header_2x20_P2.54mm_Vertical" (id 2) (at 93.98 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 93.98 101.6 0)
@@ -2857,10 +2857,10 @@
       (reference "J1") (unit 1) (value "Conn_01x40") (footprint "J-SAMTEC-SFM-120-02-X-DH:SFM-120-02-X-DH")
     )
     (path "/dc1bbcc9-ee51-40f1-8280-08a3863581c3"
-      (reference "J2") (unit 1) (value "Conn_01x40") (footprint "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical")
+      (reference "J2") (unit 1) (value "Conn_01x40") (footprint "Connector_IDC:IDC-Header_2x20_P2.54mm_Vertical")
     )
     (path "/3376b2e0-8f3f-4d46-b094-eca914ece75a"
-      (reference "J3") (unit 1) (value "Conn_01x40") (footprint "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical")
+      (reference "J3") (unit 1) (value "Conn_01x40") (footprint "Connector_IDC:IDC-Header_2x20_P2.54mm_Vertical")
     )
     (path "/83f85e22-fe20-4ffa-b437-52ec5beed00a"
       (reference "J4") (unit 1) (value "Conn_01x27") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x27_P2.54mm_Vertical")
