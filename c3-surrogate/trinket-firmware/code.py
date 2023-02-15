@@ -67,7 +67,7 @@ def print_help():
     print("  opd probe")
     for row in opd_table:
         print("  opd [enable|disable] " + row[0])
-    
+
     print("-----------------------")
     return
 
@@ -124,19 +124,25 @@ def i2c_write_reg(addr, reg, data):
     return(None)
 
 
-def opd_i2c_start(i2c_addr):
+#def opd_i2c_start(i2c_addr):
+#    result = bytearray(1)
+
+#    i2c_read_reg(i2c_addr, MAX7310_AD_MODE, result)
+
+#    result[0] &= ~(1 << OPD_SDA)
+#    i2c_write_reg(i2c_addr, MAX7310_AD_MODE, result)
+
+#    result[0] &= ~(1 << OPD_SCL)
+    
+#    i2c_write_reg(i2c_addr, MAX7310_AD_MODE, result)
+
+#    return
+    
+def opd_en_pin_mode(i2c_addr):
     result = bytearray(1)
 
-
     i2c_read_reg(i2c_addr, MAX7310_AD_MODE, result)
-
-    result[0] &= ~(1 << OPD_SDA)
-
-    i2c_write_reg(i2c_addr, MAX7310_AD_MODE, result)
-
-    result[0] &= ~(1 << OPD_SCL)
-    result[0] &= ~(1 << OPD_EN)
-
+    result[0] &= ~(1 << OPD_EN) # Set the EN pin to output mode
     i2c_write_reg(i2c_addr, MAX7310_AD_MODE, result)
 
     return
@@ -164,8 +170,8 @@ def set_max7310_pin(i2c_addr, pin_num):
     result[0] |= (1 << pin_num)
     i2c_write_reg(i2c_addr, MAX7310_AD_ODR, result)
     return
-    
-    
+
+
 def clear_max7310_pin(i2c_addr, pin_num):
     result = bytearray(1)
     i2c_read_reg(i2c_addr, MAX7310_AD_ODR, result)
@@ -173,10 +179,10 @@ def clear_max7310_pin(i2c_addr, pin_num):
     result[0] &= ~(1 << pin_num)
     i2c_write_reg(i2c_addr, MAX7310_AD_ODR, result)
     return
-    
-    
+
+
 def opd_enable_disable_node(i2c_addr, enable_flag):
-    opd_i2c_start(i2c_addr)
+    opd_en_pin_mode(i2c_addr)
     if( enable_flag ):
         set_max7310_pin(i2c_addr, OPD_EN)
     else:
@@ -191,15 +197,15 @@ i = 0
 while True:
   #i = (i+1) % 256  # run from 0 to 255
   #print("Loop Itteration: %d"  % i)
-  
+
   if supervisor.runtime.serial_bytes_available:
         value = input().strip()
         if value == "":
             continue
-            
+
         #print("RX: {}".format(value))
         handled_command = False
-        
+
         if( value == "help" ):
             print_help()
             handled_command = True
@@ -210,7 +216,7 @@ while True:
             for row in opd_table:
                 cmd_en = "opd enable " + row[0]
                 cmd_dis = "opd disable " + row[0]
-                
+
                 if( value == cmd_en ):
                     print("Turning on OPD at address 0x%X" % row[1])
                     opd_enable_disable_node(row[1], True)
@@ -219,11 +225,11 @@ while True:
                     print("Turning off OPD at address 0x%X" % row[1])
                     opd_enable_disable_node(row[1], False)
                     handled_command = True
-                    
+
         if( not handled_command ):
             print("Unknown command")
-                    
-            
+
+
 
   time.sleep(1.20)
 
