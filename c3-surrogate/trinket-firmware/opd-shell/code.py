@@ -73,17 +73,15 @@ def print_help():
 
 
 def probe_i2c():
-    if( i2c.try_lock() ):
+    if i2c.try_lock():
         for row in opd_table:
             addr = row[1]
             found = False
             try:
                 result = bytearray(2)
                 i2c.readfrom_into(addr, result)
-                #print("Successfully read from i2c address 0x%X" % addr);
                 found = True
-            except:
-                #print("Failed to read from i2c address 0x%X" % addr)
+            except Exception:
                 pass
 
             print("I2C device at address 0x%X (%13s): %s" %(addr, row[0], ("FOUND" if found else "not found")))
@@ -93,20 +91,15 @@ def probe_i2c():
     return
 
 
-
 def i2c_read_reg(addr, reg, result):
     if i2c.try_lock():
-      try:
+        try:
             i2c.writeto_then_readfrom(addr, bytes([reg]), result)
-            #print("Successfully read from i2c address 0x%X: 0x%X" % (addr, result[0]));
             return result
-      except:
+        except Exception:
             print("Failed to read from i2c address 0x%X" % addr)
-      finally:
-
+        finally:
             i2c.unlock()
-
-    return None
 
 
 def i2c_write_reg(addr, reg, data):
@@ -116,36 +109,19 @@ def i2c_write_reg(addr, reg, data):
             buf[0] = reg
             buf.extend(data)
             i2c.writeto(addr, buf)
-        except:
+        except Exception:
             print("Failed to write to address 0x%X: reg=0x%X" % (addr, reg))
         finally:
             i2c.unlock()
 
-    return(None)
 
-
-#def opd_i2c_start(i2c_addr):
-#    result = bytearray(1)
-
-#    i2c_read_reg(i2c_addr, MAX7310_AD_MODE, result)
-
-#    result[0] &= ~(1 << OPD_SDA)
-#    i2c_write_reg(i2c_addr, MAX7310_AD_MODE, result)
-
-#    result[0] &= ~(1 << OPD_SCL)
-    
-#    i2c_write_reg(i2c_addr, MAX7310_AD_MODE, result)
-
-#    return
-    
 def opd_en_pin_mode(i2c_addr):
     result = bytearray(1)
 
     i2c_read_reg(i2c_addr, MAX7310_AD_MODE, result)
-    result[0] &= ~(1 << OPD_EN) # Set the EN pin to output mode
+    result[0] &= ~(1 << OPD_EN)  # Set the EN pin to output mode
     i2c_write_reg(i2c_addr, MAX7310_AD_MODE, result)
 
-    return
 
 def opt_print_status(i2c_addr):
     result = bytearray(1)
@@ -164,6 +140,7 @@ def opt_print_status(i2c_addr):
 
     return
 
+
 def set_max7310_pin(i2c_addr, pin_num):
     result = bytearray(1)
     i2c_read_reg(i2c_addr, MAX7310_AD_ODR, result)
@@ -175,7 +152,6 @@ def set_max7310_pin(i2c_addr, pin_num):
 def clear_max7310_pin(i2c_addr, pin_num):
     result = bytearray(1)
     i2c_read_reg(i2c_addr, MAX7310_AD_ODR, result)
-    #result[0] = result[0] | (1 << pin_num)
     result[0] &= ~(1 << pin_num)
     i2c_write_reg(i2c_addr, MAX7310_AD_ODR, result)
     return
@@ -183,7 +159,7 @@ def clear_max7310_pin(i2c_addr, pin_num):
 
 def opd_enable_disable_node(i2c_addr, enable_flag):
     opd_en_pin_mode(i2c_addr)
-    if( enable_flag ):
+    if enable_flag:
         set_max7310_pin(i2c_addr, OPD_EN)
     else:
         clear_max7310_pin(i2c_addr, OPD_EN)
@@ -192,54 +168,38 @@ def opd_enable_disable_node(i2c_addr, enable_flag):
 
 print_help()
 
-######################### MAIN LOOP ##############################
+# ---------------------- MAIN LOOP ---------------------------------
+
 i = 0
 while True:
-  #i = (i+1) % 256  # run from 0 to 255
-  #print("Loop Itteration: %d"  % i)
-
-  if supervisor.runtime.serial_bytes_available:
+    if supervisor.runtime.serial_bytes_available:
         value = input().strip()
         if value == "":
             continue
 
-        #print("RX: {}".format(value))
         handled_command = False
 
-        if( value == "help" ):
+        if value == "help":
             print_help()
             handled_command = True
-        elif( value == "opd probe" ):
-            probe_i2c();
+        elif value == "opd probe":
+            probe_i2c()
             handled_command = True
         else:
             for row in opd_table:
                 cmd_en = "opd enable " + row[0]
                 cmd_dis = "opd disable " + row[0]
 
-                if( value == cmd_en ):
+                if value == cmd_en:
                     print("Turning on OPD at address 0x%X" % row[1])
                     opd_enable_disable_node(row[1], True)
                     handled_command = True
-                elif( value == cmd_dis ):
+                elif value == cmd_dis:
                     print("Turning off OPD at address 0x%X" % row[1])
                     opd_enable_disable_node(row[1], False)
                     handled_command = True
 
-        if( not handled_command ):
+        if not handled_command:
             print("Unknown command")
 
-
-
-  time.sleep(1.20)
-
-
-
-
-
-
-
-
-
-
-
+    time.sleep(1.20)
