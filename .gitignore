@@ -1,22 +1,19 @@
-# Don't checkin directories called "local-archive". This is 
-# Where folks can store old versions for easy access, or build
-# files, or whatnot.
-
+# Ignore local archives and build folders
+archive
 local-archive
+build
 
-# Additional files for KiCAD 6, we think
-*.kicad_prl
-fp-lib-table
-*-backups
-
-# For PCBs designed using KiCad 5.x: http://www.kicad-pcb.org/
-# Format documentation: http://kicad-pcb.org/help/file-formats/
+# For PCBs designed using KiCad: https://www.kicad.org/
+# Format documentation: https://kicad.org/help/file-formats/
 
 # Temporary files
 *.000
 *.bak
 *.bck
 *.kicad_pcb-bak
+*.kicad_sch-bak
+*-backups
+*.kicad_prl
 *.sch-bak
 *~
 _autosave-*
@@ -36,7 +33,7 @@ fp-info-cache
 *.xml
 *.csv
 
-
+# ----------------------------------------------------------------------------
 
 # Ignore list for Eagle, a PCB layout tool
 
@@ -44,6 +41,7 @@ fp-info-cache
 *.s#?
 *.b#?
 *.l#?
+*.d#?
 *.b$?
 *.s$?
 *.l$?
@@ -75,6 +73,7 @@ eagle.epf
 *.gpi
 *.pls
 *.ger
+*.gpi
 *.xln
 
 *.drd
