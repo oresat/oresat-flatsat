@@ -435,6 +435,75 @@
         )
       )
     )
+    (symbol "oresat-pcbs:UMFT234XF" (pin_numbers hide) (in_bom yes) (on_board yes)
+      (property "Reference" "PCB" (at 7.62 -7.62 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "UMFT234XF" (at 7.62 -10.16 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at -2.54 8.89 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "https://www.ftdichip.com/Support/Documents/DataSheets/Modules/DS_UMFT234XF.pdf" (at 0 25.4 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "UMFT234XF_0_1"
+        (rectangle (start -11.43 3.81) (end -6.35 -3.81)
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (rectangle (start -10.16 6.35) (end 10.16 -6.35)
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "UMFT234XF_1_1"
+        (text "micro-B USB" (at -8.89 0 900)
+          (effects (font (size 0.65 0.65)))
+        )
+        (pin input line (at 12.7 -5.08 180) (length 2.54)
+          (name "RESET#" (effects (font (size 1 1))))
+          (number "P1" (effects (font (size 0.75 0.75))))
+        )
+        (pin input line (at 12.7 1.27 180) (length 2.54)
+          (name "CTS#" (effects (font (size 1 1))))
+          (number "P10" (effects (font (size 0.75 0.75))))
+        )
+        (pin power_out line (at 0 8.89 270) (length 2.54)
+          (name "3V3" (effects (font (size 1 1))))
+          (number "P2" (effects (font (size 0.75 0.75))))
+        )
+        (pin power_in line (at -2.54 8.89 270) (length 2.54)
+          (name "VIO" (effects (font (size 1 1))))
+          (number "P3" (effects (font (size 0.75 0.75))))
+        )
+        (pin power_in line (at 0 -8.89 90) (length 2.54)
+          (name "GND" (effects (font (size 1 1))))
+          (number "P4" (effects (font (size 0.75 0.75))))
+        )
+        (pin power_out line (at 2.54 8.89 270) (length 2.54)
+          (name "VBUS" (effects (font (size 1 1))))
+          (number "P5" (effects (font (size 0.75 0.75))))
+        )
+        (pin bidirectional line (at 12.7 -2.54 180) (length 2.54)
+          (name "CB0" (effects (font (size 1 1))))
+          (number "P6" (effects (font (size 0.75 0.75))))
+        )
+        (pin output line (at 12.7 5.08 180) (length 2.54)
+          (name "TXD" (effects (font (size 1 1))))
+          (number "P7" (effects (font (size 0.75 0.75))))
+        )
+        (pin output line (at 12.7 0 180) (length 2.54)
+          (name "RTS#" (effects (font (size 1 1))))
+          (number "P8" (effects (font (size 0.75 0.75))))
+        )
+        (pin input line (at 12.7 3.81 180) (length 2.54)
+          (name "RXD" (effects (font (size 1 1))))
+          (number "P9" (effects (font (size 0.75 0.75))))
+        )
+      )
+    )
     (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "#PWR" (at 0 -6.35 0)
         (effects (font (size 1.27 1.27)) hide)
@@ -484,8 +553,16 @@
     (uuid 80aabb7b-f0a7-4efc-bd99-8af1f8607f5c)
   )
 
+  (no_connect (at 123.19 27.94) (uuid 2253c7eb-e663-4671-9eaf-94a7cd260767))
+  (no_connect (at 73.66 48.26) (uuid 29de27a9-ed77-44f3-8d42-53b57f3ade3a))
   (no_connect (at 148.59 67.31) (uuid 32704e21-5418-4741-853e-7ecc7fff5f58))
+  (no_connect (at 81.28 35.56) (uuid 667dbed3-bf6b-4a07-8e28-9eb4b86b87f4))
+  (no_connect (at 82.55 35.56) (uuid 7bd07051-6213-4f3e-a808-d9092b4e060a))
+  (no_connect (at 73.66 50.8) (uuid 804f9f6f-ec62-460d-8430-55349007ac81))
   (no_connect (at 104.14 87.63) (uuid 93969c1e-c8dc-4f4f-91a6-948308293f5d))
+  (no_connect (at 85.09 35.56) (uuid b3d9bc0b-6b74-4ae3-8985-d08e6a47e6e5))
+  (no_connect (at 73.66 45.72) (uuid cc187ad8-5add-4bb5-b40b-83c96496a112))
+  (no_connect (at 87.63 35.56) (uuid cfc40ede-6886-4ab2-8a61-03c5c72cd98a))
   (no_connect (at 116.84 90.17) (uuid fbaabd68-343f-40cc-b6ac-c8060f065430))
 
   (wire (pts (xy 101.6 82.55) (xy 104.14 82.55))
@@ -499,6 +576,10 @@
   (wire (pts (xy 101.6 82.55) (xy 101.6 85.09))
     (stroke (width 0) (type default))
     (uuid 1c90bdd9-19d9-495a-993c-4068ea9d8260)
+  )
+  (wire (pts (xy 96.52 48.26) (xy 96.52 55.88))
+    (stroke (width 0) (type default))
+    (uuid 1ff7d56d-7a87-43e8-a862-37795f2c0207)
   )
   (wire (pts (xy 101.6 77.47) (xy 101.6 64.77))
     (stroke (width 0) (type default))
@@ -520,9 +601,17 @@
     (stroke (width 0) (type default))
     (uuid 42841d15-7680-4b68-ad2b-f4f8ae3a3dba)
   )
+  (wire (pts (xy 69.85 74.93) (xy 104.14 74.93))
+    (stroke (width 0) (type default))
+    (uuid 4894bbe8-4be8-43f5-b9d9-fdc929c12719)
+  )
   (wire (pts (xy 148.59 59.69) (xy 148.59 53.34))
     (stroke (width 0) (type default))
     (uuid 555de98a-c2e8-43e9-99e8-d22a69dab9a3)
+  )
+  (wire (pts (xy 77.47 34.29) (xy 69.85 34.29))
+    (stroke (width 0) (type default))
+    (uuid 56aae8e0-b5fd-4846-a7e6-23efa82d962e)
   )
   (wire (pts (xy 104.14 77.47) (xy 101.6 77.47))
     (stroke (width 0) (type default))
@@ -531,6 +620,10 @@
   (wire (pts (xy 119.38 72.39) (xy 119.38 62.23))
     (stroke (width 0) (type default))
     (uuid 5b258dae-5110-423f-be29-6d11c977edd4)
+  )
+  (wire (pts (xy 127 34.29) (xy 127 74.93))
+    (stroke (width 0) (type default))
+    (uuid 624712b6-f6e9-4952-8314-0ef8565ac8b7)
   )
   (wire (pts (xy 104.14 80.01) (xy 101.6 80.01))
     (stroke (width 0) (type default))
@@ -551,6 +644,10 @@
   (wire (pts (xy 104.14 100.33) (xy 147.32 100.33))
     (stroke (width 0) (type default))
     (uuid 762809e9-39b6-42a5-8b6b-63a9f1417696)
+  )
+  (wire (pts (xy 77.47 35.56) (xy 77.47 34.29))
+    (stroke (width 0) (type default))
+    (uuid 76894c75-c3e4-4d37-9d2f-41453f56034b)
   )
   (wire (pts (xy 119.38 62.23) (xy 148.59 62.23))
     (stroke (width 0) (type default))
@@ -604,6 +701,10 @@
     (stroke (width 0) (type default))
     (uuid bf10f84b-c235-4a4d-839b-08d320fc70d3)
   )
+  (wire (pts (xy 78.74 34.29) (xy 127 34.29))
+    (stroke (width 0) (type default))
+    (uuid c1dd488b-5e5f-477f-bf43-0677ee6a52e6)
+  )
   (wire (pts (xy 148.59 80.01) (xy 154.94 80.01))
     (stroke (width 0) (type default))
     (uuid c2af0087-a7be-4a44-bbe4-b87dd1e5f375)
@@ -620,6 +721,18 @@
     (stroke (width 0) (type default))
     (uuid c8991a8b-db6f-44e6-a860-550eb94579ab)
   )
+  (wire (pts (xy 78.74 35.56) (xy 78.74 34.29))
+    (stroke (width 0) (type default))
+    (uuid c9edd6a8-8ea5-4303-99b5-f9426d4bd71d)
+  )
+  (wire (pts (xy 69.85 34.29) (xy 69.85 74.93))
+    (stroke (width 0) (type default))
+    (uuid cc69bd12-462a-4dd0-9980-516c8d7766d3)
+  )
+  (wire (pts (xy 127 74.93) (xy 116.84 74.93))
+    (stroke (width 0) (type default))
+    (uuid d97a44d7-6a88-49c1-adb6-6420a66f73a6)
+  )
   (wire (pts (xy 116.84 87.63) (xy 120.65 87.63))
     (stroke (width 0) (type default))
     (uuid ed236fa1-c2f5-43c4-8776-de8dccf92da5)
@@ -632,14 +745,14 @@
     (stroke (width 0) (type default))
     (uuid fc94a367-5c43-49a0-b544-6297754de21a)
   )
+  (wire (pts (xy 91.44 48.26) (xy 96.52 48.26))
+    (stroke (width 0) (type default))
+    (uuid ff3f7503-efdf-440a-910f-8ecf9d250358)
+  )
 
   (text "To vulCAN" (at 156.21 64.77 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 1b68f075-2cd0-4230-87e6-7bc62345290d)
-  )
-  (text "UMFT234XF goes here\n" (at 78.74 55.88 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 91d1e50d-969d-4dbc-ae84-0cdfa82ea450)
   )
   (text "OPD" (at 154.94 100.33 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -695,9 +808,34 @@
     (pin "2" (uuid 528d559e-fc3a-42c6-9f83-e1f76f0f9b3f))
     (pin "1" (uuid 671e899c-c1c2-4b94-a5c4-7018dad25361))
     (instances
-      (project "flatsat-backplane-breakout-debug"
+      (project "backplane-debug-breakout"
         (path "/3c6f9748-3b52-445b-9cee-a3f7ec926272"
           (reference "D1") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 96.52 55.88 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 22885b50-7859-461a-bbbb-b6a4dd5e1307)
+    (property "Reference" "#PWR06" (at 96.52 62.23 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 96.52 60.96 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 96.52 55.88 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 96.52 55.88 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid e35e5612-f1fc-45aa-88a8-865aa7913f8d))
+    (instances
+      (project "backplane-debug-breakout"
+        (path "/3c6f9748-3b52-445b-9cee-a3f7ec926272"
+          (reference "#PWR06") (unit 1)
         )
       )
     )
@@ -720,7 +858,7 @@
     )
     (pin "1" (uuid 54d25502-86ac-42ad-b9ec-99050518d049))
     (instances
-      (project "flatsat-backplane-breakout-debug"
+      (project "backplane-debug-breakout"
         (path "/3c6f9748-3b52-445b-9cee-a3f7ec926272"
           (reference "J4") (unit 1)
         )
@@ -745,7 +883,7 @@
     )
     (pin "1" (uuid 245761c0-9517-4840-9eaa-cd587d0babc0))
     (instances
-      (project "flatsat-backplane-breakout-debug"
+      (project "backplane-debug-breakout"
         (path "/3c6f9748-3b52-445b-9cee-a3f7ec926272"
           (reference "#PWR01") (unit 1)
         )
@@ -785,7 +923,7 @@
     (pin "9" (uuid 60310417-40c1-4cf1-9443-7146e678d578))
     (pin "2" (uuid 5314a2f0-bdf9-4700-855a-08a9c1c5e3d3))
     (instances
-      (project "flatsat-backplane-breakout-debug"
+      (project "backplane-debug-breakout"
         (path "/3c6f9748-3b52-445b-9cee-a3f7ec926272"
           (reference "J1") (unit 1)
         )
@@ -813,7 +951,7 @@
     (pin "2" (uuid db7c5317-2b53-4ebe-8c1c-d71e9203f781))
     (pin "3" (uuid 25cb1354-b576-4799-879e-b58d802a2e42))
     (instances
-      (project "flatsat-backplane-breakout-debug"
+      (project "backplane-debug-breakout"
         (path "/3c6f9748-3b52-445b-9cee-a3f7ec926272"
           (reference "J5") (unit 1)
         )
@@ -839,7 +977,7 @@
     (pin "1" (uuid 07366248-071b-4dd5-b9dc-32ba11329d4d))
     (pin "2" (uuid b90f0009-3fc6-47f3-ac58-6b0a227b8cf1))
     (instances
-      (project "flatsat-backplane-breakout-debug"
+      (project "backplane-debug-breakout"
         (path "/3c6f9748-3b52-445b-9cee-a3f7ec926272"
           (reference "SW1") (unit 1)
         )
@@ -867,7 +1005,7 @@
     (pin "2" (uuid 538a5f67-e2eb-43d1-8180-1a5c1b910a08))
     (pin "4" (uuid fab0f068-3a53-49a3-bb37-58dfe3017928))
     (instances
-      (project "flatsat-backplane-breakout-debug"
+      (project "backplane-debug-breakout"
         (path "/3c6f9748-3b52-445b-9cee-a3f7ec926272"
           (reference "J2") (unit 1)
         )
@@ -892,7 +1030,7 @@
     )
     (pin "1" (uuid acc9cb24-1573-45a3-befb-b3d16c5c4f40))
     (instances
-      (project "flatsat-backplane-breakout-debug"
+      (project "backplane-debug-breakout"
         (path "/3c6f9748-3b52-445b-9cee-a3f7ec926272"
           (reference "#PWR05") (unit 1)
         )
@@ -918,7 +1056,7 @@
     (pin "1" (uuid 1c9d3a3d-bb0c-4bdf-a1c8-7736ff25d90f))
     (pin "2" (uuid b1245e4c-449b-4a53-9423-06b6341cdb30))
     (instances
-      (project "flatsat-backplane-breakout-debug"
+      (project "backplane-debug-breakout"
         (path "/3c6f9748-3b52-445b-9cee-a3f7ec926272"
           (reference "F1") (unit 1)
         )
@@ -943,7 +1081,7 @@
     )
     (pin "1" (uuid a8231ddc-2428-4dca-b036-0028cdc5c9ba))
     (instances
-      (project "flatsat-backplane-breakout-debug"
+      (project "backplane-debug-breakout"
         (path "/3c6f9748-3b52-445b-9cee-a3f7ec926272"
           (reference "#PWR02") (unit 1)
         )
@@ -968,7 +1106,7 @@
     )
     (pin "1" (uuid 21ad12e0-6dd9-4aac-b8d4-d5b4b05a4e38))
     (instances
-      (project "flatsat-backplane-breakout-debug"
+      (project "backplane-debug-breakout"
         (path "/3c6f9748-3b52-445b-9cee-a3f7ec926272"
           (reference "#PWR04") (unit 1)
         )
@@ -993,9 +1131,43 @@
     )
     (pin "1" (uuid ee20e178-c823-45e5-9d1d-6bbf660994b3))
     (instances
-      (project "flatsat-backplane-breakout-debug"
+      (project "backplane-debug-breakout"
         (path "/3c6f9748-3b52-445b-9cee-a3f7ec926272"
           (reference "J3") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "oresat-pcbs:UMFT234XF") (at 82.55 48.26 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid ed9d751f-c9f7-45d8-b55c-d4a4ab11c8f2)
+    (property "Reference" "PCB1" (at 82.55 62.23 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "UMFT234XF" (at 82.55 64.77 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 73.66 50.8 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://www.ftdichip.com/Support/Documents/DataSheets/Modules/DS_UMFT234XF.pdf" (at 57.15 48.26 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "P6" (uuid c9690010-faf4-48d4-afe7-da2c702d03b9))
+    (pin "P10" (uuid d3cb1d7c-d501-45e0-86e6-06179fc869b5))
+    (pin "P2" (uuid 46e229f0-d6eb-4d48-98b2-a99e6ba7a4b4))
+    (pin "P5" (uuid 17ece060-4be6-4118-a2f6-b1e5a19d36e9))
+    (pin "P3" (uuid cf5281a2-4512-434b-98c8-d65ed6ba98b4))
+    (pin "P1" (uuid e2fb6543-445a-4e97-9eb3-e9114f447c04))
+    (pin "P8" (uuid 402606ee-0532-44eb-bece-f3a8f6c55e47))
+    (pin "P7" (uuid b76b5857-eb81-47db-a980-773f8a3c718e))
+    (pin "P9" (uuid 153ee5e1-b709-4d44-8f1c-25a7f6d5a56d))
+    (pin "P4" (uuid 2aa7217e-fc96-4a95-8322-4c25717f725d))
+    (instances
+      (project "backplane-debug-breakout"
+        (path "/3c6f9748-3b52-445b-9cee-a3f7ec926272"
+          (reference "PCB1") (unit 1)
         )
       )
     )
@@ -1018,7 +1190,7 @@
     )
     (pin "1" (uuid ab118b18-0a43-414c-9149-4756ad125023))
     (instances
-      (project "flatsat-backplane-breakout-debug"
+      (project "backplane-debug-breakout"
         (path "/3c6f9748-3b52-445b-9cee-a3f7ec926272"
           (reference "#PWR03") (unit 1)
         )
