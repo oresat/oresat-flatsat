@@ -2694,7 +2694,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf"
+		(property "Datasheet" "https://services.taiwansemi.com/storage/resources/datasheet/MUR305SH%20SERIES_B2212.pdf"
 			(at 144.78 80.01 0)
 			(effects
 				(font
@@ -2837,7 +2837,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical"
+		(property "Footprint" "Connector_IDC:IDC-Header_2x08_P2.54mm_Vertical"
 			(at 109.22 80.01 0)
 			(effects
 				(font
@@ -3023,7 +3023,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "oresat-pcbs:vulCAN"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 			(at 153.67 62.23 0)
 			(effects
 				(font
