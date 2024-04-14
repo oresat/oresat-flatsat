@@ -867,6 +867,139 @@
 				)
 			)
 		)
+		(symbol "Device:Fuse"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "F"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Fuse"
+				(at -1.905 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Fuse"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "fuse"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*Fuse*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Fuse_0_1"
+				(rectangle
+					(start -0.762 -2.54)
+					(end 0.762 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Fuse_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:Fuse_Small"
 			(pin_numbers hide)
 			(pin_names
@@ -2677,7 +2810,7 @@
 				)
 			)
 		)
-		(property "Value" "tbd"
+		(property "Value" "TSM MURS315SH"
 			(at 144.78 76.2 0)
 			(effects
 				(font
@@ -2730,6 +2863,24 @@
 				(hide yes)
 			)
 		)
+		(property "DPN" "1801-MUR315SHCT-ND"
+			(at 144.78 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "MUR315SH"
+			(at 144.78 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "528d559e-fc3a-42c6-9f83-e1f76f0f9b3f")
 		)
@@ -2750,7 +2901,7 @@
 		(at 160.02 83.82 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -2792,6 +2943,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 160.02 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" ""
+			(at 160.02 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
 			(at 160.02 83.82 0)
 			(effects
 				(font
@@ -2856,6 +3025,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 109.22 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "609-86130161014345E1LF-ND "
+			(at 109.22 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "86130161014345E1LF"
 			(at 109.22 80.01 0)
 			(effects
 				(font
@@ -2975,6 +3162,24 @@
 				(hide yes)
 			)
 		)
+		(property "DPN" ""
+			(at 82.55 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 82.55 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "4065bc81-8725-4d02-9b0c-34adc5ee2c7d")
 		)
@@ -3050,6 +3255,24 @@
 				(hide yes)
 			)
 		)
+		(property "DPN" "WM12840-ND"
+			(at 153.67 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0757570441"
+			(at 153.67 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "03b650d2-64a3-4b8f-b964-3dcbb7897be1")
 		)
@@ -3066,6 +3289,91 @@
 			(project "backplane-debug-breakout"
 				(path "/3c6f9748-3b52-445b-9cee-a3f7ec926272"
 					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Fuse")
+		(at 132.08 86.36 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(dnp no)
+		(uuid "6af6cfa4-bde3-4d2c-8066-cc9866c04a1e")
+		(property "Reference" "F2"
+			(at 132.08 82.804 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3A"
+			(at 132.334 84.328 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 132.08 88.138 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 132.08 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fuse"
+			(at 132.08 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "F2583CT-ND"
+			(at 132.08 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0451003.MRL"
+			(at 132.08 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "993c35da-0e0c-4b18-ad39-af1542fb5a42")
+		)
+		(pin "1"
+			(uuid "13f52572-b9e1-4f86-9d2a-e0d802531450")
+		)
+		(instances
+			(project "backplane-debug-breakout"
+				(path "/3c6f9748-3b52-445b-9cee-a3f7ec926272"
+					(reference "F2")
 					(unit 1)
 				)
 			)
@@ -3192,6 +3500,24 @@
 				(hide yes)
 			)
 		)
+		(property "DPN" ""
+			(at 74.93 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 74.93 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "07366248-071b-4dd5-b9dc-32ba11329d4d")
 		)
@@ -3261,6 +3587,24 @@
 				(hide yes)
 			)
 		)
+		(property "DPN" "WM12840-ND"
+			(at 152.4 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0757570441"
+			(at 152.4 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7ab4bd4c-e705-4157-8074-428d269bc249")
 		)
@@ -3292,7 +3636,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "812b819c-6a63-4232-bda8-ed13dba57407")
-		(property "Reference" "F2"
+		(property "Reference" "F1"
 			(at 132.08 74.93 0)
 			(effects
 				(font
@@ -3300,7 +3644,7 @@
 				)
 			)
 		)
-		(property "Value" "Fuse_Small"
+		(property "Value" "Fuseholder"
 			(at 132.08 77.47 0)
 			(effects
 				(font
@@ -3335,6 +3679,24 @@
 				(hide yes)
 			)
 		)
+		(property "DPN" "18-01550900DRCT-ND"
+			(at 132.08 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "01550900DR"
+			(at 132.08 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5859f851-93c2-42b8-80fd-f1e10b511712")
 		)
@@ -3344,7 +3706,7 @@
 		(instances
 			(project "backplane-debug-breakout"
 				(path "/3c6f9748-3b52-445b-9cee-a3f7ec926272"
-					(reference "F2")
+					(reference "F1")
 					(unit 1)
 				)
 			)
@@ -3623,7 +3985,7 @@
 		(at 160.02 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "dfa74597-4ecb-4d94-8bd7-d9549f261a00")
@@ -3672,6 +4034,24 @@
 				(hide yes)
 			)
 		)
+		(property "DPN" ""
+			(at 160.02 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 160.02 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ee20e178-c823-45e5-9d1d-6bbf660994b3")
 		)
@@ -3694,7 +4074,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ed9d751f-c9f7-45d8-b55c-d4a4ab11c8f2")
-		(property "Reference" "PCB1"
+		(property "Reference" "U1"
 			(at 81.28 40.64 90)
 			(effects
 				(font
@@ -3737,6 +4117,24 @@
 				(hide yes)
 			)
 		)
+		(property "DPN" "768-1174-ND"
+			(at 95.25 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "UMFT234XF"
+			(at 95.25 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "P6"
 			(uuid "c9690010-faf4-48d4-afe7-da2c702d03b9")
 		)
@@ -3770,7 +4168,7 @@
 		(instances
 			(project "backplane-debug-breakout"
 				(path "/3c6f9748-3b52-445b-9cee-a3f7ec926272"
-					(reference "PCB1")
+					(reference "U1")
 					(unit 1)
 				)
 			)
