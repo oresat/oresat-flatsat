@@ -3135,7 +3135,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_9.78x4.72mm_W8.61mm_P2.54mm"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 			(at 82.55 83.82 0)
 			(effects
 				(font
@@ -3162,7 +3162,7 @@
 				(hide yes)
 			)
 		)
-		(property "DPN" ""
+		(property "DPN" "EG1903-ND"
 			(at 82.55 83.82 0)
 			(effects
 				(font
@@ -3171,7 +3171,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "EG1218"
 			(at 82.55 83.82 0)
 			(effects
 				(font
@@ -3473,7 +3473,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_1P1T_6x3.5mm_H4.3_APEM_MJTP1243"
+		(property "Footprint" "oresat-misc:D6R90_CNK"
 			(at 69.85 83.82 0)
 			(effects
 				(font
@@ -3482,7 +3482,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.ckswitches.com/media/1341/d6.pdf"
 			(at 69.85 83.82 0)
 			(effects
 				(font
