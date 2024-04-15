@@ -3328,7 +3328,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.littelfuse.com/media?resourcetype=datasheets&itemid=533cd5cc-956c-4243-867f-6ab5a62f6ba1&filename=littelfuse_fuse_451_453_datasheet.pdf"
 			(at 132.08 86.36 0)
 			(effects
 				(font
