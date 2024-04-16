@@ -95,8 +95,8 @@
         "padstack": "warning",
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
-        "silk_edge_clearance": "warning",
-        "silk_over_copper": "warning",
+        "silk_edge_clearance": "ignore",
+        "silk_over_copper": "ignore",
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
@@ -230,7 +230,9 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      "power_pin_not_driven|1346200|1028700|0538cc89-3d06-4e39-bd75-91899c8fb212|00000000-0000-0000-0000-000000000000|/3c6f9748-3b52-445b-9cee-a3f7ec926272|/3c6f9748-3b52-445b-9cee-a3f7ec926272|"
+    ],
     "meta": {
       "version": 0
     },
