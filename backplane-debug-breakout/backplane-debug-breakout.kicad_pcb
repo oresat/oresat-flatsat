@@ -160,7 +160,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Black Banana jack GND ground"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -172,7 +172,7 @@
 				)
 			)
 		)
-		(property "DPN" ""
+		(property "DPN" "36-7007-ND"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -185,12 +185,38 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "7007"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "060705bf-5d7a-416b-856b-fbc6410ca054")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DST" "Digi-Key"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0b9ba568-b86e-4721-bbec-d736547d8724")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MFR" "KEYSTONE"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "409c3b39-d97e-4392-bb28-5b82d8fe4c20")
 			(effects
 				(font
 					(size 1 1)
@@ -342,6 +368,58 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "SW400-ND"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b70b62e2-12a9-452c-8c62-19b93ff6aec1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DST" "Digi-Key"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "98aa8368-2255-4abd-bebb-25501e1d80be")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MFR" "Omron"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "abc6d06f-63e0-4ef5-a1d3-6b19cfcdee56")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "B3F-1000"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "228d4094-faf5-45dc-bd1a-4f6b4d8f318f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -728,11 +806,37 @@
 				)
 			)
 		)
+		(property "DST" "Digi-Key"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "af6a9113-9cda-4fb8-8237-04e4ace3a9b0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MFR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6749a32d-e48c-47d0-a7d9-ecadb7f06840")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/757d61a3-6b7f-4f54-8eac-c7aa300e79fc")
 		(sheetname "Root")
 		(sheetfile "backplane-debug-breakout.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_bom dnp)
 		(fp_line
 			(start -1.33 -1.33)
 			(end 0 -1.33)
@@ -1234,6 +1338,58 @@
 				)
 			)
 		)
+		(property "DPN" "EG1903-ND"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ad065bdd-565b-47fe-994d-e36bc3022ad8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DST" "Digi-Key"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5ff7874d-d4c9-43a6-abf4-9d756d9eaed7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MFR" "E-Switch"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a9e51b34-3405-4155-a6f3-9a7aa7dc52ac")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "EG1218"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3a79a8cf-4823-483a-bd54-b0121eaba865")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/0a3ea3d3-0322-4636-9af1-f0a15b72513e")
 		(sheetname "Root")
 		(sheetfile "backplane-debug-breakout.kicad_sch")
@@ -1559,6 +1715,32 @@
 				)
 			)
 		)
+		(property "DST" "Digi-Key"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "223ffc4a-a7e1-4add-ae09-3bd4a6114ed0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MFR" "TSM"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a4bca388-c8c4-4588-98e4-7a06bec18600")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "D*DO?41*")
 		(path "/16076cf8-8537-474f-a478-224d24732f9f")
 		(sheetname "Root")
@@ -1837,6 +2019,32 @@
 				)
 			)
 		)
+		(property "DST" "Digi-Key"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9e8d5aeb-91b5-4e63-9321-f56dc0012921")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MFR" "FTDI, Future Technology Devices International Ltd"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0a3a0aa6-fa49-438c-96db-e8623faf1470")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/ed9d751f-c9f7-45d8-b55c-d4a4ab11c8f2")
 		(sheetname "Root")
 		(sheetfile "backplane-debug-breakout.kicad_sch")
@@ -2061,7 +2269,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "16-position cable assembly socket"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2073,7 +2281,7 @@
 				)
 			)
 		)
-		(property "DPN" "609-86130161014345E1LF-ND "
+		(property "DPN" "H3DDH-1611618G-ND"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2086,12 +2294,38 @@
 				)
 			)
 		)
-		(property "MPN" "86130161014345E1LF"
+		(property "MPN" "H3DDH-161618G"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "2102f85d-cb38-4fc4-b538-97f40d4bb342")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DST" "Digi-Key"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a33b4917-340f-4b89-91bd-c0e63464214b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MFR" "Assman"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "15ad23c6-db3e-452a-ae51-f840aeaba891")
 			(effects
 				(font
 					(size 1 1)
@@ -2714,6 +2948,32 @@
 				)
 			)
 		)
+		(property "DST" "Digi-Key"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7d210278-3503-4ce8-bcbc-fd2811862e94")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MFR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "07be036d-98f8-4765-9d4a-8bf1f6006c5d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/61e86779-9d1a-41fb-86f7-1c248dac5eda")
 		(sheetname "Root")
@@ -2989,7 +3249,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Red Banana jack VBUS power"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3001,7 +3261,7 @@
 				)
 			)
 		)
-		(property "DPN" ""
+		(property "DPN" "36-7006-ND "
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3014,12 +3274,38 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "7006"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "2d50b16c-3519-47c6-bd25-cab4ed3011c4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DST" "Digi-Key"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "db966fc5-fc58-423b-b288-8dd159d96136")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MFR" "KEYSTONE"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e9b68bbf-e483-49a6-a86a-feea81759a72")
 			(effects
 				(font
 					(size 1 1)
@@ -3194,6 +3480,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "10b80ea7-8f5b-46a2-b040-202a89ccb20f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DST" "Digi-Key"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f4451056-ffdc-4d2d-a03d-6235977f5d43")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MFR" "LittelFuse"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9ec3226b-0fcc-42a2-933d-783856067fbf")
 			(effects
 				(font
 					(size 1 1)

@@ -2890,6 +2890,42 @@
 				(hide yes)
 			)
 		)
+		(property "DPN" "EG1903-ND"
+			(at 86.36 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DST" "Digi-Key"
+			(at 86.36 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "E-Switch"
+			(at 86.36 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "EG1218"
+			(at 86.36 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "ffbb03cd-550f-41e8-98d4-24f3454eea52")
 		)
@@ -3063,6 +3099,24 @@
 				(hide yes)
 			)
 		)
+		(property "DST" "Digi-Key"
+			(at 199.39 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "TSM"
+			(at 199.39 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "528d559e-fc3a-42c6-9f83-e1f76f0f9b3f")
 		)
@@ -3124,7 +3178,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Black Banana jack GND ground"
 			(at 223.52 101.6 0)
 			(effects
 				(font
@@ -3133,7 +3187,7 @@
 				(hide yes)
 			)
 		)
-		(property "DPN" ""
+		(property "DPN" "36-7007-ND"
 			(at 223.52 101.6 0)
 			(effects
 				(font
@@ -3142,7 +3196,25 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "7007"
+			(at 223.52 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DST" "Digi-Key"
+			(at 223.52 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "KEYSTONE"
 			(at 223.52 101.6 0)
 			(effects
 				(font
@@ -3206,7 +3278,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "16-position cable assembly socket"
 			(at 144.78 97.79 0)
 			(effects
 				(font
@@ -3215,7 +3287,7 @@
 				(hide yes)
 			)
 		)
-		(property "DPN" "609-86130161014345E1LF-ND "
+		(property "DPN" "H3DDH-1611618G-ND"
 			(at 144.78 97.79 0)
 			(effects
 				(font
@@ -3224,7 +3296,25 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "86130161014345E1LF"
+		(property "MPN" "H3DDH-161618G"
+			(at 144.78 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DST" "Digi-Key"
+			(at 144.78 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "Assman"
 			(at 144.78 97.79 0)
 			(effects
 				(font
@@ -3363,6 +3453,24 @@
 				(hide yes)
 			)
 		)
+		(property "DST" "Digi-Key"
+			(at 80.01 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 80.01 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "03b650d2-64a3-4b8f-b964-3dcbb7897be1")
 		)
@@ -3446,6 +3554,24 @@
 			)
 		)
 		(property "MPN" "0451003.MRL"
+			(at 181.61 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DST" "Digi-Key"
+			(at 181.61 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "LittelFuse"
 			(at 181.61 109.22 0)
 			(effects
 				(font
@@ -3541,9 +3667,9 @@
 		(at 176.53 130.81 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "757d61a3-6b7f-4f54-8eac-c7aa300e79fc")
 		(property "Reference" "J2"
 			(at 175.26 138.43 0)
@@ -3600,6 +3726,24 @@
 			)
 		)
 		(property "MPN" "0757570441"
+			(at 176.53 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DST" "Digi-Key"
+			(at 176.53 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
 			(at 176.53 130.81 0)
 			(effects
 				(font
@@ -3692,6 +3836,24 @@
 			)
 		)
 		(property "MPN" "01550900DR"
+			(at 181.61 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DST" "Digi-Key"
+			(at 181.61 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "LittelFuse"
 			(at 181.61 97.79 0)
 			(effects
 				(font
@@ -3829,6 +3991,42 @@
 			)
 		)
 		(property "Description" "Omron B3FS 6x6mm single pole normally-open tactile switch"
+			(at 73.66 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "SW400-ND"
+			(at 73.66 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DST" "Digi-Key"
+			(at 73.66 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "Omron"
+			(at 73.66 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "B3F-1000"
 			(at 73.66 99.06 0)
 			(effects
 				(font
@@ -4098,7 +4296,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Red Banana jack VBUS power"
 			(at 223.52 97.79 0)
 			(effects
 				(font
@@ -4107,7 +4305,7 @@
 				(hide yes)
 			)
 		)
-		(property "DPN" ""
+		(property "DPN" "36-7006-ND "
 			(at 223.52 97.79 0)
 			(effects
 				(font
@@ -4116,7 +4314,25 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "7006"
+			(at 223.52 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DST" "Digi-Key"
+			(at 223.52 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "KEYSTONE"
 			(at 223.52 97.79 0)
 			(effects
 				(font
@@ -4199,6 +4415,24 @@
 			)
 		)
 		(property "MPN" "UMFT234XF"
+			(at 90.17 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DST" "Digi-Key"
+			(at 90.17 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "FTDI, Future Technology Devices International Ltd"
 			(at 90.17 52.07 0)
 			(effects
 				(font
