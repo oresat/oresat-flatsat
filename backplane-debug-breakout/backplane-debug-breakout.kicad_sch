@@ -3278,7 +3278,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "16-position cable assembly socket"
+		(property "Description" "CONN HEADER VERT 16POS 2.54MM Y - 0"
 			(at 144.78 97.79 0)
 			(effects
 				(font
@@ -3287,7 +3287,7 @@
 				(hide yes)
 			)
 		)
-		(property "DPN" "H3DDH-1611618G-ND"
+		(property "DPN" "732-2095-ND"
 			(at 144.78 97.79 0)
 			(effects
 				(font
@@ -3296,7 +3296,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "H3DDH-161618G"
+		(property "MPN" "61201621621"
 			(at 144.78 97.79 0)
 			(effects
 				(font
@@ -3314,7 +3314,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFR" "Assman"
+		(property "MFR" "Würth Elektronik"
 			(at 144.78 97.79 0)
 			(effects
 				(font
