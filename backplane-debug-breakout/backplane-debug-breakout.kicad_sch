@@ -4270,7 +4270,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "oresat-passives:DPDT slide switch 6 pin"
 			(at 135.89 59.69 0)
 			(effects
 				(font
@@ -4658,7 +4658,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "100n"
 			(at 208.28 77.4699 0)
 			(effects
 				(font
@@ -4667,7 +4667,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 205.4352 80.01 0)
 			(effects
 				(font
@@ -5775,7 +5775,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "oresat-misc:TestPoint-0.75mm-th"
 			(at 195.58 54.61 0)
 			(effects
 				(font
