@@ -1772,6 +1772,345 @@
 				)
 			)
 		)
+		(symbol "Device:LED"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:R_US"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.54 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R_US"
+				(at -2.54 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 1.016 -0.254 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor, US symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_US_0_1"
+				(polyline
+					(pts
+						(xy 0 -2.286) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.286) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.762) (xy 1.016 0.381) (xy 0 0) (xy -1.016 -0.381) (xy 0 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_US_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Diode:1N4001"
 			(pin_numbers hide)
 			(pin_names hide)
@@ -2962,6 +3301,12 @@
 		(uuid "2375c28b-380e-45fb-afb4-31361250fdc9")
 	)
 	(junction
+		(at 204.47 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4eb505d4-bf9a-4263-b655-a48a85de12e8")
+	)
+	(junction
 		(at 157.48 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2988,7 +3333,7 @@
 		(uuid "32704e21-5418-4741-853e-7ecc7fff5f58")
 	)
 	(no_connect
-		(at 185.42 109.22)
+		(at 185.42 87.63)
 		(uuid "44a5c1c2-b91d-4306-89c3-5cce45bd200f")
 	)
 	(no_connect
@@ -3024,7 +3369,7 @@
 		(uuid "fbaabd68-343f-40cc-b6ac-c8060f065430")
 	)
 	(no_connect
-		(at 177.8 109.22)
+		(at 177.8 87.63)
 		(uuid "ffbf5857-6290-4fb7-a9c3-9a7b6bff43a0")
 	)
 	(wire
@@ -3489,6 +3834,16 @@
 	)
 	(wire
 		(pts
+			(xy 204.47 107.95) (xy 204.47 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9569cb22-927e-4b1b-87d4-1cba63fd1196")
+	)
+	(wire
+		(pts
 			(xy 218.44 100.33) (xy 218.44 105.41)
 		)
 		(stroke
@@ -3679,6 +4034,26 @@
 	)
 	(wire
 		(pts
+			(xy 191.77 110.49) (xy 186.69 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4490f3c-5a00-4adc-9f76-f97e6dcb25e3")
+	)
+	(wire
+		(pts
+			(xy 204.47 97.79) (xy 204.47 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d89a9a0e-11d1-4d83-bda2-89320334947a")
+	)
+	(wire
+		(pts
 			(xy 201.93 71.12) (xy 194.31 71.12)
 		)
 		(stroke
@@ -3706,6 +4081,16 @@
 			(type default)
 		)
 		(uuid "e0bbbe06-1e7f-4379-b2cd-05aed5919990")
+	)
+	(wire
+		(pts
+			(xy 199.39 110.49) (xy 204.47 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e54a7e84-a1f1-4ede-b417-6479f70a944e")
 	)
 	(wire
 		(pts
@@ -3749,6 +4134,16 @@
 	)
 	(wire
 		(pts
+			(xy 204.47 97.79) (xy 218.44 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f03e7605-4a60-41fc-8d60-68d82e3a1321")
+	)
+	(wire
+		(pts
 			(xy 134.62 100.33) (xy 137.16 100.33)
 		)
 		(stroke
@@ -3769,13 +4164,23 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 97.79) (xy 218.44 97.79)
+			(xy 203.2 97.79) (xy 204.47 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "fb21e18c-536a-4cc5-8502-747f11f7e978")
+	)
+	(wire
+		(pts
+			(xy 186.69 110.49) (xy 186.69 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb6acaa9-22ad-4d4a-87f2-4471e799c686")
 	)
 	(text "Oresat backplane \n16-pin connector"
 		(exclude_from_sim no)
@@ -4752,7 +5157,7 @@
 	)
 	(symbol
 		(lib_id "Device:Fuse")
-		(at 181.61 109.22 90)
+		(at 181.61 87.63 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4760,7 +5165,7 @@
 		(dnp no)
 		(uuid "6af6cfa4-bde3-4d2c-8066-cc9866c04a1e")
 		(property "Reference" "F2"
-			(at 181.61 105.664 90)
+			(at 181.61 84.074 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4768,7 +5173,7 @@
 			)
 		)
 		(property "Value" "0451003.MRL (3A)"
-			(at 181.864 107.188 90)
+			(at 181.864 85.598 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4776,7 +5181,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 181.61 110.998 90)
+			(at 181.61 89.408 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4785,7 +5190,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.littelfuse.com/media?resourcetype=datasheets&itemid=533cd5cc-956c-4243-867f-6ab5a62f6ba1&filename=littelfuse_fuse_451_453_datasheet.pdf"
-			(at 181.61 109.22 0)
+			(at 181.61 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4794,7 +5199,7 @@
 			)
 		)
 		(property "Description" "Fuse"
-			(at 181.61 109.22 0)
+			(at 181.61 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4803,7 +5208,7 @@
 			)
 		)
 		(property "DPN" "F2583CT-ND"
-			(at 181.61 109.22 0)
+			(at 181.61 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4812,7 +5217,7 @@
 			)
 		)
 		(property "MPN" "0451003.MRL"
-			(at 181.61 109.22 0)
+			(at 181.61 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4821,7 +5226,7 @@
 			)
 		)
 		(property "DST" "Digi-Key"
-			(at 181.61 109.22 0)
+			(at 181.61 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4830,7 +5235,7 @@
 			)
 		)
 		(property "MFR" "LittelFuse"
-			(at 181.61 109.22 0)
+			(at 181.61 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5026,6 +5431,141 @@
 			(project "backplane-debug-breakout"
 				(path "/3c6f9748-3b52-445b-9cee-a3f7ec926272"
 					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 195.58 110.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "75fe5543-35c8-4af9-bcd1-f8489ed5c881")
+		(property "Reference" "D2"
+			(at 193.9925 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 193.9925 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+			(at 195.58 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 195.58 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 195.58 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "aa197dcb-e413-4587-8830-aa363985bb73")
+		)
+		(pin "2"
+			(uuid "0f58ffbe-bf84-4450-8e41-7672752674de")
+		)
+		(instances
+			(project "backplane-debug-breakout"
+				(path "/3c6f9748-3b52-445b-9cee-a3f7ec926272"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_1")
+		(lib_id "power:GND")
+		(at 186.69 113.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7d659232-8971-4ca1-afed-afa54124e317")
+		(property "Reference" "#PWR09"
+			(at 186.69 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 186.69 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 186.69 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 186.69 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 186.69 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f13de30d-17d6-48c6-add9-dcf6d74858d2")
+		)
+		(instances
+			(project "backplane-debug-breakout"
+				(path "/3c6f9748-3b52-445b-9cee-a3f7ec926272"
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -5437,6 +5977,76 @@
 			(project "backplane-debug-breakout"
 				(path "/3c6f9748-3b52-445b-9cee-a3f7ec926272"
 					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 204.47 104.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bfd593fe-e327-4cf5-a549-adc549d8c762")
+		(property "Reference" "R1"
+			(at 207.01 102.8699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "R_US"
+			(at 207.01 105.4099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 205.486 104.394 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 204.47 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 204.47 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0efae8e0-8b49-45c0-8ca3-528b225351df")
+		)
+		(pin "1"
+			(uuid "ba513897-9668-4a61-badd-cb712c41c660")
+		)
+		(instances
+			(project "backplane-debug-breakout"
+				(path "/3c6f9748-3b52-445b-9cee-a3f7ec926272"
+					(reference "R1")
 					(unit 1)
 				)
 			)
