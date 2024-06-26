@@ -235,7 +235,13 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      "lib_symbol_issues|939800|1905000|34f1ee96-0962-4695-a66c-47038a0cfe68|00000000-0000-0000-0000-000000000000|||",
+      "pin_to_pin|1371600|1041400|2dcd52c3-851b-45fe-9a6b-992848ddad98|a553d92b-60a4-455a-958d-203eea136f8b|/a762bfd7-2da3-46cd-8ea9-3793bee7a19f|/a762bfd7-2da3-46cd-8ea9-3793bee7a19f|/a762bfd7-2da3-46cd-8ea9-3793bee7a19f",
+      "power_pin_not_driven|1270000|1219200|dbe9e091-6efa-4de8-b893-56595ff7cef4|00000000-0000-0000-0000-000000000000|/a762bfd7-2da3-46cd-8ea9-3793bee7a19f|/a762bfd7-2da3-46cd-8ea9-3793bee7a19f|",
+      "power_pin_not_driven|1676400|558800|05d44259-b77e-406a-b3f5-2d10a9e37cc5|00000000-0000-0000-0000-000000000000|/a762bfd7-2da3-46cd-8ea9-3793bee7a19f|/a762bfd7-2da3-46cd-8ea9-3793bee7a19f|",
+      "power_pin_not_driven|1917700|317500|f1af7534-9e03-427b-a573-d75707c2a332|00000000-0000-0000-0000-000000000000|/a762bfd7-2da3-46cd-8ea9-3793bee7a19f|/a762bfd7-2da3-46cd-8ea9-3793bee7a19f|"
+    ],
     "meta": {
       "version": 0
     },
@@ -497,6 +503,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
+    "bom_export_filename": "",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
