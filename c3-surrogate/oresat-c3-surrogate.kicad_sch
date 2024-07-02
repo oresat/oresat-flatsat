@@ -10553,13 +10553,13 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:NTR2101P")
-		(at 160.02 36.83 90)
+		(at 160.02 36.83 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "20876a01-f02c-43c3-bb3d-4518272ee1a2")
 		(property "Reference" "Q4"
 			(at 160.02 27.94 90)
@@ -10578,7 +10578,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 161.925 31.75 0)
+			(at 158.115 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10589,7 +10589,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.onsemi.com/pub/Collateral/NTR2101P-D.PDF"
-			(at 163.83 31.75 0)
+			(at 156.21 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12847,13 +12847,13 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:NTR2101P")
-		(at 176.53 101.6 90)
+		(at 176.53 101.6 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "58131df7-2053-46ff-82c8-fd915ac3c322")
 		(property "Reference" "Q3"
 			(at 176.53 92.71 90)
@@ -12872,7 +12872,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 178.435 96.52 0)
+			(at 174.625 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12883,7 +12883,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.onsemi.com/pub/Collateral/NTR2101P-D.PDF"
-			(at 180.34 96.52 0)
+			(at 172.72 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14299,7 +14299,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Mosfets:SOT23-3"
+		(property "Footprint" "oresat-ics:SOT23"
 			(at 143.51 50.8 0)
 			(effects
 				(font
