@@ -5020,24 +5020,6 @@
 					)
 				)
 				(pin passive line
-					(at 0 0 0)
-					(length 7.62)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at 40.64 0 180)
 					(length 7.62)
 					(name "10"
@@ -5056,24 +5038,6 @@
 					)
 				)
 				(pin passive line
-					(at 0 -2.54 0)
-					(length 7.62)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at 0 -5.08 0)
 					(length 7.62)
 					(name "3"
@@ -5084,42 +5048,6 @@
 						)
 					)
 					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -7.62 0)
-					(length 7.62)
-					(name "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -10.16 0)
-					(length 7.62)
-					(name "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5192,6 +5120,80 @@
 						)
 					)
 					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "OS203011MV9QS1_1_1"
+				(pin passive line
+					(at 0 -10.16 0)
+					(length 7.62)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 0)
+					(length 7.62)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 7.62)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 7.62)
+					(name "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -10486,6 +10488,73 @@
 	)
 	(symbol
 		(lib_id "oresat-misc:Test-Point-0.75mm-th")
+		(at 45.72 134.62 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1aba8ac6-dea6-4a00-a132-82a929982e14")
+		(property "Reference" "TP20"
+			(at 48.26 134.6199 0)
+			(effects
+				(font
+					(size 1.27 1.0795)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Test-Point"
+			(at 45.72 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "oresat-misc:TestPoint-0.75mm-th"
+			(at 45.72 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 45.72 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.75 mm TH test point; good for scope probes and jumpers"
+			(at 45.72 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9af7a68f-3567-490f-a02d-bf4376fc53cd")
+		)
+		(instances
+			(project "oresat-c3-surrogate"
+				(path "/a762bfd7-2da3-46cd-8ea9-3793bee7a19f"
+					(reference "TP20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "oresat-misc:Test-Point-0.75mm-th")
 		(at 58.42 101.6 0)
 		(unit 1)
 		(exclude_from_sim yes)
@@ -11736,6 +11805,73 @@
 			(project "oresat-c3-surrogate"
 				(path "/a762bfd7-2da3-46cd-8ea9-3793bee7a19f"
 					(reference "TP11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "oresat-misc:Test-Point-0.75mm-th")
+		(at 45.72 137.16 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3ebf9409-1d9d-41be-a8a5-7d01ebcb1970")
+		(property "Reference" "TP36"
+			(at 48.26 137.1599 0)
+			(effects
+				(font
+					(size 1.27 1.0795)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Test-Point"
+			(at 45.72 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "oresat-misc:TestPoint-0.75mm-th"
+			(at 45.72 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 45.72 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.75 mm TH test point; good for scope probes and jumpers"
+			(at 45.72 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "731d70c0-816c-4377-b548-b4eebe0aefaf")
+		)
+		(instances
+			(project "oresat-c3-surrogate"
+				(path "/a762bfd7-2da3-46cd-8ea9-3793bee7a19f"
+					(reference "TP36")
 					(unit 1)
 				)
 			)
