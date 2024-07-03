@@ -1910,6 +1910,139 @@
 				)
 			)
 		)
+		(symbol "Device:Fuse"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "F"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Fuse"
+				(at -1.905 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Fuse"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "fuse"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*Fuse*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Fuse_0_1"
+				(rectangle
+					(start -0.762 -2.54)
+					(end 0.762 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Fuse_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:Fuse_Small"
 			(pin_numbers hide)
 			(pin_names
@@ -3098,179 +3231,6 @@
 						)
 					)
 					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Switch:SW_SPDT"
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "SW"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "SW_SPDT"
-				(at 0 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Switch, single pole double throw"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "switch single-pole double-throw spdt ON-ON"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SW_SPDT_0_1"
-				(circle
-					(center -2.032 0)
-					(radius 0.4572)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.651 0.254) (xy 1.651 2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 -2.54)
-					(radius 0.4572)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 2.54)
-					(radius 0.4572)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SW_SPDT_1_1"
-				(rectangle
-					(start -3.175 3.81)
-					(end 3.175 -3.81)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at 5.08 2.54 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 2.54)
-					(name "C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6550,12 +6510,20 @@
 		(uuid "bbda0fc3-9914-462f-86b7-7bdd50fada5f")
 	)
 	(no_connect
+		(at 93.98 58.42)
+		(uuid "ceccd501-5fcf-42a8-b205-fdb685dcdd52")
+	)
+	(no_connect
 		(at 144.78 52.07)
 		(uuid "d0b096c5-bbe7-47f5-b0d8-b1f2b8cc8566")
 	)
 	(no_connect
 		(at 317.5 59.69)
 		(uuid "f601ce02-8d47-4de3-837b-2bffec31424d")
+	)
+	(no_connect
+		(at 101.6 58.42)
+		(uuid "fd40dcd8-f5af-4641-9d63-40e46b1841af")
 	)
 	(no_connect
 		(at 134.62 152.4)
@@ -6673,7 +6641,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 35.56) (xy 97.79 35.56)
+			(xy 83.82 35.56) (xy 93.98 35.56)
 		)
 		(stroke
 			(width 0)
@@ -7903,7 +7871,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 35.56) (xy 105.41 35.56)
+			(xy 99.06 35.56) (xy 105.41 35.56)
 		)
 		(stroke
 			(width 0)
@@ -8925,6 +8893,16 @@
 			(justify left bottom)
 		)
 		(uuid "2cf9aca0-342b-4036-8cf8-f89b9ea28b79")
+	)
+	(text "(Fuseholder)\n"
+		(exclude_from_sim no)
+		(at 96.266 38.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "61508562-ed72-4803-907b-e1adeb9226ba")
 	)
 	(text "VulCAN USB to CAN Adapter\n\n"
 		(exclude_from_sim no)
@@ -10284,7 +10262,7 @@
 				)
 			)
 		)
-		(property "Value" "NTR2101P"
+		(property "Value" "NTR4101P"
 			(at 200.66 31.75 90)
 			(effects
 				(font
@@ -12486,7 +12464,7 @@
 	)
 	(symbol
 		(lib_id "Device:Fuse_Small")
-		(at 100.33 35.56 0)
+		(at 96.52 35.56 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12495,15 +12473,15 @@
 		(fields_autoplaced yes)
 		(uuid "5686a032-2fee-4061-99e2-1a9cc9420829")
 		(property "Reference" "F2"
-			(at 100.33 30.48 0)
+			(at 96.52 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "Fuse_Small"
-			(at 100.33 33.02 0)
+		(property "Value" "0155900DR"
+			(at 96.52 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12511,7 +12489,7 @@
 			)
 		)
 		(property "Footprint" "oresat-passives:Littelfuse 155900DR"
-			(at 100.33 35.56 0)
+			(at 96.52 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12520,7 +12498,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 100.33 35.56 0)
+			(at 96.52 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12529,7 +12507,7 @@
 			)
 		)
 		(property "Description" "Fuse, small symbol"
-			(at 100.33 35.56 0)
+			(at 96.52 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12953,114 +12931,6 @@
 			(project "oresat-c3-surrogate"
 				(path "/a762bfd7-2da3-46cd-8ea9-3793bee7a19f"
 					(reference "#PWR017")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_SPDT")
-		(at 143.51 68.58 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5e1dcefe-f9e7-4f8d-aeb7-9b9f3835a84d")
-		(property "Reference" "SW2"
-			(at 147.32 66.04 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Slide Switch"
-			(at 147.32 68.58 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "S-CK-AYZ0102AGRLC-Slide-Switch:AYZ0102AGRLC"
-			(at 143.51 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 143.51 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Switch, single pole double throw"
-			(at 143.51 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DIST" "Digi-Key"
-			(at 143.51 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DPN" "401-2012-1-ND"
-			(at 143.51 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFR" "C&K"
-			(at 143.51 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "AYZ0102AGRLC"
-			(at 143.51 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "07b1fb7a-1eb8-4982-b912-0ee2b87fa2d5")
-		)
-		(pin "2"
-			(uuid "ae0fa59f-b56a-4309-b99b-bdc2cb1ff19e")
-		)
-		(pin "3"
-			(uuid "dfd69f9e-32b4-4cff-9e8e-f65cbb4e5b63")
-		)
-		(instances
-			(project "oresat-c3-surrogate"
-				(path "/a762bfd7-2da3-46cd-8ea9-3793bee7a19f"
-					(reference "SW2")
 					(unit 1)
 				)
 			)
@@ -14303,7 +14173,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "90430da5-dfbf-4bfe-b36a-1c0178fa07ed")
 		(property "Reference" "J4"
 			(at 79.375 30.48 0)
@@ -14314,7 +14183,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02_Socket"
-			(at 79.375 33.02 0)
+			(at 71.12 33.274 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15477,6 +15346,109 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:Fuse")
+		(at 97.79 58.42 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(dnp no)
+		(uuid "c9dfd40c-1132-4021-8379-6101eb04e5f1")
+		(property "Reference" "F1"
+			(at 97.79 54.864 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0451003.MRL (3A)"
+			(at 98.044 56.388 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 97.79 60.198 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.littelfuse.com/media?resourcetype=datasheets&itemid=533cd5cc-956c-4243-867f-6ab5a62f6ba1&filename=littelfuse_fuse_451_453_datasheet.pdf"
+			(at 97.79 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fuse"
+			(at 97.79 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "F2583CT-ND"
+			(at 97.79 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0451003.MRL"
+			(at 97.79 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DST" "Digi-Key"
+			(at 97.79 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "LittelFuse"
+			(at 97.79 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "617a6c22-0e35-471c-9d66-621e44c43338")
+		)
+		(pin "1"
+			(uuid "79e830a5-e563-4209-a53e-52ee15b2319a")
+		)
+		(instances
+			(project "oresat-c3-surrogate"
+				(path "/a762bfd7-2da3-46cd-8ea9-3793bee7a19f"
+					(reference "F1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "oresat-ics:TS5A21366")
 		(at 241.3 182.88 0)
 		(unit 1)
@@ -15994,6 +15966,113 @@
 			(project "oresat-c3-surrogate"
 				(path "/a762bfd7-2da3-46cd-8ea9-3793bee7a19f"
 					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPDT_321")
+		(at 143.51 68.58 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "de67653e-ecbc-4a03-a786-ea5cc9ce2cb4")
+		(property "Reference" "SW2"
+			(at 151.892 71.628 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "EG1218"
+			(at 151.892 69.088 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+			(at 153.67 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://sten-eswitch-13110800-production.s3.amazonaws.com/system/asset/product_line/data_sheet/119/EG.pdf"
+			(at 151.13 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch, single pole double throw"
+			(at 143.51 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "EG1903-ND"
+			(at 143.51 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DST" "Digi-Key"
+			(at 143.51 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "E-Switch"
+			(at 143.51 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "EG1218"
+			(at 143.51 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "6e213f94-eb44-4d9f-bdc0-dbece44b9e3b")
+		)
+		(pin "2"
+			(uuid "ef205a80-4935-4d22-ba0f-8301a4c03f13")
+		)
+		(pin "1"
+			(uuid "9fa2b280-bea7-4d89-950f-87ca411a3254")
+		)
+		(instances
+			(project "oresat-c3-surrogate"
+				(path "/a762bfd7-2da3-46cd-8ea9-3793bee7a19f"
+					(reference "SW2")
 					(unit 1)
 				)
 			)
