@@ -8894,6 +8894,16 @@
 		)
 		(uuid "2cf9aca0-342b-4036-8cf8-f89b9ea28b79")
 	)
+	(text "we want to prevent power flowing from opd to \ntrinket, but it will in current always flow \nin current orientation\nis ltc4412 even necessary here if we flip transistor?"
+		(exclude_from_sim no)
+		(at 240.538 118.872 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3ff8d7d3-cbdd-4361-a56d-188608d26024")
+	)
 	(text "(Fuseholder)\n"
 		(exclude_from_sim no)
 		(at 96.266 38.1 0)
