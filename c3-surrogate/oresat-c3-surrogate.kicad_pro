@@ -59,7 +59,16 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "clearance|184627500|104137500|4d4acfc7-abba-448d-9bce-f6ff86760b49|7bdaa7c7-5b8b-4dfc-b47a-31a2e863b206",
+        "clearance|184627500|104637500|7bdaa7c7-5b8b-4dfc-b47a-31a2e863b206|f2ededed-47fa-473d-a952-6d920a9ef357",
+        "clearance|187427500|104462500|84d5c8de-feec-4a52-9265-e5a0af15b727|d0069d0b-ba50-470c-bb11-dde7b63c5a01",
+        "clearance|187427500|104962500|862945ea-ef24-4a6b-9b86-3e58a003991d|84d5c8de-feec-4a52-9265-e5a0af15b727",
+        "clearance|187427500|105462500|5f21bdae-027c-4c6d-a669-4df71f83c0a4|862945ea-ef24-4a6b-9b86-3e58a003991d",
+        "text_height|136184000|61909500|2cbc463a-5da7-49cd-ac86-db296c156ab5|00000000-0000-0000-0000-000000000000",
+        "text_height|136184000|62862000|99bea96f-1491-427a-854e-0a8e1628f587|00000000-0000-0000-0000-000000000000",
+        "text_height|162854000|62862000|daee0907-f668-4501-95ee-b9b78701f994|00000000-0000-0000-0000-000000000000"
+      ],
       "meta": {
         "version": 2
       },

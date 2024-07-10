@@ -6270,12 +6270,6 @@
 		(uuid "4cf6a2d2-4ea8-4b5b-be2f-821ed9cc452f")
 	)
 	(junction
-		(at 241.3 140.97)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "57046659-6961-4b22-8a8b-5d9561b877d3")
-	)
-	(junction
 		(at 209.55 132.08)
 		(diameter 0.9144)
 		(color 0 0 0 0)
@@ -6611,6 +6605,16 @@
 	)
 	(wire
 		(pts
+			(xy 241.3 139.7) (xy 241.3 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "057ede2c-4fea-48d1-8b79-a65563c1fa06")
+	)
+	(wire
+		(pts
 			(xy 220.98 146.05) (xy 220.98 147.32)
 		)
 		(stroke
@@ -6921,16 +6925,6 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 140.97) (xy 241.3 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "32fa935c-58d8-402a-9c6d-9b60f305fb66")
-	)
-	(wire
-		(pts
 			(xy 220.98 132.08) (xy 229.87 132.08)
 		)
 		(stroke
@@ -7068,16 +7062,6 @@
 			(type default)
 		)
 		(uuid "3f81d0d7-e10c-4c1c-8202-1ffed9092dd9")
-	)
-	(wire
-		(pts
-			(xy 241.3 139.7) (xy 241.3 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "404fe772-7d0d-4d6c-8750-9ff84d1f8bdd")
 	)
 	(wire
 		(pts
@@ -8894,7 +8878,7 @@
 		)
 		(uuid "2cf9aca0-342b-4036-8cf8-f89b9ea28b79")
 	)
-	(text "we want to prevent power flowing from opd to \ntrinket, but it will in current always flow \nin current orientation\nis ltc4412 even necessary here if we flip transistor?"
+	(text "flipped this pmos for diode"
 		(exclude_from_sim no)
 		(at 240.538 118.872 0)
 		(effects
@@ -12609,8 +12593,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:NTR2101P")
-		(at 241.3 134.62 270)
-		(mirror x)
+		(at 241.3 134.62 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12634,7 +12617,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 239.395 129.54 0)
+			(at 243.205 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12645,7 +12628,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.onsemi.com/pub/Collateral/NTR2101P-D.PDF"
-			(at 237.49 129.54 0)
+			(at 245.11 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
