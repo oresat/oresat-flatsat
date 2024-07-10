@@ -6,8 +6,8 @@
 	(paper "B")
 	(title_block
 		(title "C3 Surrogate Card")
-		(date "2024-07-02")
-		(rev "2")
+		(date "2024-07-09")
+		(rev "\"2\"")
 	)
 	(lib_symbols
 		(symbol "Connector:Conn_01x02_Socket"
@@ -6645,7 +6645,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 35.56) (xy 93.98 35.56)
+			(xy 82.55 35.56) (xy 93.98 35.56)
 		)
 		(stroke
 			(width 0)
@@ -7675,7 +7675,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 38.1) (xy 85.09 38.1)
+			(xy 82.55 38.1) (xy 85.09 38.1)
 		)
 		(stroke
 			(width 0)
@@ -10488,7 +10488,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "DP3T_OS203011MV9QS1_CNK"
+		(property "Footprint" "oresat-passives:DP3T_OS203011MV9QS1_CNK"
 			(at 327.406 66.548 0)
 			(effects
 				(font
@@ -14159,7 +14159,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Socket")
-		(at 78.74 38.1 180)
+		(at 77.47 38.1 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14167,15 +14167,15 @@
 		(dnp no)
 		(uuid "90430da5-dfbf-4bfe-b36a-1c0178fa07ed")
 		(property "Reference" "J4"
-			(at 79.375 30.48 0)
+			(at 78.105 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "Conn_01x02_Socket"
-			(at 71.12 33.274 0)
+		(property "Value" "PHOENIX_1995499"
+			(at 69.85 33.274 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14183,7 +14183,7 @@
 			)
 		)
 		(property "Footprint" "oresat-connectors:PHOENIX_1995499"
-			(at 78.74 38.1 0)
+			(at 77.47 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14192,7 +14192,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 78.74 38.1 0)
+			(at 77.47 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14201,7 +14201,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 78.74 38.1 0)
+			(at 77.47 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
