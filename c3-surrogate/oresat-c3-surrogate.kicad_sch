@@ -10240,8 +10240,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:NTR2101P")
-		(at 200.66 38.1 270)
-		(mirror x)
+		(at 200.66 38.1 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10265,7 +10264,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 198.755 33.02 0)
+			(at 202.565 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10276,7 +10275,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.onsemi.com/pub/Collateral/NTR2101P-D.PDF"
-			(at 196.85 33.02 0)
+			(at 204.47 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
