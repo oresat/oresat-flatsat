@@ -598,13 +598,13 @@
           "group_by": false,
           "label": "DIST",
           "name": "DIST",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
           "label": "DPN",
           "name": "DPN",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -622,13 +622,13 @@
           "group_by": false,
           "label": "MFR",
           "name": "MFR",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
           "label": "MPN",
           "name": "MPN",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -646,6 +646,24 @@
           "group_by": false,
           "label": "Description",
           "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Device",
+          "name": "Sim.Device",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "DST",
+          "name": "DST",
           "show": false
         }
       ],
