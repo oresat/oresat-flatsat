@@ -145,8 +145,8 @@
         "min_microvia_drill": 0.1,
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
-        "min_text_height": 0.8,
-        "min_text_thickness": 0.08,
+        "min_text_height": 0.6,
+        "min_text_thickness": 0.127,
         "min_through_hole_diameter": 0.254,
         "min_track_width": 0.1524,
         "min_via_annular_width": 0.127,
@@ -270,6 +270,7 @@
   },
   "erc": {
     "erc_exclusions": [
+      "pin_to_pin|1574800|1447800|4c2dc540-6597-48ca-be8d-704cda95dda2|03411606-70ae-40fc-8a76-61aecb11121c|/a762bfd7-2da3-46cd-8ea9-3793bee7a19f|/a762bfd7-2da3-46cd-8ea9-3793bee7a19f|/a762bfd7-2da3-46cd-8ea9-3793bee7a19f",
       "pin_to_pin|1828800|1320800|2dcd52c3-851b-45fe-9a6b-992848ddad98|a553d92b-60a4-455a-958d-203eea136f8b|/a762bfd7-2da3-46cd-8ea9-3793bee7a19f|/a762bfd7-2da3-46cd-8ea9-3793bee7a19f|/a762bfd7-2da3-46cd-8ea9-3793bee7a19f",
       "power_pin_not_driven|1054100|419100|d0262c34-a312-478c-b21b-e4e023581fb8|00000000-0000-0000-0000-000000000000|/a762bfd7-2da3-46cd-8ea9-3793bee7a19f|/a762bfd7-2da3-46cd-8ea9-3793bee7a19f|",
       "power_pin_not_driven|1409700|749300|c1e02722-fe36-4da7-a47c-9d018f1f2e33|00000000-0000-0000-0000-000000000000|/a762bfd7-2da3-46cd-8ea9-3793bee7a19f|/a762bfd7-2da3-46cd-8ea9-3793bee7a19f|",

@@ -3868,6 +3868,215 @@
 				)
 			)
 		)
+		(symbol "oresat-ics:MAX892LEUA+T"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "MAX892LEUA+T"
+				(at 0 11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "oresat-ics:LINEAR-MSOP-8-AND-MAXIM-UMAX-8-21-0036"
+				(at 0 22.86 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/MAX891L-MAX892L.pdf"
+				(at 0 26.67 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MAX892LEUA+T_1_0"
+				(pin power_in line
+					(at -12.7 7.62 0)
+					(length 2.54)
+					(name "IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 7.62 0)
+					(length 2.54) hide
+					(name "IN_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 -12.7 0)
+					(length 2.54)
+					(name "~{ON}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -17.78 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 12.7 -10.16 180)
+					(length 2.54)
+					(name "SET"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -12.7 -5.08 0)
+					(length 2.54)
+					(name "~{FAULT}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 7.62 180)
+					(length 2.54) hide
+					(name "OUT_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 12.7 7.62 180)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "MAX892LEUA+T_1_1"
+				(rectangle
+					(start -10.16 10.16)
+					(end 10.16 -15.24)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+		)
 		(symbol "oresat-ics:TS5A21366"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -4153,247 +4362,6 @@
 					)
 					(fill
 						(type background)
-					)
-				)
-			)
-		)
-		(symbol "oresat-passives:MAX892LEUA+T"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U3"
-				(at 0 12.7 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "MAX892LEUA+T"
-				(at 0 10.16 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "U-Maxim-MAX892LEUA+T-power-switch:MAX892LEUA+T"
-				(at 0.254 22.352 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "DIST" "Digi-Key"
-				(at -4.826 25.654 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "MFR" "Maxim"
-				(at -4.826 28.702 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "DPN" "MAX892LEUA+-ND"
-				(at 9.144 25.654 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "MPN" "MAX892LEUA+"
-				(at 6.858 28.702 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "MAX892LEUA+T_1_1"
-				(rectangle
-					(start -7.62 7.62)
-					(end 7.62 -10.16)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin power_in line
-					(at -10.16 2.54 0)
-					(length 2.54)
-					(name "IN_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -10.16 5.08 0)
-					(length 2.54)
-					(name "IN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 -7.62 0)
-					(length 2.54)
-					(name "~{ON}"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -12.7 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 10.16 -5.08 180)
-					(length 2.54)
-					(name "SET"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 -2.54 0)
-					(length 2.54)
-					(name "~{FAULT}"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 10.16 2.54 180)
-					(length 2.54)
-					(name "OUT_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 10.16 5.08 180)
-					(length 2.54)
-					(name "OUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
 					)
 				)
 			)
@@ -6344,6 +6312,12 @@
 		(uuid "26f93b8d-97df-46a6-8a11-2204500ac8b8")
 	)
 	(junction
+		(at 154.94 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "280c7071-d12d-4cd9-b760-0c1d282150fc")
+	)
+	(junction
 		(at 156.21 160.02)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6354,12 +6328,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2b93b2b4-9033-42a1-a3a0-704369b05749")
-	)
-	(junction
-		(at 162.56 132.08)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "300c0f9b-c27a-4d5c-a183-d44804ed0008")
 	)
 	(junction
 		(at 204.47 132.08)
@@ -6434,12 +6402,6 @@
 		(uuid "681b2a92-e082-4ef0-9e70-36bf4f31929c")
 	)
 	(junction
-		(at 182.88 132.08)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6fcd5e54-db0f-4262-9dd1-a6f45a4c9ee6")
-	)
-	(junction
 		(at 227.33 180.34)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6468,6 +6430,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "766995ff-99e6-4890-ae3b-6adacdf6c5e7")
+	)
+	(junction
+		(at 154.94 152.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7b5df442-ae74-4d78-89b7-a4f7481e674c")
 	)
 	(junction
 		(at 54.61 208.28)
@@ -6530,12 +6498,6 @@
 		(uuid "b3afa0fc-06ec-4f86-97c6-0c3903869b29")
 	)
 	(junction
-		(at 160.02 139.7)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "baea5f12-8491-4552-a6ed-0baaa0a826ce")
-	)
-	(junction
 		(at 332.74 170.18)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6558,12 +6520,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cc1cf8c9-b40b-44e3-aaab-6c25dffb0305")
-	)
-	(junction
-		(at 160.02 144.78)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ce88058a-9cdd-4061-a089-27dd7c06cc4e")
 	)
 	(junction
 		(at 114.3 35.56)
@@ -6590,7 +6546,7 @@
 		(uuid "dfd231ad-b9c3-4c3e-a56b-2b655bab2460")
 	)
 	(junction
-		(at 184.15 142.24)
+		(at 184.15 149.86)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e4b05461-432d-43ec-a7d6-a0e92981109f")
@@ -6640,6 +6596,14 @@
 		(uuid "28527eb7-adf6-4515-8d6b-4ab4ff3d78e9")
 	)
 	(no_connect
+		(at 69.85 35.56)
+		(uuid "347536bd-e74b-44df-9fba-2dd2e51a63f5")
+	)
+	(no_connect
+		(at 69.85 38.1)
+		(uuid "3cf7b085-9a6d-4531-aa43-ab114955896c")
+	)
+	(no_connect
 		(at 146.05 73.66)
 		(uuid "431d54a4-a8ad-4d5f-b500-0b03b32b296f")
 	)
@@ -6687,7 +6651,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 142.24) (xy 184.15 142.24)
+			(xy 189.23 149.86) (xy 184.15 149.86)
 		)
 		(stroke
 			(width 0)
@@ -6697,7 +6661,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 167.64) (xy 189.23 142.24)
+			(xy 189.23 167.64) (xy 189.23 149.86)
 		)
 		(stroke
 			(width 0)
@@ -6907,7 +6871,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 132.08) (xy 162.56 132.08)
+			(xy 137.16 132.08) (xy 157.48 132.08)
 		)
 		(stroke
 			(width 0)
@@ -7037,16 +7001,6 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 149.86) (xy 172.72 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2d7773dc-b88f-45aa-aecf-8270e802816d")
-	)
-	(wire
-		(pts
 			(xy 144.78 172.72) (xy 147.32 172.72)
 		)
 		(stroke
@@ -7154,6 +7108,16 @@
 			(type solid)
 		)
 		(uuid "3bffe2a7-cb8f-492b-bc8d-9c3ef945eef3")
+	)
+	(wire
+		(pts
+			(xy 154.94 152.4) (xy 157.48 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3da8b389-d546-47f6-ac8c-fc7dfa7faede")
 	)
 	(wire
 		(pts
@@ -7297,6 +7261,16 @@
 	)
 	(wire
 		(pts
+			(xy 170.18 158.75) (xy 170.18 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48fbca43-b9f2-48f7-9f04-0187ecd33c20")
+	)
+	(wire
+		(pts
 			(xy 356.87 30.48) (xy 356.87 46.99)
 		)
 		(stroke
@@ -7334,16 +7308,6 @@
 			(type solid)
 		)
 		(uuid "4b5c843b-c6a6-493a-80b8-c3f48a261161")
-	)
-	(wire
-		(pts
-			(xy 162.56 132.08) (xy 162.56 134.62)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "4bc6136d-ea42-486c-9dbe-b8cfb9062212")
 	)
 	(wire
 		(pts
@@ -7507,7 +7471,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 139.7) (xy 162.56 139.7)
+			(xy 154.94 144.78) (xy 157.48 144.78)
 		)
 		(stroke
 			(width 0)
@@ -7577,7 +7541,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 142.24) (xy 184.15 142.24)
+			(xy 182.88 149.86) (xy 184.15 149.86)
 		)
 		(stroke
 			(width 0)
@@ -7587,7 +7551,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 142.24) (xy 184.15 144.78)
+			(xy 184.15 149.86) (xy 184.15 152.4)
 		)
 		(stroke
 			(width 0)
@@ -7744,16 +7708,6 @@
 			(type default)
 		)
 		(uuid "829f67d1-d85b-4bd7-8da9-802d5b8764cc")
-	)
-	(wire
-		(pts
-			(xy 152.4 144.78) (xy 152.4 175.26)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "83bf8694-12e8-47c7-be78-e489ac09f3fb")
 	)
 	(wire
 		(pts
@@ -7957,16 +7911,6 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 132.08) (xy 182.88 134.62)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "9926d039-8395-4978-9102-8fda2f1c5a25")
-	)
-	(wire
-		(pts
 			(xy 52.07 124.46) (xy 54.61 124.46)
 		)
 		(stroke
@@ -8037,7 +7981,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 144.78) (xy 160.02 144.78)
+			(xy 151.13 152.4) (xy 154.94 152.4)
 		)
 		(stroke
 			(width 0)
@@ -8097,7 +8041,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 139.7) (xy 147.32 172.72)
+			(xy 147.32 144.78) (xy 147.32 172.72)
 		)
 		(stroke
 			(width 0)
@@ -8107,7 +8051,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 139.7) (xy 160.02 139.7)
+			(xy 147.32 144.78) (xy 154.94 144.78)
 		)
 		(stroke
 			(width 0)
@@ -8207,16 +8151,6 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 144.78) (xy 162.56 144.78)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "b017b20c-21fc-4855-af42-7d53886b3e73")
-	)
-	(wire
-		(pts
 			(xy 304.8 40.64) (xy 304.8 43.18)
 		)
 		(stroke
@@ -8284,6 +8218,16 @@
 			(type default)
 		)
 		(uuid "b884c86e-7677-45c6-a080-1a14c553ca27")
+	)
+	(wire
+		(pts
+			(xy 151.13 152.4) (xy 151.13 175.26)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "b9bea8fd-6760-44a7-bfa1-ab5defe74702")
 	)
 	(wire
 		(pts
@@ -8697,7 +8641,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 149.86) (xy 184.15 151.13)
+			(xy 184.15 157.48) (xy 184.15 158.75)
 		)
 		(stroke
 			(width 0)
@@ -8877,7 +8821,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 175.26) (xy 144.78 175.26)
+			(xy 151.13 175.26) (xy 144.78 175.26)
 		)
 		(stroke
 			(width 0)
@@ -9278,7 +9222,7 @@
 		(uuid "7f1961db-0c44-4a21-9cbd-a8266e1be476")
 	)
 	(label "OPD_~{ENABLE}"
-		(at 152.4 156.21 90)
+		(at 151.13 175.26 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10200,7 +10144,7 @@
 	)
 	(symbol
 		(lib_id "oresat-misc:Test-Point-0.75mm-th")
-		(at 160.02 144.78 0)
+		(at 154.94 152.4 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -10208,7 +10152,7 @@
 		(dnp no)
 		(uuid "1328f224-3488-4f5d-8618-9f9192806576")
 		(property "Reference" "TP3"
-			(at 158.75 147.32 0)
+			(at 153.67 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.0795)
@@ -10217,7 +10161,7 @@
 			)
 		)
 		(property "Value" "Test-Point"
-			(at 160.02 137.16 0)
+			(at 154.94 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10226,7 +10170,7 @@
 			)
 		)
 		(property "Footprint" "oresat-misc:TestPoint-0.75mm-th"
-			(at 160.02 134.62 0)
+			(at 154.94 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10235,7 +10179,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 160.02 144.78 0)
+			(at 154.94 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10244,7 +10188,7 @@
 			)
 		)
 		(property "Description" "0.75 mm TH test point; good for scope probes and jumpers"
-			(at 160.02 144.78 0)
+			(at 154.94 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10253,7 +10197,7 @@
 			)
 		)
 		(property "DPN" "N/A"
-			(at 160.02 144.78 0)
+			(at 154.94 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10262,7 +10206,7 @@
 			)
 		)
 		(property "MFR" "N/A"
-			(at 160.02 144.78 0)
+			(at 154.94 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10271,7 +10215,7 @@
 			)
 		)
 		(property "MPN" "N/A"
-			(at 160.02 144.78 0)
+			(at 154.94 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11254,8 +11198,8 @@
 		)
 	)
 	(symbol
-		(lib_id "oresat-passives:MAX892LEUA+T")
-		(at 172.72 137.16 0)
+		(lib_id "oresat-ics:MAX892LEUA+T")
+		(at 170.18 139.7 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11264,7 +11208,7 @@
 		(fields_autoplaced yes)
 		(uuid "2db6bb5c-80df-4cff-bec8-7db494087c19")
 		(property "Reference" "U1"
-			(at 172.72 124.46 0)
+			(at 170.18 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11272,15 +11216,15 @@
 			)
 		)
 		(property "Value" "MAX892LEUA+T"
-			(at 172.72 127 0)
+			(at 170.18 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "U-Maxim-MAX892LEUA+T-power-switch:MAX892LEUA+T"
-			(at 172.72 137.16 0)
+		(property "Footprint" "oresat-ics:LINEAR-MSOP-8-AND-MAXIM-UMAX-8-21-0036"
+			(at 170.18 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11288,8 +11232,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 172.72 137.16 0)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/MAX891L-MAX892L.pdf"
+			(at 170.18 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11298,7 +11242,7 @@
 			)
 		)
 		(property "Description" "Power Switch/Driver 1:1 P-Channel 250mA 8-uMAX/uSOP"
-			(at 172.72 137.16 0)
+			(at 170.18 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11307,7 +11251,7 @@
 			)
 		)
 		(property "DIST" "Digi-Key"
-			(at 172.72 137.16 0)
+			(at 170.18 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11316,7 +11260,7 @@
 			)
 		)
 		(property "MFR" "Maxim"
-			(at 172.72 137.16 0)
+			(at 170.18 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11325,7 +11269,7 @@
 			)
 		)
 		(property "DPN" "MAX892LEUA+-ND"
-			(at 172.72 137.16 0)
+			(at 170.18 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11334,7 +11278,7 @@
 			)
 		)
 		(property "MPN" "MAX892LEUA+"
-			(at 172.72 137.16 0)
+			(at 170.18 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13784,7 +13728,7 @@
 	(symbol
 		(lib_name "GND_2")
 		(lib_id "power:GND")
-		(at 184.15 151.13 0)
+		(at 184.15 158.75 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13793,7 +13737,7 @@
 		(fields_autoplaced yes)
 		(uuid "5af18abf-87ff-4edc-be7b-42b6f399c881")
 		(property "Reference" "#PWR017"
-			(at 184.15 157.48 0)
+			(at 184.15 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13802,7 +13746,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 184.15 156.21 0)
+			(at 184.15 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13810,7 +13754,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 184.15 151.13 0)
+			(at 184.15 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13819,7 +13763,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 151.13 0)
+			(at 184.15 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13828,7 +13772,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 184.15 151.13 0)
+			(at 184.15 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14011,7 +13955,7 @@
 	(symbol
 		(lib_name "GND_2")
 		(lib_id "power:GND")
-		(at 172.72 151.13 0)
+		(at 170.18 158.75 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14020,7 +13964,7 @@
 		(fields_autoplaced yes)
 		(uuid "6d1ba353-71cf-44f9-9e83-ea41444966f4")
 		(property "Reference" "#PWR016"
-			(at 172.72 157.48 0)
+			(at 170.18 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14029,7 +13973,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 172.72 156.21 0)
+			(at 170.18 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14037,7 +13981,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 172.72 151.13 0)
+			(at 170.18 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14046,7 +13990,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 172.72 151.13 0)
+			(at 170.18 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14055,7 +13999,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 172.72 151.13 0)
+			(at 170.18 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15913,7 +15857,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b26d52c7-f771-47b1-8588-e00a68c63d3b")
@@ -15933,7 +15877,7 @@
 				)
 			)
 		)
-		(property "Footprint" "N/A"
+		(property "Footprint" ""
 			(at 64.77 35.56 0)
 			(effects
 				(font
@@ -16580,7 +16524,7 @@
 	)
 	(symbol
 		(lib_id "oresat-misc:Test-Point-0.75mm-th")
-		(at 160.02 139.7 0)
+		(at 154.94 144.78 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -16588,7 +16532,7 @@
 		(dnp no)
 		(uuid "c81c2e94-3d93-44ce-ba04-86bc97444229")
 		(property "Reference" "TP4"
-			(at 158.75 137.16 0)
+			(at 153.67 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.0795)
@@ -16597,7 +16541,7 @@
 			)
 		)
 		(property "Value" "Test-Point"
-			(at 160.02 132.08 0)
+			(at 154.94 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16606,7 +16550,7 @@
 			)
 		)
 		(property "Footprint" "oresat-misc:TestPoint-0.75mm-th"
-			(at 160.02 129.54 0)
+			(at 154.94 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16615,7 +16559,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 160.02 139.7 0)
+			(at 154.94 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16624,7 +16568,7 @@
 			)
 		)
 		(property "Description" "0.75 mm TH test point; good for scope probes and jumpers"
-			(at 160.02 139.7 0)
+			(at 154.94 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16633,7 +16577,7 @@
 			)
 		)
 		(property "DPN" "N/A"
-			(at 160.02 139.7 0)
+			(at 154.94 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16642,7 +16586,7 @@
 			)
 		)
 		(property "MFR" "N/A"
-			(at 160.02 139.7 0)
+			(at 154.94 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16651,7 +16595,7 @@
 			)
 		)
 		(property "MPN" "N/A"
-			(at 160.02 139.7 0)
+			(at 154.94 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17908,7 +17852,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "eab5ae7c-4a4f-4802-a089-851ed12c48dd")
-		(property "Reference" "U6"
+		(property "Reference" "PCB3"
 			(at 140.97 181.61 0)
 			(effects
 				(font
@@ -17924,7 +17868,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Adafruit-Trinket-M0:Trinket-M0"
+		(property "Footprint" "oresat-pcbs:Adafruit-Trinket"
 			(at 134.62 167.64 0)
 			(effects
 				(font
@@ -18020,7 +17964,7 @@
 		(instances
 			(project ""
 				(path "/a762bfd7-2da3-46cd-8ea9-3793bee7a19f"
-					(reference "U6")
+					(reference "PCB3")
 					(unit 1)
 				)
 			)
@@ -18028,7 +17972,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 184.15 147.32 0)
+		(at 184.15 154.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18036,7 +17980,7 @@
 		(dnp no)
 		(uuid "ebd64bd2-965b-4838-b990-886d898f7976")
 		(property "Reference" "R4"
-			(at 182.245 148.5899 90)
+			(at 182.245 156.2099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18045,7 +17989,7 @@
 			)
 		)
 		(property "Value" "23.7k"
-			(at 186.055 149.8599 90)
+			(at 186.055 157.4799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18054,7 +17998,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 184.15 147.32 0)
+			(at 184.15 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18063,7 +18007,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 184.15 147.32 0)
+			(at 184.15 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18072,7 +18016,7 @@
 			)
 		)
 		(property "Description" "23.7 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Moisture Resistant Thick Film"
-			(at 184.15 147.32 0)
+			(at 184.15 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18081,7 +18025,7 @@
 			)
 		)
 		(property "DIST" "DigiKey"
-			(at 184.15 147.32 0)
+			(at 184.15 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18090,7 +18034,7 @@
 			)
 		)
 		(property "DPN" "RMCF0603FT23K7CT-ND"
-			(at 184.15 147.32 0)
+			(at 184.15 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18099,7 +18043,7 @@
 			)
 		)
 		(property "MFR" "Stackpole"
-			(at 184.15 147.32 0)
+			(at 184.15 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18108,7 +18052,7 @@
 			)
 		)
 		(property "MPN" "RMCF0603FT23K7"
-			(at 184.15 147.32 0)
+			(at 184.15 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
