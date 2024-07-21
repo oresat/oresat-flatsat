@@ -6124,6 +6124,24 @@
 				(hide yes)
 			)
 		)
+		(property "DPN" "732-5960-1-ND"
+			(at 201.93 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DST" "Digi-Key"
+			(at 201.93 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "84731832-5d8a-4258-b061-cad76fbc8258")
 		)
@@ -6153,16 +6171,16 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Socket")
-		(at 223.52 97.79 0)
+		(at 223.52 100.33 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "d2de5671-dc19-4989-9ffe-8a6f6b883e25")
 		(property "Reference" "J4"
-			(at 224.79 97.7899 0)
+			(at 224.79 100.3301 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6171,7 +6189,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02_Socket"
-			(at 224.79 100.3299 0)
+			(at 224.79 97.7901 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6180,7 +6198,7 @@
 			)
 		)
 		(property "Footprint" "oresat-connectors:PHOENIX_1995499"
-			(at 223.52 97.79 0)
+			(at 223.52 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6189,7 +6207,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 223.52 97.79 0)
+			(at 223.52 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6198,7 +6216,43 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 223.52 97.79 0)
+			(at 223.52 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "277-6718-ND"
+			(at 223.52 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DST" "Digi-Key"
+			(at 223.52 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "Phoenix "
+			(at 223.52 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "1995499"
+			(at 223.52 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
