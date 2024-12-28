@@ -4778,7 +4778,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "SW_Push_DPDT"
+		(property "Value" "EG2209"
 			(at 151.13 60.9599 90)
 			(effects
 				(font
@@ -6076,7 +6076,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "SW_Omron_B3FS"
+		(property "Value" "B3F-1000"
 			(at 72.39 100.3299 90)
 			(effects
 				(font
