@@ -6,7 +6,11 @@
 		(thickness 1.6)
 		(legacy_teardrops no)
 	)
-	(paper "A4")
+	(paper "USLedger")
+	(title_block
+		(date "2025-01-13")
+		(rev "2.1")
+	)
 	(layers
 		(0 "F.Cu" signal)
 		(31 "B.Cu" signal)
@@ -4772,7 +4776,7 @@
 			(justify right)
 		)
 	)
-	(gr_text "OreSat FlatSat Breakout - Main v2.0\n2025-01-14 Backplane v2.1"
+	(gr_text "OreSat FlatSat Card Breakout v2.1\n2025-01-14 for Backplane v2.0"
 		(at 150.05 61.6 0)
 		(layer "F.SilkS")
 		(uuid "9c2f9557-da10-4519-b8a9-205a097e86ac")

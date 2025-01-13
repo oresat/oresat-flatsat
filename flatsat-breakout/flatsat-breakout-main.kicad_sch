@@ -6,8 +6,8 @@
 	(paper "USLedger")
 	(title_block
 		(title "OreSat FlatSat Card Connector")
-		(date "2025-01-13")
-		(rev "1.2")
+		(date "2025-01-14")
+		(rev "2.1")
 	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_01x27"
