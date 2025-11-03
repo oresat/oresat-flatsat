@@ -59,7 +59,44 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "courtyards_overlap|152705000|63825000|05a740eb-a0e4-4380-9d7a-4898a6a8973f|7de04600-dbb8-4385-9766-0691c0bef545",
+          ""
+        ],
+        [
+          "footprint_type_mismatch|149200000|94100000|817aae1c-5d48-4ab5-bd87-834abf01dabe|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "silk_overlap|175000000|80750000|683771d3-1c61-4ddf-ab52-311fa0fda67e|84c533c2-8b09-4052-9f55-87295d4de297",
+          ""
+        ],
+        [
+          "silk_overlap|175000000|82250000|84c533c2-8b09-4052-9f55-87295d4de297|9743964a-6df8-4e54-886d-92aa11b7a139",
+          ""
+        ],
+        [
+          "silk_overlap|175000000|83750000|9743964a-6df8-4e54-886d-92aa11b7a139|ce654ab0-799e-4180-8616-a1b65d1e7b98",
+          ""
+        ],
+        [
+          "silk_overlap|175000000|85250000|6ee8bb12-2be3-4dea-8ff0-52023a1c2dc8|ce654ab0-799e-4180-8616-a1b65d1e7b98",
+          ""
+        ],
+        [
+          "silk_overlap|175000000|86750000|66150693-6d0a-4d4b-b01b-a11784e25826|6ee8bb12-2be3-4dea-8ff0-52023a1c2dc8",
+          ""
+        ],
+        [
+          "silk_overlap|175000000|88250000|5ae4e8b3-1562-44f2-863b-243126cbdbca|66150693-6d0a-4d4b-b01b-a11784e25826",
+          ""
+        ],
+        [
+          "silk_overlap|175000000|89750000|58110127-3c8b-4bfd-ad6b-0907d8c53e52|5ae4e8b3-1562-44f2-863b-243126cbdbca",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -489,7 +526,16 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
+    "pinned_footprint_libs": [
+      "oresat-connectors",
+      "oresat-diodes",
+      "oresat-graphics",
+      "oresat-ics",
+      "oresat-misc",
+      "oresat-passives",
+      "oresat-transistors",
+      "oresat-pcbs"
+    ],
     "pinned_symbol_libs": []
   },
   "meta": {
@@ -563,8 +609,8 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
-      "pos_files": "",
+      "plot": "build",
+      "pos_files": "build",
       "specctra_dsn": "",
       "step": "",
       "svg": "",
