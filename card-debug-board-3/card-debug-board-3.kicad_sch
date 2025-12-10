@@ -6,7 +6,7 @@
 	(paper "B")
 	(title_block
 		(title "Card Debug Board")
-		(date "2025-11-10")
+		(date "2025-11-24")
 		(rev "3.1")
 		(company "Portland State Aerospace Society")
 	)
@@ -1278,7 +1278,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:Crystal_GND23_Small"
+		(symbol "Device:Crystal_GND24_Small"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -1295,7 +1295,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "Crystal_GND23_Small"
+			(property "Value" "Crystal_GND24_Small"
 				(at 1.27 2.54 0)
 				(effects
 					(font
@@ -1322,7 +1322,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Four pin crystal, GND on pins 2 and 3, small symbol"
+			(property "Description" "Four pin crystal, GND on pins 2 and 4, small symbol"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1349,7 +1349,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Crystal_GND23_Small_0_1"
+			(symbol "Crystal_GND24_Small_0_1"
 				(polyline
 					(pts
 						(xy -1.27 1.27) (xy -1.27 1.905) (xy 1.27 1.905) (xy 1.27 1.27)
@@ -1410,7 +1410,7 @@
 					)
 				)
 			)
-			(symbol "Crystal_GND23_Small_1_1"
+			(symbol "Crystal_GND24_Small_1_1"
 				(pin passive line
 					(at -2.54 0 0)
 					(length 1.27)
@@ -1432,14 +1432,14 @@
 				(pin passive line
 					(at 0 2.54 270)
 					(length 0.635)
-					(name "3"
+					(name "4"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "3"
+					(number "4"
 						(effects
 							(font
 								(size 0.762 0.762)
@@ -1468,14 +1468,14 @@
 				(pin passive line
 					(at 2.54 0 180)
 					(length 1.27)
-					(name "4"
+					(name "3"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "4"
+					(number "3"
 						(effects
 							(font
 								(size 0.762 0.762)
@@ -3560,7 +3560,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Switch:SW_DIP_x02"
+		(symbol "Switch:SW_DIP_x01"
 			(pin_names
 				(offset 0)
 				(hide yes)
@@ -3569,14 +3569,14 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "SW"
-				(at 0 6.35 0)
+				(at 0 3.81 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "SW_DIP_x02"
+			(property "Value" "SW_DIP_x01"
 				(at 0 -3.81 0)
 				(effects
 					(font
@@ -3602,7 +3602,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "2x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
+			(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3620,7 +3620,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SW?DIP?x2*"
+			(property "ki_fp_filters" "SW?DIP?x1*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3629,33 +3629,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "SW_DIP_x02_0_0"
-				(circle
-					(center -2.032 2.54)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
+			(symbol "SW_DIP_x01_0_0"
 				(circle
 					(center -2.032 0)
 					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 2.667) (xy 2.3622 3.7084)
-					)
 					(stroke
 						(width 0)
 						(type default)
@@ -3677,17 +3654,6 @@
 					)
 				)
 				(circle
-					(center 2.032 2.54)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
 					(center 2.032 0)
 					(radius 0.508)
 					(stroke
@@ -3699,9 +3665,9 @@
 					)
 				)
 			)
-			(symbol "SW_DIP_x02_0_1"
+			(symbol "SW_DIP_x01_0_1"
 				(rectangle
-					(start -3.81 5.08)
+					(start -3.81 2.54)
 					(end 3.81 -2.54)
 					(stroke
 						(width 0.254)
@@ -3712,9 +3678,9 @@
 					)
 				)
 			)
-			(symbol "SW_DIP_x02_1_1"
+			(symbol "SW_DIP_x01_1_1"
 				(pin passive line
-					(at -7.62 2.54 0)
+					(at -7.62 0 0)
 					(length 5.08)
 					(name "~"
 						(effects
@@ -3732,42 +3698,6 @@
 					)
 				)
 				(pin passive line
-					(at -7.62 0 0)
-					(length 5.08)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 2.54 180)
-					(length 5.08)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at 7.62 0 180)
 					(length 5.08)
 					(name "~"
@@ -3777,7 +3707,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6234,9 +6164,9 @@
 		)
 		(uuid 378701f9-bec9-4931-8b5d-e6b508e64d10)
 	)
-	(text "Enable 3.3V for\nsolar module"
+	(text "3.3V power for solar module"
 		(exclude_from_sim no)
-		(at 331.47 196.596 0)
+		(at 342.9 211.328 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6423,17 +6353,6 @@
 			(justify bottom)
 		)
 		(uuid "bd3f59f6-265a-4127-adb2-97262c9e7f90")
-	)
-	(text "Used on Solar Modules"
-		(exclude_from_sim no)
-		(at 337.82 214.63 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e15cec03-cc46-4cff-a072-64053ee23789")
 	)
 	(text "Heartbeat/Misc"
 		(exclude_from_sim no)
@@ -6806,10 +6725,6 @@
 		(uuid "545896cd-9417-42bd-9a54-8b15d646af18")
 	)
 	(no_connect
-		(at 318.77 208.28)
-		(uuid "744c07d2-dbdb-46ca-8479-9aefa00bec1e")
-	)
-	(no_connect
 		(at 160.02 165.1)
 		(uuid "7b4b49f2-d69a-432f-9672-cc9a6e306dba")
 	)
@@ -6840,10 +6755,6 @@
 	(no_connect
 		(at 50.8 138.43)
 		(uuid "e029b34c-956b-4b1c-9a38-76d41f3ca38a")
-	)
-	(no_connect
-		(at 334.01 208.28)
-		(uuid "e3116502-d57e-453c-9e69-a84b7322cb97")
 	)
 	(no_connect
 		(at 160.02 142.24)
@@ -10847,8 +10758,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
-			(at 54.864 72.136 0)
+		(property "Value" "5.1k"
+			(at 54.102 72.136 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10874,7 +10785,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "10 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+		(property "Description" "5.1 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
 			(at 59.69 71.12 0)
 			(effects
 				(font
@@ -10892,7 +10803,7 @@
 				(hide yes)
 			)
 		)
-		(property "DPN" "RMCF0603FT10K0CT-ND"
+		(property "DPN" "RMCF0603FT5K10CT-ND"
 			(at 59.69 71.12 0)
 			(effects
 				(font
@@ -10910,7 +10821,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RMCF0603FT10K0"
+		(property "MPN" "RMCF0603FT5K10"
 			(at 59.69 71.12 0)
 			(effects
 				(font
@@ -12100,7 +12011,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "5.1k"
 			(at 62.484 134.366 0)
 			(effects
 				(font
@@ -12127,7 +12038,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "10 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+		(property "Description" "5.1 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
 			(at 60.96 133.35 0)
 			(effects
 				(font
@@ -12145,7 +12056,7 @@
 				(hide yes)
 			)
 		)
-		(property "DPN" "RMCF0603FT10K0CT-ND"
+		(property "DPN" "RMCF0603FT5K10CT-ND"
 			(at 60.96 133.35 0)
 			(effects
 				(font
@@ -12163,7 +12074,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RMCF0603FT10K0"
+		(property "MPN" "RMCF0603FT5K10"
 			(at 60.96 133.35 0)
 			(effects
 				(font
@@ -17250,117 +17161,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_DIP_x02")
-		(at 326.39 208.28 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7f2c875d-50e3-45f8-a33a-6175c17ce1ff")
-		(property "Reference" "SW4"
-			(at 326.39 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "78RB02T"
-			(at 326.39 200.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_THT:SW_DIP_SPSTx02_Slide_6.7x6.64mm_W7.62mm_P2.54mm_LowProfile"
-			(at 326.39 208.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://app-grayhill-website-cms-prod-001.azurewebsites.net/media/4nooheqb/78b-datasheet.pdf"
-			(at 326.39 208.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dip Switch SPST 2 Position Through Hole Slide (Standard) Actuator 150mA 30VDC"
-			(at 326.39 208.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFR" "Grayhill Inc."
-			(at 326.39 208.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "78RB02T"
-			(at 326.39 208.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DIS" "DigiKey"
-			(at 326.39 208.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DPN" "GH7201-ND"
-			(at 326.39 208.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "cd9ed727-8eda-4819-a525-ff8be69c9307")
-		)
-		(pin "1"
-			(uuid "cee5d933-459f-46e0-9961-c8f49fc39c23")
-		)
-		(pin "2"
-			(uuid "9783aad7-2017-4daa-99e0-76b3ce67c72c")
-		)
-		(pin "4"
-			(uuid "7d66934c-143e-4da8-bbc6-53ae78d921f1")
-		)
-		(instances
-			(project ""
-				(path "/6ec99451-f949-47af-a175-ad55f6cf8202"
-					(reference "SW4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 218.44 132.08 0)
 		(unit 1)
@@ -17857,7 +17657,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "5.1k"
 			(at 63.754 72.136 0)
 			(effects
 				(font
@@ -17884,7 +17684,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "10 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+		(property "Description" "5.1 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
 			(at 62.23 71.12 0)
 			(effects
 				(font
@@ -17902,7 +17702,7 @@
 				(hide yes)
 			)
 		)
-		(property "DPN" "RMCF0603FT10K0CT-ND"
+		(property "DPN" "RMCF0603FT5K10CT-ND"
 			(at 62.23 71.12 0)
 			(effects
 				(font
@@ -17920,7 +17720,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RMCF0603FT10K0"
+		(property "MPN" "RMCF0603FT5K10"
 			(at 62.23 71.12 0)
 			(effects
 				(font
@@ -20133,6 +19933,110 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_DIP_x01")
+		(at 326.39 205.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ce07b618-19ff-4042-b032-a548a2613917")
+		(property "Reference" "SW4"
+			(at 326.39 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_DIP_x01"
+			(at 326.39 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W7.62mm_P2.54mm_LowProfile"
+			(at 326.39 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "Dip Switch SPST 1 Position Through Hole Slide (Standard) Actuator 100mA 6VDC"
+			(at 326.39 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
+			(at 326.39 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "Nidec Components Corporation"
+			(at 326.39 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CFS-0100MC"
+			(at 326.39 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DIS" "DigiKey"
+			(at 326.39 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "563-2016-5-ND"
+			(at 326.39 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c8d07163-9db1-4974-9ab7-641b628d0cc7")
+		)
+		(pin "2"
+			(uuid "30d71feb-1f6c-4440-b263-5c00daacdd1a")
+		)
+		(instances
+			(project ""
+				(path "/6ec99451-f949-47af-a175-ad55f6cf8202"
+					(reference "SW4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 367.03 189.23 0)
 		(mirror y)
@@ -21188,8 +21092,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
-			(at 53.594 134.366 0)
+		(property "Value" "5.1k"
+			(at 52.832 134.366 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21215,7 +21119,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "10 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+		(property "Description" "5.1 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
 			(at 58.42 133.35 0)
 			(effects
 				(font
@@ -21233,7 +21137,7 @@
 				(hide yes)
 			)
 		)
-		(property "DPN" "RMCF0603FT10K0CT-ND"
+		(property "DPN" "RMCF0603FT5K10CT-ND"
 			(at 58.42 133.35 0)
 			(effects
 				(font
@@ -21251,7 +21155,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RMCF0603FT10K0"
+		(property "MPN" "RMCF0603FT5K10"
 			(at 58.42 133.35 0)
 			(effects
 				(font
@@ -21972,7 +21876,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Crystal_GND23_Small")
+		(lib_id "Device:Crystal_GND24_Small")
 		(at 96.52 190.5 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -22005,7 +21909,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.raltron.com/webproducts/specs/CRYSTAL/RH100-12.000-12-1010-X-TR-NS2.pdf"
+		(property "Datasheet" "~"
 			(at 96.52 190.5 0)
 			(effects
 				(font
@@ -22014,7 +21918,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "12 MHz ±10ppm Crystal 12pF 50 Ohms 4-SMD, No Lead"
+		(property "Description" "Four pin crystal, GND on pins 2 and 4, small symbol"
 			(at 96.52 190.5 0)
 			(effects
 				(font
