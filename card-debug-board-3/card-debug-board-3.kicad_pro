@@ -37,15 +37,15 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 0.7366,
+          "height": 1.1,
+          "width": 1.1
         },
-        "silk_line_width": 0.15,
+        "silk_line_width": 0.125,
         "silk_text_italic": false,
-        "silk_text_size_h": 1.0,
-        "silk_text_size_v": 1.0,
-        "silk_text_thickness": 0.15,
+        "silk_text_size_h": 0.5,
+        "silk_text_size_v": 0.5,
+        "silk_text_thickness": 0.125,
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
@@ -59,7 +59,16 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "courtyards_overlap|152705000|63825000|05a740eb-a0e4-4380-9d7a-4898a6a8973f|7de04600-dbb8-4385-9766-0691c0bef545",
+          ""
+        ],
+        [
+          "footprint_type_mismatch|149200000|94100000|817aae1c-5d48-4ab5-bd87-834abf01dabe|00000000-0000-0000-0000-000000000000",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -91,7 +100,7 @@
         "length_out_of_range": "error",
         "lib_footprint_issues": "warning",
         "lib_footprint_mismatch": "warning",
-        "malformed_courtyard": "error",
+        "malformed_courtyard": "ignore",
         "microvia_drill_out_of_range": "error",
         "mirrored_text_on_front_layer": "warning",
         "missing_courtyard": "ignore",
@@ -120,29 +129,29 @@
         "tracks_crossing": "error",
         "unconnected_items": "error",
         "unresolved_variable": "error",
-        "via_dangling": "warning",
+        "via_dangling": "error",
         "zones_intersect": "error"
       },
       "rules": {
         "allow_blind_buried_vias": false,
         "allow_microvias": false,
         "max_error": 0.005,
-        "min_clearance": 0.1524,
+        "min_clearance": 0.127,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.381,
         "min_groove_width": 0.0,
-        "min_hole_clearance": 0.1524,
-        "min_hole_to_hole": 0.1524,
+        "min_hole_clearance": 0.127,
+        "min_hole_to_hole": 0.127,
         "min_microvia_diameter": 0.2,
         "min_microvia_drill": 0.1,
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
-        "min_text_height": 0.8,
-        "min_text_thickness": 0.08,
+        "min_text_height": 0.5,
+        "min_text_thickness": 0.125,
         "min_through_hole_diameter": 0.254,
-        "min_track_width": 0.1524,
-        "min_via_annular_width": 0.127,
-        "min_via_diameter": 0.508,
+        "min_track_width": 0.127,
+        "min_via_annular_width": 0.1016,
+        "min_via_diameter": 0.4572,
         "solder_mask_clearance": 0.0,
         "solder_mask_min_width": 0.0,
         "solder_mask_to_copper_clearance": 0.0,
@@ -194,14 +203,18 @@
       ],
       "track_widths": [
         0.0,
+        0.127,
+        0.15,
         0.1524,
         0.2,
         0.25,
+        0.254,
         0.3,
-        0.35,
+        0.38,
         0.4,
-        0.45,
-        1.0
+        0.5,
+        1.0,
+        2.0
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -235,11 +248,11 @@
           "drill": 0.0
         },
         {
-          "diameter": 0.508,
+          "diameter": 0.4572,
           "drill": 0.254
         }
       ],
-      "zones_allow_external_fillets": false,
+      "zones_allow_external_fillets": true,
       "zones_use_no_outline": true
     },
     "ipc2581": {
@@ -258,7 +271,12 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "lib_symbol_issues|3937000|1600200|db8e7169-ef38-4204-bbdf-7eacdc54917b|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ]
+    ],
     "meta": {
       "version": 0
     },
@@ -435,7 +453,6 @@
     "rule_severities": {
       "bus_definition_conflict": "error",
       "bus_entry_needed": "error",
-      "bus_label_syntax": "error",
       "bus_to_bus_conflict": "error",
       "bus_to_net_conflict": "error",
       "conflicting_netclasses": "error",
@@ -464,9 +481,9 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
-      "power_pin_not_driven": "error",
-      "same_local_global_label": "ignore",
+      "pin_to_pin": "error",
+      "power_pin_not_driven": "ignore",
+      "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
       "similar_labels": "warning",
       "similar_power": "warning",
@@ -481,18 +498,27 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
+    "pinned_footprint_libs": [
+      "oresat-connectors",
+      "oresat-diodes",
+      "oresat-graphics",
+      "oresat-ics",
+      "oresat-misc",
+      "oresat-passives",
+      "oresat-transistors",
+      "oresat-pcbs"
+    ],
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "flatsat-breakout-main.kicad_pro",
+    "filename": "card-debug-board-3.kicad_pro",
     "version": 3
   },
   "net_settings": {
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.1524,
+        "clearance": 0.127,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -503,8 +529,42 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.1524,
-        "via_diameter": 0.508,
+        "track_width": 0.127,
+        "via_diameter": 0.4572,
+        "via_drill": 0.254,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 1.0105,
+        "diff_pair_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "RF-50-max",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.38,
+        "via_diameter": 0.4572,
+        "via_drill": 0.254,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.6063,
+        "diff_pair_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "RF-50-min",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.38,
+        "via_diameter": 0.4572,
         "via_drill": 0.254,
         "wire_width": 6
       }
@@ -522,7 +582,7 @@
       "idf": "",
       "netlist": "",
       "plot": "build",
-      "pos_files": "",
+      "pos_files": "build",
       "specctra_dsn": "",
       "step": "",
       "svg": "",
@@ -532,7 +592,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
-    "bom_export_filename": "",
+    "bom_export_filename": "${PROJECTNAME}.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -545,7 +605,7 @@
     },
     "bom_presets": [],
     "bom_settings": {
-      "exclude_dnp": false,
+      "exclude_dnp": true,
       "fields_ordered": [
         {
           "group_by": false,
@@ -557,6 +617,36 @@
           "group_by": false,
           "label": "Reference",
           "name": "Reference",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Value",
+          "name": "Value",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "DNP",
+          "name": "${DNP}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Exclude from BOM",
+          "name": "${EXCLUDE_FROM_BOM}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Exclude from Board",
+          "name": "${EXCLUDE_FROM_BOARD}",
+          "show": false
+        },
+        {
+          "group_by": true,
+          "label": "Footprint",
+          "name": "Footprint",
           "show": true
         },
         {
@@ -572,40 +662,10 @@
           "show": true
         },
         {
-          "group_by": true,
-          "label": "Value",
-          "name": "Value",
-          "show": true
-        },
-        {
           "group_by": false,
           "label": "Description",
           "name": "Description",
           "show": true
-        },
-        {
-          "group_by": false,
-          "label": "Datasheet",
-          "name": "Datasheet",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "Footprint",
-          "name": "Footprint",
-          "show": true
-        },
-        {
-          "group_by": true,
-          "label": "DNP",
-          "name": "${DNP}",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "#",
-          "name": "${ITEM_NUMBER}",
-          "show": false
         },
         {
           "group_by": false,
@@ -618,6 +678,24 @@
           "label": "DPN",
           "name": "DPN",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Datasheet",
+          "name": "Datasheet",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -625,32 +703,29 @@
       "include_excluded_from_bom": false,
       "name": "",
       "sort_asc": true,
-      "sort_field": "Reference"
+      "sort_field": "${QUANTITY}"
     },
     "connection_grid_size": 50.0,
     "drawing": {
       "dashed_lines_dash_length_ratio": 12.0,
       "dashed_lines_gap_length_ratio": 3.0,
-      "default_bus_thickness": 12.0,
-      "default_junction_size": 36.0,
       "default_line_thickness": 6.0,
       "default_text_size": 50.0,
-      "default_wire_thickness": 6.0,
       "field_names": [],
       "intersheets_ref_own_page": false,
       "intersheets_ref_prefix": "",
       "intersheets_ref_short": false,
       "intersheets_ref_show": false,
       "intersheets_ref_suffix": "",
-      "junction_size_choice": 3,
-      "label_size_ratio": 0.3,
+      "junction_size_choice": 2,
+      "label_size_ratio": 0.375,
       "operating_point_overlay_i_precision": 3,
       "operating_point_overlay_i_range": "~A",
       "operating_point_overlay_v_precision": 3,
       "operating_point_overlay_v_range": "~V",
       "overbar_offset_ratio": 1.23,
       "pin_symbol_size": 25.0,
-      "text_offset_ratio": 0.3
+      "text_offset_ratio": 0.15
     },
     "legacy_lib_dir": "",
     "legacy_lib_list": [],
@@ -667,7 +742,7 @@
       "model_mode": 0,
       "workbook_filename": ""
     },
-    "page_layout_descr_file": "${ORESAT_LIBRARIES}/title-blocks/oresat-schematic-title-block.kicad_wks",
+    "page_layout_descr_file": "",
     "plot_directory": "",
     "space_save_all_events": true,
     "spice_adjust_passive_values": false,
@@ -682,7 +757,7 @@
   },
   "sheets": [
     [
-      "1685d9f1-2e37-4073-a34f-2675ab2d0a11",
+      "6ec99451-f949-47af-a175-ad55f6cf8202",
       "Root"
     ]
   ],
