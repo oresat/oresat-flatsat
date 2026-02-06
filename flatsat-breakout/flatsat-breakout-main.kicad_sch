@@ -10,7 +10,7 @@
 		(rev "2.1")
 	)
 	(lib_symbols
-		(symbol "Connector_Generic:Conn_01x19"
+		(symbol "Connector_Generic:Conn_01x20"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -26,8 +26,8 @@
 					)
 				)
 			)
-			(property "Value" "Conn_01x19"
-				(at 0 -25.4 0)
+			(property "Value" "Conn_01x20"
+				(at 0 -27.94 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -52,7 +52,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x19, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Generic connector, single row, 01x20, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -79,10 +79,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x19_1_1"
+			(symbol "Conn_01x20_1_1"
 				(rectangle
 					(start -1.27 24.13)
-					(end 1.27 -24.13)
+					(end 1.27 -26.67)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -292,6 +292,17 @@
 				(rectangle
 					(start -1.27 -22.733)
 					(end 0 -22.987)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -25.273)
+					(end 0 -25.527)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -635,6 +646,24 @@
 						)
 					)
 					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -25.4 0)
+					(length 3.81)
+					(name "Pin_20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4343,6 +4372,16 @@
 	)
 	(wire
 		(pts
+			(xy 255.27 129.54) (xy 255.27 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f091835-30bc-452d-ba03-6b8aa2dddf27")
+	)
+	(wire
+		(pts
 			(xy 181.61 83.82) (xy 255.27 83.82)
 		)
 		(stroke
@@ -6140,6 +6179,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 255.27 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1ae2c978-6728-4d9d-a7fc-e1bac7766bb8")
+		(property "Reference" "#PWR07"
+			(at 255.27 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 255.27 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 255.27 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 255.27 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 255.27 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d11349d0-6bbf-4728-9918-1062bbece626")
+		)
+		(instances
+			(project "flatsat-breakout-main"
+				(path "/1685d9f1-2e37-4073-a34f-2675ab2d0a11"
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x40")
 		(at 176.53 127 0)
 		(mirror y)
@@ -6165,7 +6270,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_IDC:IDC-Header_2x20_P2.54mm_Vertical"
 			(at 176.53 127 0)
 			(effects
 				(font
@@ -6897,7 +7002,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x19")
+		(lib_id "Connector_Generic:Conn_01x20")
 		(at 260.35 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6925,7 +7030,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x27_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x20_P2.54mm_Vertical"
 			(at 260.35 104.14 0)
 			(effects
 				(font
@@ -6943,7 +7048,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x19, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Generic connector, single row, 01x20, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 260.35 104.14 0)
 			(effects
 				(font
@@ -7044,6 +7149,9 @@
 		)
 		(pin "9"
 			(uuid "e8de2ae3-8dbc-48cf-a20f-909d71ab8a0c")
+		)
+		(pin "20"
+			(uuid "17eeb0a2-ab97-4e73-860d-de49d08f3bd2")
 		)
 		(instances
 			(project "flatsat-breakout-main"
@@ -7146,7 +7254,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_IDC:IDC-Header_2x20_P2.54mm_Vertical"
 			(at 130.81 127 0)
 			(effects
 				(font
@@ -7393,7 +7501,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "99b4c396-a391-4113-bbba-8b5365552300")
+			(uuid "99b4c396-a391-4113-bbba-8b5365552301")
 		)
 		(instances
 			(project ""
