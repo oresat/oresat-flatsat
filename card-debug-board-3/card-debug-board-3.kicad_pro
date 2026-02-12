@@ -67,6 +67,14 @@
         [
           "footprint_type_mismatch|149200000|94100000|817aae1c-5d48-4ab5-bd87-834abf01dabe|00000000-0000-0000-0000-000000000000",
           ""
+        ],
+        [
+          "silk_edge_clearance|145950000|83190000|f01af4fd-2911-47de-8952-94a9e08b79f1|8b7a5c41-3697-43de-8858-a1ffced26740",
+          ""
+        ],
+        [
+          "silk_edge_clearance|146000000|83190000|f01af4fd-2911-47de-8952-94a9e08b79f1|d3b9692d-938f-456d-8acd-8682c66458f5",
+          ""
         ]
       ],
       "meta": {
@@ -271,12 +279,7 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [
-      [
-        "lib_symbol_issues|3937000|1600200|db8e7169-ef38-4204-bbdf-7eacdc54917b|00000000-0000-0000-0000-000000000000|||",
-        ""
-      ]
-    ],
+    "erc_exclusions": [],
     "meta": {
       "version": 0
     },
@@ -663,12 +666,6 @@
         },
         {
           "group_by": false,
-          "label": "Description",
-          "name": "Description",
-          "show": true
-        },
-        {
-          "group_by": false,
           "label": "DIS",
           "name": "DIS",
           "show": true
@@ -677,6 +674,12 @@
           "group_by": false,
           "label": "DPN",
           "name": "DPN",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
           "show": true
         },
         {
