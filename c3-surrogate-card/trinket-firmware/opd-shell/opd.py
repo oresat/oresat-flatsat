@@ -4,6 +4,8 @@ import time
 # see https://docs.google.com/spreadsheets/d/1JS7-zUmwoZT049liGybgThh3jqxo8DjF8rsd_qzp3mU/edit#gid=13315181
 # ADCS address is 0x1A
 
+
+OPD_I2C_ADDRESS_DIODE         = 0x11
 OPD_I2C_ADDRESS_BATTERY_1     = 0x18
 OPD_I2C_ADDRESS_GPS           = 0x19
 OPD_I2C_ADDRESS_ADCS          = 0x1A
@@ -17,11 +19,11 @@ OPD_I2C_ADDRESS_RW2           = 0x21
 OPD_I2C_ADDRESS_RW3           = 0x22
 OPD_I2C_ADDRESS_RW4           = 0x23
 
-MAX7310_AD_INPUT                   = 0x00
-MAX7310_AD_ODR                     = 0x01
-MAX7310_AD_POL                     = 0x02
-MAX7310_AD_MODE                    = 0x03
-MAX7310_AD_TIMEOUT                 = 0x04
+MAX7310_AD_INPUT              = 0x00
+MAX7310_AD_ODR                = 0x01
+MAX7310_AD_POL                = 0x02
+MAX7310_AD_MODE               = 0x03
+MAX7310_AD_TIMEOUT            = 0x04
 
 OPD_SCL                    = 0
 OPD_SDA                    = 1
@@ -33,32 +35,96 @@ OPD_LINUX_BOOT             = 6
 OPD_PIN7                   = 7
 
 opd_table = [
-    ['battery-1', OPD_I2C_ADDRESS_BATTERY_1],
-    ['gps', OPD_I2C_ADDRESS_GPS],
-    ['adcs', OPD_I2C_ADDRESS_ADCS],
-    ['dxwifi', OPD_I2C_ADDRESS_DXWIFI],
+    ['diode-test',   OPD_I2C_ADDRESS_DIODE],
+    ['battery-1',    OPD_I2C_ADDRESS_BATTERY_1],
+    ['gps',          OPD_I2C_ADDRESS_GPS],
+    ['adcs',         OPD_I2C_ADDRESS_ADCS],
+    ['dxwifi',       OPD_I2C_ADDRESS_DXWIFI],
     ['star-tracker', OPD_I2C_ADDRESS_STAR_TRACKER],
-    ['battery-2', OPD_I2C_ADDRESS_BATTERY_2],
-    ['cfc-octavo', OPD_I2C_ADDRESS_CFC_OCTAVO],
-    ['cfc-sensor', OPD_I2C_ADDRESS_CFC_SENSOR],
-    ['rw1', OPD_I2C_ADDRESS_RW1],
-    ['rw2', OPD_I2C_ADDRESS_RW2],
-    ['rw3', OPD_I2C_ADDRESS_RW3],
-    ['rw4', OPD_I2C_ADDRESS_RW4],
-    ['diode', 0x11]
+    ['battery-2',    OPD_I2C_ADDRESS_BATTERY_2],
+    ['cfc-octavo',   OPD_I2C_ADDRESS_CFC_OCTAVO],
+    ['cfc-sensor',   OPD_I2C_ADDRESS_CFC_SENSOR],
+    ['rw1',          OPD_I2C_ADDRESS_RW1],
+    ['rw2',          OPD_I2C_ADDRESS_RW2],
+    ['rw3',          OPD_I2C_ADDRESS_RW3],
+    ['rw4',          OPD_I2C_ADDRESS_RW4]
 ]
 
+# OPD Commands
+
+def opd_scan(i2c):
+    # Loop over all possible I2C addresses and print devices found
+
+    if i2c.try_lock():
+        # found = False
+        # addr_start = int("0x08", 16)
+        # addr_end   = int("0x3F", 16)+1 
+        # for addr in range(addr_start, addr_end):
+        #     # try:
+        #     #     result = bytearray(2)
+        #     #     i2c.readfrom_into(addr, result)
+        #     #     found = True
+        #     #     print("Found I2C device at address 0x%X" %(addr))
+        #     # except Exception:
+        #     #     pass
+        #     found = check_max7310(addr)
+        #     time.sleep(0.005)
+
+        # if not found:
+        #     "No Devices Found"
+
+        device_list = i2c.scan()
+
+        i2c.unlock()
+        if not device_list:  # check list is empty
+            print("No Devices Found")
+        else:
+            for addr in device_list:
+                print("Found I2C device at address 0x%X" %(addr))
+            
+
+    return
+
+    
+
+def lookup_device(addr):
+    pass
+
+def opd_enable():
+    nOPD_ENABLE.value = 0
+    time.sleep(1)
+    if nOPD_FAULT.value==1:
+        print("OPD Enabled")
+
+    else:
+        print("ERROR: Fault when trying to enable OPD")
+
+def opd_disable():
+    nOPD_ENABLE.value = 1
+    print("OPD Disabled")
+
+def opd_reset():
+    nOPD_ENABLE.value = 1
+    time.sleep(2)
+    nOPD_ENABLE.value = 0
+    time.sleep(1)
+    if nOPD_FAULT.value==1:
+        print("OPD Reset and Enabled")
+    else:
+        print("ERROR: Fault when trying to reset OPD")
+
+def opd_status():
+    if nOPD_FAULT.value == 1:
+        print("OPD power OK")
+    else:
+        print("OPD power FAULT")
+
 def probe_i2c(i2c):
+    # loops over all devices in opd_table and shows which are found on bus
     if i2c.try_lock():
         for row in opd_table:
             addr = row[1]
-            found = False
-            try:
-                result = bytearray(2)
-                i2c.readfrom_into(addr, result)
-                found = True
-            except Exception:
-                pass
+            found = i2c.probe(addr)
 
             print("I2C device at address 0x%X (%13s): %s" %(addr, row[0], ("FOUND" if found else "not found")))
             time.sleep(0.005)
@@ -66,6 +132,66 @@ def probe_i2c(i2c):
         i2c.unlock()
     return
 
+# MAX7310 Commands
+# def check_max7310(addr):
+#     found = False
+#     try:
+#         result = bytearray(2)
+#         i2c.readfrom_into(addr, result)
+#         found = True
+#     except Exception:
+#        pass
+    
+#     return found
+def max_read(i2c, addr):
+    if not addr:
+        print("Device address not set")
+        return
+    
+    while not i2c.try_lock():
+        pass
+    # if i2c.try_lock():
+
+    try:
+        result = bytearray(1)
+        register = 0 # input port register
+        i2c.i2c_read_reg(addr,register,result)
+
+        print("Address %x: %x = %b" % (addr, register, result))
+    except Exception:
+        print("Failed to read from i2c address 0x%X" % addr)
+    finally:  # unlock the i2c bus when ctrl-c'ing out of the loop
+        i2c.unlock()
+
+    return result
+
+def max_write(i2c, addr, data):
+
+    if not addr:
+        print("Device address not set")
+        return
+        
+    register = 0x01 # output register
+
+    if i2c.try_lock():
+       try:
+           buf = bytearray(1)
+           buf[0] = register
+           buf.extend(data)
+           i2c.writeto(addr, buf)
+       except Exception:
+           print("Failed to write to address 0x%X: reg=0x%X" % (addr, register))
+       finally:
+           i2c.unlock()
+
+def max_direction(i2c, addr, direction):
+    register = 0x03 # configuration register
+
+    if not addr:
+        print("Device address not set")
+        return
+
+    i2c_write_reg(addr, register, direction)
 
 def i2c_read_reg(addr, reg, result):
    if i2c.try_lock():
@@ -140,3 +266,7 @@ def opd_enable_disable_node(i2c_addr, enable_flag):
     else:
         clear_max7310_pin(i2c_addr, OPD_EN)
     return
+
+# Node commands
+def node():
+    pass

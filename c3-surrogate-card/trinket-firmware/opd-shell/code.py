@@ -7,6 +7,8 @@ from opd import *
 
 commands = ["help", "scan", "enable", "disable", "reset", "status"]
 
+address = 0 # default current address
+i2c = None
 
 ######################### HELPERS ##############################
 
@@ -25,10 +27,12 @@ def print_help():
 
 # OPD Helper Functions
 def opd_enable():
+    global i2c
     nOPD_ENABLE.value = 0
     time.sleep(1)
     if nOPD_FAULT.value==1:
         print("OPD Enabled")
+        i2c = busio.I2C(board.SCL, board.SDA, frequency=100000) # Singleton
     else:
         print("ERROR: Fault when trying to enable OPD")
 
@@ -51,6 +55,34 @@ def opd_status():
         print("OPD power OK")
     else:
         print("OPD power FAULT")
+
+def max_address():
+    # Sets device address for subsequent commands
+    global address
+    if len(value)>len("address"):
+        # TODO: check for space
+        addr_str = value[7:].strip()
+        # TODO: check not empty
+        if addr_str[:2] == "0x":        # hexadecimal value
+            address = int(addr_str,16)
+        elif addr_str[:2] == "0b":      # binary value
+            address = int(addr_str,2)     
+        else:                           # decimal value
+            address = int(addr_str)
+    
+    # check device found at new address
+    # otherwise set to 0 (no address set)
+    i2c.try_lock()
+    found = i2c.probe(address)
+    i2c.unlock()
+
+    if found:
+        print("Current address is set to %s" % hex(address))
+    elif address == 0:
+        print("Address not set")
+    else:
+        print("No MAX7310 found at %s" % hex(address))
+        address = 0
 
 
 ######################### MAIN ##############################
@@ -89,7 +121,6 @@ print("!! DISCONNECT (OR HOLD IN RESET) ANY C3 ON THE BUS BEFORE TURNING ON THE 
 print("Type 'help' for commands")
 print("> ", end="")
 
-i = 0
 while True:
     led.value = not led.value
 
@@ -105,7 +136,7 @@ while True:
             handled_command = True
         # OPD Commands
         elif value == "scan":
-            print(f"scan has not been implemented yet")
+            opd_scan(i2c)
             handled_command = True
         elif value == "enable":
             opd_enable()
@@ -121,13 +152,16 @@ while True:
             handled_command = True
 
         # MAX7310 Commands
-        elif value == "address":
+        elif value[:7] == "address":
+            max_address()
             handled_command = True
         elif value == "direction":
+            
             handled_command = True
         elif value == "write":
             handled_command = True
         elif value =="read":
+            max_read(i2c, address)
             handled_command = True
 
         # Node Commands
@@ -144,6 +178,7 @@ while True:
 
         elif value == "bus":
             i2c = busio.I2C(board.SCL, board.SDA, frequency=100000)
+            print("I2C bus turned on")
             handled_command = True
         elif value == "probe":
             probe_i2c(i2c)
@@ -154,4 +189,4 @@ while True:
 
         print("> ", end="")
 
-    time.sleep(1.20)
+    time.sleep(1)
