@@ -6494,8 +6494,8 @@
 		)
 	)
 	(rectangle
-		(start 318.262 25.908)
-		(end 385.572 39.37)
+		(start 318.262 19.05)
+		(end 406.4 39.37)
 		(stroke
 			(width 0)
 			(type default)
@@ -6557,7 +6557,7 @@
 		)
 		(uuid "47a58023-eedb-44fb-800c-19545a39e8fc")
 	)
-	(text " 2x Molex 5040511201 - Pico-Lock Receptical Housing\n12x Molex 0797581004 - Pico-Lock precrimped 300 mm 24 AWG\nIMPORTANT: CROSS PRECRIMPED WIRES (Wire pin 1 to pin 1!)"
+	(text "02x JST SHLP-14V-S-B 1.0 mm pitch wire-to-board \"SHL\" connector\nAnd then one set of leads:\n- 14x JST ASSHLSSHL28K305 28 AWG Jumper Lead Socket to Socket 12.0\" (305 mm)\n- or \n- 14x JST ASSHLSSHL28K152 28 AWG Jumper Lead Socket to Socket 6.00\" (152 mm)\nIMPORTANT: CROSS PRECRIMPED WIRES (Wire pin 1 to pin 1!)"
 		(exclude_from_sim no)
 		(at 318.77 36.83 0)
 		(effects
@@ -6669,7 +6669,7 @@
 	)
 	(text "ORESAT DEBUG v3 CABLE ASSEMBLY"
 		(exclude_from_sim no)
-		(at 353.06 27.94 0)
+		(at 364.998 21.082 0)
 		(effects
 			(font
 				(size 1.27 1.27)
