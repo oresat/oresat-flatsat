@@ -6,7 +6,7 @@
 	(paper "B")
 	(title_block
 		(title "C3 Surrogate to OreSat Card Adapter Board")
-		(date "2026-02-05")
+		(date "2026-03-11")
 		(rev "1.0")
 		(company "Portland State Aerospace Society")
 	)
@@ -1594,6 +1594,16 @@
 			)
 		)
 		(uuid "5146258a-b4ab-4a1b-a5f3-39b01018a8f6")
+	)
+	(text "This card butts up two Backplane v2.1 cards to each other. \nUsually that's the C3 Surrogate (C3S) card with some \ncard under development/test."
+		(exclude_from_sim no)
+		(at 207.518 64.262 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "616a285e-1cb0-4f79-b7b1-a7acd04f8604")
 	)
 	(junction
 		(at 238.76 154.94)
@@ -3820,7 +3830,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://suddendocs.samtec.com/productspecs/sfm-tfm.pdf"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6129/sfm-1xx-xx-x-xh-xr-mkt.pdf"
 			(at 176.53 130.81 0)
 			(effects
 				(font
@@ -3829,7 +3839,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ".050\" (1.27 mm) Tiger Eye™ High Reliability Socket and Terminal Strips"
+		(property "Description" "40 Position Receptacle Connector 0.050\" (1.27mm) Surface Mount, Right Angle Gold"
 			(at 176.53 130.81 0)
 			(effects
 				(font
@@ -3838,7 +3848,7 @@
 				(hide yes)
 			)
 		)
-		(property "DIS" ""
+		(property "DIS" "DigiKey"
 			(at 176.53 130.81 0)
 			(effects
 				(font
@@ -3847,7 +3857,7 @@
 				(hide yes)
 			)
 		)
-		(property "DPN" ""
+		(property "DPN" "SAM14509CT-ND"
 			(at 176.53 130.81 0)
 			(effects
 				(font
@@ -3856,7 +3866,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFR" ""
+		(property "MFR" "Samtec Inc."
 			(at 176.53 130.81 0)
 			(effects
 				(font
@@ -3865,7 +3875,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "SFM-120-02-L-DH-TR"
 			(at 176.53 130.81 0)
 			(effects
 				(font
@@ -4051,7 +4061,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://suddendocs.samtec.com/productspecs/sfm-tfm.pdf"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6129/sfm-1xx-xx-x-xh-xr-mkt.pdf"
 			(at 233.68 132.08 0)
 			(effects
 				(font
@@ -4060,7 +4070,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ".050\" (1.27 mm) Tiger Eye™ High Reliability Socket and Terminal Strips"
+		(property "Description" "40 Position Receptacle Connector 0.050\" (1.27mm) Surface Mount, Right Angle Gold"
 			(at 233.68 132.08 0)
 			(effects
 				(font
@@ -4069,7 +4079,7 @@
 				(hide yes)
 			)
 		)
-		(property "DIS" ""
+		(property "DIS" "DigiKey"
 			(at 233.68 132.08 0)
 			(effects
 				(font
@@ -4078,7 +4088,7 @@
 				(hide yes)
 			)
 		)
-		(property "DPN" ""
+		(property "DPN" "SAM14509CT-ND"
 			(at 233.68 132.08 0)
 			(effects
 				(font
@@ -4087,7 +4097,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFR" ""
+		(property "MFR" "Samtec Inc."
 			(at 233.68 132.08 0)
 			(effects
 				(font
@@ -4096,7 +4106,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "SFM-120-02-L-DH-TR"
 			(at 233.68 132.08 0)
 			(effects
 				(font
