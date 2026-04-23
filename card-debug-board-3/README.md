@@ -1,32 +1,185 @@
-# OreSat Card Debug Board
+---
+title: "**OreSat Debug Board v3**"
+subtitle: |
+  **Fabrication and Assembly Information**\
+  For build TIME-STAMP
+fontsize: 10pt
+geometry:
+  - margin=0.5in
+toc: true
+toc-depth: 2
+colorlinks: true
+urlcolor: blue
+---
 
-This folder contains the CAD for the "Card Debug Board" used to program all of OreSat's cards and solar modules.
+\newpage
 
-Version 1 was our original board.
+# About this Board
 
-Version 2 integrates an STLink v3mini onboard.
+## Board Description
 
-Version 3 integrates an RP2040 with Raspberry Pi Debug Probe firmware to talk to the card's microcontroller and present a virtual UART (serial port).
+The OreSat Debug Board v3 is a Raspberry Pi Pico-based debugger interface for OreSat cards and subsystems. It features:
 
-# Design Notes
+- A Raspberry Pi Pico running [Raspberry Pi Debug Probe](https://www.raspberrypi.com/documentation/microcontrollers/debug-probe.html) firmware
+   - Provides a SWD debugger to the target
+   - Provides a virtual UART to the target
+- Two USB C ports
+    - USB C for the Pico running the Debug Probe firmware, programming the Pico using CircuitPython, and (partially) powering up the target.
+    - USB C for the USB device interface on all Octavo SM-based cards
+- The older 20 pin FFC connector (Debug Connector v2)
+- The newer 14 pin JST connector (Debug Connector v3)
+- A power switch to switch target power between USB ports
+- Automatic reset control from the Pico
+- Automatic power control for solar modules on a spare debug line.
 
-**Status, design, construction, and testing information can be found in the [OreSat Card Debug Board Design Notes](https://docs.google.com/document/d/14hADVJ9qS1ceCpSYXYKz2LTTw5es1_j-fpDTiQAza8c/edit?usp=sharing).**
+## Documentation Links
 
-For more information on the debug connector we use on the cards and solar modules, see [Debug Connector](https://docs.google.com/document/d/1XaE9PLI4TAI1yr0yW3gInwoh7cTG9GLr1tC2V4bRNVA/edit?usp=sharing) document.
+- Git repository: <https://github.com/oresat/oresat-flatsat>
+- **TODO:** Design Notes + Design Review Notes
 
-## LICENSE
+## Documentation Files
 
-Copyright the Portland State Aerospace Society, 2025.
+| Filename                        | Notes                                    |
+| ------------------------------- | ---------------------------------------- |
+| README.pdf                      | This README file                         |
+| PROJECT-NAME-outline.dxf        | Board outline (with holes) in DXF format |
+| PROJECT-NAME-pcba.step          | 3D model of PCBA (with components)       |
+| PROJECT-NAME-render-bot.jpg     | Render of the top of the 3D model        |
+| PROJECT-NAME-render-bot.jpg     | Render of the bottom of the 3D model     |
+| PROJECT-NAME-schematic.pdf      | PDF of board schematics                  |
 
-This source describes Open Hardware that is licensed under CERN-OHL-S v2, or any later version.
+## Contact Information
 
-You may redistribute and modify this source and make products using it under the terms of the CERN-OHL-S v2 (https://ohwr.org/cern_ohl_s_v2.txt).
+- Website: <https://www.oresat.org/>
+- Email: <oresat@pdx.edu>
+- Instagram: @pdxaerospace
 
-This source is distributed WITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF MERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A PARTICULAR PURPOSE. Please see the CERN-OHL-S v2 for applicable conditions.
+## Board Renders
 
-Source location: https://github.com/oresat/
+![Render of the top of the 3D model](./build/documentation/PROJECT-NAME-render-top.jpg){width=50%}
+![Render of the bottom of the 3D model](./build/documentation/PROJECT-NAME-render-bot.jpg){width=50%}
 
-If you require a different license for this open hardware project, please contact us at [oresat@pdx.edu](mailto:oresat@pdx.edu).
+\newpage
 
+# Printed Circuit Board (PCB) Fabrication Information
 
+## Board Info
+
+- 4 layer board
+- Bounding box is 54.0 x 64.0 mm
+- Board thickness is 1.59 mm
+
+## Board Requirements
+
+- Design Rules
+    - Minimum Trace / Space design rules
+       - Outer layers: 0.127 mm (5.0 mil) / 0.127 mm (5.0 mil)
+       - Inner layers: 0.127 mm (5.0 mil) / 0.127 mm (5.0 mil)
+    - Outer dimension router tolerance: +/- 0.254 mm (10.0 mil)
+    - Hole placement tolerance: +/- 0.075 mm (3.0 mil)
+    - Inner tab routed slot tolerance: +/- 0.254 mm (10.0 mil)
+- Drills
+   - Drill Positional Tolerance: 0.051 mm (2.0 mil)
+   - Drill Size tolerance: +/- 0.064 mm (2.5 mil)
+- Plated/Un-plated holes
+  - Via/PTH minimum diameter: 0.254 mm (10 mil)
+  - Via/PTH minimum annulus: 0.102 mm (4 mil) radius
+- Outline/Routing
+  - Requires a 1.0 mm or smaller diameter routing bit
+- Slots
+  - There are no slots.
+- Cutouts
+  - There are no cutouts
+- There are 3 fiducials on the top layer.
+- Panel tabs ("mouse bites")
+   - Card edges must be smooth; no mouse bites or other intrusions into the card outline.
+   - If external mouse bites are required, minimize and customer will remove by hand before assembly.
+- If not otherwise specified, build to IPC 6012 Class 2 or better.
+
+## Stackup /  Materials
+
+- Outside copper layers is 1 oz Cu after plating (0.043 mm / 1.7 mil)
+- Inside copper layers are 0.5 oz Cu (0.018 mm / 0.7 mil)
+- There are no requirements on the prepreg or core of this four layer stackup.
+- Board Surface treatment should be ENIG, althogh immersion Silver is acceptable.
+- White silkscreen on top and bottom surface
+- Taiyo PSR-4000 or equivalent soldermask on top and bottom, no requirements for color.
+
+## Array / Panel Information
+
+- Coordinate with Contract Manufacturer (CM) for optimal size of this panel.
+- If no feedback from CM, then produce single boards (no panel).
+
+## Fabrication Files
+
+### IPC-2581 File
+
+| Filename                 | Notes                                   |
+| ------------------------ | --------------------------------------- |
+| PROJECT-NAME-ipc2581.xml | IPC-2581 board information file         |
+
+### Legacy PCB Files
+
+| Filename                      | Notes                                         |
+| ------------------------------| --------------------------------------------- |
+| PROJECT-NAME-Edge_Cuts.gbr    | RS274X file for the dimension (outline) layer |
+| PROJECT-NAME-F_Silkscreen.gbr | RS274X file for the top silkscreen            |
+| PROJECT-NAME-F_Mask.gbr       | RS274X file for the top soldermask            |
+| PROJECT-NAME-F_Cu.gbr         | RS274X file for the top copper layer          |
+| PROJECT-NAME-In1_Cu.gbr       | RS274X file for the layer 2 copper            |
+| PROJECT-NAME-In2_Cu.gbr       | RS274X file for the layer 3 copper            |
+| PROJECT-NAME-B_Cu.gbr         | RS274X file for the bottom copper layer       |
+| PROJECT-NAME-B_Mask.gbr       | RS274X file for the bottom soldermask         |
+| PROJECT-NAME-B_Silkscreen.gbr | RS274X file for the bottom silkscreen         |
+| PROJECT-NAME-NPTH.drl         | Excellon file for non-plated through holes    |
+| PROJECT-NAME-PTH.drl          | Excellon file for plated through holes        | 
+
+\newpage
+
+# Printed Circuit Board Assembly (PCBA) Information
+
+## Assembly Info
+
+- All components are on the top side of the board.
+- This PCBA is mostly surface mount (SMT) with a few (THT) components.
+
+## Assembly Requirements
+
+- Assemble to IPC Class 2 or better
+- Bake components that are not moisture sealed to appropriate levels as required.
+- Any solder paste (leaded or RoHS) is acceptable. RoHS solder is slightly preferred.
+- Any no-clean or aqueous was flux is acceptable.
+- No conformal coating.
+- Ship in antistatic protective bag
+
+## Component Specific Assembly Information
+
+- No specific information
+
+## Assembly Files
+
+### IPC-2581 File
+
+| Filename                 | Notes                           |
+| ------------------------ | ------------------------------- |
+| PROJECT-NAME-ipc2581.xml | IPC-2581 board information file |
+
+### Bill of Materials (BOM)
+
+| Filename             | Description                            |
+| -------------------- | -------------------------------------- |
+| PROJECT-NAME-bom.csv | BOM in Comma Separated Variable format |
+
+### Solder Paste Stencils
+
+| Filename                 | Notes                                            |
+| ------------------------ | ------------------------------------------------ |
+| PROJECT-NAME-B_Paste.gbr | RS274X file for top/front solder paste stencil   |
+| PROJECT-NAME-F_Paste.gbr | RS274X file for bottom/back solder paste stencil |
+
+### Mounting/Placement Location
+
+| Filename            | Description                                 |
+| ------------------- | ------------------------------------------- |
+| PROJECT-NAME-3u.pos | Pick and place locations for components     |
 
