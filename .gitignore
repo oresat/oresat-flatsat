@@ -12,6 +12,7 @@ build
 fp-info-cache
 _autosave-*
 *auto_saved_files*
+.history
 
 # Netlist files (exported from Eeschema)
 *.net
