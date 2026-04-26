@@ -162,6 +162,10 @@ class C3Surrogate:
     def opd_scan(self):
     # Loop over all possible I2C addresses and print devices found
 
+        if self.nOPD_ENABLE.value == 1:
+            print("Enable OPD before scanning")
+            return
+
         if self.i2c.try_lock():
             device_list = self.i2c.scan()
 

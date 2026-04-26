@@ -22,8 +22,8 @@ while True:
 
     if supervisor.runtime.serial_bytes_available:
         # Check nOPD_FAULT
-        #if C3S.address is not None and not C3S.check():
-        #    print("OPD CB is tripped.  Reset OPD, then set Node and turn on")
+        if C3S.nOPD_ENABLE.value == 0 and not C3S.check():
+            print("OPD CB is tripped.  Reset OPD, then set Node and turn on")
 
         # Check for text input
         value = input().strip() # get string with leading or trailing whitespace removed
@@ -75,7 +75,6 @@ while True:
             C3S.off()
         elif cmd == "check":
             #Output: High = “OPD CB on”,  low = “OPD CB is tripped”, or error message
-            #print(f'Check = {C3S.check()}')
             if C3S.check():
                 print("OPD CB on")
             else:
