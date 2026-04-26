@@ -21,87 +21,81 @@ while True:
     C3S.led.value = not C3S.led.value
 
     if supervisor.runtime.serial_bytes_available:
+        # Check nOPD_FAULT
+        #if C3S.address is not None and not C3S.check():
+        #    print("OPD CB is tripped.  Reset OPD, then set Node and turn on")
+
+        # Check for text input
         value = input().strip() # get string with leading or trailing whitespace removed
         if value == "":
             continue
 
+        # Get command (1st argument)
         arg_list = value.split()
         cmd = arg_list[0]
-        arg = None
 
-        if len(arg_list)==2:
-            arg = arg_list[1]
-        elif len(arg_list)>2:
-            print("Error: only 1 or 2 arguments expected")
+        if cmd not in opd.commands:  # check cmd in cmd list
+            print("Unknown Command.  Type 'help' for list of commands")
+            continue
+        
+        if len(arg_list)>4:
+            print("Error: No more than 4 arguments expected")
             continue
 
-        handled_command = False
-
+        # Execute command
         if cmd == "help":
             opd.print_help()
-            handled_command = True
+            
         # OPD Commands
         elif cmd == "scan":
             C3S.opd_scan()
-            handled_command = True
         elif cmd == "enable":
-            C3S.opd_enable()
-            handled_command = True
+            C3S.opd_enable()           
         elif cmd == "disable":
-            C3S.opd_disable()
-            handled_command = True
+            C3S.opd_disable()           
         elif cmd == "reset":
-            C3S.opd_reset()
-            handled_command = True
+            C3S.opd_reset()           
         elif cmd == "status":
-            C3S.opd_status()
-            handled_command = True
+            C3S.opd_status()           
 
         # MAX7310 Commands
-        elif cmd == "address":
-            C3S.max_address(arg)
-            handled_command = True
-        elif cmd == "direction":
-            handled_command = True
-        elif cmd == "write":
-            handled_command = True
+        elif cmd == "probe":
+            C3S.max_probe(arg_list[1:2]) # addr
         elif cmd =="read":
-            #max_read(i2c, address)
-            handled_command = True
+            C3S.max_read(arg_list[1:3])  # addr reg
+        elif cmd == "write":
+            C3S.max_write(arg_list[1:4])  # addr reg value
 
         # Node Commands
         elif cmd == "node":
-            C3S.node(arg)
-            handled_command = True
+            C3S.node(arg_list[1])
         elif cmd == "on":
             C3S.on()
-            handled_command = True
         elif cmd == "off":
             C3S.off()
-            handled_command = True
         elif cmd == "check":
-            C3S.check()
-            handled_command = True
+            #Output: High = “OPD CB on”,  low = “OPD CB is tripped”, or error message
+            #print(f'Check = {C3S.check()}')
+            if C3S.check():
+                print("OPD CB on")
+            else:
+                print("OPD CB is tripped")
         elif cmd == "retry":
             C3S.retry()
-            handled_command = True
         elif cmd == "serialon":
             C3S.serialon()
-            handled_command = True
         elif cmd == "serialoff":
             C3S.serialoff()
-            handled_command = True
-        # elif cmd == "bus":
-        #     i2c = busio.I2C(board.SCL, board.SDA, frequency=100000)
-        #     print("I2C bus turned on")
-        #     handled_command = True
+        elif cmd == "boothigh":
+            C3S.boothigh()
+        elif cmd == "bootlow":
+            C3S.bootlow()
+        elif cmd == "bootrelease":
+            C3S.bootrelease()     
         elif cmd == "probe":
-            C3S.probe_i2c()
-            handled_command = True
+             C3S.probe_i2c()
 
-        if not handled_command:
-            print("Unknown command")
-
+        # Print Prompt for next input
         print("> ", end="")
 
     time.sleep(1)

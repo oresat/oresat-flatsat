@@ -33,7 +33,7 @@ OPD_EN                     = 3
 OPD_CB_RESET               = 4
 OPD_BOOT0                  = 5
 OPD_LINUX_BOOT             = 6
-OPD_PIN7                   = 7
+OPD_UART_EN                = 7 
 
 opd_table = [
     ['diode-test',   OPD_I2C_ADDRESS_DIODE],
@@ -51,7 +51,9 @@ opd_table = [
     ['rw4',          OPD_I2C_ADDRESS_RW4]
 ]
 
-commands = ["help", "scan", "enable", "disable", "reset", "status"]
+commands = ["help", "scan", "enable", "disable", "reset", "status",
+            "probe", "read", "write",
+            "node", "on", "off", "check", "retry", "serialon", "serialoff", "boothigh", "bootlow", "bootrelease"]
 
 ######################### HELPERS ##############################
 
@@ -67,13 +69,41 @@ def print_help():
     #     print("  opd [enable|disable] " + row[0])
     print("-----------------------")
     return
-    
 
+def set_bit(value, bit):
+    return value | (1<<bit)
+
+def clear_bit(value, bit):
+    return value & ~(1<<bit)
+
+def toggle_bit(value, bit):
+    return value ^ (1<<bit)  
+
+def get_bit(value, bit):
+    return (value >> bit) & 1
+
+def address_string_to_int(addr_str):
+    # converts hex, binary, or decimal value in string to int
+    if not isinstance(addr_str, str):
+        print("Input not a string")
+        addr = None
+
+    if addr_str[:2] == "0x":        # hexadecimal value
+        addr = int(addr_str,16)
+    elif addr_str[:2] == "0b":      # binary value
+        addr = int(addr_str,2)
+    else:                           # decimal value
+        addr = int(addr_str)
+
+    return addr
+    
 class C3Surrogate:
 
     def __init__(self):
-        self.address = None    # default current address
-        self.i2c = None        # I2C bus, instantiated after OPD enabled 
+        self.address = None  # default current address
+        self.i2c     = None  # I2C bus, instantiated after OPD enabled 
+        self.output  = None  # To track the state of the output register
+        self.config  = None  # To track the state of config register
 
         # Built in red LED, turn on
         self.led = DigitalInOut(board.D13)
@@ -95,12 +125,13 @@ class C3Surrogate:
         self.OPD_ISET.direction = Direction.INPUT
 
     # Helper commands to read and write to registers
-    def i2c_read_reg(self, reg):
+    def i2c_read_reg(self, addr, reg):
         if self.i2c.try_lock():
             try:
                 result = bytearray(1)
-                self.i2c.writeto_then_readfrom(self.address, bytes([reg]), result)
-                print(f"Address 0x{self.address:02x} : {reg:02x} = {result:02x}")
+                write_buf = bytes([reg])
+                self.i2c.writeto_then_readfrom(addr, write_buf, result)
+                print(f"Address 0x{addr:02x} : {reg:02x} = {result:02x}")
                 return result
             except Exception:
                 print(f"Failed to read from i2c address 0x{self.address:02x}")
@@ -108,10 +139,9 @@ class C3Surrogate:
                 self.i2c.unlock()
 
 
-    def i2c_write_reg(self, reg, data):
+    def i2c_write_reg(self, addr, reg, data):
         if not self.address:
             print("Device address not set")
-            return
 
         if self.i2c.try_lock():
             try:
@@ -133,23 +163,6 @@ class C3Surrogate:
     # Loop over all possible I2C addresses and print devices found
 
         if self.i2c.try_lock():
-            # found = False
-            # addr_start = int("0x08", 16)
-            # addr_end   = int("0x3F", 16)+1 
-            # for addr in range(addr_start, addr_end):
-            #     # try:
-            #     #     result = bytearray(2)
-            #     #     i2c.readfrom_into(addr, result)
-            #     #     found = True
-            #     #     print("Found I2C device at address 0x%X" %(addr))
-            #     # except Exception:
-            #     #     pass
-            #     found = check_max7310(addr)
-            #     time.sleep(0.005)
-
-            # if not found:
-            #     "No Devices Found"
-
             device_list = self.i2c.scan()
 
             self.i2c.unlock()
@@ -158,8 +171,7 @@ class C3Surrogate:
             else:
                 for addr in device_list:
                     print("Found I2C device at address 0x%X" %(addr))
-            
-
+        
         return
 
     def opd_enable(self):
@@ -207,6 +219,8 @@ class C3Surrogate:
             self.i2c.unlock()
         return
     
+
+    
     # MAX7310 Commands
     def max_address(self, addr_str):
         # Sets device address for subsequent commands
@@ -236,46 +250,70 @@ class C3Surrogate:
             print("No MAX7310 found at %s, set to None" % hex(self.address))
             self.address = None
 
-    # def max_read(self):
-    #     if not self.address:
-    #         print("Device address not set")
-    #         return
+    def max_probe(self, addr):
+        if not self.i2c.try_lock():
+            print("I2C bus not available")
+            return
         
-    #     while not self.i2c.try_lock():
-    #         pass
-    #     # if i2c.try_lock():
+        try:
+            found = self.i2c.probe(self.address)
+        except Exception:
+            print(f"Error occurred probing address 0x{addr:02x}")
+        finally:
+            self.i2c.unlock()
 
-    #     try:
-    #         #result = bytearray(1)
-    #         register = 0x0 # input port register
-    #         result = self.i2c_read_reg(register)
+        if found:
+            print(f"MAX7310 Device found at address 0x{addr:02x}")
+        else:
+            print(f"No MAX7310 Device found at address 0x{addr:02x}")
+    
+    def max_read(self, addr, register):
+ 
+        # check register
+        if register   in ['0', 'i', "input"]:
+            reg_addr = MAX7310_AD_INPUT
+        elif register in ['1', 'o', "output"]:
+            reg_addr = MAX7310_AD_ODR
+        elif register in ['2', 'p', "polarity"]:
+            reg_addr = MAX7310_AD_POL
+        elif register in ['3', 'c', "configuration"]:
+            reg_addr = MAX7310_AD_MODE
+        elif register in ['4', 't', "timeout"]:
+            reg_addr = MAX7310_AD_TIMEOUT
+        else:
+            print(f"Not a valid register: {register}")
+            return
 
-    #         print("Address %x: %x = %b" % (self.address, register, result))
-    #     except Exception:
-    #         print("Failed to read from i2c address 0x%X" % self.address)
-    #     finally:  # unlock the i2c bus when ctrl-c'ing out of the loop
-    #         self.i2c.unlock()
+        if not self.i2c.try_lock():
+            print("I2C bus not available")
+            return
+                   
+        try:
+            result = self.i2c_read_reg(addr, reg_addr)
+            print("Address %x: %x = %b" % (addr, reg_addr, result))
+        except Exception:
+            print(f"Failed to read from from address: {addr:02x}:{reg_addr:02x}")
+        finally:  # unlock the i2c bus when ctrl-c'ing out of the loop
+            self.i2c.unlock()
 
-    #     return result
+        return result
 
-    # def max_write(self, data):
+    def max_write(self, addr, reg, value):
+        pass
+        if not self.address:
+            print("Device address not set")
+            return
 
-    #     if not self.address:
-    #         print("Device address not set")
-    #         return
-            
-    #     register = 0x01 # output register
-
-    #     if self.i2c.try_lock():
-    #         try:
-    #             buf = bytearray(1)
-    #             buf[0] = register
-    #             buf.extend(data)
-    #             self.i2c.writeto(self.address, buf)
-    #         except Exception:
-    #             print("Failed to write to address 0x%X: reg=0x%X" % (self.address, register))
-    #         finally:
-    #             self.i2c.unlock()
+        if self.i2c.try_lock():
+            try:
+                buf = bytearray(1)
+                buf[0] = MAX7310_AD_ODR 
+                buf.extend(value)
+                self.i2c.writeto(self.address, buf)
+            except Exception:
+                print("Failed to write to address 0x%X: reg=0x%X" % (self.address, MAX7310_AD_ODR))
+            finally:
+                self.i2c.unlock()
 
 
     # def opd_en_pin_mode(i2c_addr):
@@ -331,81 +369,91 @@ class C3Surrogate:
     # Node commands
     def node(self, addr):
         self.max_address(addr)
-        # Sets the direction to 0b0000 0100 = 0x04
-        register  = 0x03 # configuration register
-        direction = 0x04
-        self.i2c_write_reg(register, direction)
 
-        # Sets the write to 0b0000 0000 = 0x00
-        register = 0x01 # output register
-        value    = 0x00
-        self.i2c_write_reg(register, value)
+        # Sets the direction to 0b0010 0100
+        self.config = 0b00100100
+        self.i2c_write_reg(addr, MAX7310_AD_MODE, self.config)
+
+        # Sets the output to 0b0000 0000
+        self.output = 0x00
+        self.i2c_write_reg(addr, MAX7310_AD_ODR, MAX7310_AD_ODR)
 
     def on(self):
         # Sets ON/nOFF (bit 3) to high
-        register = 0x01 # output register
-        value = 0x08
-        self.i2c_write_reg(register, value)
+        self.output = set_bit(self.output, 3)
+        self.i2c_write_reg(self.address, MAX7310_AD_ODR, self.output)
 
+        
         # Output: “OK” or error message
-        pass
 
     def off(self):
         # Sets ON/nOFF (bit 3) to low
-        register = 0x01 # output register
-        value = 0x00
-        self.i2c_write_reg(register, value)
+        self.output = clear_bit(self.output, 3)
+        self.i2c_write_reg(self.address, MAX7310_AD_ODR, self.output)
+
         # Output: “OK” or error message
-        pass
 
     def check(self):
-        #Check nFAULT (bit 2)
-        #register = 0x00 # input port register
-        register = 0x01 # output register
-        result = self.i2c_read_reg(register)
+        # Checks if nFAULT is bit is set and returns result.  No message printed
 
-        #Output: High = “OPD CB on”,  low = “OPD CB is tripped”, or error message
-        pass
+        if self.address==None:
+            return
+        
+        #Check nFAULT (bit 2)
+        value = self.i2c_read_reg(self.address, MAX7310_AD_INPUT)
+        value_int = int.from_bytes(value)
+        result = (value_int >> 2) & 1 == 1 # check bit 2 set
+
+        return result
 
     def retry(self):
-        #Write 1 to CB-RESET (bit 4)
-        register = 0x01 # output register
-        value    = 0x10 # bit 4
-        self.i2c_write_reg(register, value)
-        time.sleep(.100) #Wait 100 ms
-        #Write 0 to CB-RESET (bit 4)
-        value    = 0x00
-        self.i2c_write_reg(register, value)       
+        #Write 1 to CB-RESET
+        self.output = set_bit(self.output, OPD_CB_RESET)
+        self.i2c_write_reg(self.address, MAX7310_AD_ODR, self.output)
+        time.sleep(.500) #Wait 100 ms
+        #Write 0 to CB-RESET
+        self.output = clear_bit(self.output, OPD_CB_RESET)
+        self.i2c_write_reg(self.address, MAX7310_AD_ODR, self.output)      
 
     def serialon(self):
         #Sets UART_EN (bit 7) to high, connecting C3-UART lines to the card
-        register = 0x01 # output register
-        value    = 0x80 # bit 7        
-        self.i2c_write_reg(register, value)  
+        self.output = set_bit(self.output, OPD_UART_EN)
+        self.i2c_write_reg(self.address, MAX7310_AD_ODR, self.output)       
         #Output: “OK” or error message
-        pass
 
     def serialoff(self):
         # Sets UART_EN (bit 7) to low, disconnected C3-UART lines from the card
-        register = 0x01 # output register
-        value    = 0x00 # bit 7 low 
-        self.i2c_write_reg(register, value)  
+        self.output = clear_bit(self.output, OPD_UART_EN)
+        self.i2c_write_reg(self.address, MAX7310_AD_ODR, self.output)
         # Output: “OK” or error message
-        pass
 
     def boothigh(self):
+        # Check direction of pin 5 (input=1, output=0)
+        if get_bit(self.config, OPD_BOOT0):  # check if pin 5 set as input           
+            self.config = clear_bit(self.config, OPD_BOOT0) # set pin5 to output
+            self.i2c_write_reg(self.address, MAX7310_AD_MODE, self.config) 
+        
         #Sets BOOT0/BOOT/ISPMODE (bit 5) to high
-        register = 0x01 # output register
-        value    = 0x20 # bit 5  
-        self.i2c_write_reg(register, value)  
+        self.output = set_bit(self.output, OPD_BOOT0)
+        self.i2c_write_reg(self.address, MAX7310_AD_ODR, self.output)
         #Output: “OK” or error message
-        pass
 
     def bootlow(self):
-        # Sets BOOT0/BOOT/ISPMODE (bit 5) to low
-        register = 0x01 # output register
-        value    = 0x00 # bit 5 low
-        self.i2c_write_reg(register, value)  
-        # Output: “OK” or error message
-        pass
+        # Check direction of pin 5 (input=1, output=0)
+        if get_bit(self.config, OPD_BOOT0):  # check if pin 5 set as input          
+            self.config = clear_bit(self.config, OPD_BOOT0)     # set pin5 to output
+            self.i2c_write_reg(self.address, MAX7310_AD_MODE, self.config)           
 
+        # Sets BOOT0/BOOT/ISPMODE (bit 5) to low
+        self.output = clear_bit(self.output, OPD_BOOT0)
+        self.i2c_write_reg(self.address, MAX7310_AD_ODR, self.output) 
+        # Output: “OK” or error message
+
+    def bootrelease(self):
+        # Check direction of pin 5 (input=1, output=0)
+        if get_bit(self.config, OPD_BOOT0):  # check if pin 5 set as input
+            return
+        
+        self.config = set_bit(self.config, OPD_BOOT0) # set pin5 to input
+        self.i2c_write_reg(self.address, MAX7310_AD_MODE, self.config)
+        
