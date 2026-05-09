@@ -1,4 +1,3 @@
-
 import supervisor
 import time
 import opd
@@ -20,11 +19,12 @@ print("> ", end="")
 while True:
     C3S.led.value = not C3S.led.value
 
-    if supervisor.runtime.serial_bytes_available:
-        # Check nOPD_FAULT
-        if C3S.nOPD_ENABLE.value == 0 and not C3S.check():
+    # Continuously poll nOPD_FAULT
+    if C3S.nOPD_ENABLE.value == 0:
+        if C3S.nOPD_FAULT == 0:
             print("OPD CB is tripped.  Reset OPD, then set Node and turn on")
 
+    if supervisor.runtime.serial_bytes_available:
         # Check for text input
         value = input().strip() # get string with leading or trailing whitespace removed
         if value == "":
@@ -45,7 +45,25 @@ while True:
         # Execute command
         if cmd == "help":
             opd.print_help()
+        elif cmd == "debug":
+            nArgs = len(arg_list)
+            if nArgs==1:    # no argument after cmd
+                opd.debug = not opd.debug # toggle value
+            elif nArgs ==2:
+                if arg_list[1] == 'on':
+                    opd.debug = True
+                elif arg_list[1] == 'off':
+                    opd.debug = False
+                else:
+                    print("Unknown command.  Use debug | debug on | debug off")
+            else:
+                print("Run debug command as:  debug | debug on | debug off")
             
+            if opd.debug:
+                print("Debug messages on")
+            else:
+                print("Debug messages off")
+
         # OPD Commands
         elif cmd == "scan":
             C3S.opd_scan()
@@ -60,11 +78,11 @@ while True:
 
         # MAX7310 Commands
         elif cmd == "probe":
-            C3S.max_probe(arg_list[1:2]) # addr
-        elif cmd =="read":
-            C3S.max_read(arg_list[1:3])  # addr reg
+            C3S.max_probe(arg_list[1:2]) # probe [addr]
+        elif cmd == "read":
+            C3S.max_read(arg_list[1:3])  #  read [addr] [reg]
         elif cmd == "write":
-            C3S.max_write(arg_list[1:4])  # addr reg value
+            C3S.max_write(arg_list[1:4]) # write [addr] [reg] [value]
 
         # Node Commands
         elif cmd == "node":

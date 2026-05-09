@@ -3,9 +3,11 @@ import busio
 from digitalio import DigitalInOut, Direction, Pull
 import time
 
+# Paramters
+debug = True  # Prints message for every register read and write.  Set to false for only high level messages.
+
 # see https://docs.google.com/spreadsheets/d/1JS7-zUmwoZT049liGybgThh3jqxo8DjF8rsd_qzp3mU/edit#gid=13315181
 # ADCS address is 0x1A
-
 OPD_I2C_ADDRESS_DIODE         = 0x11
 OPD_I2C_ADDRESS_BATTERY_1     = 0x18
 OPD_I2C_ADDRESS_GPS           = 0x19
@@ -52,7 +54,7 @@ opd_table = [
 ]
 
 commands = ["help", "scan", "enable", "disable", "reset", "status",
-            "probe", "read", "write",
+            "probe", "read", "write", "debug",
             "node", "on", "off", "check", "retry", "serialon", "serialoff", "boothigh", "bootlow", "bootrelease"]
 
 ######################### HELPERS ##############################
@@ -131,7 +133,8 @@ class C3Surrogate:
                 result = bytearray(1)
                 write_buf = bytes([reg])
                 self.i2c.writeto_then_readfrom(addr, write_buf, result)
-                print(f"Address 0x{addr:02x} : {reg:02x} = {result:02x}")
+                if debug:
+                    print(f"Address 0x{addr:02x} : {reg:02x} = {result:02x}")
                 return result
             except Exception:
                 print(f"Failed to read from i2c address 0x{self.address:02x}")
@@ -152,7 +155,8 @@ class C3Surrogate:
                 buf[0] = reg
                 buf[1] = data
                 self.i2c.writeto(self.address, buf)
-                print(f"Wrote 0x{buf[1]:02x} to device at 0x{self.address:02x}, register 0x{reg:02x}")
+                if debug:
+                    print(f"Wrote 0x{buf[1]:02x} to device at 0x{self.address:02x}, register 0x{reg:02x}")
             except Exception:
                 print("Failed to write to address 0x{self.address:02x}: reg=0x{reg:02x}")
             finally:
