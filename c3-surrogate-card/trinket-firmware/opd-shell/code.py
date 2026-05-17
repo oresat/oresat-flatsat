@@ -78,11 +78,11 @@ while True:
 
         # MAX7310 Commands
         elif cmd == "probe":
-            C3S.max_probe(arg_list[1:2]) # probe [addr]
+            C3S.max_probe(arg_list[1]) # probe [addr]
         elif cmd == "read":
-            C3S.max_read(arg_list[1:3])  #  read [addr] [reg]
+            C3S.max_read(arg_list[1], arg_list[2])  #  read [addr] [reg]
         elif cmd == "write":
-            C3S.max_write(arg_list[1:4]) # write [addr] [reg] [value]
+            C3S.max_write(arg_list[1], arg_list[2], arg_list[3]) # write [addr] [reg] [value]
 
         # Node Commands
         elif cmd == "node":
@@ -92,11 +92,7 @@ while True:
         elif cmd == "off":
             C3S.off()
         elif cmd == "check":
-            #Output: High = “OPD CB on”,  low = “OPD CB is tripped”, or error message
-            if C3S.check():
-                print("OPD CB on")
-            else:
-                print("OPD CB is tripped")
+            C3S.check()
         elif cmd == "retry":
             C3S.retry()
         elif cmd == "serialon":
@@ -108,9 +104,9 @@ while True:
         elif cmd == "bootlow":
             C3S.bootlow()
         elif cmd == "bootrelease":
-            C3S.bootrelease()     
-        elif cmd == "probe":
-             C3S.probe_i2c()
+            C3S.bootrelease()
+        else:
+            print("Command not found")  # unnessessary due to check at beginning, but just in case
 
         # Print Prompt for next input
         print("> ", end="")
