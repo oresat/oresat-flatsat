@@ -53,8 +53,8 @@ opd_table = [
     ['rw4',          OPD_I2C_ADDRESS_RW4]
 ]
 
-commands = ["help", "scan", "enable", "disable", "reset", "status",
-            "probe", "read", "write", "debug",
+commands = ["help", "scan", "enable", "disable", "reset", "status", "debug",
+            "probe","read", "write",
             "node", "on", "off", "check", "retry", "serialon", "serialoff", "boothigh", "bootlow", "bootrelease"]
 
 ######################### HELPERS ##############################
@@ -180,6 +180,9 @@ class C3Surrogate:
                 for addr in device_list:
                     print("Found I2C device at address 0x%X" %(addr))
         
+        else:
+            print("Unable to get I2C lock.  Try scan again")
+
         return
 
     def opd_enable(self):
@@ -212,35 +215,13 @@ class C3Surrogate:
             print("OPD power OK")
         else:
             print("OPD power FAULT")
-
-    
-    def probe_i2c(self):
-        # loops over all devices in opd_table and shows which are found on bus
-        if self.i2c.try_lock():
-            for row in opd_table:
-                addr = row[1]
-                found = self.i2c.probe(addr)
-
-                print("I2C device at address 0x%X (%13s): %s" %(addr, row[0], ("FOUND" if found else "not found")))
-                time.sleep(0.005)
-
-            self.i2c.unlock()
-        return
-    
-
     
     # MAX7310 Commands
     def max_address(self, addr_str):
         # Sets device address for subsequent commands
 
         if addr_str is not None:
-            if addr_str[:2] == "0x":        # hexadecimal value
-                self.address = int(addr_str,16)
-            elif addr_str[:2] == "0b":      # binary value
-                self.address = int(addr_str,2)
-            else:                           # decimal value
-                self.address = int(addr_str)
-
+            self.address = address_string_to_int(addr_str)
               
         # check device found at new address
         # otherwise set to None (no address set)
@@ -258,59 +239,73 @@ class C3Surrogate:
             print("No MAX7310 found at %s, set to None" % hex(self.address))
             self.address = None
 
-    def max_probe(self, addr):
+    def max_probe(self, max_addr_str):
         if not self.i2c.try_lock():
             print("I2C bus not available")
             return
         
-        try:
-            found = self.i2c.probe(self.address)
+        if max_addr_str is not None:
+            max_addr = address_string_to_int(max_addr_str)
+
+        try:    
+            found = self.i2c.probe(max_addr)
         except Exception:
-            print(f"Error occurred probing address 0x{addr:02x}")
+            print(f"Error occurred probing address 0x{max_addr:02x}")
         finally:
             self.i2c.unlock()
 
         if found:
-            print(f"MAX7310 Device found at address 0x{addr:02x}")
+            print(f"MAX7310 Device found at address 0x{max_addr:02x}")
         else:
-            print(f"No MAX7310 Device found at address 0x{addr:02x}")
+            print(f"No MAX7310 Device found at address 0x{max_addr:02x}")
     
-    def max_read(self, addr, register):
- 
-        # check register
-        if register   in ['0', 'i', "input"]:
+    def get_register_address(reg_name):
+        # returns register address given serveral forms of register name
+        if reg_name   in ['0', 'i', "input"]:
             reg_addr = MAX7310_AD_INPUT
-        elif register in ['1', 'o', "output"]:
+        elif reg_name in ['1', 'o', "output"]:
             reg_addr = MAX7310_AD_ODR
-        elif register in ['2', 'p', "polarity"]:
+        elif reg_name in ['2', 'p', "polarity"]:
             reg_addr = MAX7310_AD_POL
-        elif register in ['3', 'c', "configuration"]:
+        elif reg_name in ['3', 'c', "configuration"]:
             reg_addr = MAX7310_AD_MODE
-        elif register in ['4', 't', "timeout"]:
+        elif reg_name in ['4', 't', "timeout"]:
             reg_addr = MAX7310_AD_TIMEOUT
         else:
-            print(f"Not a valid register: {register}")
-            return
+            print(f"Not a valid register: {reg_name}")
+            reg_addr = None
+
+        return reg_addr
+
+    def max_read(self, max_addr, reg_name):
+        
+        reg_addr = self.get_register_address(reg_name)
 
         if not self.i2c.try_lock():
             print("I2C bus not available")
             return
                    
         try:
-            result = self.i2c_read_reg(addr, reg_addr)
-            print("Address %x: %x = %b" % (addr, reg_addr, result))
+            value = self.i2c_read_reg(max_addr, reg_addr)
+            print("Address %x: %x = %b" % (max_addr, reg_addr, value))
         except Exception:
-            print(f"Failed to read from from address: {addr:02x}:{reg_addr:02x}")
+            print(f"Failed to read from from address: {max_addr:02x}:{reg_addr:02x}")
         finally:  # unlock the i2c bus when ctrl-c'ing out of the loop
             self.i2c.unlock()
 
-        return result
+        return value
 
-    def max_write(self, addr, reg, value):
-        pass
-        if not self.address:
-            print("Device address not set")
+    def max_write(self, max_addr, reg_name, value):
+
+        if reg_name in ['0', 'i', "input"]:
+            print("Error: cannot write to input register")
             return
+        
+        if reg_name in ['4', 't', "timeout"]:
+            if value not in [0, 1]:
+                print("Error: timeout value must be 0 or 1")
+
+        reg_addr = self.get_register_address(reg_name)
 
         if self.i2c.try_lock():
             try:
@@ -318,6 +313,7 @@ class C3Surrogate:
                 buf[0] = MAX7310_AD_ODR 
                 buf.extend(value)
                 self.i2c.writeto(self.address, buf)
+                print("OK")
             except Exception:
                 print("Failed to write to address 0x%X: reg=0x%X" % (self.address, MAX7310_AD_ODR))
             finally:
@@ -330,7 +326,6 @@ class C3Surrogate:
     #   i2c_read_reg(i2c_addr, MAX7310_AD_MODE, result)
     #   result[0] &= ~(1 << OPD_EN)  # Set the EN pin to output mode
     #   i2c_write_reg(i2c_addr, MAX7310_AD_MODE, result)
-
 
     # def opt_print_status(i2c_addr):
     #     result = bytearray(1)
@@ -349,7 +344,6 @@ class C3Surrogate:
 
     #     return
 
-
     # def set_max7310_pin(i2c_addr, pin_num):
     # result = bytearray(1)
     # i2c_read_reg(i2c_addr, MAX7310_AD_ODR, result)
@@ -364,7 +358,6 @@ class C3Surrogate:
     # result[0] &= ~(1 << pin_num)
     # i2c_write_reg(i2c_addr, MAX7310_AD_ODR, result)
     # return
-
 
     # def opd_enable_disable_node(i2c_addr, enable_flag):
     #     opd_en_pin_mode(i2c_addr)
@@ -402,23 +395,28 @@ class C3Surrogate:
         # Output: “OK” or error message
 
     def check(self):
-        # Checks if nFAULT is bit is set and returns result.  No message printed
+        # Checks if Node nFAULT is bit is set
 
         if self.address==None:
+            print("Set Node Address first")
             return
         
         #Check nFAULT (bit 2)
         value = self.i2c_read_reg(self.address, MAX7310_AD_INPUT)
         value_int = int.from_bytes(value)
         result = (value_int >> 2) & 1 == 1 # check bit 2 set
-
-        return result
+  
+        # Output: High = “OPD CB on”,  low = “OPD CB is tripped”, or error message
+        if result:
+            print("OPD CB on")
+        else:
+            print("OPD CB is tripped")
 
     def retry(self):
         #Write 1 to CB-RESET
         self.output = set_bit(self.output, OPD_CB_RESET)
         self.i2c_write_reg(self.address, MAX7310_AD_ODR, self.output)
-        time.sleep(.500) #Wait 100 ms
+        time.sleep(.500) #Wait 500 ms
         #Write 0 to CB-RESET
         self.output = clear_bit(self.output, OPD_CB_RESET)
         self.i2c_write_reg(self.address, MAX7310_AD_ODR, self.output)      
