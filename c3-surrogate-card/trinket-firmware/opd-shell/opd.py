@@ -83,21 +83,6 @@ def toggle_bit(value, bit):
 
 def get_bit(value, bit):
     return (value >> bit) & 1
-
-def address_string_to_int(addr_str):
-    # converts hex, binary, or decimal value in string to int
-    if not isinstance(addr_str, str):
-        print("Input not a string")
-        addr = None
-
-    if addr_str[:2] == "0x":        # hexadecimal value
-        addr = int(addr_str,16)
-    elif addr_str[:2] == "0b":      # binary value
-        addr = int(addr_str,2)
-    else:                           # decimal value
-        addr = int(addr_str)
-
-    return addr
     
 class C3Surrogate:
 
@@ -140,6 +125,8 @@ class C3Surrogate:
                 print(f"Failed to read from i2c address 0x{self.address:02x}")
             finally:
                 self.i2c.unlock()
+        else:
+            print("Failed to get I2C lock")
 
 
     def i2c_write_reg(self, addr, reg, data):
@@ -171,9 +158,13 @@ class C3Surrogate:
             return
 
         if self.i2c.try_lock():
-            device_list = self.i2c.scan()
+            try:
+                device_list = self.i2c.scan()
+            except Exception as e:
+                print("Error in scan: {e}")
+            finally:
+                self.i2c.unlock()
 
-            self.i2c.unlock()
             if not device_list:  # check list is empty
                 print("No Devices Found")
             else:
@@ -221,7 +212,7 @@ class C3Surrogate:
         # Sets device address for subsequent commands
 
         if addr_str is not None:
-            self.address = address_string_to_int(addr_str)
+            self.address = int(addr_str, 0)
               
         # check device found at new address
         # otherwise set to None (no address set)
@@ -245,7 +236,7 @@ class C3Surrogate:
             return
         
         if max_addr_str is not None:
-            max_addr = address_string_to_int(max_addr_str)
+            max_addr = int(max_addr_str, 0)
 
         try:    
             found = self.i2c.probe(max_addr)
@@ -259,7 +250,7 @@ class C3Surrogate:
         else:
             print(f"No MAX7310 Device found at address 0x{max_addr:02x}")
     
-    def get_register_address(reg_name):
+    def get_register_address(self, reg_name):
         # returns register address given serveral forms of register name
         if reg_name   in ['0', 'i', "input"]:
             reg_addr = MAX7310_AD_INPUT
@@ -278,20 +269,15 @@ class C3Surrogate:
         return reg_addr
 
     def max_read(self, max_addr, reg_name):
-        
+ 
         reg_addr = self.get_register_address(reg_name)
-
-        if not self.i2c.try_lock():
-            print("I2C bus not available")
-            return
+        print(f'Reg address = {reg_addr:02x}')
                    
         try:
             value = self.i2c_read_reg(max_addr, reg_addr)
-            print("Address %x: %x = %b" % (max_addr, reg_addr, value))
-        except Exception:
-            print(f"Failed to read from from address: {max_addr:02x}:{reg_addr:02x}")
-        finally:  # unlock the i2c bus when ctrl-c'ing out of the loop
-            self.i2c.unlock()
+            print(f"Address {max_addr}: reg({reg_addr:02x}) = {str(value)}")
+        except Exception as e:
+            print(f"Failed to read from from address {max_addr:02x}:{reg_addr:02x} - {e}")
 
         return value
 
@@ -377,7 +363,7 @@ class C3Surrogate:
 
         # Sets the output to 0b0000 0000
         self.output = 0x00
-        self.i2c_write_reg(addr, MAX7310_AD_ODR, MAX7310_AD_ODR)
+        self.i2c_write_reg(addr, MAX7310_AD_ODR, self.output)
 
     def on(self):
         # Sets ON/nOFF (bit 3) to high

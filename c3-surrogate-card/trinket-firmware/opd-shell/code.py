@@ -8,7 +8,6 @@ import opd
 # Setup
 C3S = opd.C3Surrogate()
 
-
 # Start OPD Shell
 print()
 print("OPD Shell")
