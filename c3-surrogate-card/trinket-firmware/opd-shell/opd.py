@@ -113,16 +113,24 @@ class C3Surrogate:
 
     # Helper commands to read and write to registers
     def i2c_read_reg(self, addr, reg):
+        # reads register and returns hex value
+        #   addr = int value of I2C device address
+        #   reg  = int value of register address
+        #   returns register value as a hex string
+
         if self.i2c.try_lock():
             try:
-                result = bytearray(1)
-                write_buf = bytes([reg])
-                self.i2c.writeto_then_readfrom(addr, write_buf, result)
-                if debug:
-                    print(f"Address 0x{addr:02x} : {reg:02x} = {result:02x}")
-                return result
-            except Exception:
-                print(f"Failed to read from i2c address 0x{self.address:02x}")
+                result_buffer = bytearray(1)
+                write_buffer = bytes([reg])
+                self.i2c.writeto_then_readfrom(addr, write_buffer, result_buffer)
+                hex_str = result_buffer.hex()
+                # if debug:
+                #     print(f"Address 0x{addr:02x} : Reg 0x{reg:02x} = {hex_str}")
+
+                return hex_str
+            except Exception as e:
+                print(f"Error in i2c_read_reg: {e}")
+                print(f"Failed to read from i2c address 0x{addr:02x}")
             finally:
                 self.i2c.unlock()
         else:
@@ -268,16 +276,19 @@ class C3Surrogate:
 
         return reg_addr
 
-    def max_read(self, max_addr, reg_name):
- 
+    def max_read(self, max_addr_str, reg_name):
+        # command run by user to read register
+        # max_addr = address string for I2C device
+        # reg_name = string name for register (see get_register_address)
+        # returns contents of register as a hex string
+
         reg_addr = self.get_register_address(reg_name)
-        print(f'Reg address = {reg_addr:02x}')
                    
         try:
-            value = self.i2c_read_reg(max_addr, reg_addr)
-            print(f"Address {max_addr}: reg({reg_addr:02x}) = {str(value)}")
+            value = self.i2c_read_reg(int(max_addr_str,0), reg_addr)
+            print(f"Address {max_addr_str} : Reg 0x{reg_addr:02x} = 0x{value}")
         except Exception as e:
-            print(f"Failed to read from from address {max_addr:02x}:{reg_addr:02x} - {e}")
+            print(f"max_read: Failed to read from from address {max_addr_str:02x}:{reg_addr:02x} - {e}")
 
         return value
 

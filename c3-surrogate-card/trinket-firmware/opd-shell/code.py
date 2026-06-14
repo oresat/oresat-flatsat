@@ -79,6 +79,8 @@ while True:
         elif cmd == "probe":
             C3S.max_probe(arg_list[1]) # probe [addr]
         elif cmd == "read":
+            # print help info if not right # of arguments
+            
             C3S.max_read(arg_list[1], arg_list[2])  #  read [addr] [reg]
         elif cmd == "write":
             C3S.max_write(arg_list[1], arg_list[2], arg_list[3]) # write [addr] [reg] [value]
