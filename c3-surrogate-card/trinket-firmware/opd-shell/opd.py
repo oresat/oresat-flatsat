@@ -124,7 +124,8 @@ class C3Surrogate:
                 write_buffer = bytes([reg])
                 self.i2c.writeto_then_readfrom(addr, write_buffer, result_buffer)
                 hex_str = result_buffer.hex()
-                # if debug:
+                if debug:
+                    print(f"read byte value = {result_buffer}")
                 #     print(f"Address 0x{addr:02x} : Reg 0x{reg:02x} = {hex_str}")
 
                 return hex_str
@@ -260,15 +261,15 @@ class C3Surrogate:
     
     def get_register_address(self, reg_name):
         # returns register address given serveral forms of register name
-        if reg_name   in ['0', 'i', "input"]:
+        if reg_name   in ['0','0x00', 'i', "input"]:
             reg_addr = MAX7310_AD_INPUT
-        elif reg_name in ['1', 'o', "output"]:
+        elif reg_name in ['1','0x01', 'o', "output"]:
             reg_addr = MAX7310_AD_ODR
-        elif reg_name in ['2', 'p', "polarity"]:
+        elif reg_name in ['2','0x02', 'p', "polarity"]:
             reg_addr = MAX7310_AD_POL
-        elif reg_name in ['3', 'c', "configuration"]:
+        elif reg_name in ['3','0x03', 'c', "configuration"]:
             reg_addr = MAX7310_AD_MODE
-        elif reg_name in ['4', 't', "timeout"]:
+        elif reg_name in ['4','0x04', 't', "timeout"]:
             reg_addr = MAX7310_AD_TIMEOUT
         else:
             print(f"Not a valid register: {reg_name}")
