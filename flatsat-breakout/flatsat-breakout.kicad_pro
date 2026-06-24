@@ -61,7 +61,7 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.0,
+          "min_clearance": 0.2,
           "min_island_area": 10.0,
           "min_thickness": 0.127,
           "pad_connection": 1,
@@ -560,7 +560,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "flatsat-breakout-main.kicad_pro",
+    "filename": "flatsat-breakout.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -967,8 +967,8 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "flatsat-breakout-main.kicad_sch",
-        "name": "flatsat-breakout-main",
+        "filename": "flatsat-breakout.kicad_sch",
+        "name": "flatsat-breakout",
         "uuid": "1685d9f1-2e37-4073-a34f-2675ab2d0a11"
       }
     ],
