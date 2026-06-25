@@ -18,8 +18,10 @@ urlcolor: blue
 
 ## Board Description
 
-The OreSat FlatSat Breakout Board attaches all OreSat cards to the OreSat FlatSat assembly. It requires a 40 pin 
-ribbon cable to provide the FlatSat "backplane".
+The OreSat FlatSat Breakout Board attaches all OreSat cards to the OreSat FlatSat assembly. 
+
+This board requires a series of 10 cm (4 in) or 15 cm (6 in) long 40 pin ribbon cables to 
+provide the FlatSat "backplane". Suggested cable part numbers are in the schematic.
 
 ## Documentation Links
 
@@ -131,6 +133,9 @@ ribbon cable to provide the FlatSat "backplane".
 
 - All components are on the top side of the board.
 - This PCBA uses both surface mount (SMT) and through-hole (THT) components.
+- Hand assembly notes
+   - Do not try and hand-solder the right-angle card connector! It will not hand-solder reliably. Use a solder stencil and reflow at least that connector.
+   
 
 ## Assembly Requirements
 
