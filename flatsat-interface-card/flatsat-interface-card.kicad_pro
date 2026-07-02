@@ -671,7 +671,7 @@
         "uuid": "1a9202c4-e698-4c93-952c-ee3e64e9e49c"
       }
     ],
-    "used_designators": "U2",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
@@ -681,11 +681,15 @@
     ],
     [
       "9e3e06f8-887b-42f5-9213-500926d830e9",
-      "Power and Measurement"
+      "Power and OPD"
     ],
     [
       "49d3c6f5-cb2f-4549-b410-01196e0c3050",
-      "Interfaces"
+      "Bus Interfaces"
+    ],
+    [
+      "ad201ad7-0b68-497a-9bd5-92d5158f3b08",
+      "Measurement"
     ]
   ],
   "text_variables": {},
