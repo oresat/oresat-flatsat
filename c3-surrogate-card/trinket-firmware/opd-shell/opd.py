@@ -8,6 +8,7 @@ debug = True  # Prints message for every register read and write.  Set to false 
 
 # see https://docs.google.com/spreadsheets/d/1JS7-zUmwoZT049liGybgThh3jqxo8DjF8rsd_qzp3mU/edit#gid=13315181
 # ADCS address is 0x1A
+OPD_I2C_ADDRESS_PROTO         = 0x10
 OPD_I2C_ADDRESS_DIODE         = 0x11
 OPD_I2C_ADDRESS_BATTERY_1     = 0x18
 OPD_I2C_ADDRESS_GPS           = 0x19
@@ -37,21 +38,22 @@ OPD_BOOT0                  = 5
 OPD_LINUX_BOOT             = 6
 OPD_UART_EN                = 7 
 
-opd_table = [
-    ['diode-test',   OPD_I2C_ADDRESS_DIODE],
-    ['battery-1',    OPD_I2C_ADDRESS_BATTERY_1],
-    ['gps',          OPD_I2C_ADDRESS_GPS],
-    ['adcs',         OPD_I2C_ADDRESS_ADCS],
-    ['dxwifi',       OPD_I2C_ADDRESS_DXWIFI],
-    ['star-tracker', OPD_I2C_ADDRESS_STAR_TRACKER],
-    ['battery-2',    OPD_I2C_ADDRESS_BATTERY_2],
-    ['cfc-octavo',   OPD_I2C_ADDRESS_CFC_OCTAVO],
-    ['cfc-sensor',   OPD_I2C_ADDRESS_CFC_SENSOR],
-    ['rw1',          OPD_I2C_ADDRESS_RW1],
-    ['rw2',          OPD_I2C_ADDRESS_RW2],
-    ['rw3',          OPD_I2C_ADDRESS_RW3],
-    ['rw4',          OPD_I2C_ADDRESS_RW4]
-]
+opd_dict = {
+    'proto:':       OPD_I2C_ADDRESS_PROTO,
+    'diode-test':   OPD_I2C_ADDRESS_DIODE,
+    'battery-1':    OPD_I2C_ADDRESS_BATTERY_1,
+    'gps':          OPD_I2C_ADDRESS_GPS,
+    'adcs':         OPD_I2C_ADDRESS_ADCS,
+    'dxwifi':       OPD_I2C_ADDRESS_DXWIFI,
+    'star-tracker': OPD_I2C_ADDRESS_STAR_TRACKER,
+    'battery-2':    OPD_I2C_ADDRESS_BATTERY_2,
+    'cfc-octavo':   OPD_I2C_ADDRESS_CFC_OCTAVO,
+    'cfc-sensor':   OPD_I2C_ADDRESS_CFC_SENSOR,
+    'rw1':          OPD_I2C_ADDRESS_RW1,
+    'rw2':          OPD_I2C_ADDRESS_RW2,
+    'rw3':          OPD_I2C_ADDRESS_RW3,
+    'rw4':          OPD_I2C_ADDRESS_RW4
+}
 
 commands = ["help", "scan", "enable", "disable", "reset", "status", "debug",
             "probe","read", "write",
@@ -60,16 +62,36 @@ commands = ["help", "scan", "enable", "disable", "reset", "status", "debug",
 ######################### HELPERS ##############################
 
 def print_help():
+    print(
+    '''
+    C3S OPD System
+    enable   Turn on the OPD system power (only with no C3 connected!)
+    disable  Turn off the OPD system power
+    scan     Look for MAX7310s on the I2C bus (only after power is on)
+    reset    Cycle the OPD system power
+    status   Report on the power status of the OPD system power
 
-    print("")
-    print("-----------------------")
-    print("Commands:")
-    for cmd in commands:
-        print("  ", end="")
-        print(cmd)
-    # for row in opd_table:
-    #     print("  opd [enable|disable] " + row[0])
-    print("-----------------------")
+    MAX7310 Registers
+    <address>	Sets the MAX7310 address you’re controlling
+    <register> Reads the register. Valid registers are configuration (c), input (i), output (o), polarity (p), timeout (t).
+    <register> <value> writes the register
+
+    debug    Turn on and off debug messages 
+    probe    Check if the current address has a MAX7310 that is responding
+
+    OPD Node Commands
+    node         Sets address of the OPD node and sets up initial values
+    on           Turns on the node (set ON/nOFF to 1)
+    off          Turns off the node (set ON/nOFF to 0)
+    check        Checks the nFAULT pin (0 = circuit breaker is tripped)
+    retry        Tries to reset the OPD (pulses CB-RESET) 
+    serialon     Connects the Node’s UART to the C3-UART lines
+    serialoff    Disconnects the NODe’S UART from the C3-UART lines
+    boothigh     Sets BOOT0/BOOTCFG/BOOTSEL to 1
+    bootlow      Sets BOOT0/BOOTCFG/BOOTSEL to 0
+    bootrelease  Floats BOOT0/BOOTCFG/BOOTSEL
+    ''')
+
     return
 
 def set_bit(value, bit):
@@ -221,7 +243,10 @@ class C3Surrogate:
         # Sets device address for subsequent commands
 
         if addr_str is not None:
-            self.address = int(addr_str, 0)
+            if addr_str in opd_dict.keys():  # check if node label in opd dictionary               
+                self.address = opd_dict[addr_str]
+            else: # assume it is a number and convert to integer
+                self.address = int(addr_str, 0)
               
         # check device found at new address
         # otherwise set to None (no address set)
@@ -284,7 +309,7 @@ class C3Surrogate:
         # returns contents of register as a hex string
 
         reg_addr = self.get_register_address(reg_name)
-                   
+
         try:
             value = self.i2c_read_reg(int(max_addr_str,0), reg_addr)
             print(f"Address {max_addr_str} : Reg 0x{reg_addr:02x} = 0x{value}")
@@ -366,8 +391,9 @@ class C3Surrogate:
     #     return
 
     # Node commands
-    def node(self, addr):
-        self.max_address(addr)
+    def node(self, addr_str):
+        # addr is a string that can be a node label or an address (hex or dec)
+        self.max_address(addr_str)
 
         # Sets the direction to 0b0010 0100
         self.config = 0b00100100
