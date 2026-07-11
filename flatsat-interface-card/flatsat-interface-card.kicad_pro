@@ -628,7 +628,15 @@
         "SPARE21",
         "SPARE22",
         "SPARE31",
-        "SPARE32"
+        "SPARE32",
+        "OPD_SDA",
+        "OPD_SCL",
+        "OPD_PWR",
+        "CAN1_H",
+        "CAN1_L",
+        "C3-UART-TX",
+        "C3-UART-RX",
+        "~{SD}"
       ]
     },
     "connection_grid_size": 50.0,
@@ -671,7 +679,7 @@
         "uuid": "1a9202c4-e698-4c93-952c-ee3e64e9e49c"
       }
     ],
-    "used_designators": "",
+    "used_designators": "J5,#PWR19,U9,F1-2,#VBUS8-12,TP22-29,R7-10",
     "variants": []
   },
   "sheets": [
