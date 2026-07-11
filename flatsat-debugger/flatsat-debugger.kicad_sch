@@ -6696,7 +6696,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "untitled.kicad_sch"
+		(property "Sheetfile" "opd.kicad_sch"
 			(at 276.86 196.1646 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6888,7 +6888,7 @@
 			(color 255 229 191 1)
 		)
 		(uuid "ad201ad7-0b68-497a-9bd5-92d5158f3b08")
-		(property "Sheetname" "OPD"
+		(property "Sheetname" "opd"
 			(at 204.47 160.5784 0)
 			(show_name no)
 			(do_not_autoplace no)
