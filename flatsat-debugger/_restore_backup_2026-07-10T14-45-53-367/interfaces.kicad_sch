@@ -1593,34 +1593,20 @@
 	)
 	(text "flatsat/host side"
 		(exclude_from_sim no)
-		(at 59.69 24.384 0)
+		(at 59.944 27.432 0)
 		(effects
 			(font
 				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
 			)
 		)
 		(uuid "3bfb0977-f266-4a10-be4f-36b7003a9f3f")
 	)
-	(text "Change name to match footprint"
-		(exclude_from_sim no)
-		(at 255.27 37.338 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "9a588719-637d-4101-a998-b8521c3aa2e8")
-	)
 	(text "card side"
 		(exclude_from_sim no)
-		(at 229.616 23.622 0)
+		(at 232.156 26.924 0)
 		(effects
 			(font
 				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
 			)
 		)
 		(uuid "db3e8aa8-d379-4b82-905b-5197e75ebdde")
@@ -1644,6 +1630,12 @@
 			)
 		)
 		(uuid "f9569411-b99f-45ff-9a01-c829237dbf2d")
+	)
+	(junction
+		(at 189.23 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "03af1a06-e838-4eff-bec1-2f4d349afec7")
 	)
 	(junction
 		(at 220.98 125.73)
@@ -1676,22 +1668,10 @@
 		(uuid "0e76dc63-fff7-4f35-bd8e-491cd07327ee")
 	)
 	(junction
-		(at 68.58 67.31)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "14e87e4b-8f81-4c6e-bedb-52e44f3c6996")
-	)
-	(junction
 		(at 68.58 105.41)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "16e3e7d4-c1c6-4bc6-b557-673aa8acb452")
-	)
-	(junction
-		(at 220.98 72.39)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "29bb946e-6fbc-42f6-b0a6-63b90906c43e")
 	)
 	(junction
 		(at 68.58 123.19)
@@ -1712,12 +1692,6 @@
 		(uuid "3edffaf4-f9de-4de0-8e08-e569433dc284")
 	)
 	(junction
-		(at 82.55 125.73)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "41de5613-3998-423c-8de9-50242180752d")
-	)
-	(junction
 		(at 82.55 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1736,10 +1710,10 @@
 		(uuid "554a36cc-5ac7-4f6b-8a08-fdf15b4b81e8")
 	)
 	(junction
-		(at 68.58 77.47)
+		(at 68.58 67.31)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "5621e014-e2e0-45f1-bb52-b3bf8770980b")
+		(uuid "5ea2eed8-6338-4c92-aef2-2007c84af193")
 	)
 	(junction
 		(at 220.98 107.95)
@@ -1752,12 +1726,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6cba24c4-f24d-4ee4-bfc9-719f987a83c7")
-	)
-	(junction
-		(at 88.9 130.81)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "707e501e-a395-400f-8505-152aab5c72c9")
 	)
 	(junction
 		(at 82.55 49.53)
@@ -1778,12 +1746,6 @@
 		(uuid "74077589-a577-4115-9a6b-053c18842514")
 	)
 	(junction
-		(at 220.98 67.31)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7706eeff-cfb9-4b66-aef6-b41a9d585f4a")
-	)
-	(junction
 		(at 83.82 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1796,28 +1758,22 @@
 		(uuid "7c1a41f6-c8f0-4469-abbc-e2342b0017d8")
 	)
 	(junction
-		(at 68.58 72.39)
+		(at 220.98 67.31)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "7f949e8f-9b55-47b0-9695-dd37e66e68de")
+		(uuid "7d6b5af0-f84f-464f-80a4-e5c9a4c0a0ca")
 	)
 	(junction
-		(at 144.78 77.47)
+		(at 218.44 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "93158f74-29f1-4664-942c-72da81e3f65d")
+		(uuid "7fc85484-8592-4b70-be4a-5348fab83693")
 	)
 	(junction
-		(at 82.55 123.19)
+		(at 71.12 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "9cd31de3-1632-4522-b135-7419d473fe70")
-	)
-	(junction
-		(at 88.9 133.35)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9d3238a5-a83b-4a58-a443-2fceeabc4b14")
+		(uuid "86add25d-ad91-4a0c-8e7c-cc7045a9ac0f")
 	)
 	(junction
 		(at 82.55 59.69)
@@ -1836,12 +1792,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a07f08de-2cbb-49b0-9114-7b7ceb20959a")
-	)
-	(junction
-		(at 214.63 102.87)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a489ee9b-46b7-4cd1-bfbe-3f2eacde6640")
 	)
 	(junction
 		(at 68.58 102.87)
@@ -1872,12 +1822,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b836c388-881b-45f7-bda4-0d6c747fe9c4")
-	)
-	(junction
-		(at 88.9 138.43)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bb0f6b04-f018-4202-ba5b-376ca59ec766")
 	)
 	(junction
 		(at 68.58 100.33)
@@ -1928,6 +1872,18 @@
 		(uuid "de30f091-741b-4bcc-a833-929103cc4d9e")
 	)
 	(junction
+		(at 220.98 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e0b03bb2-64f9-449b-9f7b-d8158594bc7b")
+	)
+	(junction
+		(at 100.33 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e536bbc4-26fe-461c-a6e3-2924eededbb1")
+	)
+	(junction
 		(at 82.55 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1940,16 +1896,16 @@
 		(uuid "e7d63658-2bc0-4616-8014-8429be0037cd")
 	)
 	(junction
-		(at 220.98 77.47)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e950d756-76f5-4483-81ed-4d4a00dcb219")
-	)
-	(junction
 		(at 68.58 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f2feb817-f7c3-4fff-9856-ec26dbda5a0f")
+	)
+	(junction
+		(at 68.58 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f5f70c31-2594-4fda-94f6-5bc07c950777")
 	)
 	(junction
 		(at 68.58 138.43)
@@ -1968,15 +1924,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fd5a2df9-2c2e-4fa7-9d13-10de512773cd")
-	)
-	(bus_entry
-		(at 189.23 120.65)
-		(size 2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1459d52e-410c-46ca-9f50-81102ca718bc")
 	)
 	(bus_entry
 		(at 189.23 52.07)
@@ -2015,15 +1962,6 @@
 		(uuid "32b97d86-750b-4417-a49e-9aa074fe4fe5")
 	)
 	(bus_entry
-		(at 189.23 130.81)
-		(size 2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "37e012a9-6f0a-4737-90de-402742d1e410")
-	)
-	(bus_entry
 		(at 100.33 44.45)
 		(size -2.54 2.54)
 		(stroke
@@ -2033,42 +1971,6 @@
 		(uuid "3a6a1f03-09ea-4d7f-9fe3-d36189739ee3")
 	)
 	(bus_entry
-		(at 100.33 135.89)
-		(size -2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3ddae773-838e-4f38-a747-811ceca134c1")
-	)
-	(bus_entry
-		(at 100.33 74.93)
-		(size -2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4e1735ca-ab67-436e-be28-0f936f8a57dc")
-	)
-	(bus_entry
-		(at 100.33 69.85)
-		(size -2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4fe10a09-e48d-4d02-bf49-7374cc070396")
-	)
-	(bus_entry
-		(at 100.33 64.77)
-		(size -2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "51f378d5-efcf-4083-a942-93e1407187b1")
-	)
-	(bus_entry
 		(at 100.33 115.57)
 		(size -2.54 2.54)
 		(stroke
@@ -2076,15 +1978,6 @@
 			(type default)
 		)
 		(uuid "53e4b7bb-8551-4c3d-9225-591a4fa4c48a")
-	)
-	(bus_entry
-		(at 189.23 123.19)
-		(size 2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "541dae68-166a-4650-b465-1b1af7a2c5e9")
 	)
 	(bus_entry
 		(at 189.23 44.45)
@@ -2112,24 +2005,6 @@
 			(type default)
 		)
 		(uuid "629eae84-4149-489b-aea9-992ac629e10c")
-	)
-	(bus_entry
-		(at 100.33 130.81)
-		(size -2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "65a921ca-d7f8-4256-ae4e-53a75669fe90")
-	)
-	(bus_entry
-		(at 100.33 128.27)
-		(size -2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "66b59d1c-e426-45ab-8852-22e98416ede6")
 	)
 	(bus_entry
 		(at 100.33 36.83)
@@ -2168,15 +2043,6 @@
 		(uuid "8058bde5-daf3-4e6e-b120-f78442a1cdec")
 	)
 	(bus_entry
-		(at 100.33 123.19)
-		(size -2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "80a1f28d-3540-4383-9486-c7e79654a977")
-	)
-	(bus_entry
 		(at 100.33 82.55)
 		(size -2.54 2.54)
 		(stroke
@@ -2193,15 +2059,6 @@
 			(type default)
 		)
 		(uuid "81c24623-a182-4b64-8b77-05807d0af2e6")
-	)
-	(bus_entry
-		(at 100.33 120.65)
-		(size -2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "88950c23-c17b-4c79-8bc3-126b606dafec")
 	)
 	(bus_entry
 		(at 189.23 115.57)
@@ -2229,15 +2086,6 @@
 			(type default)
 		)
 		(uuid "95172ec1-d770-48c9-9895-9c41be3dddd8")
-	)
-	(bus_entry
-		(at 189.23 135.89)
-		(size 2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "95d1e8fc-d807-4136-9e41-d06ca3eb765e")
 	)
 	(bus_entry
 		(at 100.33 80.01)
@@ -2285,24 +2133,6 @@
 		(uuid "cbec5d88-f167-4388-9346-86b8b9b95c31")
 	)
 	(bus_entry
-		(at 189.23 128.27)
-		(size 2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d4835e45-102f-4a4e-b9e4-68adcacf4201")
-	)
-	(bus_entry
-		(at 189.23 69.85)
-		(size 2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d552f8dc-4a1c-468a-b7ff-7a4a720ab43e")
-	)
-	(bus_entry
 		(at 100.33 59.69)
 		(size -2.54 2.54)
 		(stroke
@@ -2328,15 +2158,6 @@
 			(type default)
 		)
 		(uuid "de351075-8cd4-49a6-aacd-3308623d3d5d")
-	)
-	(bus_entry
-		(at 189.23 74.93)
-		(size 2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e566f378-34cc-4d50-a955-7f7289528d48")
 	)
 	(bus_entry
 		(at 189.23 46.99)
@@ -2374,15 +2195,6 @@
 		)
 		(uuid "f0cf647f-ffce-45d9-b787-ec7bc9d20209")
 	)
-	(bus_entry
-		(at 189.23 64.77)
-		(size 2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f6238273-1a19-458a-8a0b-34ce38467b3a")
-	)
 	(wire
 		(pts
 			(xy 191.77 59.69) (xy 224.79 59.69)
@@ -2392,16 +2204,6 @@
 			(type default)
 		)
 		(uuid "01166df4-3d7d-4142-b152-e6de0c59ed2f")
-	)
-	(bus
-		(pts
-			(xy 144.78 77.47) (xy 189.23 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0293d28d-e3da-4640-a74f-48f8d827c564")
 	)
 	(wire
 		(pts
@@ -2465,16 +2267,6 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 72.39) (xy 220.98 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0a177b23-9c4a-4edf-a335-f386942a4e0f")
-	)
-	(wire
-		(pts
 			(xy 191.77 90.17) (xy 224.79 90.17)
 		)
 		(stroke
@@ -2515,7 +2307,7 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 102.87) (xy 214.63 102.87)
+			(xy 209.55 102.87) (xy 220.98 102.87)
 		)
 		(stroke
 			(width 0)
@@ -2545,6 +2337,16 @@
 	)
 	(wire
 		(pts
+			(xy 220.98 67.31) (xy 207.01 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1db683a9-afee-4263-b889-19917f8c3281")
+	)
+	(wire
+		(pts
 			(xy 68.58 80.01) (xy 68.58 82.55)
 		)
 		(stroke
@@ -2562,6 +2364,16 @@
 			(type default)
 		)
 		(uuid "223181d6-6f1f-4488-bf3c-7da9e96f8332")
+	)
+	(wire
+		(pts
+			(xy 220.98 138.43) (xy 224.79 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "224c014e-72d7-4a3b-abe4-fda13d958329")
 	)
 	(wire
 		(pts
@@ -2625,6 +2437,16 @@
 	)
 	(wire
 		(pts
+			(xy 218.44 74.93) (xy 218.44 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "330c1842-242e-46c4-96e6-26637cad8719")
+	)
+	(wire
+		(pts
 			(xy 80.01 105.41) (xy 80.01 107.95)
 		)
 		(stroke
@@ -2643,6 +2465,16 @@
 		)
 		(uuid "36c8bac3-3fd7-4657-a589-5c04fd2c1084")
 	)
+	(bus
+		(pts
+			(xy 100.33 77.47) (xy 189.23 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "373b8d77-9d04-4053-bb97-ece983a1028c")
+	)
 	(wire
 		(pts
 			(xy 220.98 107.95) (xy 220.98 110.49)
@@ -2652,6 +2484,16 @@
 			(type default)
 		)
 		(uuid "389b2477-cb6f-44e7-a6dd-dd9581adb737")
+	)
+	(wire
+		(pts
+			(xy 220.98 125.73) (xy 213.36 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3989dbcc-5b19-4b11-a82e-115cc3a4d649")
 	)
 	(wire
 		(pts
@@ -2675,16 +2517,6 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 133.35) (xy 224.79 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3c665da4-f2bb-4ea6-ab6e-bce933e50095")
-	)
-	(wire
-		(pts
 			(xy 76.2 102.87) (xy 80.01 102.87)
 		)
 		(stroke
@@ -2692,6 +2524,16 @@
 			(type default)
 		)
 		(uuid "3ca779b1-acc1-41c7-aa26-7263e804c0a3")
+	)
+	(bus
+		(pts
+			(xy 100.33 77.47) (xy 100.33 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e1c8872-b465-412d-8568-b41e9fe97511")
 	)
 	(wire
 		(pts
@@ -2715,6 +2557,16 @@
 	)
 	(wire
 		(pts
+			(xy 218.44 72.39) (xy 207.01 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40df91d4-8285-448f-8564-57cecf2b30fb")
+	)
+	(wire
+		(pts
 			(xy 64.77 105.41) (xy 68.58 105.41)
 		)
 		(stroke
@@ -2725,7 +2577,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 123.19) (xy 82.55 123.19)
+			(xy 68.58 123.19) (xy 76.2 123.19)
 		)
 		(stroke
 			(width 0)
@@ -2815,13 +2667,23 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 77.47) (xy 97.79 77.47)
+			(xy 220.98 138.43) (xy 213.36 138.43)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4c2435a8-e2ce-4a0f-96e6-f1347bc6c649")
+		(uuid "4ddd8ade-570f-49c8-9f1c-ad3b08d702d7")
+	)
+	(bus
+		(pts
+			(xy 189.23 77.47) (xy 189.23 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4df8dad6-5c65-4f27-8e69-d3a15c5611a4")
 	)
 	(wire
 		(pts
@@ -2843,15 +2705,15 @@
 		)
 		(uuid "4f265d99-8b72-4728-a539-578236ac7eef")
 	)
-	(bus
+	(wire
 		(pts
-			(xy 144.78 77.47) (xy 144.78 83.82)
+			(xy 220.98 69.85) (xy 207.01 69.85)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4f79b821-b112-4b4a-a29e-8854464fa8c2")
+		(uuid "507d64e1-5686-401a-b3d3-09e8b8bae3c8")
 	)
 	(wire
 		(pts
@@ -2905,26 +2767,6 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 72.39) (xy 220.98 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5a662ae5-8f79-41a7-956d-2ca68d53f287")
-	)
-	(wire
-		(pts
-			(xy 88.9 133.35) (xy 97.79 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5d548253-51e0-4421-8ef9-9044c544f087")
-	)
-	(wire
-		(pts
 			(xy 64.77 54.61) (xy 82.55 54.61)
 		)
 		(stroke
@@ -2945,16 +2787,6 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 77.47) (xy 220.98 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5e325b28-f029-4d0f-879b-04134b550747")
-	)
-	(wire
-		(pts
 			(xy 68.58 138.43) (xy 64.77 138.43)
 		)
 		(stroke
@@ -2972,6 +2804,16 @@
 			(type default)
 		)
 		(uuid "5f0fc841-a765-4dae-80d8-75a2e5b7c6d2")
+	)
+	(wire
+		(pts
+			(xy 71.12 72.39) (xy 82.55 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62d24bd1-5bba-432e-80f6-98db45d4ea42")
 	)
 	(wire
 		(pts
@@ -3015,17 +2857,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 125.73) (xy 97.79 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "70b790e6-7847-43b2-8899-02b04e0b6016")
-	)
-	(wire
-		(pts
-			(xy 68.58 138.43) (xy 88.9 138.43)
+			(xy 68.58 138.43) (xy 76.2 138.43)
 		)
 		(stroke
 			(width 0)
@@ -3085,7 +2917,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 125.73) (xy 82.55 125.73)
+			(xy 68.58 125.73) (xy 76.2 125.73)
 		)
 		(stroke
 			(width 0)
@@ -3115,13 +2947,13 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 102.87) (xy 220.98 102.87)
+			(xy 224.79 130.81) (xy 213.36 130.81)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "81f07015-390c-43e1-b1ce-87be5b78ddd5")
+		(uuid "8365ee16-b820-42e4-8b10-06446c441415")
 	)
 	(wire
 		(pts
@@ -3165,7 +2997,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 72.39) (xy 97.79 72.39)
+			(xy 68.58 69.85) (xy 82.55 69.85)
 		)
 		(stroke
 			(width 0)
@@ -3245,7 +3077,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 74.93) (xy 68.58 74.93)
+			(xy 64.77 74.93) (xy 71.12 74.93)
 		)
 		(stroke
 			(width 0)
@@ -3275,26 +3107,6 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 138.43) (xy 97.79 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "98e844ed-c6f8-4f07-90d9-6d47c277e479")
-	)
-	(wire
-		(pts
-			(xy 88.9 130.81) (xy 97.79 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "99802072-59ab-49ca-8a70-6169d9725031")
-	)
-	(wire
-		(pts
 			(xy 220.98 102.87) (xy 224.79 102.87)
 		)
 		(stroke
@@ -3302,16 +3114,6 @@
 			(type default)
 		)
 		(uuid "9ad89bad-95d6-4be8-968f-8033e888a9cd")
-	)
-	(wire
-		(pts
-			(xy 82.55 123.19) (xy 97.79 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9cb15155-b326-418e-869c-d0de7c067ef4")
 	)
 	(wire
 		(pts
@@ -3345,23 +3147,13 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 74.93) (xy 220.98 74.93)
+			(xy 224.79 74.93) (xy 218.44 74.93)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "a1a3c945-456f-4be1-9aed-eb72e5461b3c")
-	)
-	(wire
-		(pts
-			(xy 220.98 74.93) (xy 220.98 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a1ab239b-acfb-467e-94e6-d2b42fa3715f")
 	)
 	(wire
 		(pts
@@ -3372,6 +3164,16 @@
 			(type default)
 		)
 		(uuid "a2262f7e-d06e-4340-b75c-03b3e02149d7")
+	)
+	(wire
+		(pts
+			(xy 220.98 72.39) (xy 220.98 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a25e5c3c-cceb-45d6-8426-ab18249e008b")
 	)
 	(wire
 		(pts
@@ -3433,16 +3235,6 @@
 		)
 		(uuid "af2da622-8fee-4ef3-a53e-56477035e746")
 	)
-	(bus
-		(pts
-			(xy 143.51 83.82) (xy 144.78 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b2251247-2290-4a4c-8b3b-afa2098509ab")
-	)
 	(wire
 		(pts
 			(xy 191.77 57.15) (xy 224.79 57.15)
@@ -3495,6 +3287,16 @@
 	)
 	(wire
 		(pts
+			(xy 220.98 123.19) (xy 213.36 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "babf8080-1c69-46ee-9354-6b4a446c7b38")
+	)
+	(wire
+		(pts
 			(xy 64.77 107.95) (xy 68.58 107.95)
 		)
 		(stroke
@@ -3515,23 +3317,23 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 130.81) (xy 224.79 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "be57cc32-879a-44c9-82fa-c86aa8ec2eb8")
-	)
-	(wire
-		(pts
-			(xy 64.77 133.35) (xy 88.9 133.35)
+			(xy 64.77 133.35) (xy 76.2 133.35)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "bf2b629f-f886-43f5-bc64-54f4fba9fdcb")
+	)
+	(wire
+		(pts
+			(xy 71.12 77.47) (xy 71.12 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf4c50b4-5bf3-422c-bab4-2df19583e5fb")
 	)
 	(wire
 		(pts
@@ -3585,7 +3387,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 74.93) (xy 68.58 77.47)
+			(xy 71.12 74.93) (xy 71.12 72.39)
 		)
 		(stroke
 			(width 0)
@@ -3595,17 +3397,7 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 67.31) (xy 220.98 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c9a3ac13-34b2-4013-bb5f-9fdb11bf8222")
-	)
-	(wire
-		(pts
-			(xy 64.77 77.47) (xy 68.58 77.47)
+			(xy 64.77 77.47) (xy 71.12 77.47)
 		)
 		(stroke
 			(width 0)
@@ -3632,16 +3424,6 @@
 			(type default)
 		)
 		(uuid "cbe8d19f-160c-4b44-b266-87a8222e5abd")
-	)
-	(wire
-		(pts
-			(xy 191.77 123.19) (xy 220.98 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cc66f248-d5d6-4171-8e59-676030590ac8")
 	)
 	(wire
 		(pts
@@ -3775,7 +3557,7 @@
 	)
 	(bus
 		(pts
-			(xy 189.23 36.83) (xy 189.23 135.89)
+			(xy 189.23 36.83) (xy 189.23 77.47)
 		)
 		(stroke
 			(width 0)
@@ -3805,13 +3587,23 @@
 	)
 	(bus
 		(pts
-			(xy 100.33 59.69) (xy 100.33 135.89)
+			(xy 100.33 59.69) (xy 100.33 77.47)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "e086d8ea-15c0-4c10-a1a3-d050f1b170e3")
+	)
+	(wire
+		(pts
+			(xy 218.44 77.47) (xy 218.44 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e30700ed-6579-41d1-8ca7-a309af4344e9")
 	)
 	(wire
 		(pts
@@ -3885,23 +3677,13 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 130.81) (xy 88.9 130.81)
+			(xy 64.77 130.81) (xy 76.2 130.81)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "e779bdc3-3640-4e93-83f0-a892fb281e79")
-	)
-	(wire
-		(pts
-			(xy 191.77 138.43) (xy 224.79 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e8a55b92-182f-4c1a-9075-e6a2c66dcce4")
 	)
 	(wire
 		(pts
@@ -3975,6 +3757,16 @@
 	)
 	(wire
 		(pts
+			(xy 224.79 133.35) (xy 213.36 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa875b9f-533b-4629-96ea-32bcd47ad834")
+	)
+	(wire
+		(pts
 			(xy 64.77 87.63) (xy 68.58 87.63)
 		)
 		(stroke
@@ -3985,7 +3777,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 67.31) (xy 97.79 67.31)
+			(xy 68.58 67.31) (xy 82.55 67.31)
 		)
 		(stroke
 			(width 0)
@@ -3993,29 +3785,9 @@
 		)
 		(uuid "fd1d2c8c-922f-49bd-b8ba-65979bd04bde")
 	)
-	(bus
-		(pts
-			(xy 100.33 77.47) (xy 144.78 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fde2ef42-4888-4040-bc42-483b87c8058a")
-	)
 	(wire
 		(pts
-			(xy 191.77 125.73) (xy 220.98 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fdf7d850-1426-45fb-ba4c-06ebb1910952")
-	)
-	(wire
-		(pts
-			(xy 224.79 77.47) (xy 220.98 77.47)
+			(xy 224.79 77.47) (xy 218.44 77.47)
 		)
 		(stroke
 			(width 0)
@@ -4034,12 +3806,12 @@
 		(uuid "06994348-d851-47a2-bea1-049824892b9c")
 	)
 	(label "SPARE6"
-		(at 203.2 52.07 0)
+		(at 208.28 52.07 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "073db1ae-0b67-4794-aafd-921de24d23fd")
 	)
@@ -4063,53 +3835,13 @@
 		)
 		(uuid "0e24a39f-b43e-4f47-9b36-ef36c1794da0")
 	)
-	(label "CAN1_L"
-		(at 72.39 125.73 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "17d3d1aa-6ef6-4712-85ed-32a22fc0cca8")
-	)
-	(label "OPD_SDA"
-		(at 72.39 67.31 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "19bcd380-7b93-4e8d-a589-3f66b9de808b")
-	)
-	(label "CAN1_L"
-		(at 203.2 125.73 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1b6cb3ae-f377-465f-a6d0-ab010318d0f0")
-	)
-	(label "~{SD}"
-		(at 203.2 138.43 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1f228087-5a55-40df-a6b2-55acb2136710")
-	)
 	(label "SPARE8"
-		(at 203.2 57.15 0)
+		(at 208.28 57.15 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "1fd627d3-1db1-4ab7-b3d9-52777be32aac")
 	)
@@ -4123,16 +3855,6 @@
 		)
 		(uuid "259fea05-f60a-4189-8e48-1c70bf7444a9")
 	)
-	(label "OPD_SDA"
-		(at 203.2 67.31 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "31e20167-c7dc-4013-a49a-f854790696d5")
-	)
 	(label "SPARE4"
 		(at 66.04 46.99 0)
 		(effects
@@ -4143,33 +3865,23 @@
 		)
 		(uuid "3978f7c4-f012-4e80-add1-63c3c25a46bc")
 	)
-	(label "~{SD}"
-		(at 72.39 138.43 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3b40b1ff-c3b0-45dd-97f8-40f214845646")
-	)
 	(label "CAN2_H"
-		(at 203.2 82.55 0)
+		(at 207.01 82.55 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "4173c20b-6a81-4fbf-ba47-3a114555b2ed")
 	)
 	(label "SPARE4"
-		(at 203.2 46.99 0)
+		(at 208.28 46.99 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "4c055f5c-1488-4e42-a60c-78a5bd2265d7")
 	)
@@ -4184,12 +3896,12 @@
 		(uuid "4c564161-9100-45dc-a082-69fc3e4bf468")
 	)
 	(label "CAN2_L"
-		(at 203.2 85.09 0)
+		(at 207.01 85.09 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "4c9a1a22-9492-47e5-aa80-349c82d646fc")
 	)
@@ -4212,56 +3924,6 @@
 			(justify left bottom)
 		)
 		(uuid "50d1deaf-89d5-4d42-805d-169e2ba081f9")
-	)
-	(label "OPD_SCL"
-		(at 203.2 72.39 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "5165906f-54f6-40ef-aef0-78150290bc0a")
-	)
-	(label "CAN1_H"
-		(at 203.2 123.19 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "582bed81-aa2e-4104-a927-e72c8e17b429")
-	)
-	(label "OPD_SCL"
-		(at 73.66 72.39 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "5f51242f-6639-46bb-9c62-9979240f61a4")
-	)
-	(label "C3-UART-RX"
-		(at 203.2 133.35 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "6a6e5827-9647-4d04-9431-8a718e116a15")
-	)
-	(label "OPD_PWR"
-		(at 73.66 77.47 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "74f1754c-f4f9-479e-a86c-0ee09af5b1ca")
 	)
 	(label "SPARE5"
 		(at 66.04 49.53 0)
@@ -4294,27 +3956,27 @@
 		(uuid "8802c878-a449-4b2d-a090-f170ee989f64")
 	)
 	(label "SPARE7"
-		(at 203.2 54.61 0)
+		(at 208.28 54.61 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "9317eb08-7956-47b5-9048-747e3e1a16c7")
 	)
 	(label "SPARE3"
-		(at 203.2 44.45 0)
+		(at 208.28 44.45 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "9b3183a0-4955-4384-b696-dd2c5c70e884")
 	)
 	(label "SPARE31"
-		(at 212.09 115.57 180)
+		(at 219.71 115.57 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4324,7 +3986,7 @@
 		(uuid "9cc63a5a-4f73-4641-abb2-8f358058c922")
 	)
 	(label "SPARE32"
-		(at 212.09 118.11 180)
+		(at 219.71 118.11 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4332,26 +3994,6 @@
 			(justify right bottom)
 		)
 		(uuid "a700d971-75c9-44d0-9e85-c9d3f95696e9")
-	)
-	(label "CAN1_H"
-		(at 72.39 123.19 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a8e4a5ad-2546-42f9-94f1-13d5ce18cf31")
-	)
-	(label "C3-UART-TX"
-		(at 72.39 130.81 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b0926664-e909-441a-a73f-4177e0b03b0d")
 	)
 	(label "CAN2_L"
 		(at 69.85 85.09 0)
@@ -4362,16 +4004,6 @@
 			(justify left bottom)
 		)
 		(uuid "b380a39a-ada3-41db-9bc8-bce3bdd769b0")
-	)
-	(label "C3-UART-TX"
-		(at 203.2 130.81 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b5d9e652-18d0-42ca-a646-67de440c32b4")
 	)
 	(label "SPARE7"
 		(at 66.04 54.61 0)
@@ -4393,16 +4025,6 @@
 		)
 		(uuid "bfa7a4db-411b-45fd-b7b6-32e6a02342a5")
 	)
-	(label "C3-UART-RX"
-		(at 72.39 133.35 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c4de18e7-2b21-48e0-9a16-9cc07698d803")
-	)
 	(label "SPARE21"
 		(at 212.09 90.17 180)
 		(effects
@@ -4414,24 +4036,14 @@
 		(uuid "dd170636-dec8-4d24-b0a1-be757dd1b736")
 	)
 	(label "SPARE5"
-		(at 203.2 49.53 0)
+		(at 208.28 49.53 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "decc8f4e-7f0b-480a-aaf3-6331403321c5")
-	)
-	(label "OPD_PWR"
-		(at 203.2 77.47 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e31ba2ae-3680-443f-9a9d-02955604b3af")
 	)
 	(label "SPARE22"
 		(at 69.85 92.71 0)
@@ -4444,12 +4056,12 @@
 		(uuid "e85446a7-0242-4dee-add9-e8baa2994e84")
 	)
 	(label "SPARE1"
-		(at 203.2 39.37 0)
+		(at 208.28 39.37 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "eea0a086-a682-4ba4-aec4-2bae1b1e3e13")
 	)
@@ -4464,22 +4076,22 @@
 		(uuid "f281c71e-2d1c-46a0-97af-53ac3059cd1c")
 	)
 	(label "SPARE9"
-		(at 203.2 59.69 0)
+		(at 208.28 59.69 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "f2f9e3a3-1f16-461d-a809-6c5ad80ea93a")
 	)
 	(label "SPARE10"
-		(at 203.2 62.23 0)
+		(at 208.28 62.23 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "f86125f1-d7f5-47a5-9e74-c092a8ea5956")
 	)
@@ -4493,42 +4105,67 @@
 		)
 		(uuid "fc38357b-071a-453c-9dfd-af16526d7283")
 	)
-	(hierarchical_label "backplane"
+	(global_label "C3-UART-RX"
 		(shape input)
-		(at 143.51 83.82 180)
+		(at 213.36 133.35 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "91436872-344a-412b-a07d-39372b48a793")
-	)
-	(symbol
-		(lib_id "oresat_stuff:Test-Point-0.75mm-th")
-		(at 88.9 133.35 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "00bf8444-fa9d-4011-bd3c-bb2c3939dc3a")
-		(property "Reference" "TP27"
-			(at 91.44 133.3499 0)
+		(uuid "042e667f-f5e5-4966-bcf3-8d372afd0189")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 197.6143 133.35 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.0795)
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "~{SD}"
+		(shape input)
+		(at 76.2 138.43 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "048fdc0f-8214-41c1-867f-b6025b454fd0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 81.6647 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 				(justify left)
 			)
 		)
-		(property "Value" "Test-Point"
-			(at 88.9 125.73 0)
+	)
+	(global_label "C3-UART-TX"
+		(shape input)
+		(at 76.2 130.81 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "12ea1004-f81d-48d1-b949-41867de59f37")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 91.6433 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4536,10 +4173,23 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "oresat-misc:TestPoint-0.75mm-th"
-			(at 88.9 123.19 0)
+	)
+	(global_label "C3-UART-RX"
+		(shape input)
+		(at 76.2 133.35 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6c771b9a-ef3d-4dc8-b30a-6b2303fe518d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 91.9457 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4547,10 +4197,23 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Datasheet" ""
-			(at 88.9 133.35 0)
+	)
+	(global_label "OPD_SCL"
+		(shape input)
+		(at 82.55 69.85 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "76c5f767-2991-41c0-b618-c8f87f4f82e5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 93.8809 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4558,10 +4221,23 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Description" "0.75 mm TH test point; good for scope probes and jumpers"
-			(at 88.9 133.35 0)
+	)
+	(global_label "CAN1_H"
+		(shape input)
+		(at 213.36 123.19 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7e97ddb5-be2f-4f1f-9753-503e48b07217")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 203.1781 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4569,17 +4245,247 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(pin "1"
-			(uuid "545f7b03-8f34-4dc0-95e5-bb001136799e")
+	)
+	(global_label "OPD_PWR"
+		(shape input)
+		(at 82.55 72.39 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
 		)
-		(instances
-			(project "flatsat-interface-card"
-				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/49d3c6f5-cb2f-4549-b410-01196e0c3050"
-					(reference "TP27")
-					(unit 1)
+		(uuid "a10c283c-570d-4780-98d6-efb27b67e4f9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 94.3647 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "CAN1_L"
+		(shape input)
+		(at 213.36 125.73 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ac5aed1e-bf4b-4191-9914-57ebfb5df2d5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 203.4805 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "~{SD}"
+		(shape input)
+		(at 213.36 138.43 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "afd8b281-b304-4f2d-9333-c4382957b38e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 207.8953 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "OPD_SDA"
+		(shape input)
+		(at 207.01 67.31 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b2695ef2-20dc-4b53-a66a-102c87fb3fb1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 195.6186 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "OPD_SCL"
+		(shape input)
+		(at 207.01 69.85 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "bbcd08df-b9f2-4a08-8e39-1744f85dc320")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 195.6791 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "CAN1_L"
+		(shape input)
+		(at 76.2 125.73 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c13e0544-2107-420b-9e66-ebf5b9a49cfe")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 86.0795 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "OPD_SDA"
+		(shape input)
+		(at 82.55 67.31 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c3019526-4eed-4e4f-9e4d-0c9d4502fd3f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 93.9414 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "C3-UART-TX"
+		(shape input)
+		(at 213.36 130.81 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c8a796d4-9c0a-482a-98b6-acd556955187")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 197.9167 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "OPD_PWR"
+		(shape input)
+		(at 207.01 72.39 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ea564a95-b429-4977-bae3-1075c78d582b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 195.1953 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "CAN1_H"
+		(shape input)
+		(at 76.2 123.19 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fbfb234b-ef0d-4102-afa0-8bfbfbc1dea1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 86.3819 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 	)
@@ -4653,7 +4559,7 @@
 			(uuid "c681d68f-2a88-4b32-bd45-5b3ec3c77063")
 		)
 		(instances
-			(project "flatsat-interface-card"
+			(project "flatsat-debugger"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/49d3c6f5-cb2f-4549-b410-01196e0c3050"
 					(reference "TP10")
 					(unit 1)
@@ -4732,7 +4638,7 @@
 			(uuid "5ba5baa5-f016-4cc2-94b3-f945bbc3b82d")
 		)
 		(instances
-			(project "flatsat-interface-card"
+			(project "flatsat-debugger"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/49d3c6f5-cb2f-4549-b410-01196e0c3050"
 					(reference "TP9")
 					(unit 1)
@@ -4762,7 +4668,7 @@
 				)
 			)
 		)
-		(property "Value" "J-SAMTEC-TFM-120-X1-XXX-D-RA"
+		(property "Value" "J-SAMTEC-TFM-120-01-L-D-RA"
 			(at 59.69 34.29 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4926,7 +4832,7 @@
 			(uuid "c21ae48c-58df-416b-95b6-9822d7b42c92")
 		)
 		(instances
-			(project "flatsat-interface-card"
+			(project "flatsat-debugger"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/49d3c6f5-cb2f-4549-b410-01196e0c3050"
 					(reference "J1")
 					(unit 1)
@@ -5005,7 +4911,7 @@
 			(uuid "cb751233-9c90-4cad-933e-52ac3c259a0b")
 		)
 		(instances
-			(project "flatsat-interface-card"
+			(project "flatsat-debugger"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/49d3c6f5-cb2f-4549-b410-01196e0c3050"
 					(reference "TP2")
 					(unit 1)
@@ -5082,7 +4988,7 @@
 			(uuid "380bcf11-a3ae-4fe3-848e-9c4070fb0682")
 		)
 		(instances
-			(project "flatsat-interface-card"
+			(project "flatsat-debugger"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/49d3c6f5-cb2f-4549-b410-01196e0c3050"
 					(reference "#PWR01")
 					(unit 1)
@@ -5160,167 +5066,9 @@
 			(uuid "0a516090-bc53-4696-8d55-8c55e8d371d2")
 		)
 		(instances
-			(project "flatsat-interface-card"
+			(project "flatsat-debugger"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/49d3c6f5-cb2f-4549-b410-01196e0c3050"
 					(reference "TP13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "oresat_stuff:Test-Point-0.75mm-th")
-		(at 88.9 130.81 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4c103058-af70-40f0-ae9a-50a05f3af5bd")
-		(property "Reference" "TP26"
-			(at 91.44 130.8099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.0795)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Test-Point"
-			(at 88.9 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "oresat-misc:TestPoint-0.75mm-th"
-			(at 88.9 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 88.9 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "0.75 mm TH test point; good for scope probes and jumpers"
-			(at 88.9 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "557c9dee-d52e-4ec0-8395-b3af2bec69e8")
-		)
-		(instances
-			(project "flatsat-interface-card"
-				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/49d3c6f5-cb2f-4549-b410-01196e0c3050"
-					(reference "TP26")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "oresat_stuff:Test-Point-0.75mm-th")
-		(at 82.55 123.19 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5179fc23-d405-4b3d-8aa3-d76ab54ce8ae")
-		(property "Reference" "TP24"
-			(at 85.09 123.1899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.0795)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Test-Point"
-			(at 82.55 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "oresat-misc:TestPoint-0.75mm-th"
-			(at 82.55 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 82.55 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "0.75 mm TH test point; good for scope probes and jumpers"
-			(at 82.55 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7588f40c-ccee-4c6f-b34b-5623375a1817")
-		)
-		(instances
-			(project "flatsat-interface-card"
-				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/49d3c6f5-cb2f-4549-b410-01196e0c3050"
-					(reference "TP24")
 					(unit 1)
 				)
 			)
@@ -5396,7 +5144,7 @@
 			(uuid "eb472666-49cf-4892-82eb-02c92361724e")
 		)
 		(instances
-			(project "flatsat-interface-card"
+			(project "flatsat-debugger"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/49d3c6f5-cb2f-4549-b410-01196e0c3050"
 					(reference "TP11")
 					(unit 1)
@@ -5475,7 +5223,7 @@
 			(uuid "f450c3ff-bd13-4051-b990-e9e4124acb8d")
 		)
 		(instances
-			(project "flatsat-interface-card"
+			(project "flatsat-debugger"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/49d3c6f5-cb2f-4549-b410-01196e0c3050"
 					(reference "TP6")
 					(unit 1)
@@ -5553,7 +5301,7 @@
 			(uuid "0340bd81-60a9-4d7d-90fe-7769a5127280")
 		)
 		(instances
-			(project "flatsat-interface-card"
+			(project "flatsat-debugger"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/49d3c6f5-cb2f-4549-b410-01196e0c3050"
 					(reference "#VBUS02")
 					(unit 1)
@@ -5632,7 +5380,7 @@
 			(uuid "0c94cff1-457e-47c6-b738-1bbfdaf42a31")
 		)
 		(instances
-			(project "flatsat-interface-card"
+			(project "flatsat-debugger"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/49d3c6f5-cb2f-4549-b410-01196e0c3050"
 					(reference "TP7")
 					(unit 1)
@@ -5711,7 +5459,7 @@
 			(uuid "7404cc73-a87d-4af4-a9b0-752dfbda00a0")
 		)
 		(instances
-			(project "flatsat-interface-card"
+			(project "flatsat-debugger"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/49d3c6f5-cb2f-4549-b410-01196e0c3050"
 					(reference "TP8")
 					(unit 1)
@@ -5789,88 +5537,9 @@
 			(uuid "1c823a74-6f79-420c-b04b-eabb7f0011e2")
 		)
 		(instances
-			(project "flatsat-interface-card"
+			(project "flatsat-debugger"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/49d3c6f5-cb2f-4549-b410-01196e0c3050"
 					(reference "TP14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "oresat_stuff:Test-Point-0.75mm-th")
-		(at 88.9 138.43 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "80fd9eb0-e065-41a7-9eaf-2841618ffa8d")
-		(property "Reference" "TP28"
-			(at 91.44 138.4299 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.0795)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Test-Point"
-			(at 88.9 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "oresat-misc:TestPoint-0.75mm-th"
-			(at 88.9 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 88.9 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "0.75 mm TH test point; good for scope probes and jumpers"
-			(at 88.9 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "071ec5b7-56cd-4e04-b03f-3802beec1ba0")
-		)
-		(instances
-			(project "flatsat-interface-card"
-				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/49d3c6f5-cb2f-4549-b410-01196e0c3050"
-					(reference "TP28")
 					(unit 1)
 				)
 			)
@@ -5946,7 +5615,7 @@
 			(uuid "5038299d-d8e1-4ae2-8a14-74b4a011380c")
 		)
 		(instances
-			(project "flatsat-interface-card"
+			(project "flatsat-debugger"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/49d3c6f5-cb2f-4549-b410-01196e0c3050"
 					(reference "#PWR02")
 					(unit 1)
@@ -6024,7 +5693,7 @@
 			(uuid "097b507c-acfc-4e8a-a907-10e986143a95")
 		)
 		(instances
-			(project "flatsat-interface-card"
+			(project "flatsat-debugger"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/49d3c6f5-cb2f-4549-b410-01196e0c3050"
 					(reference "TP15")
 					(unit 1)
@@ -6103,7 +5772,7 @@
 			(uuid "caa49f3e-91ed-4517-9de8-14aed9827d49")
 		)
 		(instances
-			(project "flatsat-interface-card"
+			(project "flatsat-debugger"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/49d3c6f5-cb2f-4549-b410-01196e0c3050"
 					(reference "TP5")
 					(unit 1)
@@ -6182,7 +5851,7 @@
 			(uuid "a314e1f4-6406-4a03-b927-895e65179e17")
 		)
 		(instances
-			(project "flatsat-interface-card"
+			(project "flatsat-debugger"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/49d3c6f5-cb2f-4549-b410-01196e0c3050"
 					(reference "TP1")
 					(unit 1)
@@ -6261,7 +5930,7 @@
 			(uuid "252699ac-83ba-4278-b78a-e327460fa0ab")
 		)
 		(instances
-			(project "flatsat-interface-card"
+			(project "flatsat-debugger"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/49d3c6f5-cb2f-4549-b410-01196e0c3050"
 					(reference "TP4")
 					(unit 1)
@@ -6338,7 +6007,7 @@
 			(uuid "35e88c0e-7ba5-4d07-a285-4059b45d9972")
 		)
 		(instances
-			(project "flatsat-interface-card"
+			(project "flatsat-debugger"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/49d3c6f5-cb2f-4549-b410-01196e0c3050"
 					(reference "#VBUS01")
 					(unit 1)
@@ -6416,7 +6085,7 @@
 			(uuid "228ebd02-3edb-4e1a-9e1e-db4d53a5ecc2")
 		)
 		(instances
-			(project "flatsat-interface-card"
+			(project "flatsat-debugger"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/49d3c6f5-cb2f-4549-b410-01196e0c3050"
 					(reference "TP16")
 					(unit 1)
@@ -6494,7 +6163,7 @@
 			(uuid "9b8e16b6-e782-471d-8614-03856c8f519b")
 		)
 		(instances
-			(project "flatsat-interface-card"
+			(project "flatsat-debugger"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/49d3c6f5-cb2f-4549-b410-01196e0c3050"
 					(reference "TP12")
 					(unit 1)
@@ -6572,7 +6241,7 @@
 			(uuid "f923a042-726b-45d6-be96-990faa7a25ad")
 		)
 		(instances
-			(project "flatsat-interface-card"
+			(project "flatsat-debugger"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/49d3c6f5-cb2f-4549-b410-01196e0c3050"
 					(reference "TP17")
 					(unit 1)
@@ -6603,8 +6272,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "SFM-120-02-X-DH"
-			(at 217.932 33.528 0)
+		(property "Value" "J-SAMTEC-TFM-120-01-L-D-RA"
+			(at 211.074 33.528 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6614,7 +6283,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "oresat-connectors:SFM-120-02-X-DH"
+		(property "Footprint" "oresat-connectors:J-SAMTEC-TFM-120-X1-XXX-D-RA"
 			(at 229.87 24.13 0)
 			(hide yes)
 			(show_name no)
@@ -6768,166 +6437,9 @@
 			(uuid "b56b72ab-8f00-4257-8cc4-6f83fcdd6acf")
 		)
 		(instances
-			(project "flatsat-interface-card"
+			(project "flatsat-debugger"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/49d3c6f5-cb2f-4549-b410-01196e0c3050"
 					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "oresat_stuff:Test-Point-0.75mm-th")
-		(at 214.63 102.87 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "f565c6da-8b15-4a27-9f8a-60c5a02970fc")
-		(property "Reference" "TP29"
-			(at 212.852 100.584 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.0795)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Test-Point"
-			(at 214.63 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "oresat-misc:TestPoint-0.75mm-th"
-			(at 214.63 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 214.63 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "0.75 mm TH test point; good for scope probes and jumpers"
-			(at 214.63 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1a5664ed-e84c-4eea-b59f-a1eb09d588b4")
-		)
-		(instances
-			(project "flatsat-interface-card"
-				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/49d3c6f5-cb2f-4549-b410-01196e0c3050"
-					(reference "TP29")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "oresat_stuff:Test-Point-0.75mm-th")
-		(at 82.55 125.73 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f7f41dfe-3290-4bb6-8885-3bf6d2bad505")
-		(property "Reference" "TP25"
-			(at 85.09 125.7299 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.0795)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Test-Point"
-			(at 82.55 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "oresat-misc:TestPoint-0.75mm-th"
-			(at 82.55 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 82.55 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "0.75 mm TH test point; good for scope probes and jumpers"
-			(at 82.55 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "270450e9-ac0d-4483-83c9-95a073ff821f")
-		)
-		(instances
-			(project "flatsat-interface-card"
-				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/49d3c6f5-cb2f-4549-b410-01196e0c3050"
-					(reference "TP25")
 					(unit 1)
 				)
 			)
@@ -7004,7 +6516,7 @@
 			(uuid "372abfa1-862f-41db-9725-d275b9428d71")
 		)
 		(instances
-			(project "flatsat-interface-card"
+			(project "flatsat-debugger"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/49d3c6f5-cb2f-4549-b410-01196e0c3050"
 					(reference "TP3")
 					(unit 1)
