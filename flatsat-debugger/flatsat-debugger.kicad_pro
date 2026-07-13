@@ -691,7 +691,7 @@
         "uuid": "1a9202c4-e698-4c93-952c-ee3e64e9e49c"
       }
     ],
-    "used_designators": "#3V1,C2,J1-5,#PWR1-2,#PWR5,#PWR7-9,#PWR12,#PWR19-20,Q6,U2,U9,F1-2,#VBUS1-2,#VBUS4,#VBUS8-12,TP1-17,TP22-29,R1-3,R7-23",
+    "used_designators": "#3V1,D2-3,C2,C6,J1-5,#PWR1-2,#PWR5,#PWR7-9,#PWR12,#PWR19-21,Q6,U2,U9,F1-2,#VBUS1-2,#VBUS4,#VBUS8-16,TP1-17,TP22-29,R1-3,R7-23",
     "variants": []
   },
   "sheets": [

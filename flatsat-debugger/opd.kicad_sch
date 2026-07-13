@@ -725,16 +725,6 @@
 		)
 		(uuid "1687d151-5e9e-44ee-b253-7995e1ea8437")
 	)
-	(text "current sensing"
-		(exclude_from_sim no)
-		(at 164.592 191.516 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "4f49fba5-90f4-4898-85d8-bb6042a27313")
-	)
 	(text "A0\n"
 		(exclude_from_sim no)
 		(at 240.792 81.788 0)
@@ -814,10 +804,10 @@
 		(uuid "37acfb25-726e-4377-88f8-6a8f61f5dc99")
 	)
 	(junction
-		(at 170.18 186.69)
+		(at 162.56 149.86)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "3e9e218d-5b88-4405-8016-231999d01de4")
+		(uuid "4ca27727-be1f-47f9-a152-248b8c56870c")
 	)
 	(junction
 		(at 203.2 149.86)
@@ -850,12 +840,6 @@
 		(uuid "9883cd0b-0a84-4f5c-8ac6-5950b7632bd7")
 	)
 	(junction
-		(at 157.48 186.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a8b0c6a4-ba02-478a-9f7d-b8c26a6a7768")
-	)
-	(junction
 		(at 220.98 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -878,12 +862,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d11a71b5-c87d-48db-9404-f0647e4275d2")
-	)
-	(junction
-		(at 162.56 149.86)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fad562a9-3ff8-4e14-9306-30773e10ea74")
 	)
 	(wire
 		(pts
@@ -927,26 +905,6 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 152.4) (xy 167.64 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0e1ed85b-faf1-4d0a-a772-3d6e2a013e23")
-	)
-	(wire
-		(pts
-			(xy 147.32 186.69) (xy 157.48 186.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "21661a25-7e97-435b-995c-074cc46994ae")
-	)
-	(wire
-		(pts
 			(xy 232.41 120.65) (xy 232.41 139.7)
 		)
 		(stroke
@@ -964,6 +922,16 @@
 			(type default)
 		)
 		(uuid "2a3bd1d6-95ac-4224-99ac-b7c55be47d79")
+	)
+	(wire
+		(pts
+			(xy 152.4 149.86) (xy 162.56 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30249a88-9813-408c-8c3a-bef46ed710ff")
 	)
 	(wire
 		(pts
@@ -1007,13 +975,13 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 170.18) (xy 157.48 186.69)
+			(xy 152.4 152.4) (xy 167.64 152.4)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "39fb3364-6cb0-4ee3-ae00-1bf1478e814e")
+		(uuid "39aeae4d-4c22-4db4-bfaa-1c9110c7cd8b")
 	)
 	(wire
 		(pts
@@ -1047,16 +1015,6 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 149.86) (xy 162.56 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4218c4a1-a129-4607-8c0b-e1e16822f5c4")
-	)
-	(wire
-		(pts
 			(xy 236.22 120.65) (xy 238.76 120.65)
 		)
 		(stroke
@@ -1084,16 +1042,6 @@
 			(type default)
 		)
 		(uuid "53faf260-db11-4c42-9b85-867f5a94a2d1")
-	)
-	(wire
-		(pts
-			(xy 157.48 186.69) (xy 161.29 186.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "58d45a49-f6dd-4f77-94f8-ba8294082dff")
 	)
 	(wire
 		(pts
@@ -1127,16 +1075,6 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 182.88) (xy 147.32 186.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5f54a729-6601-4265-9241-5b4a6446203a")
-	)
-	(wire
-		(pts
 			(xy 203.2 86.36) (xy 203.2 149.86)
 		)
 		(stroke
@@ -1154,16 +1092,6 @@
 			(type default)
 		)
 		(uuid "609512d7-96f1-4867-9d8b-f675e73d4928")
-	)
-	(wire
-		(pts
-			(xy 170.18 170.18) (xy 165.1 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "63c07229-7632-4bfa-89d1-34e8db3ad5b7")
 	)
 	(wire
 		(pts
@@ -1377,16 +1305,6 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 186.69) (xy 170.18 186.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b38063d7-fbed-4938-86a5-9d962388aa2b")
-	)
-	(wire
-		(pts
 			(xy 246.38 97.79) (xy 243.84 97.79)
 		)
 		(stroke
@@ -1404,26 +1322,6 @@
 			(type default)
 		)
 		(uuid "b8c1b94f-b3c6-416e-b130-02271e69ea1c")
-	)
-	(wire
-		(pts
-			(xy 165.1 170.18) (xy 165.1 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b9600ec2-e491-4f51-8c12-08841a0df783")
-	)
-	(wire
-		(pts
-			(xy 180.34 182.88) (xy 180.34 186.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c7a430c9-d422-4f48-9461-c4c00fd43f4b")
 	)
 	(wire
 		(pts
@@ -1507,16 +1405,6 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 170.18) (xy 170.18 186.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ec8e003b-c646-497b-886b-03496934f892")
-	)
-	(wire
-		(pts
 			(xy 246.38 120.65) (xy 243.84 120.65)
 		)
 		(stroke
@@ -1534,26 +1422,6 @@
 			(type default)
 		)
 		(uuid "f0fc4839-7284-4e71-9bbc-d5bd02e3f967")
-	)
-	(wire
-		(pts
-			(xy 170.18 186.69) (xy 180.34 186.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f876f52c-ffa7-4290-a3d5-4518939a2090")
-	)
-	(wire
-		(pts
-			(xy 162.56 170.18) (xy 157.48 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fa5a3254-990c-4069-a89f-fa86660a396e")
 	)
 	(wire
 		(pts
@@ -1586,6 +1454,28 @@
 			(justify left)
 		)
 		(uuid "6bee6e93-5cc7-4f35-b276-d82ba41bcd35")
+	)
+	(hierarchical_label "Vin-"
+		(shape input)
+		(at 152.4 152.4 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6f9e6866-54f2-4e09-9431-1ad44dbdb42c")
+	)
+	(hierarchical_label "Vin+"
+		(shape input)
+		(at 152.4 149.86 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "924c2405-68a9-4242-987d-34d2aa7b3d42")
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
@@ -1904,84 +1794,6 @@
 			(project "flatsat-debugger"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/8aa56671-39c3-4bed-b52c-69096fb4cc26"
 					(reference "#PWR09")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "oresat_stuff:VBUS")
-		(at 180.34 182.88 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5f4f6e52-4818-4509-b40d-886da0267d1e")
-		(property "Reference" "#VBUS012"
-			(at 180.34 186.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VBUS_CARD"
-			(at 180.34 177.8 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 180.34 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 180.34 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 180.34 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1314d344-87ff-426a-bac5-2153b301f3e9")
-		)
-		(instances
-			(project "flatsat-debugger"
-				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/8aa56671-39c3-4bed-b52c-69096fb4cc26"
-					(reference "#VBUS012")
 					(unit 1)
 				)
 			)
@@ -2414,84 +2226,6 @@
 		)
 	)
 	(symbol
-		(lib_id "oresat_stuff:VBUS")
-		(at 147.32 182.88 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ce5a9b63-8787-45cb-8f53-a9952e697644")
-		(property "Reference" "#VBUS011"
-			(at 147.32 186.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VBUS_HOST"
-			(at 147.32 177.8 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 147.32 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 147.32 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 147.32 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "cddfcdbb-9afc-4159-a0e0-b03096f62a10")
-		)
-		(instances
-			(project "flatsat-debugger"
-				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/8aa56671-39c3-4bed-b52c-69096fb4cc26"
-					(reference "#VBUS011")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small_US")
 		(at 241.3 109.22 270)
 		(unit 1)
@@ -2649,86 +2383,6 @@
 			(project "flatsat-debugger"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/8aa56671-39c3-4bed-b52c-69096fb4cc26"
 					(reference "R20")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 163.83 186.69 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ebb4e121-74f5-41f9-a1db-da83a6060a31")
-		(property "Reference" "R1"
-			(at 163.83 180.34 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10m"
-			(at 163.83 182.88 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "oresat-passives:1206-B"
-			(at 163.83 186.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 163.83 186.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "CSR1206-0R01F1"
-			(at 163.83 186.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9ea52a1c-9f5d-4252-9f39-3801c05a0081")
-		)
-		(pin "2"
-			(uuid "82b1ba31-ad64-4b26-8675-8fb543c2ed1a")
-		)
-		(instances
-			(project "flatsat-debugger"
-				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/8aa56671-39c3-4bed-b52c-69096fb4cc26"
-					(reference "R1")
 					(unit 1)
 				)
 			)
