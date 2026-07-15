@@ -52,25 +52,66 @@
         "zones": {
           "border_display_style": 2,
           "border_hatch_pitch": 0.5,
-          "corner_radius": 0.0,
-          "corner_smoothing": 0,
+          "corner_radius": 0.2,
+          "corner_smoothing": 2,
           "fill_mode": 0,
           "hatch_gap": 1.5,
           "hatch_orientation": 0.0,
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.5,
+          "min_clearance": 0.2,
           "min_island_area": 10.0,
-          "min_thickness": 0.25,
-          "pad_connection": 1,
-          "remove_islands": 0,
-          "thermal_relief_gap": 0.5,
+          "min_thickness": 0.127,
+          "pad_connection": 2,
+          "remove_islands": 1,
+          "thermal_relief_gap": 0.127,
           "thermal_relief_spoke_width": 0.5
         }
       },
       "diff_pair_dimensions": [],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "clearance|153050500|98905500|c85aa7ae-8688-4a76-972c-ee04155000b2|e6afa8e2-25aa-4e53-b5f6-94d94ce614f3",
+          ""
+        ],
+        [
+          "clearance|153050500|99405500|e6afa8e2-25aa-4e53-b5f6-94d94ce614f3|da0c6592-3710-4f12-ab88-beec5a781bd2",
+          ""
+        ],
+        [
+          "clearance|153050500|99905500|da0c6592-3710-4f12-ab88-beec5a781bd2|ea5e8598-42a5-419c-853f-328fa9df1de0",
+          ""
+        ],
+        [
+          "clearance|155850500|99230500|b96e03d2-9e01-436d-97f7-3f5dfc846d9b|704ad1ff-abd4-463d-8412-e3c0036085a4",
+          ""
+        ],
+        [
+          "clearance|155850500|99730500|5ca73749-b0e2-4c8e-839d-6254888c7b6a|b96e03d2-9e01-436d-97f7-3f5dfc846d9b",
+          ""
+        ],
+        [
+          "clearance|155850500|99905500|5ca73749-b0e2-4c8e-839d-6254888c7b6a|1ec018d7-e410-4f45-8968-c8f882b13e4e",
+          ""
+        ],
+        [
+          "hole_clearance|132467800|96399850|10d2a366-bb27-4be2-9d7f-17e7546b1671|21ab4525-75fb-4eba-9d25-1860f4151b10",
+          ""
+        ],
+        [
+          "hole_clearance|132467800|96399850|1231721f-461a-4dbe-8ae6-4fb2178a0ec8|21ab4525-75fb-4eba-9d25-1860f4151b10",
+          ""
+        ],
+        [
+          "hole_clearance|138567800|96399850|457e931f-2190-48b0-9e04-58b574b782b8|8937d2bf-8391-40d2-8dc3-6cbe8881e5c0",
+          ""
+        ],
+        [
+          "hole_clearance|138567800|96399850|ccf6035b-0799-45e6-af14-39276db1cd43|8937d2bf-8391-40d2-8dc3-6cbe8881e5c0",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
