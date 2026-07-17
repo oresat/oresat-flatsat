@@ -1227,7 +1227,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/ce1de586-e04d-4a38-ac40-189ab9f07a69")
 		(sheetname "/")
-		(sheetfile "flatsat-debugger.kicad_sch")
+		(sheetfile "flatsat-power-pal.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -2726,7 +2726,7 @@
 		)
 		(path "/9710b710-cfbf-4012-9e87-e4af8c0cb7ab")
 		(sheetname "/")
-		(sheetfile "flatsat-debugger.kicad_sch")
+		(sheetfile "flatsat-power-pal.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -3336,7 +3336,7 @@
 		(property ki_fp_filters "BarrelJack*")
 		(path "/32b5be51-89ab-4c33-9499-5248e94bdc91")
 		(sheetname "/")
-		(sheetfile "flatsat-debugger.kicad_sch")
+		(sheetfile "flatsat-power-pal.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -5089,7 +5089,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/bb16d46f-37cc-45ba-9850-01f7577c6ff0")
 		(sheetname "/")
-		(sheetfile "flatsat-debugger.kicad_sch")
+		(sheetfile "flatsat-power-pal.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -5353,7 +5353,7 @@
 		)
 		(path "/69d7c4df-48b4-4a83-b729-558c5d1087f1")
 		(sheetname "/")
-		(sheetfile "flatsat-debugger.kicad_sch")
+		(sheetfile "flatsat-power-pal.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -6338,7 +6338,7 @@
 		)
 		(path "/29b77123-891a-4d61-989a-83ddd9ad6c8b")
 		(sheetname "/")
-		(sheetfile "flatsat-debugger.kicad_sch")
+		(sheetfile "flatsat-power-pal.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -7114,7 +7114,7 @@
 		)
 		(path "/c6400b9b-2e8b-460c-98af-1d8bf5693978")
 		(sheetname "/")
-		(sheetfile "flatsat-debugger.kicad_sch")
+		(sheetfile "flatsat-power-pal.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -8225,7 +8225,7 @@
 		)
 		(path "/374d08b9-c985-4f6c-a969-733f6a37d01c")
 		(sheetname "/")
-		(sheetfile "flatsat-debugger.kicad_sch")
+		(sheetfile "flatsat-power-pal.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -10228,7 +10228,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/bc67920c-2a7c-41a5-b741-6fabf7863674")
 		(sheetname "/")
-		(sheetfile "flatsat-debugger.kicad_sch")
+		(sheetfile "flatsat-power-pal.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -10437,7 +10437,7 @@
 		)
 		(path "/b4f1c4aa-e572-4bdd-ab28-74954ff62a5e")
 		(sheetname "/")
-		(sheetfile "flatsat-debugger.kicad_sch")
+		(sheetfile "flatsat-power-pal.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -11827,7 +11827,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/55b187e6-46dc-47d4-95f7-4f55ad95e6c9")
 		(sheetname "/")
-		(sheetfile "flatsat-debugger.kicad_sch")
+		(sheetfile "flatsat-power-pal.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -12911,7 +12911,7 @@
 		)
 		(path "/4cefc358-0a80-4f97-991b-f794f9a85b3d")
 		(sheetname "/")
-		(sheetfile "flatsat-debugger.kicad_sch")
+		(sheetfile "flatsat-power-pal.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -13010,7 +13010,7 @@
 		)
 		(path "/601647f1-5c45-48de-b5ce-c0af19c4c5b4")
 		(sheetname "/")
-		(sheetfile "flatsat-debugger.kicad_sch")
+		(sheetfile "flatsat-power-pal.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -15548,7 +15548,7 @@
 		(property ki_fp_filters "USB*C*Receptacle*")
 		(path "/d77b2cbb-d6f5-42bc-bf47-aa0de5ecdec6")
 		(sheetname "/")
-		(sheetfile "flatsat-debugger.kicad_sch")
+		(sheetfile "flatsat-power-pal.kicad_sch")
 		(units
 			(unit
 				(name "A")

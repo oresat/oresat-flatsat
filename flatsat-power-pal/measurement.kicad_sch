@@ -4169,7 +4169,7 @@
 			(uuid "e96c5109-acd8-4172-a571-e978b27db6c2")
 		)
 		(instances
-			(project "flatsat-debugger"
+			(project "flatsat-power-pal"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/ad201ad7-0b68-497a-9bd5-92d5158f3b08"
 					(reference "R5")
 					(unit 1)
@@ -4263,7 +4263,7 @@
 			(uuid "1f945b64-0e0b-47b5-837f-30a9025bfc73")
 		)
 		(instances
-			(project "flatsat-debugger"
+			(project "flatsat-power-pal"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/ad201ad7-0b68-497a-9bd5-92d5158f3b08"
 					(reference "U8")
 					(unit 1)
@@ -4341,7 +4341,7 @@
 			(uuid "ab5cc2d3-51c4-40dd-9f01-c2ccc3869cec")
 		)
 		(instances
-			(project "flatsat-debugger"
+			(project "flatsat-power-pal"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/ad201ad7-0b68-497a-9bd5-92d5158f3b08"
 					(reference "TP23")
 					(unit 1)
@@ -4444,7 +4444,7 @@
 			(uuid "dde5ced9-49e6-4296-8fc7-31f93593a418")
 		)
 		(instances
-			(project "flatsat-debugger"
+			(project "flatsat-power-pal"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/ad201ad7-0b68-497a-9bd5-92d5158f3b08"
 					(reference "U7")
 					(unit 1)
@@ -4526,7 +4526,7 @@
 			(uuid "e994a557-e7ac-475e-b352-314d0bdbcf23")
 		)
 		(instances
-			(project "flatsat-debugger"
+			(project "flatsat-power-pal"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/ad201ad7-0b68-497a-9bd5-92d5158f3b08"
 					(reference "C3")
 					(unit 1)
@@ -4607,7 +4607,7 @@
 			(uuid "6c6b2bd2-b34b-4e1b-8d10-8d51a8786909")
 		)
 		(instances
-			(project "flatsat-debugger"
+			(project "flatsat-power-pal"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/ad201ad7-0b68-497a-9bd5-92d5158f3b08"
 					(reference "R12")
 					(unit 1)
@@ -4685,7 +4685,7 @@
 			(uuid "1cacb153-9ff6-4589-8e83-e47ce56501fb")
 		)
 		(instances
-			(project "flatsat-debugger"
+			(project "flatsat-power-pal"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/ad201ad7-0b68-497a-9bd5-92d5158f3b08"
 					(reference "#PWR021")
 					(unit 1)
@@ -4763,7 +4763,7 @@
 			(uuid "e6e89c56-3df3-412b-ac8c-ced3c9730fa1")
 		)
 		(instances
-			(project "flatsat-debugger"
+			(project "flatsat-power-pal"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/ad201ad7-0b68-497a-9bd5-92d5158f3b08"
 					(reference "#VBUS05")
 					(unit 1)
@@ -4843,7 +4843,7 @@
 			(uuid "e26c4355-9205-44f4-9929-befc4035d26e")
 		)
 		(instances
-			(project "flatsat-debugger"
+			(project "flatsat-power-pal"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/ad201ad7-0b68-497a-9bd5-92d5158f3b08"
 					(reference "C5")
 					(unit 1)
@@ -4921,7 +4921,7 @@
 			(uuid "bbd1fb1c-a6c8-4bf6-a493-1fa265024f40")
 		)
 		(instances
-			(project "flatsat-debugger"
+			(project "flatsat-power-pal"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/ad201ad7-0b68-497a-9bd5-92d5158f3b08"
 					(reference "#PWR011")
 					(unit 1)
@@ -5002,7 +5002,7 @@
 			(uuid "d9982b71-b78e-44a3-9227-8a157493a98f")
 		)
 		(instances
-			(project "flatsat-debugger"
+			(project "flatsat-power-pal"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/ad201ad7-0b68-497a-9bd5-92d5158f3b08"
 					(reference "C1")
 					(unit 1)
@@ -5117,7 +5117,7 @@
 			(uuid "dcafe6ca-36ed-4fd3-9c60-879ab7de92ff")
 		)
 		(instances
-			(project "flatsat-debugger"
+			(project "flatsat-power-pal"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/ad201ad7-0b68-497a-9bd5-92d5158f3b08"
 					(reference "Q4")
 					(unit 1)
@@ -5194,7 +5194,7 @@
 			(uuid "345b9abc-75fd-45cb-86a8-45167d37698a")
 		)
 		(instances
-			(project "flatsat-debugger"
+			(project "flatsat-power-pal"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/ad201ad7-0b68-497a-9bd5-92d5158f3b08"
 					(reference "#VBUS06")
 					(unit 1)
@@ -5272,7 +5272,7 @@
 			(uuid "82b0ee80-1352-4c6b-a4ac-7195e2162932")
 		)
 		(instances
-			(project "flatsat-debugger"
+			(project "flatsat-power-pal"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/ad201ad7-0b68-497a-9bd5-92d5158f3b08"
 					(reference "#PWR016")
 					(unit 1)
@@ -5354,7 +5354,7 @@
 			(uuid "519f236c-688c-410d-90d0-cc5446c514e4")
 		)
 		(instances
-			(project "flatsat-debugger"
+			(project "flatsat-power-pal"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/ad201ad7-0b68-497a-9bd5-92d5158f3b08"
 					(reference "R4")
 					(unit 1)
@@ -5432,7 +5432,7 @@
 			(uuid "fad4a6ca-c8dc-486a-8d3a-22a15cca2f15")
 		)
 		(instances
-			(project "flatsat-debugger"
+			(project "flatsat-power-pal"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/ad201ad7-0b68-497a-9bd5-92d5158f3b08"
 					(reference "#PWR010")
 					(unit 1)
@@ -5510,7 +5510,7 @@
 			(uuid "25588178-8c4e-4609-9d85-400ca4376c84")
 		)
 		(instances
-			(project "flatsat-debugger"
+			(project "flatsat-power-pal"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/ad201ad7-0b68-497a-9bd5-92d5158f3b08"
 					(reference "#PWR015")
 					(unit 1)
@@ -5588,7 +5588,7 @@
 			(uuid "3367b049-ab50-48de-9fb4-39c4a8741e52")
 		)
 		(instances
-			(project "flatsat-debugger"
+			(project "flatsat-power-pal"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/ad201ad7-0b68-497a-9bd5-92d5158f3b08"
 					(reference "#PWR014")
 					(unit 1)
@@ -5665,7 +5665,7 @@
 			(uuid "4e10dc49-59fd-4481-939e-1e615427bc6d")
 		)
 		(instances
-			(project "flatsat-debugger"
+			(project "flatsat-power-pal"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/ad201ad7-0b68-497a-9bd5-92d5158f3b08"
 					(reference "#VBUS09")
 					(unit 1)
@@ -5747,7 +5747,7 @@
 			(uuid "5ce6db45-00c7-4dcc-af2e-15dd6bbd505d")
 		)
 		(instances
-			(project "flatsat-debugger"
+			(project "flatsat-power-pal"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/ad201ad7-0b68-497a-9bd5-92d5158f3b08"
 					(reference "C6")
 					(unit 1)
@@ -5825,7 +5825,7 @@
 			(uuid "87cfde24-c735-490e-808e-74dba24c5626")
 		)
 		(instances
-			(project "flatsat-debugger"
+			(project "flatsat-power-pal"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/ad201ad7-0b68-497a-9bd5-92d5158f3b08"
 					(reference "TP22")
 					(unit 1)
@@ -5906,7 +5906,7 @@
 			(uuid "0ca8e0b0-717d-411c-97dc-e70106e70ab9")
 		)
 		(instances
-			(project "flatsat-debugger"
+			(project "flatsat-power-pal"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/ad201ad7-0b68-497a-9bd5-92d5158f3b08"
 					(reference "R14")
 					(unit 1)
@@ -5984,7 +5984,7 @@
 			(uuid "f0455518-54c0-4f29-a33d-5b06d88f8aad")
 		)
 		(instances
-			(project "flatsat-debugger"
+			(project "flatsat-power-pal"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/ad201ad7-0b68-497a-9bd5-92d5158f3b08"
 					(reference "#3V01")
 					(unit 1)
@@ -6062,7 +6062,7 @@
 			(uuid "24ca2928-835e-46df-bd59-2514bf6bbde9")
 		)
 		(instances
-			(project "flatsat-debugger"
+			(project "flatsat-power-pal"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/ad201ad7-0b68-497a-9bd5-92d5158f3b08"
 					(reference "#PWR013")
 					(unit 1)
@@ -6140,7 +6140,7 @@
 			(uuid "23176c4c-d616-4eb7-a9fe-69e97b7dd2d8")
 		)
 		(instances
-			(project "flatsat-debugger"
+			(project "flatsat-power-pal"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/ad201ad7-0b68-497a-9bd5-92d5158f3b08"
 					(reference "#PWR017")
 					(unit 1)
@@ -6222,7 +6222,7 @@
 			(uuid "9276dadb-9fc6-4ab2-8bba-2725a2b45540")
 		)
 		(instances
-			(project "flatsat-debugger"
+			(project "flatsat-power-pal"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/ad201ad7-0b68-497a-9bd5-92d5158f3b08"
 					(reference "C4")
 					(unit 1)
@@ -6337,7 +6337,7 @@
 			(uuid "92408f79-4ff9-433a-ba87-2856a476e3a9")
 		)
 		(instances
-			(project "flatsat-debugger"
+			(project "flatsat-power-pal"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/ad201ad7-0b68-497a-9bd5-92d5158f3b08"
 					(reference "U1")
 					(unit 1)
@@ -6418,7 +6418,7 @@
 			(uuid "ebd8a870-aa45-475b-9d05-f3668093bc6c")
 		)
 		(instances
-			(project "flatsat-debugger"
+			(project "flatsat-power-pal"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/ad201ad7-0b68-497a-9bd5-92d5158f3b08"
 					(reference "R13")
 					(unit 1)
@@ -6518,7 +6518,7 @@
 			(uuid "19719b43-8227-41ef-a13b-4c98d542d0de")
 		)
 		(instances
-			(project "flatsat-debugger"
+			(project "flatsat-power-pal"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/ad201ad7-0b68-497a-9bd5-92d5158f3b08"
 					(reference "U5")
 					(unit 1)
@@ -6599,7 +6599,7 @@
 			(uuid "c0a1d52b-500f-4157-a5a9-b076c4a3b0b0")
 		)
 		(instances
-			(project "flatsat-debugger"
+			(project "flatsat-power-pal"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/ad201ad7-0b68-497a-9bd5-92d5158f3b08"
 					(reference "R10")
 					(unit 1)
@@ -6679,7 +6679,7 @@
 			(uuid "893323b7-2949-40a2-805b-e95cd8b45545")
 		)
 		(instances
-			(project "flatsat-debugger"
+			(project "flatsat-power-pal"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/ad201ad7-0b68-497a-9bd5-92d5158f3b08"
 					(reference "L1")
 					(unit 1)
@@ -6760,7 +6760,7 @@
 			(uuid "da4af3ec-ef92-4ea6-a3e6-852be2ab5722")
 		)
 		(instances
-			(project "flatsat-debugger"
+			(project "flatsat-power-pal"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/ad201ad7-0b68-497a-9bd5-92d5158f3b08"
 					(reference "R9")
 					(unit 1)
@@ -6837,7 +6837,7 @@
 			(uuid "8ff394ab-eb2b-43f9-8437-291ad314dd84")
 		)
 		(instances
-			(project "flatsat-debugger"
+			(project "flatsat-power-pal"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/ad201ad7-0b68-497a-9bd5-92d5158f3b08"
 					(reference "#VBUS07")
 					(unit 1)
@@ -6915,7 +6915,7 @@
 			(uuid "bf99cee5-8899-47be-ab7f-45bc9e259be3")
 		)
 		(instances
-			(project "flatsat-debugger"
+			(project "flatsat-power-pal"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/ad201ad7-0b68-497a-9bd5-92d5158f3b08"
 					(reference "#PWR012")
 					(unit 1)
@@ -7007,7 +7007,7 @@
 			(uuid "a270f30d-4225-4737-b64f-2744ba78edc4")
 		)
 		(instances
-			(project "flatsat-debugger"
+			(project "flatsat-power-pal"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/ad201ad7-0b68-497a-9bd5-92d5158f3b08"
 					(reference "D2")
 					(unit 1)
@@ -7109,7 +7109,7 @@
 			(uuid "68d4acf6-5020-43e3-89ca-40c45353c026")
 		)
 		(instances
-			(project "flatsat-debugger"
+			(project "flatsat-power-pal"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/ad201ad7-0b68-497a-9bd5-92d5158f3b08"
 					(reference "U6")
 					(unit 1)
@@ -7202,7 +7202,7 @@
 			(uuid "eec4f4ce-62b4-42cd-96ff-c3afd5d11f04")
 		)
 		(instances
-			(project "flatsat-debugger"
+			(project "flatsat-power-pal"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/ad201ad7-0b68-497a-9bd5-92d5158f3b08"
 					(reference "D1")
 					(unit 1)
@@ -7294,7 +7294,7 @@
 			(uuid "2675ca7c-4701-4163-a724-d6f89473cdf6")
 		)
 		(instances
-			(project "flatsat-debugger"
+			(project "flatsat-power-pal"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/ad201ad7-0b68-497a-9bd5-92d5158f3b08"
 					(reference "D3")
 					(unit 1)

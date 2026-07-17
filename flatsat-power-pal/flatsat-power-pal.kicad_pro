@@ -529,7 +529,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "flatsat-debugger.kicad_pro",
+    "filename": "flatsat-power-pal.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -727,7 +727,7 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "flatsat-debugger.kicad_sch",
+        "filename": "flatsat-power-pal.kicad_sch",
         "name": "Root",
         "uuid": "1a9202c4-e698-4c93-952c-ee3e64e9e49c"
       }
