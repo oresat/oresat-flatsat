@@ -656,12 +656,66 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "DPN",
+          "name": "DPN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MFR",
+          "name": "MFR",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MPN",
+          "name": "MPN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Device",
+          "name": "Sim.Device",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Type",
+          "name": "Sim.Type",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "DIS",
+          "name": "DIS",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -732,7 +786,7 @@
         "uuid": "1a9202c4-e698-4c93-952c-ee3e64e9e49c"
       }
     ],
-    "used_designators": "#3V1,HW1-3,D2-3,C2,C6,J1-5,#PWR1-2,#PWR5,#PWR7-9,#PWR12,#PWR19-22,Q6,U2,U9,F1-2,#VBUS1-2,#VBUS4,#VBUS8-16,TP1-17,TP22-29,R1-3,R7-23",
+    "used_designators": "BZ1,#3V1,#3V7,HW1-3,D1-4,D13,C2,C6-9,J1-5,#PWR1-2,#PWR5-9,#PWR12,#PWR17,#PWR19-27,Q2,Q5-7,U2,U4,U9,F1-2,#VBUS1-2,#VBUS4,#VBUS8-16,TP1-17,TP20-29,R1-3,R5,R7-23,R95",
     "variants": []
   },
   "sheets": [

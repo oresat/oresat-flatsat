@@ -1828,25 +1828,25 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "DC Jack Power"
+		(exclude_from_sim no)
+		(at 167.386 174.498 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "0de43a4f-07ca-430d-aa0f-2518964868d7")
+	)
 	(text "3A fuse"
 		(exclude_from_sim no)
-		(at 299.974 137.668 0)
+		(at 182.626 192.278 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "20bcb11f-1cbe-45fe-b061-eaaab0bee2de")
-	)
-	(text "(6.0, 7.2, 8.0)V @ (,,3)A DC\n"
-		(exclude_from_sim no)
-		(at 315.722 122.428 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "2fc81438-8ca4-468f-a095-4ebfab3deadb")
+		(uuid "229edb81-f7fc-43a2-ad73-5ee4c2f31021")
 	)
 	(text "USB power"
 		(exclude_from_sim no)
@@ -1858,9 +1858,19 @@
 		)
 		(uuid "54baece8-7ae1-4bfd-842d-5afa8e1e5be5")
 	)
+	(text "(6.0, 7.2, 8.0)V @ (,,3)A DC\n"
+		(exclude_from_sim no)
+		(at 166.878 177.038 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "887f6888-113e-4ddc-9fb9-4c7024caed98")
+	)
 	(text "Can be powered by combinations of the barrel jack and usb, sensing requires USB power.\nThe bus voltage this card supplies depends on which power source is used.\n	DC jack only)   (typ) 7V bus, no sensing\n	USB only)       5V bus, sensing\n	USB + jack)     (typ) 7V bus, sensing"
 		(exclude_from_sim no)
-		(at 201.676 185.166 0)
+		(at 251.968 135.89 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1889,16 +1899,6 @@
 		)
 		(uuid "c6b90605-69c7-402c-9272-3c5f207eddc9")
 	)
-	(text "DC Jack Power"
-		(exclude_from_sim no)
-		(at 315.214 119.888 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "e9a4a65b-5bde-4259-9814-9d3d8971a41c")
-	)
 	(text "NOTE! better be able to handle >3.5A\n"
 		(exclude_from_sim no)
 		(at 264.414 80.518 0)
@@ -1922,10 +1922,22 @@
 		(uuid "1a0a5729-f33a-426d-b48f-71cb5d1c5c2a")
 	)
 	(junction
+		(at 241.3 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "21daf7d5-0c8e-4c23-86f3-dd8f0bb218ee")
+	)
+	(junction
 		(at 191.77 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "50d7a580-1a6b-4944-aaef-7209f9fc1ebe")
+	)
+	(junction
+		(at 222.25 189.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "62289966-322a-4139-bb8b-ec3fffbb8dd3")
 	)
 	(junction
 		(at 222.25 134.62)
@@ -1940,22 +1952,10 @@
 		(uuid "8a4339ab-80c5-45f7-b185-fcc6617013f7")
 	)
 	(junction
-		(at 280.67 134.62)
+		(at 201.93 189.23)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b1d06223-aa98-4747-96e5-70c7d6c98f9d")
-	)
-	(junction
-		(at 260.35 134.62)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b8543ea5-2475-4db7-8a8b-4b0cd59c2d4f")
-	)
-	(junction
-		(at 241.3 134.62)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ba55f9c3-17c2-4248-94b1-eadb6be9c9f1")
+		(uuid "b1e0f438-6e64-4f0a-ad48-f17744ee9ce6")
 	)
 	(junction
 		(at 232.41 85.09)
@@ -1991,16 +1991,6 @@
 	)
 	(wire
 		(pts
-			(xy 256.54 158.75) (xy 260.35 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0910214e-a71d-4415-bcdf-342d87a3e6d7")
-	)
-	(wire
-		(pts
 			(xy 199.39 81.28) (xy 199.39 87.63)
 		)
 		(stroke
@@ -2031,6 +2021,16 @@
 	)
 	(wire
 		(pts
+			(xy 179.07 189.23) (xy 165.1 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e8507d1-5b38-4f81-ba9c-fce8eea14349")
+	)
+	(wire
+		(pts
 			(xy 207.01 85.09) (xy 232.41 85.09)
 		)
 		(stroke
@@ -2041,13 +2041,23 @@
 	)
 	(wire
 		(pts
-			(xy 275.59 134.62) (xy 280.67 134.62)
+			(xy 241.3 134.62) (xy 241.3 189.23)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "27c635ce-d976-42ae-abdc-9b335948f0dd")
+		(uuid "1bb8e055-72b8-458b-ab4c-f3d213ad1cca")
+	)
+	(wire
+		(pts
+			(xy 207.01 189.23) (xy 201.93 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29dd1b2b-293e-40b9-a0cd-c66357c0c093")
 	)
 	(wire
 		(pts
@@ -2068,16 +2078,6 @@
 			(type default)
 		)
 		(uuid "3325dd19-4b99-432b-ae8c-a3ac3bb5dc58")
-	)
-	(wire
-		(pts
-			(xy 280.67 134.62) (xy 280.67 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "35976a32-d93a-4ab4-b7c3-58125aa868dc")
 	)
 	(wire
 		(pts
@@ -2121,6 +2121,16 @@
 	)
 	(wire
 		(pts
+			(xy 165.1 185.42) (xy 165.1 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "440a785e-d7a6-45fe-b010-d436edb25df5")
+	)
+	(wire
+		(pts
 			(xy 180.34 130.81) (xy 180.34 134.62)
 		)
 		(stroke
@@ -2151,6 +2161,16 @@
 	)
 	(wire
 		(pts
+			(xy 241.3 189.23) (xy 222.25 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e0ac3e9-5042-438e-a98d-2635cd5ded03")
+	)
+	(wire
+		(pts
 			(xy 222.25 158.75) (xy 224.79 158.75)
 		)
 		(stroke
@@ -2158,16 +2178,6 @@
 			(type default)
 		)
 		(uuid "50ac3604-def3-4dd3-ae43-e5064e2988f6")
-	)
-	(wire
-		(pts
-			(xy 270.51 142.24) (xy 270.51 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "54d3d735-0b8e-456b-bfde-09a0e6144f76")
 	)
 	(wire
 		(pts
@@ -2211,16 +2221,6 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 134.62) (xy 260.35 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "62be9e25-47a4-4886-ab70-d819a3719b50")
-	)
-	(wire
-		(pts
 			(xy 222.25 134.62) (xy 241.3 134.62)
 		)
 		(stroke
@@ -2241,6 +2241,16 @@
 	)
 	(wire
 		(pts
+			(xy 201.93 189.23) (xy 201.93 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76c0387f-8cfa-462c-998b-07baa139e1da")
+	)
+	(wire
+		(pts
 			(xy 199.39 158.75) (xy 201.93 158.75)
 		)
 		(stroke
@@ -2248,16 +2258,6 @@
 			(type default)
 		)
 		(uuid "78d8af20-ad30-4805-b588-e6e48efab1e0")
-	)
-	(wire
-		(pts
-			(xy 317.5 130.81) (xy 317.5 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "791c5c30-591b-4b3f-b4fb-fc0e99922f80")
 	)
 	(wire
 		(pts
@@ -2291,23 +2291,13 @@
 	)
 	(wire
 		(pts
-			(xy 303.53 134.62) (xy 317.5 134.62)
+			(xy 241.3 95.25) (xy 241.3 134.62)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "86065090-e17c-4e23-9e34-a0541dcff2bb")
-	)
-	(wire
-		(pts
-			(xy 280.67 158.75) (xy 284.48 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "863278be-68ee-4dd1-8cab-492d53586c59")
+		(uuid "8d9f8c1f-a946-4874-a73c-4e0cb3e68ee0")
 	)
 	(wire
 		(pts
@@ -2331,6 +2321,16 @@
 	)
 	(wire
 		(pts
+			(xy 201.93 213.36) (xy 198.12 213.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "973b75b7-c5e8-4034-8ef0-f2bddcdd55d3")
+	)
+	(wire
+		(pts
 			(xy 180.34 134.62) (xy 201.93 134.62)
 		)
 		(stroke
@@ -2338,36 +2338,6 @@
 			(type default)
 		)
 		(uuid "9d055868-8bcd-441e-8412-138a5e7dc2e7")
-	)
-	(wire
-		(pts
-			(xy 270.51 166.37) (xy 270.51 168.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9d1dadd1-61ca-463b-9d49-95ef80387a4b")
-	)
-	(wire
-		(pts
-			(xy 241.3 95.25) (xy 241.3 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9d5b3925-f0c8-4213-8d71-526d55a4a5c1")
-	)
-	(wire
-		(pts
-			(xy 260.35 134.62) (xy 260.35 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a12fbb19-c1ac-41f0-adb8-e88f0a3ce433")
 	)
 	(wire
 		(pts
@@ -2391,16 +2361,6 @@
 	)
 	(wire
 		(pts
-			(xy 280.67 134.62) (xy 295.91 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b38b8bba-5267-42b6-b70d-66bd74487783")
-	)
-	(wire
-		(pts
 			(xy 191.77 97.79) (xy 191.77 96.52)
 		)
 		(stroke
@@ -2408,6 +2368,16 @@
 			(type default)
 		)
 		(uuid "b76a6e83-bb78-4bd7-ab28-19b8bbf551e5")
+	)
+	(wire
+		(pts
+			(xy 212.09 196.85) (xy 212.09 200.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5b58528-1067-4b22-bc95-53a9da06d0e4")
 	)
 	(wire
 		(pts
@@ -2421,13 +2391,33 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 134.62) (xy 265.43 134.62)
+			(xy 222.25 189.23) (xy 217.17 189.23)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d8641c8c-829e-4708-930e-4af16fdacbb9")
+		(uuid "cedd7c72-be7e-461b-8c9f-0c225c016b9b")
+	)
+	(wire
+		(pts
+			(xy 222.25 189.23) (xy 222.25 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4377977-acb1-49ca-a1f9-0e27d1408fdd")
+	)
+	(wire
+		(pts
+			(xy 226.06 213.36) (xy 222.25 213.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d817afcb-3ab9-413c-96a3-997629009f0e")
 	)
 	(wire
 		(pts
@@ -2438,6 +2428,16 @@
 			(type default)
 		)
 		(uuid "dc48a15e-d430-4557-be2a-0ce29892f384")
+	)
+	(wire
+		(pts
+			(xy 212.09 220.98) (xy 212.09 223.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df195ddf-ea7e-431a-b786-e93fab96cbdd")
 	)
 	(wire
 		(pts
@@ -2458,6 +2458,16 @@
 			(type default)
 		)
 		(uuid "e8a5c75c-13b6-4759-a793-b319e91fbc2b")
+	)
+	(wire
+		(pts
+			(xy 201.93 189.23) (xy 186.69 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f95147a6-e01e-4719-a4c5-97f1bbb73b74")
 	)
 	(hierarchical_label "USBShutdown"
 		(shape input)
@@ -2480,85 +2490,6 @@
 			(justify right)
 		)
 		(uuid "f1bcc035-193f-45a1-b875-28ee9779714e")
-	)
-	(symbol
-		(lib_id "oresat_stuff:Test-Point-0.75mm-th")
-		(at 284.48 158.75 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0bd9c84c-b2f1-445c-bbab-e6ef70e2eb2c")
-		(property "Reference" "TP21"
-			(at 287.02 158.7499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.0795)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Test-Point"
-			(at 284.48 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "oresat-misc:TestPoint-0.75mm-th"
-			(at 284.48 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 284.48 158.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "0.75 mm TH test point; good for scope probes and jumpers"
-			(at 284.48 158.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "944909fe-50ec-470e-9cc7-0c785e76ebab")
-		)
-		(instances
-			(project "c3-proxy"
-				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/9e3e06f8-887b-42f5-9213-500926d830e9"
-					(reference "TP21")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "oresat_stuff:Test-Point-0.75mm-th")
@@ -2640,9 +2571,9 @@
 		)
 	)
 	(symbol
-		(lib_id "Power_Management:LTC4412xS6")
-		(at 270.51 156.21 0)
-		(mirror y)
+		(lib_id "Device:Fuse")
+		(at 182.88 189.23 270)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2651,32 +2582,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "5732c176-f855-4d79-8e39-00ae03f2bd82")
-		(property "Reference" "U4"
-			(at 268.3667 143.51 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "LTC4412xS6"
-			(at 268.3667 146.05 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23-6"
-			(at 254 165.1 0)
-			(hide yes)
+		(uuid "534ef8b8-42d7-4bdf-adb2-b1006c0abb8f")
+		(property "Reference" "F2"
+			(at 182.88 182.88 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2685,9 +2593,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/4412fb.pdf"
-			(at 217.17 161.29 0)
-			(hide yes)
+		(property "Value" "Fuse"
+			(at 182.88 185.42 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2696,80 +2603,8 @@
 				)
 			)
 		)
-		(property "Description" "Low Loss PowerPath Controller, TSOT-23-6"
-			(at 270.51 156.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "877e1311-ad28-4729-ad12-c4ce93f83bd8")
-		)
-		(pin "2"
-			(uuid "8c974373-3c1e-4cf5-ae06-8b5a1e27419e")
-		)
-		(pin "3"
-			(uuid "b7dba411-3cda-4f35-bb71-1d374af20b45")
-		)
-		(pin "4"
-			(uuid "abb661f1-b543-4926-a1e8-cd7599b5163c")
-		)
-		(pin "5"
-			(uuid "847fdfe5-8156-4f69-a790-d94a1b8931b2")
-		)
-		(pin "6"
-			(uuid "fd772ec8-93bd-46d0-925a-e4c281d10705")
-		)
-		(instances
-			(project "c3-proxy"
-				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/9e3e06f8-887b-42f5-9213-500926d830e9"
-					(reference "U4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "oresat_stuff:Test-Point-0.75mm-th")
-		(at 256.54 158.75 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "580fadc7-5307-4050-8b89-63376c0d691e")
-		(property "Reference" "TP20"
-			(at 256.54 154.94 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.0795)
-				)
-			)
-		)
-		(property "Value" "Test-Point"
-			(at 256.54 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "oresat-misc:TestPoint-0.75mm-th"
-			(at 256.54 148.59 0)
+		(property "Footprint" "oresat-passives:Littelfuse 155900DR"
+			(at 182.88 191.008 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2780,7 +2615,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 256.54 158.75 0)
+			(at 182.88 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2790,8 +2625,8 @@
 				)
 			)
 		)
-		(property "Description" "0.75 mm TH test point; good for scope probes and jumpers"
-			(at 256.54 158.75 0)
+		(property "Description" "Fuse"
+			(at 182.88 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2800,14 +2635,17 @@
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(pin "2"
+			(uuid "d4d9b0c3-a003-4ab4-b7c5-373a91f502ea")
 		)
 		(pin "1"
-			(uuid "35d1cd53-7e18-4625-9541-a10893a01cd9")
+			(uuid "7d83a68e-c858-4c45-b484-1cd60a2b9a2f")
 		)
 		(instances
 			(project "c3-proxy"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/9e3e06f8-887b-42f5-9213-500926d830e9"
-					(reference "TP20")
+					(reference "F2")
 					(unit 1)
 				)
 			)
@@ -3010,6 +2848,85 @@
 		)
 	)
 	(symbol
+		(lib_id "oresat_stuff:VBUS")
+		(at 165.1 185.42 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6b94c619-7de9-4e00-965a-c6dc5dab8ab6")
+		(property "Reference" "#VBUS015"
+			(at 165.1 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VJACK"
+			(at 165.1 180.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 165.1 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 165.1 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2bfd3d1a-e7a2-45ba-b8ce-5bb1ce7fbe77")
+		)
+		(instances
+			(project "c3-proxy"
+				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/9e3e06f8-887b-42f5-9213-500926d830e9"
+					(reference "#VBUS015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small_US")
 		(at 191.77 100.33 0)
 		(mirror y)
@@ -3170,8 +3087,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Fuse")
-		(at 299.72 134.62 90)
+		(lib_id "Simulation_SPICE:PMOS")
+		(at 212.09 191.77 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3179,10 +3096,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8cd7ccca-30d1-4d39-9819-4f43b072066f")
-		(property "Reference" "F2"
-			(at 299.72 128.27 90)
+		(uuid "8b77d321-54bb-415e-bf51-6f4f21b9f669")
+		(property "Reference" "Q2"
+			(at 212.09 182.88 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3191,8 +3107,8 @@
 				)
 			)
 		)
-		(property "Value" "Fuse"
-			(at 299.72 130.81 90)
+		(property "Value" "DMP2035UQ-7"
+			(at 212.09 185.42 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3201,8 +3117,8 @@
 				)
 			)
 		)
-		(property "Footprint" "oresat-passives:Littelfuse 155900DR"
-			(at 299.72 136.398 90)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
+			(at 209.55 186.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3212,8 +3128,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 299.72 134.62 0)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
+			(at 224.79 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3223,8 +3139,8 @@
 				)
 			)
 		)
-		(property "Description" "Fuse"
-			(at 299.72 134.62 0)
+		(property "Description" "P-MOSFET transistor, drain/source/gate"
+			(at 212.09 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3234,16 +3150,52 @@
 				)
 			)
 		)
-		(pin "2"
-			(uuid "8f454ae5-1af2-4010-9afa-5f6cfc744ac6")
+		(property "Sim.Device" "PMOS"
+			(at 229.235 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" "VDMOS"
+			(at 231.14 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=D 2=G 3=S"
+			(at 227.33 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "dcc1c0e0-8bc6-406d-97e2-de8969473743")
 		)
 		(pin "1"
-			(uuid "644ac1a7-30dc-4713-b9b7-4f3be72cb1ae")
+			(uuid "fe7176d2-5c8a-4e27-836e-f8225e5b79de")
+		)
+		(pin "2"
+			(uuid "b1b52a07-bb53-41df-a9db-3b12c70bb329")
 		)
 		(instances
 			(project "c3-proxy"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/9e3e06f8-887b-42f5-9213-500926d830e9"
-					(reference "F2")
+					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -3329,6 +3281,86 @@
 	)
 	(symbol
 		(lib_id "oresat_stuff:Test-Point-0.75mm-th")
+		(at 198.12 213.36 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "95d0c61f-e787-4508-b596-7829057d7e66")
+		(property "Reference" "TP21"
+			(at 195.58 213.3599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.0795)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Test-Point"
+			(at 198.12 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "oresat-misc:TestPoint-0.75mm-th"
+			(at 198.12 203.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 198.12 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "0.75 mm TH test point; good for scope probes and jumpers"
+			(at 198.12 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "329a23f2-12f8-439c-99d7-d4ccc77b6b7e")
+		)
+		(instances
+			(project "c3-proxy"
+				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/9e3e06f8-887b-42f5-9213-500926d830e9"
+					(reference "TP21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "oresat_stuff:Test-Point-0.75mm-th")
 		(at 224.79 158.75 0)
 		(unit 1)
 		(body_style 1)
@@ -3401,6 +3433,100 @@
 			(project "c3-proxy"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/9e3e06f8-887b-42f5-9213-500926d830e9"
 					(reference "TP19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Power_Management:LTC4412xS6")
+		(at 212.09 210.82 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "af1ebbed-5925-4c6e-9dc1-92c9390d9718")
+		(property "Reference" "U4"
+			(at 214.2333 198.12 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "LTC4412xS6"
+			(at 214.2333 200.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23-6"
+			(at 228.6 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/4412fb.pdf"
+			(at 265.43 215.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Low Loss PowerPath Controller, TSOT-23-6"
+			(at 212.09 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3f574467-cc25-49ee-9b0b-200e405fe2b0")
+		)
+		(pin "2"
+			(uuid "a3738215-4392-48ce-a404-efd0d76850b1")
+		)
+		(pin "3"
+			(uuid "a8ff02e3-91c2-48fa-be03-72c7db23464c")
+		)
+		(pin "4"
+			(uuid "84d1eca1-def6-4508-bf13-0cd5e740c013")
+		)
+		(pin "5"
+			(uuid "b9f1cfc8-53ad-4e87-ba08-032d96ee68c1")
+		)
+		(pin "6"
+			(uuid "2fdc8b93-1466-47a3-9e1e-c90e18260734")
+		)
+		(instances
+			(project "c3-proxy"
+				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/9e3e06f8-887b-42f5-9213-500926d830e9"
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -3519,6 +3645,84 @@
 			(project "c3-proxy"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/9e3e06f8-887b-42f5-9213-500926d830e9"
 					(reference "Q3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "oresat_stuff:Test-Point-0.75mm-th")
+		(at 226.06 213.36 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b5b92ef8-0ae9-4f4a-948c-1bfbf11f5fa2")
+		(property "Reference" "TP20"
+			(at 226.06 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.0795)
+				)
+			)
+		)
+		(property "Value" "Test-Point"
+			(at 226.06 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "oresat-misc:TestPoint-0.75mm-th"
+			(at 226.06 203.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 226.06 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "0.75 mm TH test point; good for scope probes and jumpers"
+			(at 226.06 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fdb39009-8126-4806-9b17-166eafb0ed92")
+		)
+		(instances
+			(project "c3-proxy"
+				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/9e3e06f8-887b-42f5-9213-500926d830e9"
+					(reference "TP20")
 					(unit 1)
 				)
 			)
@@ -3743,9 +3947,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:PMOS")
-		(at 270.51 137.16 270)
-		(mirror x)
+		(lib_id "power:GND")
+		(at 212.09 223.52 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3753,29 +3956,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "c7a3f417-1530-40bd-a6ed-f1750fd0d12d")
-		(property "Reference" "Q2"
-			(at 270.51 128.27 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "DMP2035UQ-7"
-			(at 270.51 130.81 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
-			(at 273.05 132.08 0)
+		(fields_autoplaced yes)
+		(uuid "cb9e72df-0270-4f4e-8b0e-28562c5ffd73")
+		(property "Reference" "#PWR06"
+			(at 212.09 229.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3785,8 +3969,18 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-			(at 257.81 137.16 0)
+		(property "Value" "GND"
+			(at 212.09 228.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 212.09 223.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3796,8 +3990,8 @@
 				)
 			)
 		)
-		(property "Description" "P-MOSFET transistor, drain/source/gate"
-			(at 270.51 137.16 0)
+		(property "Datasheet" ""
+			(at 212.09 223.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3807,8 +4001,8 @@
 				)
 			)
 		)
-		(property "Sim.Device" "PMOS"
-			(at 253.365 137.16 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 212.09 223.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3817,42 +4011,14 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(property "Sim.Type" "VDMOS"
-			(at 251.46 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 255.27 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "54f14b9d-5dbe-4c4b-ab3a-afaf47008da3")
 		)
 		(pin "1"
-			(uuid "6510898f-4105-4ae3-8eac-9ac0b05799ae")
-		)
-		(pin "2"
-			(uuid "2274c818-2c34-4223-bc90-d8fc4741d62a")
+			(uuid "5981180b-29b3-4a82-ace8-7a1020c7b403")
 		)
 		(instances
 			(project "c3-proxy"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/9e3e06f8-887b-42f5-9213-500926d830e9"
-					(reference "Q2")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -4014,84 +4180,6 @@
 		)
 	)
 	(symbol
-		(lib_id "oresat_stuff:VBUS")
-		(at 317.5 130.81 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e42773f1-2c16-4e4a-8abc-75d688c3b883")
-		(property "Reference" "#VBUS015"
-			(at 317.5 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VJACK"
-			(at 317.5 125.73 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 317.5 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 317.5 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 317.5 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0cd0790b-1626-4a8f-a647-7877abe914cd")
-		)
-		(instances
-			(project "c3-proxy"
-				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/9e3e06f8-887b-42f5-9213-500926d830e9"
-					(reference "#VBUS015")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 212.09 168.91 0)
 		(unit 1)
@@ -4101,7 +4189,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "f1d5790c-1c75-4e18-ba42-f719e8d6f8ee")
 		(property "Reference" "#PWR04"
 			(at 212.09 175.26 0)
@@ -4115,7 +4202,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 212.09 173.99 0)
+			(at 212.09 173.482 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4164,85 +4251,6 @@
 			(project "c3-proxy"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/9e3e06f8-887b-42f5-9213-500926d830e9"
 					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 270.51 168.91 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f7c6c797-e2fd-4f5c-9ad9-8efc7141b33c")
-		(property "Reference" "#PWR06"
-			(at 270.51 175.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 270.51 173.99 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 270.51 168.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 270.51 168.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 270.51 168.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "23332e68-c5cb-4c59-a878-aec3004f7b56")
-		)
-		(instances
-			(project "c3-proxy"
-				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/9e3e06f8-887b-42f5-9213-500926d830e9"
-					(reference "#PWR06")
 					(unit 1)
 				)
 			)

@@ -3161,6 +3161,16 @@
 		)
 		(uuid "1dc11a96-2c5e-42c6-ad61-0d1b216cc5a2")
 	)
+	(text "not sure the ideal way to connect/route this capacitor"
+		(exclude_from_sim no)
+		(at 53.848 244.856 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "2708358d-15ff-4b7a-b03a-4e42142d249b")
+	)
 	(text "Outside Negitive\nInside Positive"
 		(exclude_from_sim no)
 		(at 61.468 168.91 0)
@@ -3228,6 +3238,12 @@
 		(uuid "1f5c5f8f-33e3-482f-b67b-c6ab42c88dd6")
 	)
 	(junction
+		(at 208.28 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "21cb17c3-aaa4-4c58-87fd-e4733722474a")
+	)
+	(junction
 		(at 118.11 105.41)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3261,7 +3277,7 @@
 		(at 210.82 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "43121219-ac13-49ea-8e70-141ced6e72ea")
+		(uuid "460a6891-f9ec-4809-92d5-8f0bfcd9100b")
 	)
 	(junction
 		(at 118.11 74.93)
@@ -3292,12 +3308,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "56875b78-79b0-429f-bf02-df33c5bfe6bb")
-	)
-	(junction
-		(at 208.28 69.85)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5774d252-a2b9-45e2-8601-7f6eaa40307b")
 	)
 	(junction
 		(at 118.11 82.55)
@@ -3609,7 +3619,7 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 69.85) (xy 118.11 69.85)
+			(xy 118.11 69.85) (xy 208.28 69.85)
 		)
 		(stroke
 			(width 0)
@@ -3729,16 +3739,6 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 69.85) (xy 208.28 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2c120ae4-73ef-4220-b440-58f8f76ac74b")
-	)
-	(wire
-		(pts
 			(xy 284.48 102.87) (xy 280.67 102.87)
 		)
 		(stroke
@@ -3839,16 +3839,6 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 74.93) (xy 210.82 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "452ccac8-dc47-43aa-bd6b-f02a675a7e92")
-	)
-	(wire
-		(pts
 			(xy 284.48 80.01) (xy 118.11 80.01)
 		)
 		(stroke
@@ -3936,6 +3926,16 @@
 			(type default)
 		)
 		(uuid "4efcb75b-9189-4bea-91f7-ccc2dc35248f")
+	)
+	(wire
+		(pts
+			(xy 208.28 69.85) (xy 284.48 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f44d841-74a2-4a61-bd2a-a097bd50d350")
 	)
 	(wire
 		(pts
@@ -4299,6 +4299,16 @@
 	)
 	(wire
 		(pts
+			(xy 208.28 69.85) (xy 208.28 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7941c951-07f6-4be2-9e77-08945f29a5fa")
+	)
+	(wire
+		(pts
 			(xy 288.29 110.49) (xy 284.48 110.49)
 		)
 		(stroke
@@ -4429,6 +4439,16 @@
 	)
 	(wire
 		(pts
+			(xy 118.11 74.93) (xy 210.82 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9cb1d82a-19b0-45f6-84ea-7d3f3e3d52c6")
+	)
+	(wire
+		(pts
 			(xy 288.29 54.61) (xy 114.3 54.61)
 		)
 		(stroke
@@ -4496,16 +4516,6 @@
 			(type default)
 		)
 		(uuid "a931ed53-ba2f-415a-a5e0-9ec6f447fbc6")
-	)
-	(wire
-		(pts
-			(xy 210.82 74.93) (xy 118.11 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aa72ac09-29d3-4d5d-98e8-5b0934af1af8")
 	)
 	(wire
 		(pts
@@ -4659,16 +4669,6 @@
 	)
 	(wire
 		(pts
-			(xy 284.48 74.93) (xy 210.82 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c35544fb-6926-4b93-8ac5-758f188d22d2")
-	)
-	(wire
-		(pts
 			(xy 80.01 166.37) (xy 80.01 163.83)
 		)
 		(stroke
@@ -4759,6 +4759,16 @@
 	)
 	(wire
 		(pts
+			(xy 210.82 74.93) (xy 284.48 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4cf30a6-9b58-4f27-ae81-47d5c13ffc07")
+	)
+	(wire
+		(pts
 			(xy 288.29 77.47) (xy 284.48 77.47)
 		)
 		(stroke
@@ -4846,16 +4856,6 @@
 			(type default)
 		)
 		(uuid "de29b836-c3e3-4acd-86a6-cc4a70076123")
-	)
-	(wire
-		(pts
-			(xy 284.48 69.85) (xy 208.28 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "de6a5ca7-1fef-429a-a830-2f44fe06b59c")
 	)
 	(wire
 		(pts
@@ -5086,6 +5086,16 @@
 			(type default)
 		)
 		(uuid "f9c67e03-8b28-4b79-b0dd-0b5d3de16f9e")
+	)
+	(wire
+		(pts
+			(xy 210.82 74.93) (xy 210.82 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fabe185f-7ad4-4643-9946-37a7a36d4c7f")
 	)
 	(wire
 		(pts
@@ -5713,7 +5723,7 @@
 	)
 	(symbol
 		(lib_id "oresat_stuff:M1.6_Mounting_Hole")
-		(at 340.36 184.15 0)
+		(at 360.68 157.48 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5724,7 +5734,7 @@
 		(fields_autoplaced yes)
 		(uuid "374d08b9-c985-4f6c-a969-733f6a37d01c")
 		(property "Reference" "HW1"
-			(at 342.9 182.8799 0)
+			(at 363.22 156.2099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5735,7 +5745,7 @@
 			)
 		)
 		(property "Value" "M1.6_Mounting_Hole"
-			(at 342.9 185.4199 0)
+			(at 363.22 158.7499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5746,7 +5756,7 @@
 			)
 		)
 		(property "Footprint" "oresat-misc:M1.6 Mounting Hole"
-			(at 340.36 191.77 0)
+			(at 360.68 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5757,7 +5767,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 340.36 184.15 0)
+			(at 360.68 157.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5768,7 +5778,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 340.36 184.15 0)
+			(at 360.68 157.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6668,7 +6678,7 @@
 	)
 	(symbol
 		(lib_id "oresat_stuff:M1.6_Mounting_Hole")
-		(at 340.36 193.04 0)
+		(at 360.68 166.37 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6679,7 +6689,7 @@
 		(fields_autoplaced yes)
 		(uuid "9710b710-cfbf-4012-9e87-e4af8c0cb7ab")
 		(property "Reference" "HW2"
-			(at 342.9 191.7699 0)
+			(at 363.22 165.0999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6690,7 +6700,7 @@
 			)
 		)
 		(property "Value" "M1.6_Mounting_Hole"
-			(at 342.9 194.3099 0)
+			(at 363.22 167.6399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6701,7 +6711,7 @@
 			)
 		)
 		(property "Footprint" "oresat-misc:M1.6 Mounting Hole"
-			(at 340.36 200.66 0)
+			(at 360.68 173.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6712,7 +6722,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 340.36 193.04 0)
+			(at 360.68 166.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6723,7 +6733,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 340.36 193.04 0)
+			(at 360.68 166.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7059,7 +7069,7 @@
 	)
 	(symbol
 		(lib_id "oresat_stuff:M1.6_Mounting_Hole")
-		(at 340.36 201.93 0)
+		(at 360.68 175.26 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7070,7 +7080,7 @@
 		(fields_autoplaced yes)
 		(uuid "c6400b9b-2e8b-460c-98af-1d8bf5693978")
 		(property "Reference" "HW3"
-			(at 342.9 200.6599 0)
+			(at 363.22 173.9899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7081,7 +7091,7 @@
 			)
 		)
 		(property "Value" "M1.6_Mounting_Hole"
-			(at 342.9 203.1999 0)
+			(at 363.22 176.5299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7092,7 +7102,7 @@
 			)
 		)
 		(property "Footprint" "oresat-misc:M1.6 Mounting Hole"
-			(at 340.36 209.55 0)
+			(at 360.68 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7103,7 +7113,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 340.36 201.93 0)
+			(at 360.68 175.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7114,7 +7124,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 340.36 201.93 0)
+			(at 360.68 175.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7913,7 +7923,7 @@
 			)
 		)
 		(pin "OPD_SCL" input
-			(at 210.82 154.94 90)
+			(at 208.28 154.94 90)
 			(uuid "3cd27ca9-ada2-4188-8c33-5b22618bd07d")
 			(effects
 				(font
@@ -7933,7 +7943,7 @@
 			)
 		)
 		(pin "OPD_PWR" input
-			(at 208.28 154.94 90)
+			(at 210.82 154.94 90)
 			(uuid "7678ba83-06cc-44bc-a9c0-2a78f53b3140")
 			(effects
 				(font
