@@ -7,7 +7,7 @@
 	(title_block
 		(title "Flatsat Interface Card")
 		(date "2026-06-29")
-		(rev "0.1")
+		(rev "${REVISION}")
 		(company "Portland State Aerospace Society")
 	)
 	(lib_symbols
@@ -1879,6 +1879,16 @@
 		)
 		(uuid "92d281c8-466c-4d3d-9d0c-e1c09efcdbf6")
 	)
+	(text "Reversed PMOS for ideal diode"
+		(exclude_from_sim no)
+		(at 211.328 125.73 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "b2b4e83f-12b6-4dbd-94ec-05dcc9ca2f6b")
+	)
 	(text "VUSB (4.5 5 5.5)V @ (0.5)A"
 		(exclude_from_sim no)
 		(at 178.816 122.936 0)
@@ -1898,6 +1908,16 @@
 			)
 		)
 		(uuid "c6b90605-69c7-402c-9272-3c5f207eddc9")
+	)
+	(text "Reversed PMOS for ideal diode"
+		(exclude_from_sim no)
+		(at 212.344 180.594 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e5052c6d-779e-43f3-a998-0c3497f31411")
 	)
 	(text "NOTE! better be able to handle >3.5A\n"
 		(exclude_from_sim no)
@@ -2481,7 +2501,7 @@
 		(uuid "0ebd04bf-4b09-4dff-9577-8ddef31cc944")
 	)
 	(hierarchical_label "~{SD}"
-		(shape input)
+		(shape output)
 		(at 195.58 87.63 180)
 		(effects
 			(font
@@ -2614,7 +2634,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.littelfuse.com/assetdocs/littelfuse-fuse-blocks-1550900-series-datasheet?assetguid=5ec5d985-39ad-44b5-9bdb-f49bf381a070"
 			(at 182.88 189.23 0)
 			(hide yes)
 			(show_name no)
@@ -2625,8 +2645,41 @@
 				)
 			)
 		)
-		(property "Description" "Fuse"
+		(property "Description" "Fuse Block 9 A 125V 1 Circuit Cartridge Surface Mount"
 			(at 182.88 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIST" "DigiKey"
+			(at 182.88 189.23 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Category Circuit Protection, Fuseholders For Use With/Related Products Nano 452 Mfr Littelfuse Inc. Fuse Type Cartridge Series 155 Fuseholder Type Block Packaging Tape & Reel (TR), Cut Tape (CT), Digi-Reel® Number of Circuits 1 Part Status Active Voltage 125V Mounting Type Surface Mount Termination Style Surface Mount Current Rating (Amps) 9 A Contact Finish Silver"
+			(at 182.88 189.23 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "01550900DR"
+			(at 182.88 189.23 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2693,7 +2746,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMP2035U.pdf"
 			(at 224.79 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -2704,7 +2757,7 @@
 				)
 			)
 		)
-		(property "Description" "P-MOSFET transistor, drain/source/gate"
+		(property "Description" "P-Channel 20 V 4.9A (Ta) 810mW (Ta) Surface Mount SOT-23-3"
 			(at 212.09 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -2739,6 +2792,50 @@
 		)
 		(property "Sim.Pins" "1=D 2=G 3=S"
 			(at 227.33 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIST" "DigiKey"
+			(at 212.09 137.16 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "31-DMP2035UQ-7CT-ND"
+			(at 212.09 137.16 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Diodes Incorporated"
+			(at 212.09 137.16 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "DMP2035UQ-7"
+			(at 212.09 137.16 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2810,7 +2907,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RMCF_RMCP.pdf"
 			(at 232.41 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -2821,7 +2918,51 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, small US symbol"
+		(property "Description" "10 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+			(at 232.41 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIST" "DigiKey"
+			(at 232.41 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "RMCF0603FT10K0CT-ND"
+			(at 232.41 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Stackpole Electronics"
+			(at 232.41 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RMCF0603FT10K0"
 			(at 232.41 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -2960,7 +3101,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "oresat-passives:0805-A"
+		(property "Footprint" "oresat-passives:0603-A"
 			(at 191.77 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -2971,7 +3112,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RMCF_RMCP.pdf"
 			(at 191.77 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -2982,7 +3123,51 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, small US symbol"
+		(property "Description" "10 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+			(at 191.77 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIST" "DigiKey"
+			(at 191.77 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "RMCF0603FT10K0CT-ND"
+			(at 191.77 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Stackpole Electronics"
+			(at 191.77 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RMCF0603FT10K0"
 			(at 191.77 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -3128,7 +3313,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMP2035U.pdf"
 			(at 224.79 191.77 0)
 			(hide yes)
 			(show_name no)
@@ -3139,7 +3324,7 @@
 				)
 			)
 		)
-		(property "Description" "P-MOSFET transistor, drain/source/gate"
+		(property "Description" "P-Channel 20 V 4.9A (Ta) 810mW (Ta) Surface Mount SOT-23-3"
 			(at 212.09 191.77 0)
 			(hide yes)
 			(show_name no)
@@ -3174,6 +3359,50 @@
 		)
 		(property "Sim.Pins" "1=D 2=G 3=S"
 			(at 227.33 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIST" "DigiKey"
+			(at 212.09 191.77 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "31-DMP2035UQ-7CT-ND"
+			(at 212.09 191.77 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Diodes Incorporated"
+			(at 212.09 191.77 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "DMP2035UQ-7"
+			(at 212.09 191.77 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3483,7 +3712,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/4412fb.pdf"
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ltc4412.pdf"
 			(at 265.43 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -3494,7 +3723,51 @@
 				)
 			)
 		)
-		(property "Description" "Low Loss PowerPath Controller, TSOT-23-6"
+		(property "Description" "OR Controller Source Selector Switch P-Channel 2:1 TSOT-23-6 industrial temp"
+			(at 212.09 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIST" "DigiKey"
+			(at 212.09 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "LTC4412ES6#WTRMPBF"
+			(at 212.09 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Analog Devices"
+			(at 212.09 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "LTC4412ES6#PBF"
 			(at 212.09 210.82 0)
 			(hide yes)
 			(show_name no)
@@ -3577,7 +3850,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMP2035U.pdf"
 			(at 238.76 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -3588,7 +3861,7 @@
 				)
 			)
 		)
-		(property "Description" "P-MOSFET transistor, drain/source/gate"
+		(property "Description" "P-Channel 20 V 4.9A (Ta) 810mW (Ta) Surface Mount SOT-23-3"
 			(at 238.76 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -3623,6 +3896,50 @@
 		)
 		(property "Sim.Pins" "1=D 2=G 3=S"
 			(at 238.76 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIST" "DigiKey"
+			(at 238.76 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "31-DMP2035UQ-7CT-ND"
+			(at 238.76 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Diodes Incorporated"
+			(at 238.76 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "DMP2035UQ-7"
+			(at 238.76 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3773,7 +4090,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMN2053UQ.pdf"
 			(at 196.85 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -3784,7 +4101,7 @@
 				)
 			)
 		)
-		(property "Description" "N-MOSFET transistor, drain/source/gate"
+		(property "Description" "N-Channel 20 V 6.5A (Ta) 800mW (Ta) Surface Mount SOT-23-3"
 			(at 196.85 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -3819,6 +4136,50 @@
 		)
 		(property "Sim.Pins" "1=D 2=G 3=S"
 			(at 196.85 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIST" "DigiKey"
+			(at 196.85 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "31-DMN2053UQ-13CT-ND"
+			(at 196.85 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Diodes Incorporated"
+			(at 196.85 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "DMN2053UQ-13"
+			(at 196.85 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3902,8 +4263,52 @@
 				)
 			)
 		)
-		(property "Description" "Slide Switch, SP3T, SMT, RA"
+		(property "Description" "Slide Switch SP3T Surface Mount, Right Angle"
 			(at 201.93 64.262 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIST" "DigiKey"
+			(at 201.93 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "401-2017-1-ND"
+			(at 201.93 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "C&K"
+			(at 201.93 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "PCM13SMTR"
+			(at 201.93 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4301,7 +4706,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/4412fb.pdf"
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ltc4412.pdf"
 			(at 265.43 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -4312,7 +4717,51 @@
 				)
 			)
 		)
-		(property "Description" "Low Loss PowerPath Controller, TSOT-23-6"
+		(property "Description" "OR Controller Source Selector Switch P-Channel 2:1 TSOT-23-6 industrial temp"
+			(at 212.09 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIST" "DigiKey"
+			(at 212.09 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "LTC4412ES6#WTRMPBF"
+			(at 212.09 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Analog Devices"
+			(at 212.09 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "LTC4412ES6#PBF"
 			(at 212.09 156.21 0)
 			(hide yes)
 			(show_name no)

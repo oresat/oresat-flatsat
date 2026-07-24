@@ -7,187 +7,10 @@
 	(title_block
 		(title "Flatsat Interface Card")
 		(date "2026-06-29")
-		(rev "0.1")
+		(rev "${REVISION}")
 		(company "Portland State Aerospace Society")
 	)
 	(lib_symbols
-		(symbol "Device:Buzzer"
-			(pin_names
-				(offset 0.0254)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "BZ"
-				(at 3.81 1.27 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "Buzzer"
-				(at 3.81 -1.27 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at -0.635 2.54 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at -0.635 2.54 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Buzzer, polarized"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "quartz resonator ceramic"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "*Buzzer*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Buzzer_0_1"
-				(polyline
-					(pts
-						(xy -1.651 1.905) (xy -1.143 1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.397 2.159) (xy -1.397 1.651)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 3.175)
-					(mid 3.1612 0)
-					(end 0 -3.175)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 3.175) (xy 0 -3.175)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Buzzer_1_1"
-				(pin passive line
-					(at -2.54 2.54 0)
-					(length 2.54)
-					(name "+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -2.54 -2.54 0)
-					(length 2.54)
-					(name "-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:C_Small"
 			(pin_numbers
 				(hide yes)
@@ -776,598 +599,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Simulation_SPICE:PMOS"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "Q"
-				(at 5.08 1.27 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "PMOS"
-				(at 5.08 -1.27 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 5.08 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-				(at 0 -12.7 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "P-MOSFET transistor, drain/source/gate"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Sim.Device" "PMOS"
-				(at 0 -17.145 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Sim.Type" "VDMOS"
-				(at 0 -19.05 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Sim.Pins" "1=D 2=G 3=S"
-				(at 0 -15.24 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "transistor PMOS P-MOS P-MOSFET simulation"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "PMOS_0_1"
-				(polyline
-					(pts
-						(xy 0.254 1.905) (xy 0.254 -1.905)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 0) (xy -2.54 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 2.286) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 1.778) (xy 3.302 1.778) (xy 3.302 -1.778) (xy 0.762 -1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 0.508) (xy 0.762 -0.508)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.27) (xy 0.762 -2.286)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 1.651 0)
-					(radius 2.794)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.286 0) (xy 1.27 0.381) (xy 1.27 -0.381) (xy 2.286 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy 2.54 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.54 1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 2.54 -1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.794 -0.508) (xy 2.921 -0.381) (xy 3.683 -0.381) (xy 3.81 -0.254)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.302 -0.381) (xy 2.921 0.254) (xy 3.683 0.254) (xy 3.302 -0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "PMOS_1_1"
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "G"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "oresat-diodes:1N4151WS-HE3"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "1N4151WS"
-				(at 0 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Diode_SMD:D_SOD-323"
-				(at 0 -5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://www.vishay.com/docs/85847/1n4151ws.pdf"
-				(at 0 -7.62 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Diode 50 V 150mA Surface Mount SOD-323"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "1N4151WS-HE3_0_1"
-				(polyline
-					(pts
-						(xy 1.27 0) (xy 1.27 1.27) (xy 1.27 -1.27) (xy 1.27 0) (xy -1.27 1.27) (xy -1.27 -1.27) (xy 1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "1N4151WS-HE3_1_1"
-				(pin passive line
-					(at 2.54 0 180)
-					(length 1.27)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -2.54 0 0)
-					(length 1.27)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "oresat-power:3.3V"
-			(power global)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#3V3"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "3.3V"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"3.3V\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "power-flag"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "3.3V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "3.3V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(hide yes)
-					(name "3.3V"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "oresat_stuff:VBUS"
 			(power global)
 			(pin_names
@@ -1630,16 +861,6 @@
 		)
 		(uuid "0082dbb1-4ad2-493d-a64f-32606d91b296")
 	)
-	(text "CAUTION: WILL NOT WORK IN SPACE.\nWait, no. Will work, can't hear.\nIf you can't hear it, check if\nyou're in space.\nAlso, debug before you're in space. dummy...."
-		(exclude_from_sim no)
-		(at 226.06 205.74 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "038b4957-8dec-4a3d-9f7f-9d512af126a3")
-	)
 	(text "GND\n"
 		(exclude_from_sim no)
 		(at 252.984 121.412 0)
@@ -1649,16 +870,6 @@
 			)
 		)
 		(uuid "0e935330-4fa9-49ba-b171-68acfa0bb9ec")
-	)
-	(text "just in case"
-		(exclude_from_sim no)
-		(at 253.492 164.592 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "146c791b-a3d0-4a9a-9be1-4c599ae30861")
 	)
 	(text "SDA\n"
 		(exclude_from_sim no)
@@ -1679,31 +890,6 @@
 			)
 		)
 		(uuid "53a7ba55-76f2-4932-84ed-a97342c07ac9")
-	)
-	(text "THEO'S OPTIONAL\nSPACE BUZZER!!11!"
-		(exclude_from_sim no)
-		(at 236.982 163.83 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-		)
-		(uuid "55287f64-f465-4231-aa55-f1e98b9db2ff")
-	)
-	(text "someone double check my transistor please"
-		(exclude_from_sim no)
-		(at 266.7 181.356 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-				(color 255 0 50 1)
-			)
-		)
-		(uuid "716237a9-f08a-4751-b210-810698ac6d5d")
 	)
 	(text "see INA226 datasheet table 6-2 for possible combinations\n"
 		(exclude_from_sim no)
@@ -1734,16 +920,6 @@
 			)
 		)
 		(uuid "aaf17ae2-fc5e-48f2-91c5-f77848fdc30f")
-	)
-	(text "F_res = 1.6kHz & 4-5.5 KHz"
-		(exclude_from_sim no)
-		(at 225.298 198.628 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "dd006c96-afaa-44bc-88dc-958d293efb9e")
 	)
 	(text "VS"
 		(exclude_from_sim no)
@@ -1778,12 +954,6 @@
 		(uuid "108ed2f0-b76a-4f29-8d3d-550725e0db63")
 	)
 	(junction
-		(at 223.52 167.64)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2745ec3b-c3eb-4042-b7ea-f3ab579513a0")
-	)
-	(junction
 		(at 165.1 149.86)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1800,12 +970,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "777c863c-51ad-45fc-adb4-c0febd9c3b3b")
-	)
-	(junction
-		(at 223.52 175.26)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7af6fa4a-9f77-42aa-b7cb-7d29ec40e85c")
 	)
 	(junction
 		(at 220.98 120.65)
@@ -1850,22 +1014,10 @@
 		(uuid "c1faad8b-2dce-436b-a1e4-e1a823213ee0")
 	)
 	(junction
-		(at 205.74 167.64)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c5de0e23-9803-438a-a730-f2e8ee8d2c6e")
-	)
-	(junction
 		(at 232.41 120.65)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d11a71b5-c87d-48db-9404-f0647e4275d2")
-	)
-	(junction
-		(at 223.52 170.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d4bb2418-7240-4b89-8051-8dd3a84d01a2")
 	)
 	(junction
 		(at 205.74 147.32)
@@ -1873,15 +1025,9 @@
 		(color 0 0 0 0)
 		(uuid "ed8bba3f-34ea-4296-9f4e-23358d2abb22")
 	)
-	(wire
-		(pts
-			(xy 205.74 167.64) (xy 209.55 167.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "02b47aec-814f-44ff-a818-5cf8f929324d")
+	(no_connect
+		(at 190.5 154.94)
+		(uuid "3fb54b10-f1aa-40b7-a1b5-f3d7bce5c96f")
 	)
 	(wire
 		(pts
@@ -1945,16 +1091,6 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 154.94) (xy 187.96 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2745dcd6-c6f0-4879-b8c8-b522602a32e7")
-	)
-	(wire
-		(pts
 			(xy 236.22 109.22) (xy 238.76 109.22)
 		)
 		(stroke
@@ -1962,16 +1098,6 @@
 			(type default)
 		)
 		(uuid "2a3bd1d6-95ac-4224-99ac-b7c55be47d79")
-	)
-	(wire
-		(pts
-			(xy 223.52 175.26) (xy 224.79 175.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2b37e2ad-9f9d-40e7-a097-a5d2308a3ca9")
 	)
 	(wire
 		(pts
@@ -2012,26 +1138,6 @@
 			(type default)
 		)
 		(uuid "34bed4f7-a9ee-4617-9184-323676642bdf")
-	)
-	(wire
-		(pts
-			(xy 224.79 170.18) (xy 223.52 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "354de3ab-f1ef-436b-9217-33cdae58cbe6")
-	)
-	(wire
-		(pts
-			(xy 223.52 167.64) (xy 223.52 166.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "35c28524-ca5a-4f1a-9213-c215b320201f")
 	)
 	(wire
 		(pts
@@ -2105,16 +1211,6 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 181.61) (xy 205.74 181.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4f7a8fb5-f22b-438c-9bec-5c68c85616e8")
-	)
-	(wire
-		(pts
 			(xy 232.41 109.22) (xy 229.87 109.22)
 		)
 		(stroke
@@ -2122,16 +1218,6 @@
 			(type default)
 		)
 		(uuid "5091479f-a955-4920-95f0-f51d86bec700")
-	)
-	(wire
-		(pts
-			(xy 219.71 170.18) (xy 223.52 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "533287eb-9de0-4c24-8e6a-d0c89d0201c4")
 	)
 	(wire
 		(pts
@@ -2225,16 +1311,6 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 186.69) (xy 223.52 190.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6af73d91-f956-4adb-b389-05b8f30ea61b")
-	)
-	(wire
-		(pts
 			(xy 205.74 97.79) (xy 220.98 97.79)
 		)
 		(stroke
@@ -2242,26 +1318,6 @@
 			(type default)
 		)
 		(uuid "6f992fc6-fbc8-4a76-858f-912cc85a8174")
-	)
-	(wire
-		(pts
-			(xy 223.52 170.18) (xy 223.52 167.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "75586551-399c-40bc-a4f0-4dfb19cd4535")
-	)
-	(wire
-		(pts
-			(xy 205.74 167.64) (xy 205.74 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "757548d6-b6a3-444d-9e48-a6f3d01bd84e")
 	)
 	(wire
 		(pts
@@ -2282,16 +1338,6 @@
 			(type default)
 		)
 		(uuid "7a8ea482-e019-4cf1-b63e-546faad8b81a")
-	)
-	(wire
-		(pts
-			(xy 214.63 167.64) (xy 223.52 167.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7e6186ff-a192-499a-83c9-3de50a99c76a")
 	)
 	(wire
 		(pts
@@ -2395,26 +1441,6 @@
 	)
 	(wire
 		(pts
-			(xy 219.71 175.26) (xy 223.52 175.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "98c8fe69-0bfd-4430-a338-510123633ed7")
-	)
-	(wire
-		(pts
-			(xy 223.52 175.26) (xy 223.52 176.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9b8f9477-665a-4ca3-9f3d-7f62dbbaf025")
-	)
-	(wire
-		(pts
 			(xy 220.98 120.65) (xy 224.79 120.65)
 		)
 		(stroke
@@ -2422,16 +1448,6 @@
 			(type default)
 		)
 		(uuid "9e651e6f-2fd3-4941-88cd-36ae9881fa1b")
-	)
-	(wire
-		(pts
-			(xy 205.74 181.61) (xy 205.74 167.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a29b125d-88dc-4720-8d91-2b275299c133")
 	)
 	(wire
 		(pts
@@ -2492,6 +1508,16 @@
 			(type default)
 		)
 		(uuid "b8c1b94f-b3c6-416e-b130-02271e69ea1c")
+	)
+	(wire
+		(pts
+			(xy 187.96 154.94) (xy 190.5 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c46ddd54-7a5b-4095-a207-7252b1832064")
 	)
 	(wire
 		(pts
@@ -2625,7 +1651,7 @@
 		(uuid "4c62d1e9-71be-49a0-8558-7ab9fca43da8")
 	)
 	(hierarchical_label "LOCAL_SDA"
-		(shape input)
+		(shape bidirectional)
 		(at 212.09 147.32 0)
 		(effects
 			(font
@@ -2701,7 +1727,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RMCF_RMCP.pdf"
 			(at 241.3 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -2712,8 +1738,52 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, small US symbol"
+		(property "Description" "0 Ohms Jumper Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
 			(at 241.3 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIST" "DigiKey"
+			(at 241.3 97.79 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "RMCF0603ZT0R00CT-ND"
+			(at 241.3 97.79 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Stackpole Electronics"
+			(at 241.3 97.79 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RMCF0603ZT0R00"
+			(at 241.3 97.79 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2783,7 +1853,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RMCF_RMCP.pdf"
 			(at 227.33 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -2794,8 +1864,52 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, small US symbol"
+		(property "Description" "0 Ohms Jumper Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
 			(at 227.33 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIST" "DigiKey"
+			(at 227.33 120.65 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "RMCF0603ZT0R00CT-ND"
+			(at 227.33 120.65 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Stackpole Electronics"
+			(at 227.33 120.65 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RMCF0603ZT0R00"
+			(at 227.33 120.65 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2864,7 +1978,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RMCF_RMCP.pdf"
 			(at 241.3 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -2875,8 +1989,52 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, small US symbol"
+		(property "Description" "0 Ohms Jumper Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
 			(at 241.3 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIST" "DigiKey"
+			(at 241.3 120.65 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "RMCF0603ZT0R00CT-ND"
+			(at 241.3 120.65 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Stackpole Electronics"
+			(at 241.3 120.65 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RMCF0603ZT0R00"
+			(at 241.3 120.65 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3136,257 +2294,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 212.09 167.64 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp yes)
-		(uuid "64527b4a-1ec3-49c8-a7d7-f5cf3186dead")
-		(property "Reference" "R95"
-			(at 213.36 162.56 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 210.82 162.56 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "oresat-passives:0603-C-NOSILK"
-			(at 212.09 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RMCF_RMCP.pdf"
-			(at 212.09 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "10 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
-			(at 212.09 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DPN" "RMCF0603FT10K0CT-ND"
-			(at 212.09 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DST" "DigiKey"
-			(at 212.09 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MFR" "Stackpole Electronics"
-			(at 212.09 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "RMCF0603FT10K0"
-			(at 212.09 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f1a5a4be-b2fd-4590-ae45-b7ff00da2937")
-		)
-		(pin "2"
-			(uuid "af91e60f-fe8b-471c-89c9-33aebe291e7a")
-		)
-		(instances
-			(project "c3-proxy"
-				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/8aa56671-39c3-4bed-b52c-69096fb4cc26"
-					(reference "R95")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Buzzer")
-		(at 227.33 172.72 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "6c14d9ee-c6d9-4c0c-87e4-7819a70709aa")
-		(property "Reference" "BZ1"
-			(at 231.14 171.4499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SMT-0440-S-R"
-			(at 231.14 173.9899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "oresat-misc:SMT-0440-S-R"
-			(at 226.695 170.18 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://puiaudio.com/file/specs-SMT-0440-S-R.pdf"
-			(at 226.695 170.18 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Buzzers Transducer, Externally Driven Electromechanical/Magnetic 3 V 90mA 4kHz 70dB @ 3V, 10cm Surface Mount Solder Pads"
-			(at 227.33 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DPN" "668-1488-1-ND"
-			(at 227.33 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DST" "DigiKey"
-			(at 227.33 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MFR" "PUI Audio, Inc."
-			(at 227.33 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "SMT-0440-S-R"
-			(at 227.33 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "6864cf9f-a0b6-4809-8237-da1bf1a4c344")
-		)
-		(pin "2"
-			(uuid "68ae1291-8e9e-4347-a6c7-232879d2b9e7")
-		)
-		(instances
-			(project "c3-proxy"
-				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/8aa56671-39c3-4bed-b52c-69096fb4cc26"
-					(reference "BZ1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Sensor_Energy:INA226")
 		(at 177.8 147.32 0)
 		(unit 1)
@@ -3442,7 +2349,51 @@
 				)
 			)
 		)
-		(property "Description" "High-Side or Low-Side Measurement, Bi-Directional Current and Power Monitor (0-36V) with I2C Compatible Interface, TSSOP-10 (Texas DGS0010A / VSSOP)"
+		(property "Description" "Current Monitor Regulator High/Low-Side 10mA 10-VSSOP"
+			(at 177.8 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIST" "DIgiKey"
+			(at 177.8 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "296-29100-2-ND"
+			(at 177.8 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Texas Instruments"
+			(at 177.8 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "INA226AIDGST"
 			(at 177.8 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -3537,7 +2488,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RMCF_RMCP.pdf"
 			(at 227.33 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -3548,8 +2499,52 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, small US symbol"
+		(property "Description" "0 Ohms Jumper Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
 			(at 227.33 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIST" "DigiKey"
+			(at 227.33 86.36 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "RMCF0603ZT0R00CT-ND"
+			(at 227.33 86.36 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Stackpole Electronics"
+			(at 227.33 86.36 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RMCF0603ZT0R00"
+			(at 227.33 86.36 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3569,84 +2564,6 @@
 			(project "c3-proxy"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/8aa56671-39c3-4bed-b52c-69096fb4cc26"
 					(reference "R22")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 223.52 190.5 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "83b8cdaa-651c-4ba9-8cd9-a87a0e219c45")
-		(property "Reference" "#PWR023"
-			(at 223.52 196.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 223.52 194.31 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 223.52 190.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 223.52 190.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 223.52 190.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0b60dc14-bf92-4643-8ddd-983a1851efb0")
-		)
-		(instances
-			(project "c3-proxy"
-				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/8aa56671-39c3-4bed-b52c-69096fb4cc26"
-					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -3775,7 +2692,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.kemet.com/download/specsheet/C0603C104K5RACAUTO"
 			(at 168.91 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -3786,7 +2703,51 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "0.1 µF ±10% 50V Ceramic Capacitor X7R 0603 (1608 Metric)"
+			(at 168.91 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIST" "DigiKey"
+			(at 168.91 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "399-6856-1-ND"
+			(at 168.91 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "KEMET"
+			(at 168.91 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "C0603C104K5RACAUTO"
 			(at 168.91 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -3856,7 +2817,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RMCF_RMCP.pdf"
 			(at 241.3 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -3867,8 +2828,52 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, small US symbol"
+		(property "Description" "0 Ohms Jumper Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
 			(at 241.3 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIST" "DigiKey"
+			(at 241.3 86.36 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "RMCF0603ZT0R00CT-ND"
+			(at 241.3 86.36 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Stackpole Electronics"
+			(at 241.3 86.36 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RMCF0603ZT0R00"
+			(at 241.3 86.36 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3888,199 +2893,6 @@
 			(project "c3-proxy"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/8aa56671-39c3-4bed-b52c-69096fb4cc26"
 					(reference "R23")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "oresat-power:3.3V")
-		(at 223.52 166.37 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "cd697b3d-7b75-4a94-87e7-ab41529a0197")
-		(property "Reference" "#3V07"
-			(at 223.52 170.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "3.3V"
-			(at 223.52 162.814 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 223.52 166.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 223.52 166.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 223.52 166.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "64f50e2b-2e28-4804-a611-8a6b9ef68476")
-		)
-		(instances
-			(project "c3-proxy"
-				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/8aa56671-39c3-4bed-b52c-69096fb4cc26"
-					(reference "#3V07")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Simulation_SPICE:PMOS")
-		(at 220.98 181.61 0)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp yes)
-		(uuid "d0123e95-5119-4307-8d5e-77c9015645dd")
-		(property "Reference" "Q7"
-			(at 233.426 181.102 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "DMP2035UQ-7"
-			(at 233.426 183.642 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
-			(at 226.06 184.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-			(at 220.98 168.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "P-MOSFET transistor, drain/source/gate"
-			(at 220.98 181.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "PMOS"
-			(at 220.98 164.465 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" "VDMOS"
-			(at 220.98 162.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 220.98 166.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "0cfe9590-2313-4f72-97c0-01c3cbbc76ab")
-		)
-		(pin "1"
-			(uuid "1045bdea-4b01-42c2-b657-1e3e74873706")
-		)
-		(pin "2"
-			(uuid "f4f5a4ca-c5a3-479a-9a5e-df228efea419")
-		)
-		(instances
-			(project "c3-proxy"
-				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/8aa56671-39c3-4bed-b52c-69096fb4cc26"
-					(reference "Q7")
 					(unit 1)
 				)
 			)
@@ -4130,7 +2942,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RMCF_RMCP.pdf"
 			(at 241.3 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -4141,8 +2953,52 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, small US symbol"
+		(property "Description" "0 Ohms Jumper Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
 			(at 241.3 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIST" "DigiKey"
+			(at 241.3 109.22 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "RMCF0603ZT0R00CT-ND"
+			(at 241.3 109.22 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Stackpole Electronics"
+			(at 241.3 109.22 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RMCF0603ZT0R00"
+			(at 241.3 109.22 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4212,7 +3068,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RMCF_RMCP.pdf"
 			(at 227.33 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -4223,8 +3079,52 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, small US symbol"
+		(property "Description" "0 Ohms Jumper Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
 			(at 227.33 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIST" "DigiKey"
+			(at 227.33 97.79 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "RMCF0603ZT0R00CT-ND"
+			(at 227.33 97.79 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Stackpole Electronics"
+			(at 227.33 97.79 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RMCF0603ZT0R00"
+			(at 227.33 97.79 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4294,7 +3194,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RMCF_RMCP.pdf"
 			(at 227.33 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -4305,8 +3205,52 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, small US symbol"
+		(property "Description" "0 Ohms Jumper Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
 			(at 227.33 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIST" "DigiKey"
+			(at 227.33 109.22 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "RMCF0603ZT0R00CT-ND"
+			(at 227.33 109.22 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Stackpole Electronics"
+			(at 227.33 109.22 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RMCF0603ZT0R00"
+			(at 227.33 109.22 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4405,131 +3349,6 @@
 			(project "c3-proxy"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/8aa56671-39c3-4bed-b52c-69096fb4cc26"
 					(reference "#VBUS08")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "oresat-diodes:1N4151WS-HE3")
-		(at 219.71 172.72 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp yes)
-		(uuid "fd0abaf7-de4c-46dd-abee-6fae4e00b7e3")
-		(property "Reference" "D13"
-			(at 217.17 173.355 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1N4151WS"
-			(at 217.17 170.815 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
-			(at 224.79 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85847/1n4151ws.pdf"
-			(at 227.33 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Diode Standard 50V 150mA Surface Mount SOD-323"
-			(at 219.71 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DPN" "112-1N4151WS-E3-08CT-ND"
-			(at 219.71 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DST" "DigiKey"
-			(at 219.71 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MFR" "Vishay"
-			(at 219.71 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "1N4151WS-E3-08"
-			(at 219.71 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "115a583e-0702-4fcd-b6d7-27b8c101031f")
-		)
-		(pin "2"
-			(uuid "d310549e-b3a6-49a9-9db9-81df548c7fd8")
-		)
-		(instances
-			(project "c3-proxy"
-				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/8aa56671-39c3-4bed-b52c-69096fb4cc26"
-					(reference "D13")
 					(unit 1)
 				)
 			)

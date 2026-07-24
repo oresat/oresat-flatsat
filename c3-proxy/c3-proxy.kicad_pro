@@ -72,28 +72,28 @@
       "diff_pair_dimensions": [],
       "drc_exclusions": [
         [
-          "clearance|153050500|98905500|c85aa7ae-8688-4a76-972c-ee04155000b2|e6afa8e2-25aa-4e53-b5f6-94d94ce614f3",
-          ""
+          "clearance|153050500|99230500|e6afa8e2-25aa-4e53-b5f6-94d94ce614f3|c85aa7ae-8688-4a76-972c-ee04155000b2",
+          "small footprint"
         ],
         [
-          "clearance|153050500|99405500|e6afa8e2-25aa-4e53-b5f6-94d94ce614f3|da0c6592-3710-4f12-ab88-beec5a781bd2",
-          ""
+          "clearance|153050500|99730500|da0c6592-3710-4f12-ab88-beec5a781bd2|e6afa8e2-25aa-4e53-b5f6-94d94ce614f3",
+          "small footprint"
         ],
         [
           "clearance|153050500|99905500|da0c6592-3710-4f12-ab88-beec5a781bd2|ea5e8598-42a5-419c-853f-328fa9df1de0",
           ""
         ],
         [
+          "clearance|155850500|100230500|1ec018d7-e410-4f45-8968-c8f882b13e4e|5ca73749-b0e2-4c8e-839d-6254888c7b6a",
+          "the footprint is just small"
+        ],
+        [
           "clearance|155850500|99230500|b96e03d2-9e01-436d-97f7-3f5dfc846d9b|704ad1ff-abd4-463d-8412-e3c0036085a4",
           ""
         ],
         [
-          "clearance|155850500|99730500|5ca73749-b0e2-4c8e-839d-6254888c7b6a|b96e03d2-9e01-436d-97f7-3f5dfc846d9b",
-          ""
-        ],
-        [
-          "clearance|155850500|99905500|5ca73749-b0e2-4c8e-839d-6254888c7b6a|1ec018d7-e410-4f45-8968-c8f882b13e4e",
-          ""
+          "clearance|155850500|99405500|b96e03d2-9e01-436d-97f7-3f5dfc846d9b|5ca73749-b0e2-4c8e-839d-6254888c7b6a",
+          "small footprint"
         ],
         [
           "hole_clearance|132467800|96399850|10d2a366-bb27-4be2-9d7f-17e7546b1671|21ab4525-75fb-4eba-9d25-1860f4151b10",
@@ -281,7 +281,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": "0.1"
+      "sch_revision": "${REVISION}"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -301,7 +301,32 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "power_pin_not_driven|1562100|711200|f0455518-54c0-4f29-a33d-5b06d88f8aad|00000000-0000-0000-0000-000000000000|/1a9202c4-e698-4c93-952c-ee3e64e9e49c/ad201ad7-0b68-497a-9bd5-92d5158f3b08|/1a9202c4-e698-4c93-952c-ee3e64e9e49c/ad201ad7-0b68-497a-9bd5-92d5158f3b08|",
+        "power comes from U7"
+      ],
+      [
+        "power_pin_not_driven|1651000|1854200|2bfd3d1a-e7a2-45ba-b8ce-5bb1ce7fbe77|00000000-0000-0000-0000-000000000000|/1a9202c4-e698-4c93-952c-ee3e64e9e49c/9e3e06f8-887b-42f5-9213-500926d830e9|/1a9202c4-e698-4c93-952c-ee3e64e9e49c/9e3e06f8-887b-42f5-9213-500926d830e9|",
+        "power comes from DC jack"
+      ],
+      [
+        "power_pin_not_driven|1803400|1308100|a86c062e-9b3e-4871-8fa2-3e8fdd7bfb08|00000000-0000-0000-0000-000000000000|/1a9202c4-e698-4c93-952c-ee3e64e9e49c/9e3e06f8-887b-42f5-9213-500926d830e9|/1a9202c4-e698-4c93-952c-ee3e64e9e49c/9e3e06f8-887b-42f5-9213-500926d830e9|",
+        "power comes from USBC connector"
+      ],
+      [
+        "power_pin_not_driven|2019300|2082800|3f574467-cc25-49ee-9b0b-200e405fe2b0|00000000-0000-0000-0000-000000000000|/1a9202c4-e698-4c93-952c-ee3e64e9e49c/9e3e06f8-887b-42f5-9213-500926d830e9|/1a9202c4-e698-4c93-952c-ee3e64e9e49c/9e3e06f8-887b-42f5-9213-500926d830e9|",
+        "same as VJACK"
+      ],
+      [
+        "power_pin_not_driven|2730500|1054100|9792fcd6-c9cd-4914-bdc6-846e7f509071|00000000-0000-0000-0000-000000000000|/1a9202c4-e698-4c93-952c-ee3e64e9e49c|/1a9202c4-e698-4c93-952c-ee3e64e9e49c|",
+        ""
+      ],
+      [
+        "power_pin_not_driven|2730500|977900|ad28eb6e-ddc0-4ce0-8180-ce6c6413661a|00000000-0000-0000-0000-000000000000|/1a9202c4-e698-4c93-952c-ee3e64e9e49c|/1a9202c4-e698-4c93-952c-ee3e64e9e49c|",
+        "power comes from j1 this board"
+      ]
+    ],
     "meta": {
       "version": 0
     },
@@ -653,27 +678,15 @@
         },
         {
           "group_by": false,
-          "label": "Datasheet",
-          "name": "Datasheet",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "DPN",
-          "name": "DPN",
-          "show": false
-        },
-        {
-          "group_by": false,
           "label": "MFR",
           "name": "MFR",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
           "label": "MPN",
           "name": "MPN",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -695,14 +708,20 @@
         },
         {
           "group_by": false,
-          "label": "DIS",
-          "name": "DIS",
-          "show": false
+          "label": "DIST",
+          "name": "DIST",
+          "show": true
         },
         {
           "group_by": false,
-          "label": "Description",
-          "name": "Description",
+          "label": "DPN",
+          "name": "DPN",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "DIS",
+          "name": "DIS",
           "show": false
         },
         {
@@ -710,6 +729,18 @@
           "label": "#",
           "name": "${ITEM_NUMBER}",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Datasheet",
+          "name": "Datasheet",
+          "show": true
         }
       ],
       "filter_string": "",
@@ -786,7 +817,7 @@
         "uuid": "1a9202c4-e698-4c93-952c-ee3e64e9e49c"
       }
     ],
-    "used_designators": "BZ1,#3V1,#3V7,HW1-3,D1-4,D13,C2,C6-9,J1-5,#PWR1-2,#PWR5-9,#PWR12,#PWR17,#PWR19-27,Q2,Q5-7,U2,U4,U9,F1-2,#VBUS1-2,#VBUS4,#VBUS8-16,TP1-17,TP20-29,R1-3,R5,R7-23,R95",
+    "used_designators": "FID1-3,FIDUCIAL1-2,TP1-17,TP20-29,R1-3,R5,R7-23,R95,#VBUS1-2,#VBUS4,#VBUS8-17,F1-2,Q2,Q5-7,#PWR1-2,#PWR5-9,#PWR12,#PWR17,#PWR19-28,J1-5,C2,C6-9,U2,U4,U9,D1-4,D13,HW1-4,#3V1,#3V7,BZ1",
     "variants": []
   },
   "sheets": [
@@ -807,7 +838,9 @@
       "opd"
     ]
   ],
-  "text_variables": {},
+  "text_variables": {
+    "REVISION": "0.1"
+  },
   "tuning_profiles": {
     "meta": {
       "version": 0

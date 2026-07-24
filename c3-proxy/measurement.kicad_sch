@@ -7,7 +7,7 @@
 	(title_block
 		(title "Flatsat Interface Card")
 		(date "2026-06-29")
-		(rev "0.1")
+		(rev "${REVISION}")
 		(company "Portland State Aerospace Society")
 	)
 	(lib_symbols
@@ -2788,6 +2788,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "reversed PMOS for ideal diode"
+		(exclude_from_sim no)
+		(at 274.066 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "22d8cf16-ef70-4af5-a7ce-a3b59b543b21")
+	)
 	(text "Toggle I2C for the OPD bus, \nso can disconnect if other interface cards or C3 is present.\nToggle comes indirectly through MAX892"
 		(exclude_from_sim no)
 		(at 291.084 135.128 0)
@@ -2970,6 +2980,12 @@
 		(uuid "850a33a0-29c8-4f80-9750-c5ed33cd32a5")
 	)
 	(junction
+		(at 156.21 148.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ab9a88b1-31b2-4886-85ac-3a1f691e330f")
+	)
+	(junction
 		(at 306.07 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3028,10 +3044,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f434fea8-f0f6-42b8-adfb-fbc66aca91fc")
-	)
-	(no_connect
-		(at 204.47 87.63)
-		(uuid "e07bced5-7d7f-4389-827d-6a08f9199726")
 	)
 	(wire
 		(pts
@@ -3145,7 +3157,17 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 151.13) (xy 156.21 146.05)
+			(xy 144.78 148.59) (xy 144.78 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1be1cc67-08d7-4fcd-8fb6-e36c73aed091")
+	)
+	(wire
+		(pts
+			(xy 156.21 151.13) (xy 156.21 148.59)
 		)
 		(stroke
 			(width 0)
@@ -3232,6 +3254,16 @@
 			(type default)
 		)
 		(uuid "350d1598-c5af-4591-be8b-483e885988dd")
+	)
+	(wire
+		(pts
+			(xy 144.78 156.21) (xy 146.05 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35dabb9e-24f5-43ab-8278-ccf9672666bd")
 	)
 	(wire
 		(pts
@@ -3442,6 +3474,16 @@
 			(type default)
 		)
 		(uuid "60841a6d-c735-4768-a367-4de73ed0ffba")
+	)
+	(wire
+		(pts
+			(xy 156.21 148.59) (xy 144.78 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "617e1810-83a9-4c9d-92b6-fdbe01174f02")
 	)
 	(wire
 		(pts
@@ -3732,6 +3774,16 @@
 			(type default)
 		)
 		(uuid "ba469855-10f7-44bd-90aa-c30320801830")
+	)
+	(wire
+		(pts
+			(xy 156.21 148.59) (xy 156.21 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba5118ed-8ac6-4e64-93b3-713e9d57ed1d")
 	)
 	(wire
 		(pts
@@ -4124,7 +4176,7 @@
 		(uuid "fde51831-b09e-4ddc-b960-777ecbf81c58")
 	)
 	(hierarchical_label "OPD_SCL"
-		(shape input)
+		(shape output)
 		(at 276.86 156.21 0)
 		(effects
 			(font
@@ -4135,7 +4187,7 @@
 		(uuid "00d53296-82eb-4de8-82f3-8a67510a1d2f")
 	)
 	(hierarchical_label "USBShutdown"
-		(shape input)
+		(shape output)
 		(at 177.8 176.53 0)
 		(effects
 			(font
@@ -4146,7 +4198,7 @@
 		(uuid "020d7897-74da-4d2f-bb31-9202f8b2263a")
 	)
 	(hierarchical_label "LOCAL_SDA"
-		(shape input)
+		(shape bidirectional)
 		(at 210.82 146.05 180)
 		(effects
 			(font
@@ -4157,7 +4209,7 @@
 		(uuid "056bb0ae-1a59-4338-b56d-1dd9a22761b2")
 	)
 	(hierarchical_label "USB-"
-		(shape input)
+		(shape bidirectional)
 		(at 139.7 168.91 180)
 		(effects
 			(font
@@ -4168,7 +4220,7 @@
 		(uuid "23c689e3-06cc-4cad-964d-9d39730aa9fe")
 	)
 	(hierarchical_label "LOCAL_SCL"
-		(shape input)
+		(shape output)
 		(at 224.79 146.05 0)
 		(effects
 			(font
@@ -4179,7 +4231,7 @@
 		(uuid "3a886ebf-ccd4-40a2-a404-87c7f77d7606")
 	)
 	(hierarchical_label "OPD_SDA"
-		(shape input)
+		(shape bidirectional)
 		(at 276.86 151.13 0)
 		(effects
 			(font
@@ -4190,7 +4242,7 @@
 		(uuid "4d28a8dd-eb87-4e33-a682-73f5cf3dbd4f")
 	)
 	(hierarchical_label "OPD_PWR"
-		(shape input)
+		(shape output)
 		(at 316.23 74.93 0)
 		(effects
 			(font
@@ -4201,7 +4253,7 @@
 		(uuid "dcb29769-924c-4fbe-a7e5-4b9eb47aa378")
 	)
 	(hierarchical_label "USB+"
-		(shape input)
+		(shape bidirectional)
 		(at 139.7 166.37 180)
 		(effects
 			(font
@@ -4223,7 +4275,7 @@
 		(uuid "e3b629c1-5b11-4628-aa67-4ca15f1d1de8")
 	)
 	(hierarchical_label "C3-UART-TX"
-		(shape input)
+		(shape output)
 		(at 170.18 166.37 0)
 		(effects
 			(font
@@ -4278,7 +4330,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/4412fb.pdf"
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ltc4412.pdf"
 			(at 327.66 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -4289,7 +4341,51 @@
 				)
 			)
 		)
-		(property "Description" "Low Loss PowerPath Controller, TSOT-23-6"
+		(property "Description" "OR Controller Source Selector Switch P-Channel 2:1 TSOT-23-6 industrial temp"
+			(at 274.32 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIST" "DigiKey"
+			(at 274.32 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "LTC4412ES6#WTRMPBF"
+			(at 274.32 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Analog Devices"
+			(at 274.32 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "LTC4412ES6#PBF"
 			(at 274.32 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -4550,6 +4646,50 @@
 				)
 			)
 		)
+		(property "DIST" "DigiKey"
+			(at 130.81 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "576-3351-2-ND"
+			(at 130.81 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Microchip Technology"
+			(at 130.81 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "MIC23050-SYML-TR"
+			(at 130.81 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "9095c165-7745-46d1-9110-ae81f31e2371")
 		)
@@ -4631,7 +4771,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT188C71C475KE13-01.pdf"
 			(at 156.21 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -4642,7 +4782,51 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "4.7 µF ±10% 16V Ceramic Capacitor X7S 0603 (1608 Metric)"
+			(at 156.21 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIST" "DigiKey"
+			(at 156.21 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "490-GRT188C71C475KE13DCT-ND"
+			(at 156.21 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Murata Electronics"
+			(at 156.21 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "GRT188C71C475KE13D"
 			(at 156.21 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -4713,7 +4897,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RMCF_RMCP.pdf"
 			(at 185.42 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -4724,7 +4908,51 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, small US symbol"
+		(property "Description" "10 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+			(at 185.42 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIST" "DigiKey"
+			(at 185.42 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "RMCF0603FT10K0CT-ND"
+			(at 185.42 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Stackpole Electronics"
+			(at 185.42 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RMCF0603FT10K0"
 			(at 185.42 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -4873,7 +5101,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/150060GS75000.pdf"
 			(at 306.07 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -4884,7 +5112,7 @@
 				)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "Green 520nm LED Indication - Discrete 3.2V 0603 (1608 Metric) - 430 mcd @ 20 mA"
 			(at 306.07 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -4897,6 +5125,50 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 306.07 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIST" "DigiKey"
+			(at 306.07 85.09 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "732-4971-1-ND"
+			(at 306.07 85.09 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Wurth"
+			(at 306.07 85.09 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "150060GS75000"
+			(at 306.07 85.09 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5099,7 +5371,7 @@
 				)
 			)
 		)
-		(property "Value" "470uF"
+		(property "Value" "470pF"
 			(at 148.844 85.852 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5120,7 +5392,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.kemet.com/download/specsheet/C0603C471K5RACAUTO"
 			(at 148.59 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -5131,8 +5403,52 @@
 				)
 			)
 		)
-		(property "Description" "C0603C471K5RACAUTO"
+		(property "Description" "470 pF ±10% 50V Ceramic Capacitor X7R 0603 (1608 Metric)"
 			(at 148.59 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIST" "DigiKey"
+			(at 148.59 80.01 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "399-6894-1-ND"
+			(at 148.59 80.01 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "KEMET"
+			(at 148.59 80.01 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "C0603C471K5RACAUTO"
+			(at 148.59 80.01 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5357,7 +5673,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT188C71C475KE13-01.pdf"
 			(at 167.64 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -5368,7 +5684,51 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "4.7 µF ±10% 16V Ceramic Capacitor X7S 0603 (1608 Metric)"
+			(at 167.64 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIST" "DigiKey"
+			(at 167.64 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "490-GRT188C71C475KE13DCT-ND"
+			(at 167.64 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Murata Electronics"
+			(at 167.64 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "GRT188C71C475KE13D"
 			(at 167.64 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -5436,7 +5796,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMP2035U.pdf"
 			(at 287.02 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -5447,7 +5807,7 @@
 				)
 			)
 		)
-		(property "Description" "P-MOSFET transistor, drain/source/gate"
+		(property "Description" "P-Channel 20 V 4.9A (Ta) 810mW (Ta) Surface Mount SOT-23-3"
 			(at 274.32 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -5482,6 +5842,50 @@
 		)
 		(property "Sim.Pins" "1=D 2=G 3=S"
 			(at 289.56 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIST" "DigiKey"
+			(at 274.32 77.47 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "31-DMP2035UQ-7CT-ND"
+			(at 274.32 77.47 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Diodes Incorporated"
+			(at 274.32 77.47 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "DMP2035UQ-7"
+			(at 274.32 77.47 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5787,7 +6191,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/150060GS75000.pdf"
 			(at 170.18 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -5798,7 +6202,7 @@
 				)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "Green 520nm LED Indication - Discrete 3.2V 0603 (1608 Metric) - 430 mcd @ 20 mA"
 			(at 170.18 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -5811,6 +6215,50 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 170.18 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIST" "DigiKey"
+			(at 170.18 85.09 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "732-4971-1-ND"
+			(at 170.18 85.09 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Wurth"
+			(at 170.18 85.09 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "150060GS75000"
+			(at 170.18 85.09 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5969,7 +6417,51 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, small US symbol"
+		(property "Description" "23.7 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Moisture Resistant Thick Film"
+			(at 231.14 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIST" "DigiKey"
+			(at 231.14 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "RMCF0603FT23K7CT-ND"
+			(at 231.14 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Stackpole"
+			(at 231.14 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RMCF0603FT23K7"
 			(at 231.14 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -6429,7 +6921,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT188R71E105KE13-01.pdf"
 			(at 195.58 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -6440,7 +6932,51 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "1 µF ±10% 25V Ceramic Capacitor X7R 0603 (1608 Metric)"
+			(at 195.58 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIST" "DigiKey"
+			(at 195.58 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "490-GRT188R71E105KE13DCT-ND"
+			(at 195.58 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Murata Electronics"
+			(at 195.58 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "GRT188R71E105KE13D"
 			(at 195.58 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -6511,7 +7047,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT188C71C475KE13-01.pdf"
 			(at 248.92 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -6522,7 +7058,51 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "4.7 µF ±10% 16V Ceramic Capacitor X7S 0603 (1608 Metric)"
+			(at 248.92 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIST" "DigiKey"
+			(at 248.92 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "490-GRT188C71C475KE13DCT-ND"
+			(at 248.92 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Murata Electronics"
+			(at 248.92 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "GRT188C71C475KE13D"
 			(at 248.92 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -6671,7 +7251,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RMCF_RMCP.pdf"
 			(at 170.18 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -6682,7 +7262,51 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, small US symbol"
+		(property "Description" "10 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+			(at 170.18 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIST" "DigiKey"
+			(at 170.18 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "RMCF0603FT10K0CT-ND"
+			(at 170.18 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Stackpole Electronics"
+			(at 170.18 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RMCF0603FT10K0"
 			(at 170.18 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -6752,7 +7376,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RMCF_RMCP.pdf"
 			(at 173.99 196.85 0)
 			(hide yes)
 			(show_name no)
@@ -6763,7 +7387,51 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, small US symbol"
+		(property "Description" "10 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+			(at 173.99 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIST" "DigiKey"
+			(at 173.99 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "RMCF0603FT10K0CT-ND"
+			(at 173.99 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Stackpole Electronics"
+			(at 173.99 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RMCF0603FT10K0"
 			(at 173.99 196.85 0)
 			(hide yes)
 			(show_name no)
@@ -7068,7 +7736,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT188R71E105KE13-01.pdf"
 			(at 234.95 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -7079,7 +7747,51 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "1 µF ±10% 25V Ceramic Capacitor X7R 0603 (1608 Metric)"
+			(at 234.95 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIST" "DigiKey"
+			(at 234.95 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "490-GRT188R71E105KE13DCT-ND"
+			(at 234.95 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Murata Electronics"
+			(at 234.95 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "GRT188R71E105KE13D"
 			(at 234.95 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -7150,7 +7862,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT188C71C475KE13-01.pdf"
 			(at 109.22 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -7161,7 +7873,51 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "4.7 µF ±10% 16V Ceramic Capacitor X7S 0603 (1608 Metric)"
+			(at 109.22 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIST" "DigiKey"
+			(at 109.22 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "490-GRT188C71C475KE13DCT-ND"
+			(at 109.22 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Murata Electronics"
+			(at 109.22 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "GRT188C71C475KE13D"
 			(at 109.22 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -7232,7 +7988,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RMCF_RMCP.pdf"
 			(at 306.07 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -7243,7 +7999,51 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, small US symbol"
+		(property "Description" "10 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+			(at 306.07 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIST" "DigiKey"
+			(at 306.07 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "RMCF0603FT10K0CT-ND"
+			(at 306.07 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Stackpole Electronics"
+			(at 306.07 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RMCF0603FT10K0"
 			(at 306.07 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -7323,6 +8123,50 @@
 			)
 		)
 		(property "Description" "USB to I2C/UART Protocol Converter with GPIO, TSSOP-14"
+			(at 156.21 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIST" "DigiKey"
+			(at 156.21 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "MCP2221AT-I/STTR-ND"
+			(at 156.21 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Microchip Technology"
+			(at 156.21 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "MCP2221AT-I/ST"
 			(at 156.21 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -7428,7 +8272,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RMCF_RMCP.pdf"
 			(at 168.91 196.85 0)
 			(hide yes)
 			(show_name no)
@@ -7439,7 +8283,51 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, small US symbol"
+		(property "Description" "10 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+			(at 168.91 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIST" "DigiKey"
+			(at 168.91 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "RMCF0603FT10K0CT-ND"
+			(at 168.91 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Stackpole Electronics"
+			(at 168.91 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RMCF0603FT10K0"
 			(at 168.91 196.85 0)
 			(hide yes)
 			(show_name no)
@@ -7521,7 +8409,51 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "2 Circuit IC Switch 1:1 1Ohm 8-VSSOP"
+			(at 257.81 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIST" "DigiKey"
+			(at 257.81 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "296-24304-1-ND"
+			(at 257.81 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Texas Instruments"
+			(at 257.81 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "TS5A21366DCUR"
 			(at 257.81 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -7609,7 +8541,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RMCF_RMCP.pdf"
 			(at 219.71 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -7620,7 +8552,51 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, small US symbol"
+		(property "Description" "4.7 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+			(at 219.71 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIST" "DigiKey"
+			(at 219.71 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "RMCF0603FT4K70CT-ND"
+			(at 219.71 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Stackpole Electronics"
+			(at 219.71 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RMCF0603FT4K70"
 			(at 219.71 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -7689,7 +8665,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://product.tdk.com/en/system/files?file=dam/doc/product/inductor/inductor/smd/catalog/inductor_commercial_decoupling_mlz2012_en.pdf"
 			(at 148.59 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -7700,8 +8676,52 @@
 				)
 			)
 		)
-		(property "Description" "LBR2012T1R0M"
+		(property "Description" "1 µH Shielded Multilayer Inductor 800 mA 100mOhm 0805 (2012 Metric)"
 			(at 148.59 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIST" "DigiKey"
+			(at 148.59 74.93 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "445-8657-2-ND"
+			(at 148.59 74.93 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "TDK"
+			(at 148.59 74.93 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "MLZ2012M1R0HT000"
+			(at 148.59 74.93 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7770,7 +8790,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RMCF_RMCP.pdf"
 			(at 214.63 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -7781,7 +8801,51 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, small US symbol"
+		(property "Description" "4.7 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+			(at 214.63 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIST" "DigiKey"
+			(at 214.63 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "RMCF0603FT4K70CT-ND"
+			(at 214.63 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Stackpole Electronics"
+			(at 214.63 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RMCF0603FT4K70"
 			(at 214.63 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -8006,7 +9070,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.we-online.com/catalog/datasheet/150060AS75000.pdf"
 			(at 168.91 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -8017,7 +9081,7 @@
 				)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "Amber 605nm LED Indication - Discrete 2V 0603 (1608 Metric) - 120 mA @ 20 mA"
 			(at 168.91 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -8030,6 +9094,50 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 168.91 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIST" "DigiKey"
+			(at 168.91 186.69 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "732-150060AS75000CT-ND"
+			(at 168.91 186.69 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Wurth"
+			(at 168.91 186.69 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "150060AS75000"
+			(at 168.91 186.69 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8190,7 +9298,51 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power Switch ICs - Power Distribution Current-Limited, High-Side P-Channel Switches with Thermal Shutdown"
+			(at 217.17 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIST" "DigiKey"
+			(at 217.17 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "MAX892LEUA+-ND"
+			(at 217.17 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Analog Devices"
+			(at 217.17 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "MAX892LEUA+T"
 			(at 217.17 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -8256,7 +9408,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "GRN"
+		(property "Value" "GREEN"
 			(at 178.562 189.484 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8278,7 +9430,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/150060GS75000.pdf"
 			(at 173.99 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -8289,7 +9441,7 @@
 				)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "Green 520nm LED Indication - Discrete 3.2V 0603 (1608 Metric) - 430 mcd @ 20 mA"
 			(at 173.99 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -8302,6 +9454,50 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 173.99 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIST" "DigiKey"
+			(at 173.99 186.69 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "732-4971-1-ND"
+			(at 173.99 186.69 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Wurth"
+			(at 173.99 186.69 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "150060GS75000"
+			(at 173.99 186.69 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
