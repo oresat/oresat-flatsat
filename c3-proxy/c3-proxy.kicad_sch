@@ -6773,7 +6773,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://riedon.com/media/pdf/CSR.pdf"
+		(property "Datasheet" "https://www.vishay.com/docs/30100/wsl.pdf"
 			(at 153.67 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -6784,7 +6784,7 @@
 				)
 			)
 		)
-		(property "Description" "10 mOhms ±1% 1W Chip Resistor 1206 (3216 Metric) Current Sense, Non-Inductive Metal Element"
+		(property "Description" "10 mOhms ±1% 0.25W, 1/4W Chip Resistor 1206 (3216 Metric) Anti-Sulfur, Automotive AEC-Q200, Current Sense, Moisture Resistant, Pulse Withstanding Metal Element"
 			(at 153.67 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -6806,7 +6806,7 @@
 				)
 			)
 		)
-		(property "DPN" "696-1374-1-ND"
+		(property "DPN" "WSLC-.01TR-ND"
 			(at 153.67 100.33 90)
 			(hide yes)
 			(show_name no)
@@ -6817,7 +6817,7 @@
 				)
 			)
 		)
-		(property "MFR" "Riedon"
+		(property "MFR" "Vishay Dale"
 			(at 153.67 100.33 90)
 			(hide yes)
 			(show_name no)
@@ -6828,7 +6828,7 @@
 				)
 			)
 		)
-		(property "MPN" "CSR1206-0R01F1"
+		(property "MPN" "WSL1206R0100FEA"
 			(at 153.67 100.33 90)
 			(hide yes)
 			(show_name no)
