@@ -15375,7 +15375,7 @@
 				(justify right top)
 			)
 		)
-		(property "Datasheet" "https://riedon.com/media/pdf/CSR.pdf"
+		(property "Datasheet" "https://www.vishay.com/docs/30100/wsl.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -15387,7 +15387,7 @@
 				)
 			)
 		)
-		(property "Description" "10 mOhms ±1% 1W Chip Resistor 1206 (3216 Metric) Current Sense, Non-Inductive Metal Element"
+		(property "Description" "10 mOhms ±1% 0.25W, 1/4W Chip Resistor 1206 (3216 Metric) Anti-Sulfur, Automotive AEC-Q200, Current Sense, Moisture Resistant, Pulse Withstanding Metal Element"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -15412,7 +15412,7 @@
 				)
 			)
 		)
-		(property "DPN" "696-1374-1-ND"
+		(property "DPN" "WSLC-.01TR-ND"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15425,7 +15425,7 @@
 				)
 			)
 		)
-		(property "MFR" "Riedon"
+		(property "MFR" "Vishay Dale"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15438,7 +15438,7 @@
 				)
 			)
 		)
-		(property "MPN" "CSR1206-0R01F1"
+		(property "MPN" "WSL1206R0100FEA"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -16337,19 +16337,6 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "Microchip Technology"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "bac9ccee-b862-49d9-80ae-847a398b2ff3")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "DIST" "DigiKey"
 			(at 0 0 90)
 			(unlocked yes)
@@ -16389,10 +16376,29 @@
 				)
 			)
 		)
+		(property "MFR" "Microchip Technology"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ad0d9fb1-4aa5-4845-914b-8e454668f177")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Micrel*MLF*8*2x2mm*")
 		(path "/ad201ad7-0b68-497a-9bd5-92d5158f3b08/11540a3c-b025-47e3-81fc-b6100fcc39e0")
 		(sheetname "/opd/")
 		(sheetfile "measurement.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "7" "2" "3" "6" "9" "8" "1" "4" "5")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -16853,7 +16859,7 @@
 				)
 			)
 		)
-		(property "Value" "SFM-120-02-L-DH-TR"
+		(property "Value" "SFM-120-02-X-DH"
 			(at 0 1 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -16944,6 +16950,15 @@
 		(path "/601647f1-5c45-48de-b5ce-c0af19c4c5b4")
 		(sheetname "/")
 		(sheetfile "c3-proxy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3" "4" "5" "6" "7" "8" "9" "10" "11" "12" "13" "14" "15"
+					"16" "17" "18" "19" "20" "21" "22" "23" "24" "25" "26" "27" "28" "29"
+					"30" "31" "32" "33" "34" "35" "36" "37" "38" "39" "40"
+				)
+			)
+		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -14.7955 0.508)
