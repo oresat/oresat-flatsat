@@ -825,7 +825,7 @@
         "uuid": "1a9202c4-e698-4c93-952c-ee3e64e9e49c"
       }
     ],
-    "used_designators": "HW1-4,BZ1,#3V1,#3V7,FIDUCIAL1-2,FID1-3,TP1-17,TP20-29,R1-3,R5,R7-23,R95,#VBUS1-2,#VBUS4,#VBUS8-17,F1-2,Q2,Q5-7,D1-4,D13,U2,U4,U9,#PWR1-2,#PWR5-9,#PWR12,#PWR17,#PWR19-28,J1-5,C2,C6-9",
+    "used_designators": "D1-4,D13,U2,U4,U9,BZ1,FIDUCIAL1-2,#3V1,#3V7,J1-5,TP1-17,TP20-29,FID1-3,R1-3,R5,R7-23,R95,#VBUS1-2,#VBUS4,#VBUS8-17,Q2,Q5-7,F1-2,#PWR1-2,#PWR5-9,#PWR12,#PWR17,#PWR19-28,C2,C6-9,HW1-4",
     "variants": []
   },
   "sheets": [
