@@ -934,9 +934,9 @@
 		)
 		(uuid "e7f4336b-69e9-4f8d-a377-11320a4f9629")
 	)
-	(text "choose I2C address with resistor network\noverlaps with possible OPD address space when A1=(SDA or SCL)"
+	(text "choose I2C address with resistor network\ndoes not overlap with OPD address space\nINA226 goes from 0x40 - 0x4F\nOPD ranges from 0x08 - 0x3F "
 		(exclude_from_sim no)
-		(at 230.124 75.184 0)
+		(at 292.862 100.584 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1708,7 +1708,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "0"
+		(property "Value" "100"
 			(at 243.332 103.124 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1834,7 +1834,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "0"
+		(property "Value" "100"
 			(at 225.298 125.984 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2469,7 +2469,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "0"
+		(property "Value" "100"
 			(at 225.298 91.694 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2798,7 +2798,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "0"
+		(property "Value" "100"
 			(at 243.332 91.694 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2923,7 +2923,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "0"
+		(property "Value" "100"
 			(at 243.332 114.554 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3049,7 +3049,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "0"
+		(property "Value" "100"
 			(at 225.298 103.124 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3175,7 +3175,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "0"
+		(property "Value" "100"
 			(at 225.298 114.554 90)
 			(show_name no)
 			(do_not_autoplace no)

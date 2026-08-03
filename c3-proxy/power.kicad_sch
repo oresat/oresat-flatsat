@@ -317,6 +317,193 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Diode:1N4151"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "1N4151"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+				(at 0 -4.445 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "http://www.microsemi.com/document-portal/doc_view/11580-lds-0239"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "75V 0.5A standard switching diode, DO-35"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "D*DO?35*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "1N4151_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "1N4151_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Power_Management:LTC4412xS6"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1195,102 +1382,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "oresat-misc:Test-Point-0.75mm-th"
-			(exclude_from_sim no)
-			(in_bom no)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "TP"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.0795)
-					)
-				)
-			)
-			(property "Value" "Test-Point"
-				(at 0 7.62 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "oresat-misc:TestPoint-0.75mm-th"
-				(at 0 10.16 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "0.75 mm TH test point; good for scope probes and jumpers"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Test-Point-0.75mm-th_1_0"
-				(pin passive line
-					(at 0 0 0)
-					(length 0)
-					(name "1"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-			)
-			(symbol "Test-Point-0.75mm-th_1_1"
-				(rectangle
-					(start -1.27 1.27)
-					(end 1.27 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "oresat_stuff:C&K PCM13SMTR"
+		(symbol "oresat-misc:C&K PCM13SMTR"
 			(pin_names
 				(offset 0.254)
 			)
@@ -1299,8 +1391,8 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "SW"
-				(at 7.62 1.27 0)
+			(property "Reference" "SW1"
+				(at 7.62 1.2701 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1311,7 +1403,7 @@
 				)
 			)
 			(property "Value" "C&K PCM13SMTR"
-				(at 7.62 -1.27 0)
+				(at 7.62 -1.2699 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1345,6 +1437,50 @@
 			)
 			(property "Description" "Slide Switch, SP3T, SMT, RA"
 				(at 0 11.938 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "DIST" "DigiKey"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "DPN" "401-2017-1-ND"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MFR" "C&K"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "PCM13SMTR"
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -1465,7 +1601,7 @@
 				(pin passive line
 					(at 5.08 -5.08 90)
 					(length 2.54)
-					(name "3"
+					(name "COM"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1483,7 +1619,7 @@
 				(pin passive line
 					(at 0 -5.08 90)
 					(length 2.54)
-					(name "4"
+					(name "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1833,7 +1969,7 @@
 	)
 	(text "DC Jack Power"
 		(exclude_from_sim no)
-		(at 167.386 174.498 0)
+		(at 151.384 175.006 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1841,9 +1977,9 @@
 		)
 		(uuid "0de43a4f-07ca-430d-aa0f-2518964868d7")
 	)
-	(text "3A fuse"
+	(text "fuse holder"
 		(exclude_from_sim no)
-		(at 182.626 192.278 0)
+		(at 180.34 192.024 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1861,9 +1997,19 @@
 		)
 		(uuid "54baece8-7ae1-4bfd-842d-5afa8e1e5be5")
 	)
+	(text "reverse polarity protection.\nCERTIFIED: undergraduate proof!!!"
+		(exclude_from_sim no)
+		(at 173.736 201.168 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "5dc1e1aa-7cc9-4ee8-810c-29b182590f2d")
+	)
 	(text "(6.0, 7.2, 8.0)V @ (,,3)A DC\n"
 		(exclude_from_sim no)
-		(at 166.878 177.038 0)
+		(at 150.876 177.546 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1981,6 +2127,12 @@
 		(uuid "b1e0f438-6e64-4f0a-ad48-f17744ee9ce6")
 	)
 	(junction
+		(at 194.31 189.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ba9d3a26-4c0f-434a-8f4c-05b3b5020ba6")
+	)
+	(junction
 		(at 232.41 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1999,8 +2151,32 @@
 		(uuid "fe94e468-410c-41ee-be83-f52c86ad5f87")
 	)
 	(no_connect
+		(at 199.39 158.75)
+		(uuid "02984e17-514b-406d-9352-6fa8f1ea7d80")
+	)
+	(no_connect
+		(at 176.53 179.07)
+		(uuid "2779a8c0-2c96-41bf-a133-0a18f085c5eb")
+	)
+	(no_connect
+		(at 224.79 158.75)
+		(uuid "2a5c6873-a6bc-466e-9286-270db4310b9e")
+	)
+	(no_connect
+		(at 201.93 213.36)
+		(uuid "6bf7ab15-a187-4ff5-9c06-d2b923caa247")
+	)
+	(no_connect
 		(at 201.93 85.09)
 		(uuid "bd8a13d0-9312-4a85-b86c-abfc8d3e804b")
+	)
+	(no_connect
+		(at 222.25 213.36)
+		(uuid "bda28517-cf6d-43d5-a8f6-03ec9337364f")
+	)
+	(no_connect
+		(at 184.15 179.07)
+		(uuid "d2776506-d305-4222-bc54-82193135205a")
 	)
 	(wire
 		(pts
@@ -2044,7 +2220,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 189.23) (xy 165.1 189.23)
+			(xy 176.53 189.23) (xy 156.21 189.23)
 		)
 		(stroke
 			(width 0)
@@ -2144,7 +2320,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 185.42) (xy 165.1 189.23)
+			(xy 156.21 185.42) (xy 156.21 189.23)
 		)
 		(stroke
 			(width 0)
@@ -2334,6 +2510,16 @@
 	)
 	(wire
 		(pts
+			(xy 194.31 189.23) (xy 184.15 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8fed30fd-5712-4412-b671-e0d07435f14f")
+	)
+	(wire
+		(pts
 			(xy 207.01 81.28) (xy 207.01 85.09)
 		)
 		(stroke
@@ -2341,16 +2527,6 @@
 			(type default)
 		)
 		(uuid "9467cd55-0159-49ba-8c05-fcd9d2187b6b")
-	)
-	(wire
-		(pts
-			(xy 201.93 213.36) (xy 198.12 213.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "973b75b7-c5e8-4034-8ef0-f2bddcdd55d3")
 	)
 	(wire
 		(pts
@@ -2381,6 +2557,16 @@
 			(type default)
 		)
 		(uuid "a3a48da8-01c1-463e-81f1-39004301f7cd")
+	)
+	(wire
+		(pts
+			(xy 194.31 200.66) (xy 194.31 201.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a945543e-4b87-440b-b1cd-7c8607ac1528")
 	)
 	(wire
 		(pts
@@ -2434,16 +2620,6 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 213.36) (xy 222.25 213.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d817afcb-3ab9-413c-96a3-997629009f0e")
-	)
-	(wire
-		(pts
 			(xy 182.88 76.2) (xy 191.77 76.2)
 		)
 		(stroke
@@ -2461,6 +2637,16 @@
 			(type default)
 		)
 		(uuid "df195ddf-ea7e-431a-b786-e93fab96cbdd")
+	)
+	(wire
+		(pts
+			(xy 194.31 189.23) (xy 194.31 193.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5ffb841-f6e4-4e22-8517-e068caf4d55b")
 	)
 	(wire
 		(pts
@@ -2484,7 +2670,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 189.23) (xy 186.69 189.23)
+			(xy 201.93 189.23) (xy 194.31 189.23)
 		)
 		(stroke
 			(width 0)
@@ -2515,30 +2701,19 @@
 		(uuid "f1bcc035-193f-45a1-b875-28ee9779714e")
 	)
 	(symbol
-		(lib_id "oresat-misc:Test-Point-0.75mm-th")
-		(at 199.39 158.75 0)
-		(mirror y)
+		(lib_id "power:GND")
+		(at 194.31 201.93 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim yes)
-		(in_bom no)
+		(exclude_from_sim no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "381783e1-2033-47c5-9b47-519a90ba9732")
-		(property "Reference" "TP18"
-			(at 199.39 154.94 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.0795)
-				)
-			)
-		)
-		(property "Value" "Test-Point"
-			(at 199.39 151.13 0)
+		(uuid "07d06f1f-5bfa-4ce6-bdd8-e4374ca93e95")
+		(property "Reference" "#PWR023"
+			(at 194.31 208.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2548,8 +2723,18 @@
 				)
 			)
 		)
-		(property "Footprint" "oresat-misc:TestPoint-0.75mm-th"
-			(at 199.39 148.59 0)
+		(property "Value" "GND"
+			(at 194.31 207.01 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 194.31 201.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2560,7 +2745,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 199.39 158.75 0)
+			(at 194.31 201.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2570,8 +2755,8 @@
 				)
 			)
 		)
-		(property "Description" "0.75 mm TH test point; good for scope probes and jumpers"
-			(at 199.39 158.75 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 194.31 201.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2582,12 +2767,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "9d2ed2c7-7f1f-489f-a515-a28beeeb6a5d")
+			(uuid "626f2f22-3623-46e9-a992-a9d7b59e4500")
 		)
 		(instances
 			(project "c3-proxy"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/9e3e06f8-887b-42f5-9213-500926d830e9"
-					(reference "TP18")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -2595,7 +2780,345 @@
 	)
 	(symbol
 		(lib_id "Device:Fuse")
-		(at 182.88 189.23 270)
+		(at 180.34 179.07 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "41348971-95e2-481d-9feb-5d391ecc50d4")
+		(property "Reference" "F1"
+			(at 180.34 172.72 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0451004.MRL (4A)"
+			(at 180.34 175.26 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 180.34 180.848 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.littelfuse.com/assetdocs/littelfuse-fuse-451-453-datasheet?assetguid=533cd5cc-956c-4243-867f-6ab5a62f6ba1"
+			(at 180.34 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "4 A 125 V 125 V Fuse Board Mount (Cartridge Style Excluded) Surface Mount 2-SMD, Square End Block"
+			(at 180.34 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "F2586TR-ND"
+			(at 180.34 179.07 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0451004.MRL"
+			(at 180.34 179.07 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DST" ""
+			(at 180.34 179.07 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "LittelFuse"
+			(at 180.34 179.07 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIST" "DigiKey"
+			(at 180.34 179.07 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "733df352-d576-409d-9f69-f61e61b1988e")
+		)
+		(pin "1"
+			(uuid "bfbb028e-ddf0-461d-9649-9ad56d0f49cb")
+		)
+		(instances
+			(project "c3-proxy"
+				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/9e3e06f8-887b-42f5-9213-500926d830e9"
+					(reference "F1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4151")
+		(at 194.31 196.85 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4539f45e-3299-40b5-9f44-cc62acf7d7ed")
+		(property "Reference" "D6"
+			(at 196.85 195.5799 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1N4001"
+			(at 196.85 198.1199 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+			(at 189.865 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://diotec.com/request/datasheet/1n4001.pdf"
+			(at 194.31 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode 50 V 1A Through Hole DO-204AC (DO-41)"
+			(at 194.31 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 194.31 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 194.31 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field7" ""
+			(at 194.31 196.85 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" ""
+			(at 194.31 196.85 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field9" ""
+			(at 194.31 196.85 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field10" ""
+			(at 194.31 196.85 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field11" ""
+			(at 194.31 196.85 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIST" "DigiKey"
+			(at 194.31 196.85 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "4878-1N4001CT-ND"
+			(at 194.31 196.85 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Diotec Semiconductor"
+			(at 194.31 196.85 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "1N4001"
+			(at 194.31 196.85 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "2b985b86-38ed-438f-9ec5-cbfe5e34a94d")
+		)
+		(pin "1"
+			(uuid "3376a869-6102-4895-859a-84d05f60b64a")
+		)
+		(instances
+			(project "c3-proxy"
+				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/9e3e06f8-887b-42f5-9213-500926d830e9"
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Fuse")
+		(at 180.34 189.23 270)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -2607,7 +3130,7 @@
 		(fields_autoplaced yes)
 		(uuid "534ef8b8-42d7-4bdf-adb2-b1006c0abb8f")
 		(property "Reference" "F2"
-			(at 182.88 182.88 90)
+			(at 180.34 182.88 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2617,7 +3140,7 @@
 			)
 		)
 		(property "Value" "Fuse"
-			(at 182.88 185.42 90)
+			(at 180.34 185.42 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2627,7 +3150,7 @@
 			)
 		)
 		(property "Footprint" "oresat-passives:Littelfuse 155900DR"
-			(at 182.88 191.008 90)
+			(at 180.34 191.008 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2638,7 +3161,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.littelfuse.com/assetdocs/littelfuse-fuse-blocks-1550900-series-datasheet?assetguid=5ec5d985-39ad-44b5-9bdb-f49bf381a070"
-			(at 182.88 189.23 0)
+			(at 180.34 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2649,7 +3172,7 @@
 			)
 		)
 		(property "Description" "Fuse Block 9 A 125V 1 Circuit Cartridge Surface Mount"
-			(at 182.88 189.23 0)
+			(at 180.34 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2660,7 +3183,7 @@
 			)
 		)
 		(property "DIST" "DigiKey"
-			(at 182.88 189.23 90)
+			(at 180.34 189.23 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2671,7 +3194,7 @@
 			)
 		)
 		(property "MFR" "Category Circuit Protection, Fuseholders For Use With/Related Products Nano 452 Mfr Littelfuse Inc. Fuse Type Cartridge Series 155 Fuseholder Type Block Packaging Tape & Reel (TR), Cut Tape (CT), Digi-Reel® Number of Circuits 1 Part Status Active Voltage 125V Mounting Type Surface Mount Termination Style Surface Mount Current Rating (Amps) 9 A Contact Finish Silver"
-			(at 182.88 189.23 90)
+			(at 180.34 189.23 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2682,7 +3205,18 @@
 			)
 		)
 		(property "MPN" "01550900DR"
-			(at 182.88 189.23 90)
+			(at 180.34 189.23 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "18-01550900DRTR-ND"
+			(at 180.34 189.23 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2993,7 +3527,7 @@
 	)
 	(symbol
 		(lib_id "power:VBUS")
-		(at 165.1 185.42 0)
+		(at 156.21 185.42 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -3005,7 +3539,7 @@
 		(fields_autoplaced yes)
 		(uuid "6b94c619-7de9-4e00-965a-c6dc5dab8ab6")
 		(property "Reference" "#VBUS015"
-			(at 165.1 189.23 0)
+			(at 156.21 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3016,7 +3550,7 @@
 			)
 		)
 		(property "Value" "VJACK"
-			(at 165.1 180.34 0)
+			(at 156.21 180.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3026,7 +3560,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 165.1 185.42 0)
+			(at 156.21 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3037,7 +3571,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 165.1 185.42 0)
+			(at 156.21 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3048,7 +3582,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 165.1 185.42 0)
+			(at 156.21 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3512,165 +4046,6 @@
 		)
 	)
 	(symbol
-		(lib_id "oresat-misc:Test-Point-0.75mm-th")
-		(at 198.12 213.36 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "95d0c61f-e787-4508-b596-7829057d7e66")
-		(property "Reference" "TP21"
-			(at 195.58 213.3599 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.0795)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Test-Point"
-			(at 198.12 205.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "oresat-misc:TestPoint-0.75mm-th"
-			(at 198.12 203.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 198.12 213.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "0.75 mm TH test point; good for scope probes and jumpers"
-			(at 198.12 213.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "329a23f2-12f8-439c-99d7-d4ccc77b6b7e")
-		)
-		(instances
-			(project "c3-proxy"
-				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/9e3e06f8-887b-42f5-9213-500926d830e9"
-					(reference "TP21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "oresat-misc:Test-Point-0.75mm-th")
-		(at 224.79 158.75 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "aad4d2c1-7187-4be5-b9a4-0621505b5849")
-		(property "Reference" "TP19"
-			(at 227.33 158.7499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.0795)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Test-Point"
-			(at 224.79 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "oresat-misc:TestPoint-0.75mm-th"
-			(at 224.79 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 224.79 158.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "0.75 mm TH test point; good for scope probes and jumpers"
-			(at 224.79 158.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "03e663c5-99fb-4b67-8e0d-070e3a8f8262")
-		)
-		(instances
-			(project "c3-proxy"
-				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/9e3e06f8-887b-42f5-9213-500926d830e9"
-					(reference "TP19")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Power_Management:LTC4412xS6")
 		(at 212.09 210.82 0)
 		(unit 1)
@@ -3971,84 +4346,6 @@
 		)
 	)
 	(symbol
-		(lib_id "oresat-misc:Test-Point-0.75mm-th")
-		(at 226.06 213.36 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b5b92ef8-0ae9-4f4a-948c-1bfbf11f5fa2")
-		(property "Reference" "TP20"
-			(at 226.06 209.55 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.0795)
-				)
-			)
-		)
-		(property "Value" "Test-Point"
-			(at 226.06 205.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "oresat-misc:TestPoint-0.75mm-th"
-			(at 226.06 203.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 226.06 213.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "0.75 mm TH test point; good for scope probes and jumpers"
-			(at 226.06 213.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "fdb39009-8126-4806-9b17-166eafb0ed92")
-		)
-		(instances
-			(project "c3-proxy"
-				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/9e3e06f8-887b-42f5-9213-500926d830e9"
-					(reference "TP20")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Simulation_SPICE:NMOS")
 		(at 196.85 96.52 0)
 		(unit 1)
@@ -4211,7 +4508,7 @@
 		)
 	)
 	(symbol
-		(lib_id "oresat_stuff:C&K PCM13SMTR")
+		(lib_id "oresat-misc:C&K PCM13SMTR")
 		(at 201.93 76.2 0)
 		(unit 1)
 		(body_style 1)
@@ -4244,7 +4541,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "oresat-misc:SW-CK-PCM13SMTR"
+		(property "Footprint" "SWITCH_3SMTR"
 			(at 201.93 58.166 0)
 			(hide yes)
 			(show_name no)
@@ -4266,7 +4563,7 @@
 				)
 			)
 		)
-		(property "Description" "Slide Switch SP3T Surface Mount, Right Angle"
+		(property "Description" "Slide Switch, SP3T, SMT, RA"
 			(at 201.93 64.262 0)
 			(hide yes)
 			(show_name no)
