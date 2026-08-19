@@ -1391,8 +1391,8 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "SW1"
-				(at 7.62 1.2701 0)
+			(property "Reference" "SW"
+				(at 7.62 1.27 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1403,7 +1403,7 @@
 				)
 			)
 			(property "Value" "C&K PCM13SMTR"
-				(at 7.62 -1.2699 0)
+				(at 7.62 -1.27 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1446,50 +1446,6 @@
 					)
 				)
 			)
-			(property "DIST" "DigiKey"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "DPN" "401-2017-1-ND"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "MFR" "C&K"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "MPN" "PCM13SMTR"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
 			(property "ki_fp_filters" "SWITCH_3SMTR"
 				(at 0 0 0)
 				(show_name no)
@@ -1503,7 +1459,7 @@
 			)
 			(symbol "C&K PCM13SMTR_0_1"
 				(rectangle
-					(start -6.35 1.27)
+					(start -6.35 2.54)
 					(end 6.35 -2.54)
 					(stroke
 						(width 0)
@@ -1514,8 +1470,8 @@
 					)
 				)
 				(rectangle
-					(start -1.27 2.54)
-					(end 1.27 1.27)
+					(start -1.27 3.81)
+					(end 1.27 2.54)
 					(stroke
 						(width 0)
 						(type default)
@@ -1552,7 +1508,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.54 -0.635) (xy -2.54 0.762) (xy 5.08 0.762) (xy 5.08 -0.635)
+						(xy -2.54 -0.635) (xy -2.54 1.27) (xy 2.54 1.27) (xy 3.81 1.27)
 					)
 					(stroke
 						(width 0)
@@ -2007,6 +1963,18 @@
 		)
 		(uuid "5dc1e1aa-7cc9-4ee8-810c-29b182590f2d")
 	)
+	(text "~{SHUTDOWN} mode select switch"
+		(exclude_from_sim no)
+		(at 198.882 62.738 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "7d89b19d-f236-4bcd-b467-9d69d364283e")
+	)
 	(text "(6.0, 7.2, 8.0)V @ (,,3)A DC\n"
 		(exclude_from_sim no)
 		(at 150.876 177.546 0)
@@ -2017,9 +1985,9 @@
 		)
 		(uuid "887f6888-113e-4ddc-9fb9-4c7024caed98")
 	)
-	(text "Can be powered by combinations of the barrel jack and usb, sensing requires USB power.\nThe bus voltage this card supplies depends on which power source is used.\n	DC jack only)   (typ) 7V bus, no sensing\n	USB only)       5V bus, sensing\n	USB + jack)     (typ) 7V bus, sensing"
+	(text "Can be powered by combinations of the barrel jack and usb, sensing requires USB power.\nThe bus voltage this card supplies depends on which power source is used.\n	DC jack only   ~7 V bus, no current sensing\n	USB only       5V bus, current sensing\n	USB + jack     ~7V bus, current sensing"
 		(exclude_from_sim no)
-		(at 251.968 135.89 0)
+		(at 243.84 135.636 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2028,12 +1996,14 @@
 		)
 		(uuid "92d281c8-466c-4d3d-9d0c-e1c09efcdbf6")
 	)
-	(text "Reversed PMOS for ideal diode"
+	(text "Ideal diode for USB"
 		(exclude_from_sim no)
 		(at 211.328 125.73 0)
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
 			)
 		)
 		(uuid "b2b4e83f-12b6-4dbd-94ec-05dcc9ca2f6b")
@@ -2048,29 +2018,32 @@
 		)
 		(uuid "c34f28dc-5637-4543-abf7-106a75d85a45")
 	)
-	(text "Mode select switch:\n	1) always off\n	2) follow ~SD\n	3) always on"
+	(text "1) Assert ~{SHUTDOWN} = Watchdog reset always asserted, satellite off\n2) Follow ~{SHUTDOWN} = Watchdog resets work as expected\n3) Disable ~{SHUTDOWN} = Ignores watchdog resets if ext power is on"
 		(exclude_from_sim no)
-		(at 196.342 64.262 0)
+		(at 168.402 67.564 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
+			(justify left)
 		)
 		(uuid "c6b90605-69c7-402c-9272-3c5f207eddc9")
 	)
-	(text "Reversed PMOS for ideal diode"
+	(text "Ideal diode for Ext Power\n"
 		(exclude_from_sim no)
 		(at 212.344 180.594 0)
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
 			)
 		)
 		(uuid "e5052c6d-779e-43f3-a998-0c3497f31411")
 	)
 	(text "NOTE! better be able to handle >3.5A\n"
 		(exclude_from_sim no)
-		(at 264.414 80.518 0)
+		(at 263.398 89.154 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2270,7 +2243,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 67.31) (xy 241.3 80.01)
+			(xy 241.3 78.74) (xy 241.3 80.01)
 		)
 		(stroke
 			(width 0)
@@ -2695,6 +2668,8 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
 			)
 			(justify right)
 		)
@@ -2843,7 +2818,7 @@
 				)
 			)
 		)
-		(property "DPN" "F2586TR-ND"
+		(property "DPN" "F2586CT-ND"
 			(at 180.34 179.07 90)
 			(hide yes)
 			(show_name no)
@@ -2936,7 +2911,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1N4001"
+		(property "Value" "SS5150"
 			(at 196.85 198.1199 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2947,7 +2922,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SMA"
 			(at 189.865 196.85 0)
 			(hide yes)
 			(show_name no)
@@ -2969,7 +2944,7 @@
 				)
 			)
 		)
-		(property "Description" "Diode 50 V 1A Through Hole DO-204AC (DO-41)"
+		(property "Description" "Diode 150 V 5A Surface Mount DO-214AC (SMA)"
 			(at 194.31 196.85 0)
 			(hide yes)
 			(show_name no)
@@ -3068,7 +3043,7 @@
 				)
 			)
 		)
-		(property "DPN" "4878-1N4001CT-ND"
+		(property "DPN" "5399-SS5150CT-ND"
 			(at 194.31 196.85 90)
 			(hide yes)
 			(show_name no)
@@ -3079,7 +3054,7 @@
 				)
 			)
 		)
-		(property "MFR" "Diotec Semiconductor"
+		(property "MFR" "Shenzhen Slkormicro Semicon Co., Ltd."
 			(at 194.31 196.85 90)
 			(hide yes)
 			(show_name no)
@@ -3090,7 +3065,7 @@
 				)
 			)
 		)
-		(property "MPN" "1N4001"
+		(property "MPN" "SS5150"
 			(at 194.31 196.85 90)
 			(hide yes)
 			(show_name no)
@@ -3215,7 +3190,7 @@
 				)
 			)
 		)
-		(property "DPN" "18-01550900DRTR-ND"
+		(property "DPN" "18-01550900DRCT-ND"
 			(at 180.34 189.23 90)
 			(hide yes)
 			(show_name no)
@@ -3536,7 +3511,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "6b94c619-7de9-4e00-965a-c6dc5dab8ab6")
 		(property "Reference" "#VBUS015"
 			(at 156.21 189.23 0)
@@ -3550,7 +3524,7 @@
 			)
 		)
 		(property "Value" "VJACK"
-			(at 156.21 180.34 0)
+			(at 156.21 181.864 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3740,7 +3714,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "84939859-9b6a-4393-84c6-404d480dc3fc")
 		(property "Reference" "#VBUS03"
 			(at 180.34 134.62 0)
@@ -3754,7 +3727,7 @@
 			)
 		)
 		(property "Value" "VUSB"
-			(at 180.34 125.73 0)
+			(at 180.086 127.254 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3969,7 +3942,7 @@
 	)
 	(symbol
 		(lib_id "power:VBUS")
-		(at 241.3 67.31 0)
+		(at 241.3 78.74 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3979,7 +3952,7 @@
 		(dnp no)
 		(uuid "8fbe626c-777f-4b83-aeb6-c91c065c0ad3")
 		(property "Reference" "#VBUS010"
-			(at 241.3 71.12 0)
+			(at 241.3 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3990,7 +3963,7 @@
 			)
 		)
 		(property "Value" "VBUS_FLATSAT"
-			(at 235.204 62.992 0)
+			(at 235.204 74.93 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4001,7 +3974,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 241.3 67.31 0)
+			(at 241.3 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4012,7 +3985,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 241.3 67.31 0)
+			(at 241.3 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4023,7 +3996,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 241.3 67.31 0)
+			(at 241.3 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4123,7 +4096,7 @@
 				)
 			)
 		)
-		(property "DPN" "LTC4412ES6#WTRMPBF"
+		(property "DPN" "505-LTC4412ES6#WTRMPBFCT-ND"
 			(at 212.09 210.82 0)
 			(hide yes)
 			(show_name no)
@@ -4145,7 +4118,7 @@
 				)
 			)
 		)
-		(property "MPN" "LTC4412ES6#PBF"
+		(property "MPN" "LTC4412ES6#WTRMPBF"
 			(at 212.09 210.82 0)
 			(hide yes)
 			(show_name no)
@@ -4541,7 +4514,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SWITCH_3SMTR"
+		(property "Footprint" "oresat-misc:SW-CK-PCM13SMTR"
 			(at 201.93 58.166 0)
 			(hide yes)
 			(show_name no)
@@ -5039,7 +5012,7 @@
 				)
 			)
 		)
-		(property "DPN" "LTC4412ES6#WTRMPBF"
+		(property "DPN" "505-LTC4412ES6#WTRMPBFCT-ND"
 			(at 212.09 156.21 0)
 			(hide yes)
 			(show_name no)
@@ -5061,7 +5034,7 @@
 				)
 			)
 		)
-		(property "MPN" "LTC4412ES6#PBF"
+		(property "MPN" "LTC4412ES6#WTRMPBF"
 			(at 212.09 156.21 0)
 			(hide yes)
 			(show_name no)

@@ -3281,12 +3281,14 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "reversed PMOS for ideal diode"
+	(text "Ideal diode for OPD_PWR"
 		(exclude_from_sim no)
 		(at 274.066 66.04 0)
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
 			)
 		)
 		(uuid "22d8cf16-ef70-4af5-a7ce-a3b59b543b21")
@@ -3322,7 +3324,7 @@
 		)
 		(uuid "7e8ad3f7-0d8d-4a48-b212-be208d3961cd")
 	)
-	(text "cap reduced from 560p\nto 470p for stock"
+	(text "cap reduced from \n560p to 470p for \nstock"
 		(exclude_from_sim no)
 		(at 145.288 90.932 0)
 		(effects
@@ -3342,25 +3344,68 @@
 		)
 		(uuid "857f59ae-f343-4254-acbf-e249f39af679")
 	)
-	(text "0) act like a c3 (rx->rx, tx->tx)\n1) disconnect uarts\n2) act like a card (rx->tx, tx->rx)"
+	(text "3.3V"
 		(exclude_from_sim no)
-		(at 195.326 224.282 0)
+		(at 167.64 88.392 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+		)
+		(uuid "878cfd5c-8b54-49a3-bd8d-0a4aef26e431")
+	)
+	(text "OPD"
+		(exclude_from_sim no)
+		(at 302.006 85.598 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+		)
+		(uuid "892c9e17-305c-4240-a5b8-ff8b180c7f10")
+	)
+	(text "RX"
+		(exclude_from_sim no)
+		(at 177.292 151.13 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
+		(uuid "9c804e5b-79b7-400f-b478-75eccbb0c4aa")
+	)
+	(text "1) act like a c3 (rx->rx, tx->tx)\n2) disconnect uarts\n3) act like a card (rx->tx, tx->rx)"
+		(exclude_from_sim no)
+		(at 178.054 221.234 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
 		(uuid "b61af4ef-9ee0-429d-ae06-a499b704c04e")
 	)
 	(text "GP0/1 are set to active low UART indicators in flash"
 		(exclude_from_sim no)
-		(at 192.278 182.118 0)
+		(at 197.866 181.61 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
 		(uuid "bd9e0b61-aa27-435f-92ab-4eb741fbcc7b")
+	)
+	(text "TX"
+		(exclude_from_sim no)
+		(at 189.738 151.13 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c86acbdc-1d5d-4bf2-bea6-65711f6de4ab")
 	)
 	(text "cheap 3v3 regulator.\nsmall and SMD which is not ideal.\nthe TPS62111 (from OPD) is adjustable, which I think is more complicated than we need"
 		(exclude_from_sim no)
@@ -3377,12 +3422,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1df39a2d-f058-4bc9-8fa9-b6fcd9b41cd5")
-	)
-	(junction
-		(at 156.21 80.01)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5253b4cc-b3a4-4cf2-b251-2a4f645a57de")
 	)
 	(junction
 		(at 116.84 74.93)
@@ -3503,6 +3542,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d4f7ad1b-0e5e-4512-b62b-2be8c9694c35")
+	)
+	(junction
+		(at 156.21 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dc7c91fc-8fb4-4744-a881-238c2afa179f")
 	)
 	(junction
 		(at 234.95 74.93)
@@ -4622,7 +4667,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 80.01) (xy 146.05 80.01)
+			(xy 140.97 80.01) (xy 143.51 80.01)
 		)
 		(stroke
 			(width 0)
@@ -4652,7 +4697,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 80.01) (xy 156.21 80.01)
+			(xy 148.59 80.01) (xy 156.21 80.01)
 		)
 		(stroke
 			(width 0)
@@ -4846,6 +4891,8 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
 			)
 			(justify left)
 		)
@@ -4868,6 +4915,8 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
 			)
 			(justify right)
 		)
@@ -4879,6 +4928,8 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
 			)
 			(justify right)
 		)
@@ -4890,6 +4941,8 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
 			)
 			(justify left)
 		)
@@ -4901,6 +4954,8 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
 			)
 			(justify left)
 		)
@@ -4912,6 +4967,8 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
 			)
 			(justify left)
 		)
@@ -4923,6 +4980,8 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
 			)
 			(justify left)
 		)
@@ -4934,6 +4993,8 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
 			)
 			(justify left)
 		)
@@ -4945,6 +5006,8 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
 			)
 			(justify right)
 		)
@@ -5028,7 +5091,7 @@
 				)
 			)
 		)
-		(property "DPN" "LTC4412ES6#WTRMPBF"
+		(property "DPN" "505-LTC4412ES6#WTRMPBFCT-ND"
 			(at 274.32 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -5050,7 +5113,7 @@
 				)
 			)
 		)
-		(property "MPN" "LTC4412ES6#PBF"
+		(property "MPN" "LTC4412ES6#WTRMPBF"
 			(at 274.32 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -5244,7 +5307,7 @@
 				)
 			)
 		)
-		(property "DPN" "576-3351-2-ND"
+		(property "DPN" "576-3351-1-ND"
 			(at 130.81 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -5336,7 +5399,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7uF"
+		(property "Value" "4.7u"
 			(at 158.75 86.3662 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5358,7 +5421,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT188C71C475KE13-01.pdf"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT21BC71E475KE13-01.pdf"
 			(at 156.21 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -5369,7 +5432,7 @@
 				)
 			)
 		)
-		(property "Description" "4.7 µF ±10% 16V Ceramic Capacitor X7S 0603 (1608 Metric)"
+		(property "Description" "4.7 µF ±10% 25V Ceramic Capacitor X7S 0805 (2012 Metric)"
 			(at 156.21 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -5391,7 +5454,7 @@
 				)
 			)
 		)
-		(property "DPN" "490-GRT188C71C475KE13DCT-ND"
+		(property "DPN" "490-GRT21BC71E475KE13LCT-ND"
 			(at 156.21 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -5413,7 +5476,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRT188C71C475KE13D"
+		(property "MPN" "GRT21BC71E475KE13L"
 			(at 156.21 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -5653,10 +5716,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "28203cac-b01e-4745-85df-e2e49309b884")
 		(property "Reference" "D1"
-			(at 309.88 85.4074 90)
+			(at 308.61 83.312 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5666,8 +5728,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "GREEN"
-			(at 309.88 87.9474 90)
+		(property "Value" "GRN"
+			(at 308.61 85.852 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5938,7 +6000,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 148.59 80.01 90)
+		(at 146.05 80.01 90)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -5949,7 +6011,7 @@
 		(dnp no)
 		(uuid "2ed3fb17-a579-4d25-8c21-734cf8f910b1")
 		(property "Reference" "C5"
-			(at 148.844 83.312 90)
+			(at 146.304 83.312 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5958,8 +6020,8 @@
 				)
 			)
 		)
-		(property "Value" "470pF"
-			(at 148.844 85.852 90)
+		(property "Value" "470p"
+			(at 146.304 85.852 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5969,7 +6031,7 @@
 			)
 		)
 		(property "Footprint" "oresat-passives:0603-A"
-			(at 148.59 80.01 0)
+			(at 146.05 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5980,7 +6042,7 @@
 			)
 		)
 		(property "Datasheet" "https://search.kemet.com/download/specsheet/C0603C471K5RACAUTO"
-			(at 148.59 80.01 0)
+			(at 146.05 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5991,7 +6053,7 @@
 			)
 		)
 		(property "Description" "470 pF ±10% 50V Ceramic Capacitor X7R 0603 (1608 Metric)"
-			(at 148.59 80.01 0)
+			(at 146.05 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6002,7 +6064,7 @@
 			)
 		)
 		(property "DIST" "DigiKey"
-			(at 148.59 80.01 90)
+			(at 146.05 80.01 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6013,7 +6075,7 @@
 			)
 		)
 		(property "DPN" "399-6894-1-ND"
-			(at 148.59 80.01 90)
+			(at 146.05 80.01 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6024,7 +6086,7 @@
 			)
 		)
 		(property "MFR" "KEMET"
-			(at 148.59 80.01 90)
+			(at 146.05 80.01 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6035,7 +6097,7 @@
 			)
 		)
 		(property "MPN" "C0603C471K5RACAUTO"
-			(at 148.59 80.01 90)
+			(at 146.05 80.01 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6238,7 +6300,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "1u"
 			(at 159.004 145.542 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6260,7 +6322,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT188C71C475KE13-01.pdf"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT188R71E105KE13-01.pdf"
 			(at 156.21 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -6271,7 +6333,7 @@
 				)
 			)
 		)
-		(property "Description" "4.7 µF ±10% 16V Ceramic Capacitor X7S 0603 (1608 Metric)"
+		(property "Description" "1 µF ±10% 25V Ceramic Capacitor X7R 0603 (1608 Metric)"
 			(at 156.21 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -6293,7 +6355,7 @@
 				)
 			)
 		)
-		(property "DPN" "490-GRT188C71C475KE13DCT-ND"
+		(property "DPN" "490-GRT188R71E105KE13DCT-ND"
 			(at 156.21 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -6315,7 +6377,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRT188C71C475KE13D"
+		(property "MPN" "GRT188R71E105KE13D"
 			(at 156.21 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -6743,10 +6805,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "43f41584-b90a-4977-b0a0-e359ecde09c6")
 		(property "Reference" "D4"
-			(at 173.99 85.4074 90)
+			(at 172.466 84.328 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6756,8 +6817,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "GREEN"
-			(at 173.99 87.9474 90)
+		(property "Value" "GRN"
+			(at 172.466 86.36 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6991,7 +7052,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.nidec-components.com/e/catalog/switch/cl-sb.pdf"
 			(at 175.895 192.405 0)
 			(hide yes)
 			(show_name no)
@@ -7003,6 +7064,61 @@
 			)
 		)
 		(property "Description" "Switch, three position, dual pole triple throw, 3 position switch, SP3T"
+			(at 191.77 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL-SB-23B-02T"
+			(at 191.77 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Nidec Components"
+			(at 191.77 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIS" "DigiKey"
+			(at 191.77 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "563-1355-1-ND"
+			(at 191.77 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIST" "DigiKey"
 			(at 191.77 196.85 0)
 			(hide yes)
 			(show_name no)
@@ -7091,7 +7207,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RMCF_RMCP.pdf"
 			(at 231.14 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -7661,7 +7777,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "1u"
 			(at 193.04 82.5562 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7809,7 +7925,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT188C71C475KE13-01.pdf"
+		(property "Datasheet" "https://search.kemet.com/download/specsheet/C0603C104K5RACAUTO"
 			(at 248.92 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -7820,7 +7936,7 @@
 				)
 			)
 		)
-		(property "Description" "4.7 µF ±10% 16V Ceramic Capacitor X7S 0603 (1608 Metric)"
+		(property "Description" "0.1 µF ±10% 50V Ceramic Capacitor X7R 0603 (1608 Metric)"
 			(at 248.92 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -7842,7 +7958,7 @@
 				)
 			)
 		)
-		(property "DPN" "490-GRT188C71C475KE13DCT-ND"
+		(property "DPN" "399-6856-1-ND"
 			(at 248.92 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -7853,7 +7969,7 @@
 				)
 			)
 		)
-		(property "MFR" "Murata Electronics"
+		(property "MFR" "KEMET"
 			(at 248.92 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -7864,7 +7980,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRT188C71C475KE13D"
+		(property "MPN" "C0603C104K5RACAUTO"
 			(at 248.92 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -8018,7 +8134,8 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 181.61 140.97 180)
+		(at 181.61 140.97 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8028,7 +8145,7 @@
 		(dnp no)
 		(uuid "84f4ab92-638b-478b-88c0-df92faa9ee11")
 		(property "Reference" "R14"
-			(at 175.006 141.986 0)
+			(at 176.53 139.954 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8039,7 +8156,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 175.006 140.208 0)
+			(at 176.53 141.732 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8398,7 +8515,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "1u"
 			(at 237.49 82.5562 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8524,7 +8641,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7uF"
+		(property "Value" "4.7u"
 			(at 111.76 86.3662 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8546,7 +8663,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT188C71C475KE13-01.pdf"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT21BC71E475KE13-01.pdf"
 			(at 109.22 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -8557,7 +8674,7 @@
 				)
 			)
 		)
-		(property "Description" "4.7 µF ±10% 16V Ceramic Capacitor X7S 0603 (1608 Metric)"
+		(property "Description" "4.7 µF ±10% 25V Ceramic Capacitor X7S 0805 (2012 Metric)"
 			(at 109.22 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -8579,7 +8696,7 @@
 				)
 			)
 		)
-		(property "DPN" "490-GRT188C71C475KE13DCT-ND"
+		(property "DPN" "490-GRT21BC71E475KE13LCT-ND"
 			(at 109.22 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -8601,7 +8718,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRT188C71C475KE13D"
+		(property "MPN" "GRT21BC71E475KE13L"
 			(at 109.22 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -8828,7 +8945,7 @@
 				)
 			)
 		)
-		(property "DPN" "MCP2221AT-I/STTR-ND"
+		(property "DPN" "MCP2221AT-I/STCT-ND"
 			(at 144.78 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -8914,7 +9031,8 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 186.69 140.97 180)
+		(at 186.69 140.97 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8924,7 +9042,7 @@
 		(dnp no)
 		(uuid "ac8b3d5a-3603-4798-8973-52fe5bc0e29f")
 		(property "Reference" "R13"
-			(at 188.976 141.478 0)
+			(at 188.214 139.954 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8935,7 +9053,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 188.976 139.7 0)
+			(at 188.214 141.732 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9393,7 +9511,7 @@
 				)
 			)
 		)
-		(property "DPN" "445-8657-2-ND"
+		(property "DPN" "445-8657-1-ND"
 			(at 148.59 74.93 90)
 			(hide yes)
 			(show_name no)
@@ -9734,7 +9852,7 @@
 		(dnp no)
 		(uuid "ed0379e9-fed2-4fd5-a764-fac933e6f2db")
 		(property "Reference" "D2"
-			(at 191.77 148.59 90)
+			(at 191.008 147.066 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9745,7 +9863,7 @@
 			)
 		)
 		(property "Value" "AMB"
-			(at 193.294 151.13 90)
+			(at 192.532 148.844 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10095,7 +10213,7 @@
 		(dnp no)
 		(uuid "fa7849d2-cec4-4e18-8169-80b74b165cce")
 		(property "Reference" "D3"
-			(at 177.038 148.844 90)
+			(at 179.07 147.066 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10106,7 +10224,7 @@
 			)
 		)
 		(property "Value" "AMB"
-			(at 177.038 151.384 90)
+			(at 179.324 148.844 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10251,7 +10369,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "oresat-misc:CL-SB-23B-XX"
 			(at 175.895 207.645 0)
 			(hide yes)
 			(show_name no)
@@ -10262,7 +10380,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.nidec-components.com/e/catalog/switch/cl-sb.pdf"
 			(at 175.895 207.645 0)
 			(hide yes)
 			(show_name no)
@@ -10284,29 +10402,84 @@
 				)
 			)
 		)
+		(property "MPN" "CL-SB-23B-02T"
+			(at 191.77 212.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Nidec Components"
+			(at 191.77 212.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIS" "DigiKey"
+			(at 191.77 212.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "563-1355-1-ND"
+			(at 191.77 212.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIST" "DigiKey"
+			(at 191.77 212.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "8"
-			(uuid "62f67724-18aa-47a8-9e55-08d2f9925de2")
+			(uuid "62f67724-18aa-47a8-9e55-08d2f9925de3")
 		)
 		(pin "1"
-			(uuid "4c49f291-cd2f-4d20-9ce9-ffa07913d50c")
+			(uuid "4c49f291-cd2f-4d20-9ce9-ffa07913d50d")
 		)
 		(pin "4"
-			(uuid "3da6ce06-2ffc-41f1-9a27-ca9a0ccc0c78")
+			(uuid "3da6ce06-2ffc-41f1-9a27-ca9a0ccc0c79")
 		)
 		(pin "6"
-			(uuid "00068b0a-8260-4e94-9cd8-6e2785577ba1")
+			(uuid "00068b0a-8260-4e94-9cd8-6e2785577ba2")
 		)
 		(pin "2"
-			(uuid "fdc594b3-4885-43b7-890c-7e0ea92216d2")
+			(uuid "fdc594b3-4885-43b7-890c-7e0ea92216d3")
 		)
 		(pin "5"
-			(uuid "2ca3abe5-e898-44af-85ab-ceeb62bf8229")
+			(uuid "2ca3abe5-e898-44af-85ab-ceeb62bf822a")
 		)
 		(pin "3"
-			(uuid "465047d9-3064-475a-9d79-7607d28d3f83")
+			(uuid "465047d9-3064-475a-9d79-7607d28d3f84")
 		)
 		(pin "7"
-			(uuid "389a9b2e-db45-44e2-8452-e2463f8eb040")
+			(uuid "389a9b2e-db45-44e2-8452-e2463f8eb041")
 		)
 		(instances
 			(project "c3-proxy"
