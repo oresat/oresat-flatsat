@@ -8278,7 +8278,7 @@
 				)
 			)
 		)
-		(property "Description" "10 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+		(property "Description" "4.7 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
 			(at 181.61 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -8300,7 +8300,7 @@
 				)
 			)
 		)
-		(property "DPN" "RMCF0603FT10K0CT-ND"
+		(property "DPN" "RMCF0603FT4K70CT-ND"
 			(at 181.61 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -8322,7 +8322,7 @@
 				)
 			)
 		)
-		(property "MPN" "RMCF0603FT10K0"
+		(property "MPN" "RMCF0603FT4K70"
 			(at 181.61 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -9175,7 +9175,7 @@
 				)
 			)
 		)
-		(property "Description" "10 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+		(property "Description" "4.7 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
 			(at 186.69 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -9197,7 +9197,7 @@
 				)
 			)
 		)
-		(property "DPN" "RMCF0603FT10K0CT-ND"
+		(property "DPN" "RMCF0603FT4K70CT-ND"
 			(at 186.69 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -9219,7 +9219,7 @@
 				)
 			)
 		)
-		(property "MPN" "RMCF0603FT10K0"
+		(property "MPN" "RMCF0603FT4K70"
 			(at 186.69 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -9290,7 +9290,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT188R71E105KE13-01.pdf"
+		(property "Datasheet" "https://search.kemet.com/download/specsheet/C0603C104K5RACAUTO"
 			(at 129.54 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -9301,7 +9301,7 @@
 				)
 			)
 		)
-		(property "Description" "1 µF ±10% 25V Ceramic Capacitor X7R 0603 (1608 Metric)"
+		(property "Description" "0.1 µF ±10% 50V Ceramic Capacitor X7R 0603 (1608 Metric)"
 			(at 129.54 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -9323,7 +9323,7 @@
 				)
 			)
 		)
-		(property "DPN" "490-GRT188R71E105KE13DCT-ND"
+		(property "DPN" "399-6856-1-ND"
 			(at 129.54 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -9334,7 +9334,7 @@
 				)
 			)
 		)
-		(property "MFR" "Murata Electronics"
+		(property "MFR" "KEMET"
 			(at 129.54 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -9345,7 +9345,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRT188R71E105KE13D"
+		(property "MPN" "C0603C104K5RACAUTO"
 			(at 129.54 143.51 0)
 			(hide yes)
 			(show_name no)

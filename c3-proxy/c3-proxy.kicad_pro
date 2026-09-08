@@ -653,7 +653,7 @@
       "netlist": "",
       "plot": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "c3-proxy.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
@@ -1140,7 +1140,7 @@
       "include_excluded_from_bom": false,
       "name": "",
       "sort_asc": true,
-      "sort_field": "MFR"
+      "sort_field": "Reference"
     },
     "bus_aliases": {
       "backplane": [
@@ -1209,7 +1209,7 @@
         "uuid": "1a9202c4-e698-4c93-952c-ee3e64e9e49c"
       }
     ],
-    "used_designators": "C2,C6-10,HW1-5,Q1-2,Q5-9,J1-7,D1-6,D13,U2,U4,U9,F1-2,FIDUCIAL1-2,#3V1,#3V7,BZ1,#PWR1-2,#PWR5-9,#PWR12,#PWR17,#PWR19-31,SW2,FID1-3,TP1-17,TP20-29,#VBUS1-2,#VBUS4,#VBUS8-17,R1-3,R5,R7-23,R95",
+    "used_designators": "J1-7,D1-6,D13,U2,U4,U9,BZ1,#3V1,#3V7,FIDUCIAL1-2,FID1-3,SW2,#PWR1-2,#PWR5-9,#PWR12,#PWR17,#PWR19-31,TP1-17,TP20-29,R1-3,R5,R7-23,R95,#VBUS1-2,#VBUS4,#VBUS8-17,Q1-2,Q5-9,F1-2,C2,C6-10,HW1-5",
     "variants": []
   },
   "sheets": [
