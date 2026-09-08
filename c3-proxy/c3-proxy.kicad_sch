@@ -4874,16 +4874,6 @@
 		)
 		(uuid "1dc11a96-2c5e-42c6-ad61-0d1b216cc5a2")
 	)
-	(text "not sure the ideal way to connect/route this capacitor"
-		(exclude_from_sim no)
-		(at 94.488 246.126 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "2708358d-15ff-4b7a-b03a-4e42142d249b")
-	)
 	(text "Outside Negitive\nInside Positive"
 		(exclude_from_sim no)
 		(at 96.774 169.926 0)
@@ -5005,12 +4995,6 @@
 		(uuid "3e65c118-687c-4d30-94aa-10bbc9c955fc")
 	)
 	(junction
-		(at 325.12 38.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4062d58d-54d9-4f30-ae07-65450f7ac362")
-	)
-	(junction
 		(at 251.46 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5087,12 +5071,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "730e6152-5e87-4d99-b860-19413acb7e6c")
-	)
-	(junction
-		(at 158.75 38.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "80e06d3b-0166-407b-8142-a07e5c0d9bb9")
 	)
 	(junction
 		(at 158.75 81.28)
@@ -5237,10 +5215,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f187da0b-b973-4406-87a2-b6906fa1ee22")
-	)
-	(no_connect
-		(at 109.22 170.18)
-		(uuid "37365201-be59-44e8-ac69-8f1c57d1071a")
 	)
 	(no_connect
 		(at 124.46 218.44)
@@ -5529,6 +5503,16 @@
 			(type default)
 		)
 		(uuid "2c1cb1a7-4eda-4b3a-98f5-628247431c5d")
+	)
+	(wire
+		(pts
+			(xy 109.22 170.18) (xy 109.22 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e2a1684-9a8f-4154-bb68-af3eb4634546")
 	)
 	(wire
 		(pts
@@ -5919,16 +5903,6 @@
 			(type default)
 		)
 		(uuid "62182b97-e1f4-4a34-be13-b8853f8ece57")
-	)
-	(wire
-		(pts
-			(xy 158.75 40.64) (xy 158.75 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "632634eb-e2ab-4a2a-9f77-5529166e67f6")
 	)
 	(wire
 		(pts
@@ -6432,16 +6406,6 @@
 	)
 	(wire
 		(pts
-			(xy 328.93 40.64) (xy 325.12 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b3b4512a-5912-4def-8289-c9a047f737ce")
-	)
-	(wire
-		(pts
 			(xy 191.77 208.28) (xy 269.24 208.28)
 		)
 		(stroke
@@ -6722,16 +6686,6 @@
 	)
 	(wire
 		(pts
-			(xy 325.12 40.64) (xy 325.12 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "de29b836-c3e3-4acd-86a6-cc4a70076123")
-	)
-	(wire
-		(pts
 			(xy 328.93 93.98) (xy 325.12 93.98)
 		)
 		(stroke
@@ -6862,7 +6816,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 40.64) (xy 158.75 40.64)
+			(xy 154.94 40.64) (xy 328.93 40.64)
 		)
 		(stroke
 			(width 0)
@@ -7329,6 +7283,16 @@
 			(justify right bottom)
 		)
 		(uuid "e8f5d4ab-0f9a-47eb-a25e-daffa43bf0e0")
+	)
+	(label "SPARE2"
+		(at 274.32 40.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fc5dba46-5e04-4cbb-8edc-2ac979e74a9f")
 	)
 	(label "OPD_SCL"
 		(at 281.94 71.12 180)
@@ -7948,6 +7912,84 @@
 			(project "c3-proxy"
 				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c"
 					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 109.22 171.45 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4726e9ed-a246-46f5-9b51-50135867bab8")
+		(property "Reference" "#PWR030"
+			(at 109.22 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 107.188 175.514 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 109.22 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 109.22 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 109.22 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cc7f723b-78cd-4eba-a415-3dcf5f5f2e60")
+		)
+		(instances
+			(project "c3-proxy"
+				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c"
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)

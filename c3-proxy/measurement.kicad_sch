@@ -3341,6 +3341,16 @@
 		)
 		(uuid "9c804e5b-79b7-400f-b478-75eccbb0c4aa")
 	)
+	(text "Bypass for pin 1"
+		(exclude_from_sim no)
+		(at 119.38 139.954 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ad7a846c-a554-4d5a-9e02-2c2574483fa8")
+	)
 	(text "1) act like a c3 (rx->rx, tx->tx)\n2) disconnect uarts\n3) act like a card (rx->tx, tx->rx)"
 		(exclude_from_sim no)
 		(at 178.054 221.234 0)
@@ -3473,7 +3483,7 @@
 		(uuid "a3e3714c-3606-4963-9714-6ca863519a63")
 	)
 	(junction
-		(at 144.78 148.59)
+		(at 138.43 148.59)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ab9a88b1-31b2-4886-85ac-3a1f691e330f")
@@ -3507,6 +3517,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d4f7ad1b-0e5e-4512-b62b-2be8c9694c35")
+	)
+	(junction
+		(at 138.43 139.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d5659b4c-f645-4d17-b501-1b64fe27744a")
 	)
 	(junction
 		(at 156.21 80.01)
@@ -3642,6 +3658,16 @@
 	)
 	(wire
 		(pts
+			(xy 129.54 139.7) (xy 138.43 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10b98f0e-e674-47af-a4ed-1f30f4ea3efd")
+	)
+	(wire
+		(pts
 			(xy 147.32 142.24) (xy 156.21 142.24)
 		)
 		(stroke
@@ -3709,6 +3735,16 @@
 			(type default)
 		)
 		(uuid "19455c5a-f053-4a3e-b33e-93ca7cf942f0")
+	)
+	(wire
+		(pts
+			(xy 129.54 139.7) (xy 129.54 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1aa9d888-d9e5-4c50-94d3-5a0320414cc1")
 	)
 	(wire
 		(pts
@@ -4062,7 +4098,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 148.59) (xy 133.35 148.59)
+			(xy 133.35 148.59) (xy 144.78 148.59)
 		)
 		(stroke
 			(width 0)
@@ -4302,6 +4338,16 @@
 	)
 	(wire
 		(pts
+			(xy 129.54 146.05) (xy 129.54 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9396b428-5325-4197-b213-3e97a86730d6")
+	)
+	(wire
+		(pts
 			(xy 181.61 171.45) (xy 181.61 152.4)
 		)
 		(stroke
@@ -4422,7 +4468,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 148.59) (xy 144.78 146.05)
+			(xy 138.43 138.43) (xy 138.43 148.59)
 		)
 		(stroke
 			(width 0)
@@ -5704,7 +5750,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "oresat-passives:0603-C-NOSILK"
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 306.07 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -5887,7 +5933,7 @@
 	)
 	(symbol
 		(lib_id "power:VBUS")
-		(at 144.78 146.05 0)
+		(at 138.43 138.43 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -5898,7 +5944,7 @@
 		(dnp no)
 		(uuid "29d2427c-8696-4374-811f-7ba020b356f1")
 		(property "Reference" "#VBUS05"
-			(at 144.78 149.86 0)
+			(at 138.43 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5909,7 +5955,7 @@
 			)
 		)
 		(property "Value" "3.3V"
-			(at 144.78 141.986 0)
+			(at 138.43 134.366 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5919,7 +5965,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 144.78 146.05 0)
+			(at 138.43 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5930,7 +5976,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 146.05 0)
+			(at 138.43 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5941,7 +5987,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 144.78 146.05 0)
+			(at 138.43 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6684,6 +6730,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 129.54 147.32 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3fa52b74-e2a1-4aba-8a55-69e17c2d75c5")
+		(property "Reference" "#PWR031"
+			(at 129.54 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 129.54 151.384 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 129.54 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 129.54 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9ca3a4f4-61a1-4db8-a747-e6807cd1c9ad")
+		)
+		(instances
+			(project "c3-proxy"
+				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/ad201ad7-0b68-497a-9bd5-92d5158f3b08"
+					(reference "#PWR031")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "oresat-misc:Test-Point-0.75mm-th")
 		(at 199.39 87.63 0)
 		(unit 1)
@@ -6794,7 +6918,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "oresat-passives:0603-C-NOSILK"
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 170.18 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -9122,6 +9246,132 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 129.54 143.51 0)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b1f0896a-199d-41ea-af4d-4e0b44e4c12a")
+		(property "Reference" "C10"
+			(at 126.746 145.034 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100n"
+			(at 126.746 143.002 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "oresat-passives:0603-C-NOSILK"
+			(at 129.54 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT188R71E105KE13-01.pdf"
+			(at 129.54 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1 µF ±10% 25V Ceramic Capacitor X7R 0603 (1608 Metric)"
+			(at 129.54 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DIST" "DigiKey"
+			(at 129.54 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "490-GRT188R71E105KE13DCT-ND"
+			(at 129.54 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Murata Electronics"
+			(at 129.54 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "GRT188R71E105KE13D"
+			(at 129.54 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "ae165db4-6232-4c6f-a284-c174f9895177")
+		)
+		(pin "1"
+			(uuid "3ae44218-ccea-4eca-a2c6-4bb5f3b54482")
+		)
+		(instances
+			(project "c3-proxy"
+				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/ad201ad7-0b68-497a-9bd5-92d5158f3b08"
+					(reference "C10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "oresat-ics:TS5A21366")
 		(at 257.81 156.21 0)
 		(unit 1)
@@ -9839,7 +10089,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "oresat-passives:0603-C-NOSILK"
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 186.69 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -10200,7 +10450,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "oresat-passives:0603-C-NOSILK"
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 181.61 148.59 0)
 			(hide yes)
 			(show_name no)
