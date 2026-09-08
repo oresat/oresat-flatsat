@@ -100,10 +100,6 @@
         [
           "silk_edge_clearance|139987800|90000000|24280dfd-00a7-4e93-af86-b6fcd8008476|a9a385c4-872d-4ed6-ab66-e81ad871f580",
           ""
-        ],
-        [
-          "silk_overlap|144817295|114826298|74f6535f-db7a-408a-828a-21df96a1f363|bc455028-766d-4061-b610-22a5d33f5c94",
-          ""
         ]
       ],
       "meta": {
@@ -1144,7 +1140,7 @@
       "include_excluded_from_bom": false,
       "name": "",
       "sort_asc": true,
-      "sort_field": "Reference"
+      "sort_field": "MFR"
     },
     "bus_aliases": {
       "backplane": [
@@ -1213,7 +1209,7 @@
         "uuid": "1a9202c4-e698-4c93-952c-ee3e64e9e49c"
       }
     ],
-    "used_designators": "J1-7,D1-6,D13,U2,U4,U9,BZ1,#3V1,#3V7,FIDUCIAL1-2,FID1-3,SW2,#PWR1-2,#PWR5-9,#PWR12,#PWR17,#PWR19-29,TP1-17,TP20-29,R1-3,R5,R7-23,R95,#VBUS1-2,#VBUS4,#VBUS8-17,Q1-2,Q5-9,F1-2,C2,C6-9,HW1-5",
+    "used_designators": "R1-3,R5,R7-23,R95,#VBUS1-2,#VBUS4,#VBUS8-17,TP1-17,TP20-29,HW1-5,C2,C6-9,F1-2,D1-6,D13,U2,U4,U9,Q1-2,Q5-9,J1-7,BZ1,#3V1,#3V7,FIDUCIAL1-2,FID1-3,SW2,#PWR1-2,#PWR5-9,#PWR12,#PWR17,#PWR19-29",
     "variants": []
   },
   "sheets": [
