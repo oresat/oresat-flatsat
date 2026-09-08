@@ -5,9 +5,9 @@
 	(uuid "ccc77ee2-6f9f-4d65-b5e2-a1ff908cfc84")
 	(paper "B")
 	(title_block
-		(title "c3-Proxy card")
-		(date "2026-09-07")
-		(rev "${REVISION}")
+		(title "c3-Proxy Board")
+		(date "2026-09-08")
+		(rev "1.1")
 		(company "Portland State Aerospace Society")
 	)
 	(lib_symbols
@@ -895,6 +895,17 @@
 			)
 		)
 		(uuid "3e3c326d-7f51-46d0-8c14-2ced4d073864")
+	)
+	(text "All resistors are 0603 1% unless otherwise noted.\nAll capacitors are 0603 10% X5R Vw >= 25 V unless otherwise noted."
+		(exclude_from_sim no)
+		(at 113.792 264.668 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4672b4a5-21f8-434c-95be-b492a35215a9")
 	)
 	(text "A0\n"
 		(exclude_from_sim no)
@@ -2084,7 +2095,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "34753c82-758f-40d2-ade7-362f0cea50a2")
 		(property "Reference" "#PWR09"
 			(at 177.8 172.72 0)
@@ -2098,7 +2108,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 177.8 171.45 0)
+			(at 177.8 170.18 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2240,7 +2250,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "643e44f2-68a1-48c7-8379-2ed3c9c74051")
 		(property "Reference" "#PWR020"
 			(at 215.9 129.54 0)
@@ -2254,7 +2263,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 215.9 128.27 0)
+			(at 215.9 127 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

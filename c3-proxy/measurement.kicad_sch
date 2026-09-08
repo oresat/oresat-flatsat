@@ -5,9 +5,9 @@
 	(uuid "48477e6f-1a2b-43f8-85bc-3218f994c039")
 	(paper "B")
 	(title_block
-		(title "c3-Proxy card")
-		(date "2026-09-07")
-		(rev "${REVISION}")
+		(title "c3-Proxy Board")
+		(date "2026-09-08")
+		(rev "1.1")
 		(company "Portland State Aerospace Society")
 	)
 	(lib_symbols
@@ -3341,6 +3341,17 @@
 		)
 		(uuid "9c804e5b-79b7-400f-b478-75eccbb0c4aa")
 	)
+	(text "All resistors are 0603 1% unless otherwise noted.\nAll capacitors are 0603 10% X5R Vw >= 25 V unless otherwise noted."
+		(exclude_from_sim no)
+		(at 113.538 264.414 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ab3649a3-95f6-40ab-a85e-4112115a5979")
+	)
 	(text "Bypass for pin 1"
 		(exclude_from_sim no)
 		(at 119.38 139.954 0)
@@ -3818,7 +3829,7 @@
 	)
 	(wire
 		(pts
-			(xy 274.32 102.87) (xy 274.32 105.41)
+			(xy 274.32 102.87) (xy 274.32 104.14)
 		)
 		(stroke
 			(width 0)
@@ -3978,7 +3989,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 95.25) (xy 130.81 96.52)
+			(xy 130.81 95.25) (xy 130.81 104.14)
 		)
 		(stroke
 			(width 0)
@@ -5163,84 +5174,6 @@
 		)
 	)
 	(symbol
-		(lib_id "oresat-misc:Test-Point-0.75mm-th")
-		(at 170.18 74.93 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "0dc5ea75-af19-49f9-aec3-b6ce64c8d263")
-		(property "Reference" "TP27"
-			(at 168.148 72.39 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.0795)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Test-Point"
-			(at 170.18 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "oresat-misc:TestPoint-0.75mm-th"
-			(at 170.18 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 170.18 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "0.75 mm TH test point; good for scope probes and jumpers"
-			(at 170.18 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "bbc6b871-7b2e-4e52-b864-37c132a61a22")
-		)
-		(instances
-			(project "c3-proxy"
-				(path "/1a9202c4-e698-4c93-952c-ee3e64e9e49c/ad201ad7-0b68-497a-9bd5-92d5158f3b08"
-					(reference "TP27")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Regulator_Switching:MIC23050-SYML")
 		(at 130.81 80.01 0)
 		(unit 1)
@@ -5663,7 +5596,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 144.78 214.884 0)
+			(at 144.78 214.63 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6143,7 +6076,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "31431c81-347c-4488-bdbd-0bfcd58c4098")
 		(property "Reference" "#PWR011"
 			(at 257.81 180.34 0)
@@ -6157,7 +6089,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 257.81 179.07 0)
+			(at 257.81 177.8 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6221,7 +6153,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "3500aca1-62e2-4595-97fd-ee884b3b2285")
 		(property "Reference" "#PWR017"
 			(at 306.07 110.49 0)
@@ -6235,7 +6166,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 306.07 109.22 0)
+			(at 306.07 107.95 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6653,7 +6584,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 274.32 105.41 0)
+		(at 274.32 104.14 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6661,10 +6592,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "3e58425b-69a9-49ba-9d80-77484b00b328")
 		(property "Reference" "#PWR016"
-			(at 274.32 111.76 0)
+			(at 274.32 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6675,7 +6605,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 274.32 110.49 0)
+			(at 274.32 107.95 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6685,7 +6615,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 274.32 105.41 0)
+			(at 274.32 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6696,7 +6626,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 274.32 105.41 0)
+			(at 274.32 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6707,7 +6637,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 274.32 105.41 0)
+			(at 274.32 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6753,7 +6683,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 129.54 151.384 0)
+			(at 129.54 151.13 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7031,7 +6961,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "4666c209-971e-41d6-abe3-c6a49b0e71a5")
 		(property "Reference" "#PWR026"
 			(at 234.95 92.71 0)
@@ -7045,7 +6974,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 234.95 91.44 0)
+			(at 234.95 90.17 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7535,7 +7464,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 130.81 96.52 0)
+		(at 130.81 104.14 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7543,10 +7472,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "58bcbff0-7c2a-407a-85f2-69f17e323ab3")
 		(property "Reference" "#PWR015"
-			(at 130.81 102.87 0)
+			(at 130.81 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7557,7 +7485,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 130.81 101.6 0)
+			(at 130.81 107.95 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7567,7 +7495,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 130.81 96.52 0)
+			(at 130.81 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7578,7 +7506,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 130.81 96.52 0)
+			(at 130.81 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7589,7 +7517,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 130.81 96.52 0)
+			(at 130.81 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7621,7 +7549,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "5a110755-5b7e-4e12-871b-b7c02d219d6e")
 		(property "Reference" "#PWR014"
 			(at 217.17 110.49 0)
@@ -7635,7 +7562,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 217.17 109.22 0)
+			(at 217.17 107.95 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7776,7 +7703,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "5b80163a-6289-492e-81ac-37a78547d6c1")
 		(property "Reference" "#PWR027"
 			(at 170.18 110.49 0)
@@ -7790,7 +7716,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 170.18 109.22 0)
+			(at 170.18 107.95 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8436,7 +8362,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "887c4531-d0a1-4f4e-b86f-81e258af510a")
 		(property "Reference" "#PWR025"
 			(at 195.58 92.71 0)
@@ -8450,7 +8375,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 195.58 91.44 0)
+			(at 195.58 90.17 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8514,7 +8439,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "8a840caa-f064-40cf-b071-588804c64729")
 		(property "Reference" "#PWR013"
 			(at 231.14 110.49 0)
@@ -8528,7 +8452,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 231.14 109.22 0)
+			(at 231.14 107.95 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
