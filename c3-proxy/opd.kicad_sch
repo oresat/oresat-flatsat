@@ -5,8 +5,8 @@
 	(uuid "ccc77ee2-6f9f-4d65-b5e2-a1ff908cfc84")
 	(paper "B")
 	(title_block
-		(title "Flatsat Interface Card")
-		(date "2026-06-29")
+		(title "c3-Proxy card")
+		(date "2026-09-07")
 		(rev "${REVISION}")
 		(company "Portland State Aerospace Society")
 	)
