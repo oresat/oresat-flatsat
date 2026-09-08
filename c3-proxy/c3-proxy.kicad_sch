@@ -2574,7 +2574,7 @@
 				)
 			)
 			(property "Description" "Unpolarized capacitor, small symbol"
-				(at 0 0 0)
+				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -2624,7 +2624,7 @@
 						(xy -1.524 -0.508) (xy 1.524 -0.508)
 					)
 					(stroke
-						(width 0.3302)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -5237,6 +5237,10 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f187da0b-b973-4406-87a2-b6906fa1ee22")
+	)
+	(no_connect
+		(at 109.22 170.18)
+		(uuid "37365201-be59-44e8-ac69-8f1c57d1071a")
 	)
 	(no_connect
 		(at 124.46 218.44)
@@ -9511,7 +9515,7 @@
 				)
 			)
 		)
-		(property "Footprint" "oresat-passives:0603-A"
+		(property "Footprint" "oresat-passives:0603-C-NOSILK"
 			(at 132.08 193.04 0)
 			(hide yes)
 			(show_name no)
@@ -9634,7 +9638,7 @@
 				)
 			)
 		)
-		(property "Footprint" "oresat-passives:0603-A"
+		(property "Footprint" "oresat-passives:0603-C-NOSILK"
 			(at 132.08 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -9990,7 +9994,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "oresat-passives:0603-A"
+		(property "Footprint" "oresat-passives:0603-C-NOSILK"
 			(at 96.52 233.68 0)
 			(hide yes)
 			(show_name no)
@@ -10001,7 +10005,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://search.kemet.com/download/specsheet/C0603C104K5RACAUTO"
+		(property "Datasheet" ""
 			(at 96.52 233.68 0)
 			(hide yes)
 			(show_name no)
@@ -10012,52 +10016,8 @@
 				)
 			)
 		)
-		(property "Description" "0.1 µF ±10% 50V Ceramic Capacitor X7R 0603 (1608 Metric)"
-			(at 96.52 233.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DIST" "DigiKey"
-			(at 96.52 233.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DPN" "399-6856-1-ND"
-			(at 96.52 233.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MFR" "KEMET"
-			(at 96.52 233.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "C0603C104K5RACAUTO"
-			(at 96.52 233.68 0)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 96.52 243.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

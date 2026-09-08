@@ -3475,7 +3475,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "oresat-passives:0603-A"
+		(property "Footprint" "oresat-passives:0603-C-NOSILK"
 			(at 232.41 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -3841,7 +3841,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "oresat-passives:0603-A"
+		(property "Footprint" "oresat-passives:0603-C-NOSILK"
 			(at 191.77 100.33 0)
 			(hide yes)
 			(show_name no)

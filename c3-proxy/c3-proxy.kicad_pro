@@ -346,6 +346,14 @@
       [
         "power_pin_not_driven|2730500|977900|ad28eb6e-ddc0-4ce0-8180-ce6c6413661a|00000000-0000-0000-0000-000000000000|/1a9202c4-e698-4c93-952c-ee3e64e9e49c|/1a9202c4-e698-4c93-952c-ee3e64e9e49c|",
         "power comes from j1 this board"
+      ],
+      [
+        "power_pin_not_driven|3136900|1066800|9792fcd6-c9cd-4914-bdc6-846e7f509071|00000000-0000-0000-0000-000000000000|/1a9202c4-e698-4c93-952c-ee3e64e9e49c|/1a9202c4-e698-4c93-952c-ee3e64e9e49c|",
+        "grounded through flatsat-side connector"
+      ],
+      [
+        "power_pin_not_driven|3136900|990600|ad28eb6e-ddc0-4ce0-8180-ce6c6413661a|00000000-0000-0000-0000-000000000000|/1a9202c4-e698-4c93-952c-ee3e64e9e49c|/1a9202c4-e698-4c93-952c-ee3e64e9e49c|",
+        "powered by flatsat-side connector"
       ]
     ],
     "meta": {
@@ -1205,7 +1213,7 @@
         "uuid": "1a9202c4-e698-4c93-952c-ee3e64e9e49c"
       }
     ],
-    "used_designators": "FID1-3,SW2,#PWR1-2,#PWR5-9,#PWR12,#PWR17,#PWR19-29,TP1-17,TP20-29,R1-3,R5,R7-23,R95,#VBUS1-2,#VBUS4,#VBUS8-17,Q1-2,Q5-9,F1-2,C2,C6-9,HW1-5,U2,U4,U9,D1-6,D13,J1-7,FIDUCIAL1-2,#3V1,#3V7,BZ1",
+    "used_designators": "J1-7,D1-6,D13,U2,U4,U9,BZ1,#3V1,#3V7,FIDUCIAL1-2,FID1-3,SW2,#PWR1-2,#PWR5-9,#PWR12,#PWR17,#PWR19-29,TP1-17,TP20-29,R1-3,R5,R7-23,R95,#VBUS1-2,#VBUS4,#VBUS8-17,Q1-2,Q5-9,F1-2,C2,C6-9,HW1-5",
     "variants": []
   },
   "sheets": [

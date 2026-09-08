@@ -69,7 +69,7 @@
 				)
 			)
 			(property "Description" "Unpolarized capacitor, small symbol"
-				(at 0 0 0)
+				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -119,7 +119,7 @@
 						(xy -1.524 -0.508) (xy 1.524 -0.508)
 					)
 					(stroke
-						(width 0.3302)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -5354,7 +5354,7 @@
 		(fields_autoplaced yes)
 		(uuid "1cc40e32-824f-45e8-be1c-a1a1e1385314")
 		(property "Reference" "C3"
-			(at 158.75 83.8262 0)
+			(at 158.75 83.8199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5365,7 +5365,7 @@
 			)
 		)
 		(property "Value" "4.7u"
-			(at 158.75 86.3662 0)
+			(at 158.75 86.3599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5375,7 +5375,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "oresat-passives:0805-A"
+		(property "Footprint" "oresat-passives:0805-C-NOSILK"
 			(at 156.21 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -5386,7 +5386,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT21BC71E475KE13-01.pdf"
+		(property "Datasheet" ""
 			(at 156.21 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -5397,52 +5397,8 @@
 				)
 			)
 		)
-		(property "Description" "4.7 µF ±10% 25V Ceramic Capacitor X7S 0805 (2012 Metric)"
-			(at 156.21 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DIST" "DigiKey"
-			(at 156.21 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DPN" "490-GRT21BC71E475KE13LCT-ND"
-			(at 156.21 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MFR" "Murata Electronics"
-			(at 156.21 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "GRT21BC71E475KE13L"
-			(at 156.21 85.09 0)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 156.21 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5501,7 +5457,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "oresat-passives:0603-A"
+		(property "Footprint" "oresat-passives:0603-C-NOSILK"
 			(at 185.42 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -5704,7 +5660,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "oresat-passives:0603-A"
+		(property "Footprint" "oresat-passives:0603-C-NOSILK"
 			(at 306.07 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -5995,7 +5951,7 @@
 				)
 			)
 		)
-		(property "Footprint" "oresat-passives:0603-A"
+		(property "Footprint" "oresat-passives:0603-C-NOSILK"
 			(at 146.05 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -6006,7 +5962,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://search.kemet.com/download/specsheet/C0603C471K5RACAUTO"
+		(property "Datasheet" ""
 			(at 146.05 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -6017,52 +5973,8 @@
 				)
 			)
 		)
-		(property "Description" "470 pF ±10% 50V Ceramic Capacitor X7R 0603 (1608 Metric)"
-			(at 146.05 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DIST" "DigiKey"
-			(at 146.05 80.01 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DPN" "399-6894-1-ND"
-			(at 146.05 80.01 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MFR" "KEMET"
-			(at 146.05 80.01 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "C0603C471K5RACAUTO"
-			(at 146.05 80.01 90)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 156.21 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6276,7 +6188,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "oresat-passives:0603-A"
+		(property "Footprint" "oresat-passives:0603-C-NOSILK"
 			(at 156.21 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -6287,7 +6199,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT188R71E105KE13-01.pdf"
+		(property "Datasheet" ""
 			(at 156.21 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -6298,52 +6210,8 @@
 				)
 			)
 		)
-		(property "Description" "1 µF ±10% 25V Ceramic Capacitor X7R 0603 (1608 Metric)"
-			(at 156.21 146.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DIST" "DigiKey"
-			(at 156.21 146.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DPN" "490-GRT188R71E105KE13DCT-ND"
-			(at 156.21 146.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MFR" "Murata Electronics"
-			(at 156.21 146.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "GRT188R71E105KE13D"
-			(at 156.21 146.05 0)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 156.21 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6794,7 +6662,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "oresat-passives:0603-A"
+		(property "Footprint" "oresat-passives:0603-C-NOSILK"
 			(at 170.18 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -7162,7 +7030,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "oresat-passives:0603-A"
+		(property "Footprint" "oresat-passives:0603-C-NOSILK"
 			(at 231.14 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -7754,7 +7622,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "oresat-passives:0603-A"
+		(property "Footprint" "oresat-passives:0603-C-NOSILK"
 			(at 195.58 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -7765,7 +7633,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT188R71E105KE13-01.pdf"
+		(property "Datasheet" ""
 			(at 195.58 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -7776,52 +7644,8 @@
 				)
 			)
 		)
-		(property "Description" "1 µF ±10% 25V Ceramic Capacitor X7R 0603 (1608 Metric)"
-			(at 195.58 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DIST" "DigiKey"
-			(at 195.58 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DPN" "490-GRT188R71E105KE13DCT-ND"
-			(at 195.58 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MFR" "Murata Electronics"
-			(at 195.58 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "GRT188R71E105KE13D"
-			(at 195.58 81.28 0)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 195.58 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7859,7 +7683,7 @@
 		(fields_autoplaced yes)
 		(uuid "6d01516c-6ebe-440a-95c5-7a5f8ea53142")
 		(property "Reference" "C6"
-			(at 251.46 134.6262 0)
+			(at 251.46 134.6199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7870,7 +7694,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 251.46 137.1662 0)
+			(at 251.46 137.1599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7880,7 +7704,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "oresat-passives:0603-A"
+		(property "Footprint" "oresat-passives:0603-C-NOSILK"
 			(at 248.92 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -7891,7 +7715,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://search.kemet.com/download/specsheet/C0603C104K5RACAUTO"
+		(property "Datasheet" ""
 			(at 248.92 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -7902,52 +7726,8 @@
 				)
 			)
 		)
-		(property "Description" "0.1 µF ±10% 50V Ceramic Capacitor X7R 0603 (1608 Metric)"
-			(at 248.92 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DIST" "DigiKey"
-			(at 248.92 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DPN" "399-6856-1-ND"
-			(at 248.92 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MFR" "KEMET"
-			(at 248.92 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "C0603C104K5RACAUTO"
-			(at 248.92 135.89 0)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 248.92 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8006,7 +7786,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "oresat-passives:0603-A"
+		(property "Footprint" "oresat-passives:0603-C-NOSILK"
 			(at 170.18 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -8132,7 +7912,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "oresat-passives:0603-A"
+		(property "Footprint" "oresat-passives:0603-C-NOSILK"
 			(at 181.61 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -8471,7 +8251,7 @@
 		(fields_autoplaced yes)
 		(uuid "9aa17017-a077-4769-9b8b-786a3f2544d9")
 		(property "Reference" "C9"
-			(at 237.49 80.0162 0)
+			(at 237.49 80.0099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8482,7 +8262,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 237.49 82.5562 0)
+			(at 237.49 82.5499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8492,7 +8272,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "oresat-passives:0603-A"
+		(property "Footprint" "oresat-passives:0603-C-NOSILK"
 			(at 234.95 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -8503,7 +8283,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT188R71E105KE13-01.pdf"
+		(property "Datasheet" ""
 			(at 234.95 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -8514,52 +8294,8 @@
 				)
 			)
 		)
-		(property "Description" "1 µF ±10% 25V Ceramic Capacitor X7R 0603 (1608 Metric)"
-			(at 234.95 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DIST" "DigiKey"
-			(at 234.95 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DPN" "490-GRT188R71E105KE13DCT-ND"
-			(at 234.95 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MFR" "Murata Electronics"
-			(at 234.95 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "GRT188R71E105KE13D"
-			(at 234.95 81.28 0)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 234.95 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8597,7 +8333,7 @@
 		(fields_autoplaced yes)
 		(uuid "a5363bd2-a40b-406c-9b96-2d8b9cde7c95")
 		(property "Reference" "C4"
-			(at 111.76 83.8262 0)
+			(at 111.76 83.8199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8608,7 +8344,7 @@
 			)
 		)
 		(property "Value" "4.7u"
-			(at 111.76 86.3662 0)
+			(at 111.76 86.3599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8618,7 +8354,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "oresat-passives:0805-A"
+		(property "Footprint" "oresat-passives:0805-C-NOSILK"
 			(at 109.22 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -8629,7 +8365,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT21BC71E475KE13-01.pdf"
+		(property "Datasheet" ""
 			(at 109.22 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -8640,52 +8376,8 @@
 				)
 			)
 		)
-		(property "Description" "4.7 µF ±10% 25V Ceramic Capacitor X7S 0805 (2012 Metric)"
-			(at 109.22 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DIST" "DigiKey"
-			(at 109.22 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DPN" "490-GRT21BC71E475KE13LCT-ND"
-			(at 109.22 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MFR" "Murata Electronics"
-			(at 109.22 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "GRT21BC71E475KE13L"
-			(at 109.22 85.09 0)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 109.22 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8744,7 +8436,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "oresat-passives:0603-A"
+		(property "Footprint" "oresat-passives:0603-C-NOSILK"
 			(at 306.07 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -9029,7 +8721,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "oresat-passives:0603-A"
+		(property "Footprint" "oresat-passives:0603-C-NOSILK"
 			(at 186.69 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -9309,7 +9001,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "oresat-passives:0603-A"
+		(property "Footprint" "oresat-passives:0603-C-NOSILK"
 			(at 219.71 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -9433,7 +9125,7 @@
 				)
 			)
 		)
-		(property "Footprint" "oresat-passives:0805-A"
+		(property "Footprint" "oresat-passives:0805-C-NOSILK"
 			(at 148.59 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -9558,7 +9250,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "oresat-passives:0603-A"
+		(property "Footprint" "oresat-passives:0603-C-NOSILK"
 			(at 214.63 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -9839,7 +9531,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "oresat-passives:0603-A"
+		(property "Footprint" "oresat-passives:0603-C-NOSILK"
 			(at 186.69 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -10200,7 +9892,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "oresat-passives:0603-A"
+		(property "Footprint" "oresat-passives:0603-C-NOSILK"
 			(at 181.61 148.59 0)
 			(hide yes)
 			(show_name no)
